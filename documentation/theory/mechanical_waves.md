@@ -101,6 +101,38 @@ A displacment in the x-direction, will, in an isotropic medium with no Lame-modu
 ## Independence of sheer / bulk modulus on frequency
 In reality, when testing the material with TOF-sensors using piezo-electrics, the value obtained will not be a constant property independent of frequency.
 
+## Bulk and shear modulus values
+### Voight bound for modulus
+Assumes each grain in the polycrystal experience the same macroscropic strain.
+
+So the single-crystal stiffness constants are averaged,and an upper bound for the moduli is acquired.
+
+#### Bulk modulus:
+$$
+B_V = \frac{1}{9} (C_{11} + C_{22} + C_{33} + 2(C_{12} + C_{13} + C_{23}))
+$$
+
+#### Shear modulus:
+$$
+G_V = \frac{1}{15} (C_{11} + C_{22} + C_{33} - (C_{12} + C_{13} + C_{23}) + 3(C_{44} + C_{55} + C_{66}))
+$$
+
+### Reuss bound for modulus
+
+Assumes each grain carries the same macroscopic stress, which gives a lower boundary for the moduli.
+
+#### Bulk modulus:
+$$
+B_R = (S_{11} + S_{22} + S_{33} + 2(S_{12} + S_{13} + S_{23}))^{-1}
+$$
+
+#### Shear modulus:
+$$
+G_R = \left(15 \left(4(S_{11} + S_{22} + S_{33}) - 4(S_{12} + S_{13} + S_{23}) + 3(S_{44} + S_{55} + S_{66})\right)\right)^{-1}
+$$
+
+## Voigt-Reuss-Hill average
+Simply the arithmetic mean of Reuss and Voight bounds.
 
 # Sources:
 ### Wave equations
