@@ -134,6 +134,14 @@ $$
 ## Voigt-Reuss-Hill average
 Simply the arithmetic mean of Reuss and Voight bounds.
 
+# Raleigh Waves
+
+## Surface Waves
+
+## Surface-Penetrating Waves
+
+## Near vs Far-field
+
 # Sources:
 ### Wave equations
 - Solving the 1D wave equation on a string: https://www.youtube.com/watch?v=9TQCKWWAVjM&t=103s&ab_channel=MITOpenCourseWare
