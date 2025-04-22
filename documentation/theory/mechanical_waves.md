@@ -57,9 +57,30 @@ In case of isotropy, $C_{ijkl}$ is independent of coordinate rotation, and can b
 $C_{ijkl} = \lambda \delta_{ij} \delta_{kl} + \mu (\delta_{jk} \delta_{il} + \delta_{il} \delta_{ik})$
 - $\lambda, \mu$ are Lame constants.
 
-Consequently, filling this into the the equation for $\Tau_{ij}$ and filling in $\Tau_{ij}$ into our equation of motion, we get **the elastic wave equation for homogenous and isotropic media:**:
+Consequently, filling this into the the equation for $\Tau_{ij}$ and filling in $\Tau_{ij}$ into our equation of motion, we get **the elastic wave equation for homogenous and isotropic media**:
 
-$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = (\lambda + \mu) \nabla (\nabla \cdot \mathbf{u}) + \mu \nabla^2 \mathbf{u}  + f$
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = (\lambda + \mu) \nabla (\nabla \cdot \mathbf{u}) + \mu \nabla^2 \mathbf{u}  + f$$
+
+Rewriting the equation, and assuming the external force to be zero:
+
+$$\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = (\lambda + 2\mu) \nabla (\nabla \cdot \mathbf{u}) - \mu \nabla \times (\nabla \times \mathbf{u})$$
+
+The generalized wave equation can, depending on the initial deformation, lead to a variety of wavefronts
+- Planar (Constant displacement perpendicular to propagation direction)
+- Spherical (Radially outward / inwaard travelling waves from a point source)
+- Cylindrical waves (Radially outward / inward travelling from a line-source)
+- Surface waves (Rayleigh / Love): waves confined to the surface of a material
+
+![](./images/wavefronts.png)
+
+### Generic solution
+
+#### Homogenous medium
+Using separation of variables we get that a linear combination of $\phi(x, t)$ is a solution:
+
+$$
+\varphi(\mathbf{x}, t) = e^{i(k_1 x_1 + k_2 x_2 + k_3 x_3 - \omega t)} = e^{i(\mathbf{k} \cdot \mathbf{x} - \omega t)}
+$$
 
 ## Acoustic Waves
 
@@ -73,8 +94,82 @@ $\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = (\lambda + \mu) \nabla (\nabl
 We gets **the acoustic wave equation for homogenous media**:\
 $\rho \frac{\partial^2 \theta}{\partial T^2} = \lambda \nabla^2 \theta + \nabla \cdot \mathbf{f}$
 
+There are no shear waves which reduces the pressure field to: 
+$$
+\frac{1}{c^2} \frac{\partial^2 P}{\partial t^2} = \nabla^2 P, \quad \text{where } c = \sqrt{\frac{\lambda}{\rho}}
+$$
 
-## Transversal versus Longitudinal waves
+#### Solutions at a planar interface
+
+![](./images/planar_interface.png)
+
+The incoming wave:
+$$
+P_{inc} = A e^{i\omega \left(\frac{\sin i_1}{c_1} x_1 + \frac{\cos i_1}{c_1} x_3 - t\right)} \quad (2.26)
+$$
+The reflected wave:
+$$
+P_{refl} = B e^{i\omega \left(\frac{\sin i_1^*}{c_1} x_1 - \frac{\cos i_1^*}{c_1} x_3 - t\right)} \quad (2.27)
+$$
+The transmitted wave:
+$$
+P_{trans} = C e^{i\omega \left(\frac{\sin i_2}{c_2} x_1 + \frac{\cos i_2}{c_2} x_3 - t\right)} \quad (2.28)
+$$
+
+Using boundary conditions
+- Continuity of pressure at the boundary
+- Constant vertical displacement along the boundary
+
+#### Simplified solution: Snells law
+Valid when the incident angle is equal to the angle of reflection, and the transmission angle is related to i.
+$$
+\frac{B}{A} = \frac{\frac{\cos i_1}{\rho_1 c_1} - \frac{\cos i_2}{\rho_2 c_2}}{\frac{\cos i_1}{\rho_1 c_1} + \frac{\cos i_2}{\rho_2 c_2}}
+$$
+
+$$
+\frac{C}{A} = \frac{2 \frac{\cos i_1}{\rho_1 c_1}}{\frac{\cos i_1}{\rho_1 c_1} + \frac{\cos i_2}{\rho_2 c_2}} 
+$$
+
+We call $\rho * c$ the impedance of the fluid. $i$ is he incident angle of the wave.
+- High impedance: large pressure leads to small particle velocity.
+- Low impedance: small pressure leads to large particle velocity.
+
+#### In case i1 is too large
+Solution becomes an exponentially decaying wave:
+$$
+C e^{i\omega(px_1 - t)} e^{i\omega \sqrt{\frac{1}{c_2^2} - p^2} x_3} = C e^{-\omega \sqrt{p^2 - \frac{1}{c_2^2}} x_3} e^{i\omega(px_1 - t)}
+$$
+
+$$
+\frac{\sin i_2}{c_2} = p
+$$
+
+### Plane waves on a free surface of an elastic half-space
+
+![](images/elastic_interface.png)
+
+Reflected P-wave:
+$$
+\frac{P'}{P} = \frac{-\left(\frac{1}{\beta^2} - 2p^2\right)^2 + 4p^2 \cos i_\alpha \cos j_\beta}{\left(\frac{1}{\beta^2} - 2p^2\right)^2 + 4p^2 \cos i_\alpha \cos j_\beta} \quad (2.40)
+$$
+
+Reflected SV-wave:
+$$
+\frac{P'}{S} = \frac{4 \frac{\alpha}{\beta} p \cos i_\alpha \left(\frac{1}{\beta^2} - 2p^2\right)}{\left(\frac{1}{\beta^2} - 2p^2\right)^2 + 4p^2 \cos i_\alpha \cos j_\beta} \quad (2.41)
+$$
+
+### Raleigh waves
+
+Pair of evanescent waves: P-wave type and SV-wave type, added together can satisfy the free surface boundary condition when p takes a special value.
+
+P and S-Waves propagating as spherical wavefronts through the interior decrease proportional to the distance travelled: $\frac{1}{r}$.
+
+Rayleigh waves propagate in a circular wavefront over the earth's surface with attenuation $\frac{1}{\sqrt{r}}$.
+
+## Transversal versus Longitudinal waves (Body waves)
+
+They propagate through the interior of an elastic medium. Boundary conditions satisfy the bulk elastodynamic wave equation in 3D.
+
 ### P (Primary) / Longitudinal waves
 - Fastest wave
 - Particle motion is in the SAME direction as the propagation direction.
@@ -87,6 +182,15 @@ $\rho \frac{\partial^2 \theta}{\partial T^2} = \lambda \nabla^2 \theta + \nabla 
 A displacment in the x-direction, will, in an isotropic medium with no Lame-moduli gradients lead to
 - A longitudinal P-wave in the x-direction, with speed $c = \sqrt{\frac{\lambda + 2\mu}{\rho}}$
 - A transverse S-wave in the y and z-direction, with speed $c = \sqrt{\frac{\mu}{\rho}}$
+
+## Evanescent waves / Inhomogenous plane waves
+
+Travel along a free surface / interface. Waves behave according to Rayleigh's characteristic equation for phase velocity and depth decay.
+
+### Rayleigh waves
+- Decay is exponential with depth beneath the surface
+	- So discontinuity detection can be done up to 1.4
+- Used for surface flaw detection
 
 # Assumptions
 ## Isotropy
@@ -131,16 +235,9 @@ $$
 G_R = \left(15 \left(4(S_{11} + S_{22} + S_{33}) - 4(S_{12} + S_{13} + S_{23}) + 3(S_{44} + S_{55} + S_{66})\right)\right)^{-1}
 $$
 
-## Voigt-Reuss-Hill average
+### Voigt-Reuss-Hill average
 Simply the arithmetic mean of Reuss and Voight bounds.
 
-# Raleigh Waves
-
-## Surface Waves
-
-## Surface-Penetrating Waves
-
-## Near vs Far-field
 
 # Sources:
 ### Wave equations
@@ -150,3 +247,6 @@ Simply the arithmetic mean of Reuss and Voight bounds.
 
 ### Transversal vs Longitudinal
 - https://www.ldeo.columbia.edu/~richards/webpage_rev_Jan06/Ch2_ElasticWaves_in_Solids.pdf
+
+### Ultrasonic testing
+-  https://content.ndtsupply.com/media/Ultrasonic%20Testing-%20USAF-Tech-Manual-NR2.pdf?utm_source=chatgpt.com
