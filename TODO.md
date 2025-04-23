@@ -11,9 +11,11 @@
 ## Get the Piezo-electric
 - Choose the correct resonance frequency depending on the materials
 - Buy the piezo-electric (UB161M7)
+	- Buy at DigiKey: https://www.digikey.de/en/products/detail/pui-audio-inc/UB161M7/6071956
+	- Make sure to buy some OPAMP and power supply chips for prototyping
 - Characterize the piezo-element with a VNA
-- Make / Buy an SMA to 2-terminal adapter so you can simply connect your piezo-electric element.
-
+	- Make / Buy an SMA to 2-terminal adapter so you can simply connect your piezo-electric element.
+	- Make sure to calibrate the end of the SMA using a 50 ohm resistance with MINIMAL PARASITICS
 
 ## Circuit design and simulation
 - Create an equivalent resonant circuit for the piezo-element to use in LTSpice-simulations
