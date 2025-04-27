@@ -26,9 +26,15 @@
 ### Driving inverter
 - &#9745; Design / dimension the driving inverter and simulate in ltspice together with the piezo-electric
 - Create in KiCad
+	- Make sure to generate 12 volts from a buck converter
+	- Add a possibility to simply supply the FET driver with volts in order to test shoot-through currents and things like that
+		- This way you won't need to deal with those at 20 volts
+- Add enough capacitance to supply the 10 amp current peaks to the piezo.
 
 ### Connector
 - Choose an appropriate connector type for the driving part
+	- Simply put 2 very big pads, one for each inverter side.
+	- Choose 2 big wires
 
 ## Analog front-end
 ### ADC selection
@@ -47,6 +53,8 @@
 
 
 ### PWM generation
+- Use an FPGA
+	- Make sure to add dead time to the inverter
 
 ### LNA design
 
