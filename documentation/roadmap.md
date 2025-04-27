@@ -34,12 +34,14 @@
 ### Connector
 - Choose an appropriate connector type for the driving part
 	- Simply put 2 very big pads, one for each inverter side.
-	- Choose 2 big wires
+		- If needed solder some high-power connectors onto them / Make sure to have some holes ready.
+	- Use a high-power twisted wire to connect them both.
 
 ## Analog front-end
 ### ADC selection
 - Choose an ADC which can sample up to 10 MHz (so we can drive Piezo's up to 5 MHz)
 	- Design circuitry around it, make sure it is isolated from the inverter
+
 
 ### Pre-amplifier
 - Design a preamp with a low source impedance to push the piezo through the cable
