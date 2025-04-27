@@ -38,6 +38,8 @@
 ### Pre-amplifier
 - Design a preamp with a low source impedance to push the piezo through the cable
 - Make sure you can integrate the preamp with the sensor
+- Think about waiting with the preamp, and doing initial receiver measurements with an oscilloscope first.
+	- Depending on whether you can fit everything on one board or not.
 
 ### Connector
 - Choose an appropriate connector for transmitting the amplified signal.
