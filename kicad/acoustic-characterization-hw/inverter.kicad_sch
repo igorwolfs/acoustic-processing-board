@@ -1382,12 +1382,6 @@
 		(uuid "6b44e775-32c3-4dc6-b0f8-88987fd66b08")
 	)
 	(junction
-		(at 29.21 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "767636fa-51ac-4009-af0b-fa03999578e6")
-	)
-	(junction
 		(at 44.45 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1440,6 +1434,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3e7fa43-ef6d-47a0-9618-8a3945c7b41d")
+	)
+	(junction
+		(at 29.21 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efa50ca4-1627-4655-9443-02a0c7846c5e")
 	)
 	(junction
 		(at 44.45 160.02)
@@ -2633,6 +2633,94 @@
 			(project "acoustic-characterization-hw"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/5e6fba8e-e7e0-45ab-a830-fc281a3b250c"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 29.21 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00e7e5ee-c53c-41d9-a2a3-71dcd7b2ab67")
+		(property "Reference" "C4"
+			(at 31.75 96.5262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 31.75 99.0662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 29.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706862004473856"
+			(at 29.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 29.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturing Part Number" "CL21B105KBFNNNE"
+			(at 29.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C28323"
+			(at 29.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec15d232-2229-4d27-b72e-0d5919512a9e")
+		)
+		(pin "2"
+			(uuid "5621292a-5326-4f66-94dc-cf81976735d2")
+		)
+		(instances
+			(project "acoustic-characterization-hw"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/5e6fba8e-e7e0-45ab-a830-fc281a3b250c"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -5852,94 +5940,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 29.21 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b22f3b24-3a0e-40bf-b8bd-a280ce956f9a")
-		(property "Reference" "C4"
-			(at 31.75 96.5262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 31.75 99.0662 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 29.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
-			(at 29.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 29.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" "CL31B105KBHNNNE"
-			(at 29.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C1848"
-			(at 29.21 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "608dafd0-d3e5-4865-b7a1-7e2146ae1168")
-		)
-		(pin "2"
-			(uuid "377df2d0-c98f-4752-b83a-ab1172cb53fb")
-		)
-		(instances
-			(project "acoustic-characterization-hw"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/5e6fba8e-e7e0-45ab-a830-fc281a3b250c"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 78.74 158.75 0)
 		(unit 1)
@@ -6436,7 +6436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 29.21 31.75 0)
 			(effects
 				(font
@@ -6445,7 +6445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706862004473856"
 			(at 29.21 31.75 0)
 			(effects
 				(font
@@ -6463,7 +6463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL31B105KBHNNNE"
+		(property "Manufacturing Part Number" "CL21B105KBFNNNE"
 			(at 29.21 31.75 0)
 			(effects
 				(font
@@ -6472,7 +6472,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C1848"
+		(property "LCSC Part Number" "C28323"
 			(at 29.21 31.75 0)
 			(effects
 				(font
