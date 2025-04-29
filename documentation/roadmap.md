@@ -1,4 +1,4 @@
-# Research
+# 1. Research
 ## Physics
 ### Wave mechanics
 &#9745; Make sure you understand the terms in the wave equation
@@ -14,7 +14,7 @@
 ## Piezo-electronics
 - &#9745; Choose the correct resonance frequency depending on the materials
 
-# Design
+# 2. Design
 ## Piezo
 ### Electrical simulation
 - &#9745;  Create an equivalent resonant circuit for the piezo-element to use in LTSpice-simulations
@@ -42,6 +42,9 @@
 - Choose an ADC which can sample up to 10 MHz (so we can drive Piezo's up to 5 MHz)
 	- Design circuitry around it, make sure it is isolated from the inverter
 
+- Check design circuit for existing examples
+	- Choose differential mode inputs
+	- Choose Vref 2 Volt initially, make sure it's modifiable later-on to 1 V
 
 ### Pre-amplifier
 - Design a preamp with a low source impedance to push the piezo through the cable
@@ -58,9 +61,7 @@
 - Use an FPGA
 	- Make sure to add dead time to the inverter
 
-### LNA design
-
-# Setup
+# 3. Setup
 
 ## Piezo-electric transducer availability
 - Buy the piezo-electric (UB161M7)
@@ -79,3 +80,13 @@
 ### Waveform
 - Check if a bandpass filter is needed to filter out the high / low frequency components
 	- We're getting pretty close to the limits of what the FET driver + FET can do at 4-5 MHz.
+
+## Analog front-end adaptations
+
+### ADC adaptations
+- Depending on the Vpp coing out of your ADC
+	- Adapt your Vref to 1 V instead of 2 V
+
+### LNA design
+- Perform this design after having the piezo-element receiver and measuring Vpp with an oscilloscope
+	- If this Vpp is high enough, choose a 
