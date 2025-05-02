@@ -90,4 +90,3 @@
 ### LNA design
 - Perform this design after having the piezo-element receiver and measuring Vpp with an oscilloscope
 	- If this Vpp is high enough, choose a 
-

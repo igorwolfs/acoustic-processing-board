@@ -32,7 +32,7 @@ $$
 Higher beam angle corresponds with 
 - lower ultrasound frequencies
 - less ultra-sound decay
-- 
+
 
 # Sources
 -  https://content.ndtsupply.com/media/Ultrasonic%20Testing-%20USAF-Tech-Manual-NR2.pdf?utm_source=chatgpt.com

@@ -1,11 +1,56 @@
 # un0rick
 https://github.com/kelu124/echomods
-## What is it
+
 Uses a combination of hardware, firmware, VHDL and software that was used to experiments with various opensource ultrasound modules.
 Note that this was mostly used for beamforming, not for simple ultrasound ToF measurements.
 
 It uses the un0rick-board (https://un0rick.cc/) which contains the 
-- ADC
+
+## Processing / Digital electronics
+### FPGA (ICE40HX4K-TQ144)
+
+### RAM (IS61WV51216BLL-10TLI)
+- SRAM
+- 3.3 V supply
+- Access time (8, 10, 20 ns so max 125 MHz)
+- https://nl.mouser.com/datasheet/2/198/61_64WV51216-258283.pdf
+
+- RAM_A0 .. RAM_A18 -> ICE40
+- RAM_IO0 .. RAM_IO16 -> ICE40
+- RAM_nCE
+- RAM_nLB
+- RAM_nOE
+- RAM_nUB
+- RAM_nWE
+
+### Flash (W25Q80DVSNIG-ND)
+- 8 MBIT
+- SPI/QSPI
+	- FLASH_CS, FLASH_MISO, FLASH_SCLK, FLASH_MOSI (connected to )
+
+### Connected to 74CBTLV3257PW
+- analog switch
+- Switches SPI between ICE SPI-pins and FT323-pins
+
+### FT2232HL-REEL
+- https://ftdichip.com/wp-content/uploads/2024/09/DS_FT2232H.pdf
+Contains
+- Oscillator-in pin
+- IO1..IO4_FT: 
+- USB_DM, USB_DP
+
+**MISC**
+- Button, led
+- RPI_IO
+- 
+
+## Analog frontend
+
+### ADC
+- ADC_D0..ADC_D9, ADC_CLK -> connected to ICE40
+
+
+
 - FPGA (Lattice ICE40HX4K for DSP, acquisiton and PWM driving)
 - 8 MBit SRAM
 - 8 MBit SPI Flash
@@ -17,13 +62,10 @@ It uses the un0rick-board (https://un0rick.cc/) which contains the
 	- This way weaker signals coming from deeper in the tissue are amplified to look brighter
 - RPI / USB connection
 
-### Driving circuit
-- HV7361 GA is the pulse generator used here
-	- It supplies a max of +-2.5 amps
-	- It supplies max pulses of 100 V
-	- D P/N 1/2 are the outputs for the pulse supply
-
-
+## Driving circuit
+- NMT0572SC: power converter
+- takes 5 V 
+- outputs voltages of -24, -48, -72 V depending on the input voltage
 
 # lit3rick
 ## What is it
