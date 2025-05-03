@@ -9,6 +9,7 @@ It uses the un0rick-board (https://un0rick.cc/) which contains the
 ## Processing / Digital electronics
 ### FPGA (ICE40HX4K-TQ144)
 
+
 ### RAM (IS61WV51216BLL-10TLI)
 - SRAM
 - 3.3 V supply
@@ -17,7 +18,7 @@ It uses the un0rick-board (https://un0rick.cc/) which contains the
 
 - RAM_A0 .. RAM_A18 -> ICE40
 - RAM_IO0 .. RAM_IO16 -> ICE40
-- RAM_nCE
+- RAM_nCE (ice40)
 - RAM_nLB
 - RAM_nOE
 - RAM_nUB
