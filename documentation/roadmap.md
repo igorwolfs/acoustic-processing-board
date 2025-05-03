@@ -56,10 +56,15 @@
 - Choose an appropriate connector for transmitting the amplified signal.
 	- See if you can use the same one for the driving part as you can for the sensing part (not necessarily)
 
+## Digital electronics
 
 ### PWM generation
 - Use an FPGA
 	- Make sure to add dead time to the inverter
+
+### FPGA Selection
+- Check existing ultrasound projects using FPGA's, to see how the pipeline typically looks (e.g.: lit3rick, un0rick)
+
 
 # 3. Setup
 
