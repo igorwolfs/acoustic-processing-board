@@ -35,6 +35,6 @@ print("Pins in Bank 8:")
 print(bank8)
 
 # Select only pins for which high_speed is True
-highspeed = df[df['high_speed'] == True]
-print("\nPins with High Speed == True:")
-print(highspeed)
+# highspeed = df[df['high_speed'] == True]
+# print("\nPins with High Speed == True:")
+# print(highspeed)
