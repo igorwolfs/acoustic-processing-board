@@ -63,7 +63,15 @@
 	- Make sure to add dead time to the inverter
 
 ### FPGA Selection
-- Check existing ultrasound projects using FPGA's, to see how the pipeline typically looks (e.g.: lit3rick, un0rick)
+- Check existing ultrasound projects using FPGA's, to see how the pipeline typically looks (e.g.: lit3rick, un0rick) -> done
+
+#### Booting the FPGA
+- Decide on how to boot the FPGA
+	- Preview a JTAG connection
+	- preview a QSPI memory interface
+		- Quad-SPI, check the required configuration for the EC5
+		- Check if there are any cores for the QSPI
+		- 
 
 
 # 3. Setup
