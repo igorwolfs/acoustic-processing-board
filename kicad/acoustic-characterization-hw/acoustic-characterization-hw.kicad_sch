@@ -1,13 +1,17 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "25b015c9-ab13-4427-b72c-b6f348597100")
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 20.32 74.93)
+		(at 15.24 74.93)
 		(size 130.81 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -18,7 +22,7 @@
 		)
 		(uuid "2e3c577d-8737-43a3-b422-36e75ce65de9")
 		(property "Sheetname" "analog_fronted"
-			(at 20.32 74.2184 0)
+			(at 15.24 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,7 +31,7 @@
 			)
 		)
 		(property "Sheetfile" "analog_frontend.kicad_sch"
-			(at 20.32 114.8846 0)
+			(at 15.24 114.8846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,8 +48,12 @@
 		)
 	)
 	(sheet
-		(at 20.32 128.27)
+		(at 15.24 128.27)
 		(size 132.08 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -55,8 +63,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "36da1f88-b4f8-4b81-86e1-fac0fb6202fa")
-		(property "Sheetname" "processing"
-			(at 20.32 127.5584 0)
+		(property "Sheetname" "flash"
+			(at 15.24 127.5584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,7 +73,7 @@
 			)
 		)
 		(property "Sheetfile" "processing.kicad_sch"
-			(at 20.32 170.7646 0)
+			(at 15.24 170.7646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82,8 +90,12 @@
 		)
 	)
 	(sheet
-		(at 20.32 21.59)
+		(at 15.24 21.59)
 		(size 130.81 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -94,7 +106,7 @@
 		)
 		(uuid "5e6fba8e-e7e0-45ab-a830-fc281a3b250c")
 		(property "Sheetname" "inverter"
-			(at 20.32 20.8784 0)
+			(at 15.24 20.8784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -103,7 +115,7 @@
 			)
 		)
 		(property "Sheetfile" "inverter.kicad_sch"
-			(at 20.32 61.5446 0)
+			(at 15.24 61.5446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -119,9 +131,110 @@
 			)
 		)
 	)
+	(sheet
+		(at 176.53 22.86)
+		(size 96.52 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aad6bec2-3cac-4ef0-abf0-8e1f80301155")
+		(property "Sheetname" "power"
+			(at 176.53 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 176.53 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 176.53 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "acoustic-characterization-hw"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 175.26 73.66)
+		(size 96.52 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d85f0c18-d011-408e-9192-d89f0585c7ff")
+		(property "Sheetname" "communication"
+			(at 175.26 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "communication.kicad_sch"
+			(at 175.26 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 175.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "acoustic-characterization-hw"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100"
+					(page "6")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

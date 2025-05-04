@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8800c023-f20c-4e10-aa78-beaeb5c7e26d")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C_Polarized_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -77,17 +81,6 @@
 			)
 			(symbol "C_Polarized_Small_0_1"
 				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
 					(start -1.524 0.6858)
 					(end 1.524 0.3048)
 					(stroke
@@ -96,6 +89,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
@@ -161,11 +165,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -235,10 +244,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -247,10 +256,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -296,11 +305,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -418,9 +432,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_FET:Si7450DP"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -493,18 +510,6 @@
 			(symbol "Si7450DP_0_1"
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
 					(stroke
@@ -517,7 +522,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -541,34 +558,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -599,6 +592,63 @@
 						(type outline)
 					)
 				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
@@ -623,95 +673,8 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "Si7450DP_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54) hide
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54) hide
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -748,13 +711,74 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -826,7 +850,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -838,7 +862,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -869,12 +893,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -946,7 +975,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -958,7 +987,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -989,12 +1018,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1085,6 +1119,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "ucc27282:UCC27282DR"
 			(pin_names
@@ -1168,60 +1203,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 12.7 15.24 180)
-					(length 2.54)
-					(name "HB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "HO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "HS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -1276,6 +1257,60 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 12.7 15.24 180)
+					(length 2.54)
+					(name "HB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "HO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "HS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output line
 					(at 12.7 -15.24 180)
 					(length 2.54)
@@ -1295,7 +1330,58 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Polymer Bulk capacitors\n3 Amps RMS over 600 ns\nIrms-peak currrent: 2.65 A each"
+		(exclude_from_sim no)
+		(at 76.454 183.134 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "086d5c17-7d00-4123-92d8-28ef62391963")
+	)
+	(text "Peak frequency capacitors\n20 A over 15 ns with dV = 0.2 V => 1.5 uF"
+		(exclude_from_sim no)
+		(at 20.828 181.102 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "240082bd-a5a8-401c-837e-5155720522d1")
+	)
+	(text "Notes:\n- Make sure to correctly connect the bootstrap circuit (Hs to phase voltage)\n- Make sure to connect all 4 PWM inputs to different PWM drivers\n	=> ENSURE DEAD TIME WHEN DRIVING\n"
+		(exclude_from_sim no)
+		(at -179.832 27.178 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.3175)
+			)
+			(justify left)
+		)
+		(uuid "4b43025e-04bf-441f-afd0-a98c80915422")
+	)
+	(text "WARN: DIAMETER PHI_D(10) x L(15)\n- Should be the same as 10x20, different height\n- Check with manufacturer"
+		(exclude_from_sim no)
+		(at 105.41 165.862 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e819054-79ad-4bc6-82eb-a4237e13e52d")
 	)
 	(junction
 		(at 91.44 106.68)
@@ -2392,56 +2478,6 @@
 			(type default)
 		)
 		(uuid "fba7ad73-1770-4ba7-8a44-a1b4058e8f89")
-	)
-	(text "Polymer Bulk capacitors\n3 Amps RMS over 600 ns\nIrms-peak currrent: 2.65 A each"
-		(exclude_from_sim no)
-		(at 76.454 183.134 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left bottom)
-		)
-		(uuid "086d5c17-7d00-4123-92d8-28ef62391963")
-	)
-	(text "Peak frequency capacitors\n20 A over 15 ns with dV = 0.2 V => 1.5 uF"
-		(exclude_from_sim no)
-		(at 20.828 181.102 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "240082bd-a5a8-401c-837e-5155720522d1")
-	)
-	(text "Notes:\n- Make sure to correctly connect the bootstrap circuit (Hs to phase voltage)\n- Make sure to connect all 4 PWM inputs to different PWM drivers\n	=> ENSURE DEAD TIME WHEN DRIVING\n"
-		(exclude_from_sim no)
-		(at -179.832 27.178 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left)
-		)
-		(uuid "4b43025e-04bf-441f-afd0-a98c80915422")
-	)
-	(text "WARN: DIAMETER PHI_D(10) x L(15)\n- Should be the same as 10x20, different height\n- Check with manufacturer"
-		(exclude_from_sim no)
-		(at 105.41 165.862 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "6e819054-79ad-4bc6-82eb-a4237e13e52d")
 	)
 	(label "INV_PWM1_LOAD"
 		(at 106.68 106.68 0)
