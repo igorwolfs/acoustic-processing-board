@@ -62,6 +62,32 @@ Shows whether the adc write is currently enabled or not.
 Specific hardware primitive to enable the LED driving fabric in the FPGA.
 
 ## Controller Module 
+
+### ADC output clock 
+- ADC_CLK (pin 37)
+
+Clock is instantiated using:
+```v
+defparam OSCInst0.CLKHF_DIV = "0b00";  // 48MHz internal Clock, no divider
+
+SB_HFOSC OSCInst0 ( .CLKHFEN(1'b1), .CLKHFPU(1'b1),.CLKHF(ADC_CLK))
+```
+
+#### Other options
+- Rerouting an external clock through the FPGA fabric
+```v
+reg clk_div2;
+always @(posedge ext_clk or posedge rst) begin
+  if (rst)     clk_div2 <= 0;
+  else         clk_div2 <= ~clk_div2;
+end
+
+// then route clk_div2 through a global buffer and out to your ADC
+```
+
+- Output an internal clock
+	- However: this might lead to jitter when going to high frequencies.
+
 ### adc data handling
 #### adc_read_addr
 - Drives this signal after the amount of samples is completely full.
