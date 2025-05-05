@@ -20,6 +20,7 @@ df.columns = (
 
 print(df.columns)
 
+pd.set_option('display.max_columns', 12)
 
 # 3. Normalize the high_speed column to booleans
 df['high_speed'] = (
@@ -30,10 +31,13 @@ df['high_speed'] = (
 )
 
 # Select only pins in bank 8
-bank8 = df[df['bank'] == '8']
-print("Pins in Bank 8:")
+bank8 = df[df['bank'] == '2']
 print(bank8)
+print("Pins in Bank 2:")
+print(bank8.shape[0])
 
+filtered = df[df['dqs'].str.contains('RDQS', na=False)]
+print(f"filtered: {filtered}")
 # Select only pins for which high_speed is True
 # highspeed = df[df['high_speed'] == True]
 # print("\nPins with High Speed == True:")
