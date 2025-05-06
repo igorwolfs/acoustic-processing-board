@@ -1,6 +1,15 @@
 import os
 import pandas as pd
 
+#  show *all* columns
+pd.set_option('display.max_columns', None)
+
+# don’t wrap or insert backslashes; use a very large width (or 0 for “no limit”)
+pd.set_option('display.width', 0)           
+
+# disable the expand-frame (multi-line) repr
+pd.set_option('display.expand_frame_repr', False)
+
 # Determine this script’s directory, then build the CSV path
 script_dir = os.path.dirname(os.path.abspath(__file__))
 csv_path   = os.path.join(script_dir, 'FPGA-SC-02033-2-0-ECP5U-25-Pinout.csv')
@@ -31,14 +40,19 @@ df['high_speed'] = (
 )
 
 # Select only pins in bank 8
-bank8 = df[df['bank'] == '2']
-print(bank8)
-print("Pins in Bank 2:")
-print(bank8.shape[0])
-
-filtered = df[df['dqs'].str.contains('RDQS', na=False)]
-print(f"filtered: {filtered}")
+bank2 = df[df['bank'] == '6']
+print("Pins in Bank 6:")
+print(bank2)
+# filtered = df[df['pin/ball_function'].str.contains('PR2A', na=False)]
+# print(f"filtered: {filtered}")
 # Select only pins for which high_speed is True
 # highspeed = df[df['high_speed'] == True]
 # print("\nPins with High Speed == True:")
 # print(highspeed)
+
+
+# # Select only pins in bank 2
+# bank2 = df[df['bank'] == '6']
+# print(bank2)
+# print("Pins in Bank 6 (ordered):")
+# print(bank2[df['pin/ball_function'].str.contains('PR14B', na=False)])

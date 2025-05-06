@@ -516,21 +516,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -639,7 +637,7 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
@@ -836,7 +834,7 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
@@ -3898,7 +3896,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 27.178 120.904 0)
+			(at 30.48 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3962,8 +3960,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 67.056 135.636 0)
+		(property "Value" "C_Small"
+			(at 75.184 136.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3980,7 +3978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 74.93 134.62 0)
 			(effects
 				(font
@@ -4050,7 +4048,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 21.59 142.748 0)
+			(at 25.4 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4114,8 +4112,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 109.22 120.142 0)
+		(property "Value" "C_Small"
+			(at 113.284 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4132,7 +4130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
+		(property "Datasheet" "~"
 			(at 113.03 118.11 0)
 			(effects
 				(font
@@ -4202,7 +4200,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 25.146 171.958 0)
+			(at 29.21 169.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,13 +4264,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0 +-1%"
-			(at 71.374 59.69 0)
+		(property "Value" "R_Small"
+			(at 74.93 59.182 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -4284,7 +4281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706711113842688"
+		(property "Datasheet" "~"
 			(at 74.93 60.96 0)
 			(effects
 				(font
@@ -4339,7 +4336,7 @@
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 146.05 170.18 90)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4353,12 +4350,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 143.764 168.402 0)
+			(at 148.59 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -4407,7 +4403,7 @@
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 40.64 181.61 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4421,12 +4417,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 42.418 179.324 0)
+			(at 40.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -4489,8 +4484,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 28.194 99.822 0)
+		(property "Value" "C_Small"
+			(at 35.814 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +4502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
+		(property "Datasheet" "~"
 			(at 35.56 99.06 0)
 			(effects
 				(font
@@ -4578,11 +4573,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 175.26 0)
+			(at 125.73 171.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4642,8 +4638,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 17.526 105.156 0)
+		(property "Value" "C_Small"
+			(at 25.654 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4660,7 +4656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 25.4 104.14 0)
 			(effects
 				(font
@@ -4731,11 +4727,12 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 113.03 107.95 0)
+			(at 115.57 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4795,8 +4792,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 100.076 119.126 0)
+		(property "Value" "C_Small"
+			(at 108.204 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,7 +4810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 107.95 118.11 0)
 			(effects
 				(font
@@ -4868,7 +4865,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 35.56 135.89 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4882,12 +4879,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 35.306 133.35 0)
+			(at 35.56 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -4951,7 +4947,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "C_Small"
 			(at 82.55 135.8962 0)
 			(effects
 				(font
@@ -4969,7 +4965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706862004473856"
+		(property "Datasheet" "~"
 			(at 80.01 134.62 0)
 			(effects
 				(font
@@ -5024,7 +5020,7 @@
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 43.18 151.13 90)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5038,12 +5034,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 40.894 149.352 0)
+			(at 45.72 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -5092,7 +5087,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 40.64 189.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5106,12 +5101,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 40.386 186.69 0)
+			(at 40.64 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -5174,8 +5168,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100 nF +-2%"
-			(at 52.578 79.756 0)
+		(property "Value" "C_Small"
+			(at 51.562 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5192,7 +5186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590902449396412416"
+		(property "Datasheet" "~"
 			(at 49.53 73.66 0)
 			(effects
 				(font
@@ -5261,8 +5255,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 119.38 120.142 0)
+		(property "Value" "C_Small"
+			(at 123.444 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5279,7 +5273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
+		(property "Datasheet" "~"
 			(at 123.19 118.11 0)
 			(effects
 				(font
@@ -5348,13 +5342,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50 +-1%"
-			(at 55.626 59.182 0)
+		(property "Value" "R_Small"
+			(at 62.738 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
@@ -5366,7 +5359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706114222985216"
+		(property "Datasheet" "~"
 			(at 60.96 63.5 0)
 			(effects
 				(font
@@ -5421,7 +5414,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 40.64 173.99 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5435,12 +5428,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 40.386 171.45 0)
+			(at 40.64 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -5504,12 +5496,11 @@
 			)
 		)
 		(property "Value" "MS9280"
-			(at 118.11 138.43 0)
+			(at 118.11 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
@@ -5652,11 +5643,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 113.03 175.26 0)
+			(at 115.57 171.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5702,7 +5694,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 35.56 160.02 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5716,12 +5708,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 35.306 157.48 0)
+			(at 35.56 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -5786,11 +5777,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 35.56 111.76 0)
+			(at 38.1 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5850,8 +5842,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 27.686 105.156 0)
+		(property "Value" "C_Small"
+			(at 35.814 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5868,7 +5860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 35.56 104.14 0)
 			(effects
 				(font
@@ -5923,7 +5915,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 35.56 125.73 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5937,12 +5929,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 35.306 123.19 0)
+			(at 35.56 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -5991,7 +5982,7 @@
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 35.56 119.38 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6005,12 +5996,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 37.338 117.094 0)
+			(at 35.56 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -6074,7 +6064,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "R_Small"
 			(at 31.75 179.0699 0)
 			(effects
 				(font
@@ -6092,7 +6082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
+		(property "Datasheet" "~"
 			(at 29.21 177.8 0)
 			(effects
 				(font
@@ -6269,7 +6259,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "R_Small"
 			(at 27.94 149.8599 0)
 			(effects
 				(font
@@ -6287,7 +6277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
+		(property "Datasheet" "~"
 			(at 25.4 148.59 0)
 			(effects
 				(font
@@ -6358,11 +6348,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 146.05 179.07 0)
+			(at 148.59 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6424,11 +6415,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 27.94 87.63 0)
+			(at 30.48 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6488,13 +6480,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50 +- 1 %"
-			(at 55.118 76.962 0)
+		(property "Value" "R_Small"
+			(at 62.738 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
@@ -6506,7 +6497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706114222985216"
+		(property "Datasheet" "~"
 			(at 60.96 71.12 0)
 			(effects
 				(font
@@ -6576,7 +6567,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "R_Small"
 			(at 27.94 157.4799 0)
 			(effects
 				(font
@@ -6594,7 +6585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
+		(property "Datasheet" "~"
 			(at 25.4 156.21 0)
 			(effects
 				(font
@@ -6665,11 +6656,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 74.93 143.51 0)
+			(at 77.47 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6730,7 +6722,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "R_Small"
 			(at 31.75 186.6899 0)
 			(effects
 				(font
@@ -6748,7 +6740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
+		(property "Datasheet" "~"
 			(at 29.21 185.42 0)
 			(effects
 				(font
@@ -6817,8 +6809,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 36.576 100.076 0)
+		(property "Value" "C_Small"
+			(at 44.704 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6835,7 +6827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 44.45 99.06 0)
 			(effects
 				(font
@@ -6905,7 +6897,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 24.638 191.516 0)
+			(at 29.21 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6955,7 +6947,7 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 35.56 144.78 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6969,12 +6961,11 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 35.306 142.24 0)
+			(at 35.56 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
@@ -7038,7 +7029,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 20.32 162.814 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7102,8 +7093,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100 nF +-2%"
-			(at 52.324 62.738 0)
+		(property "Value" "C_Small"
+			(at 51.562 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7120,7 +7111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590902449396412416"
+		(property "Datasheet" "~"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -7191,11 +7182,12 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 123.19 107.95 0)
+			(at 125.73 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7257,11 +7249,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 83.82 165.1 0)
+			(at 86.36 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7321,8 +7314,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 131.064 119.38 0)
+		(property "Value" "C_Small"
+			(at 128.524 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7339,7 +7332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
+		(property "Datasheet" "~"
 			(at 128.27 118.11 0)
 			(effects
 				(font
@@ -7410,11 +7403,12 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 25.4 111.76 0)
+			(at 27.94 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
