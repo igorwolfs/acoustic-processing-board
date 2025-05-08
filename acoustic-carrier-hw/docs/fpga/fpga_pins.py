@@ -18,7 +18,6 @@ csv_path   = os.path.join(script_dir, 'fpga_pinout.csv')
 df = pd.read_csv(csv_path,
                  skiprows=8,   # skip the metadata lines
                  header=0)     # treat the next line as header
-
 # 2. Clean up column names
 df.columns = (
     df.columns
@@ -26,8 +25,6 @@ df.columns = (
       .str.replace(' ', '_')
       .str.lower()
 )
-
-print(df.columns)
 
 pd.set_option('display.max_columns', 12)
 
@@ -39,20 +36,24 @@ df['high_speed'] = (
       .map({'TRUE': True, 'FALSE': False})
 )
 
-# Select only pins in bank 8
-bank_out = df[df['bank'] == '8']
-print("Pins in Bank 8:")
-print(bank_out)
-# filtered = df[df['pin/ball_function'].str.contains('PR2A', na=False)]
-# print(f"filtered: {filtered}")
-# Select only pins for which high_speed is True
-# highspeed = df[df['high_speed'] == True]
-# print("\nPins with High Speed == True:")
-# print(highspeed)
+print(df.columns)
 
 
-# # Select only pins in bank 2
-# bank2 = df[df['bank'] == '6']
-# print(bank2)
-# print("Pins in Bank 6 (ordered):")
-# print(bank2[df['pin/ball_function'].str.contains('PR14B', na=False)])
+df = df.drop(labels=['csfbga285', 'tqfp144', 'cabga381'], axis=1)
+
+# Keep only pad numbers below 256
+df = df[df['pad'] <= 256]
+
+# keep only rows where cabga256 is not '-'
+df = df[df['cabga256'] != '-']
+
+
+# -- 1) To SELECT (keep) only the VCC‐pins:
+condition_POWER_PINS = (
+    df['pin/ball_function']
+      .str.contains('VCC|VSS', case=False, na=False, regex=True)
+)
+
+power_pins = df[condition_POWER_PINS]
+# condition = df['pin/ball_function'].str.contains('VCC', case=False, na=False, regex=False) | df['pin/ball_function'].str.contains('VSS', case=False, na=False, regex=False)
+print(power_pins)
