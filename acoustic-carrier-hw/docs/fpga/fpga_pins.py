@@ -12,7 +12,7 @@ pd.set_option('display.expand_frame_repr', False)
 
 # Determine this script’s directory, then build the CSV path
 script_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path   = os.path.join(script_dir, 'FPGA-SC-02033-2-0-ECP5U-25-Pinout.csv')
+csv_path   = os.path.join(script_dir, 'fpga_pinout.csv')
 
 # 1. Load the CSV, skipping the first 4 rows of metadata
 df = pd.read_csv(csv_path,
@@ -40,9 +40,9 @@ df['high_speed'] = (
 )
 
 # Select only pins in bank 8
-bank2 = df[df['bank'] == '6']
-print("Pins in Bank 6:")
-print(bank2)
+bank_out = df[df['bank'] == '8']
+print("Pins in Bank 8:")
+print(bank_out)
 # filtered = df[df['pin/ball_function'].str.contains('PR2A', na=False)]
 # print(f"filtered: {filtered}")
 # Select only pins for which high_speed is True
