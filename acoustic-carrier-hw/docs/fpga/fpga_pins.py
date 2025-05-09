@@ -28,6 +28,7 @@ df.columns = (
 
 pd.set_option('display.max_columns', 12)
 
+print(df[df['bank'] == '1'])
 # 3. Normalize the high_speed column to booleans
 df['high_speed'] = (
     df['high_speed']
@@ -36,19 +37,14 @@ df['high_speed'] = (
       .map({'TRUE': True, 'FALSE': False})
 )
 
-print(df.columns)
-
 
 df = df.drop(labels=['csfbga285', 'tqfp144', 'cabga381'], axis=1)
-
-# Keep only pad numbers below 256
-df = df[df['pad'] <= 256]
 
 # keep only rows where cabga256 is not '-'
 df = df[df['cabga256'] != '-']
 
 
-# -- 1) To SELECT (keep) only the VCC‐pins:
+#### SELECT ONLY POWER PINS
 condition_POWER_PINS = (
     df['pin/ball_function']
       .str.contains('VCC|VSS', case=False, na=False, regex=True)
@@ -56,4 +52,9 @@ condition_POWER_PINS = (
 
 power_pins = df[condition_POWER_PINS]
 # condition = df['pin/ball_function'].str.contains('VCC', case=False, na=False, regex=False) | df['pin/ball_function'].str.contains('VSS', case=False, na=False, regex=False)
-print(power_pins)
+# print(power_pins)
+
+#### SELECT ONLY BANK 1
+df_bank1 = df[df['bank'] == '1']
+
+print(df_bank1)
