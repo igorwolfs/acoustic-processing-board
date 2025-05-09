@@ -32,7 +32,11 @@ PIN NUMBER: 2
 PIN NUMBER: 2 x 6 banks + 1x bank 8 = 13
 
 ### VREF (Input reference voltage)
+- 2 inputs into the FPGA-bank
 
+### HF Decoupling (follow OrangeCrab instructions)
+- 2 x 0.1 uF
+- 2 x 10 nF
 
 ## Inductors / Ferrites
 - Add Ferrites of between 4 uH - 10 uH to avoid HF noise propagation
