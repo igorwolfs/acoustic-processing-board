@@ -67,7 +67,7 @@ Note these clock pins are only usefull to inject clocks with, they don't have an
 Any IO in the same region will normally have a < 50 ps skew with pins in the same region.
 
 #### _GPLL[T/C]_IN pins
-General-purpoe PLL input pins
+General-purpose PLL input pins
 - Feed into the on-die PLL via low-skew routing.
 - Used to drive a PLL from an external clock source
 - Repurposable for general IO when unused

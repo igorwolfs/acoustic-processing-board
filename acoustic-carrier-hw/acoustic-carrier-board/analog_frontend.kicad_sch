@@ -5276,93 +5276,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 49.53 73.66 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "67a242d2-d51b-479f-94c9-f240f8baadcc")
-		(property "Reference" "C31"
-			(at 48.26 80.264 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100 nF +-2%"
-			(at 52.324 80.772 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 49.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 49.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C907944"
-			(at 49.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" "GRM3195C1H104GA05D"
-			(at 49.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "71772909-6542-4c04-90a2-93453207ca93")
-		)
-		(pin "1"
-			(uuid "1594021a-ad91-4ff6-8b14-155de13cbad2")
-		)
-		(instances
-			(project "acoustic-characterization-hw"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/2e3c577d-8737-43a3-b422-36e75ce65de9"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 123.19 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6827,6 +6740,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 49.53 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c82e45bb-25f7-4240-b37d-afc1d2123879")
+		(property "Reference" "C31"
+			(at 48.26 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF +-5%"
+			(at 51.562 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588895711026941952"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "X7R"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C88136"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturing Part Number" "0603B104J500NT"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a896049f-2dc4-49c7-9614-18d0d5f3fdf0")
+		)
+		(pin "1"
+			(uuid "9621f27f-502f-453e-9058-abf3f399a3b1")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/2e3c577d-8737-43a3-b422-36e75ce65de9"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 74.93 138.43 0)
 		(unit 1)
@@ -7283,7 +7283,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100 nF +-2%"
+		(property "Value" "100 nF +-5%"
 			(at 51.562 60.706 0)
 			(effects
 				(font
@@ -7292,7 +7292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -7301,7 +7301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588895711026941952"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -7310,7 +7310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "X7R"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -7319,7 +7319,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C907944"
+		(property "LCSC Part Number" "C88136"
 			(at 49.53 60.96 0)
 			(effects
 				(font
@@ -7328,7 +7328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "GRM3195C1H104GA05D"
+		(property "Manufacturing Part Number" "0603B104J500NT"
 			(at 49.53 60.96 0)
 			(effects
 				(font
