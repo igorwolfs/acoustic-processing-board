@@ -1381,6 +1381,17 @@
 		)
 		(uuid "aaeb653d-3bf4-489c-aa51-4a6db3a3d4f1")
 	)
+	(text "FET-DRIVER: Can take up to 100 V\nFETs: can take a Vds of up to 100 V\nCAPs: can take voltages up to 50 V\nRs: voltages up to 75 V"
+		(exclude_from_sim no)
+		(at -68.072 69.596 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "abbeafe5-5787-4c83-9fa0-6e8ec92dee5a")
+	)
 	(junction
 		(at 55.88 27.94)
 		(diameter 0)
@@ -1400,16 +1411,16 @@
 		(uuid "1c860ee4-ba6d-4e5f-8d9a-e940875b18c3")
 	)
 	(junction
+		(at 118.11 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "249d2f3a-2304-44e8-b267-c08c240a32ed")
+	)
+	(junction
 		(at 102.87 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2cb14017-7dbe-4ec9-8002-260fbdfe6d89")
-	)
-	(junction
-		(at 118.11 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2dda4bf5-2939-4911-9398-c9ce0e962e71")
 	)
 	(junction
 		(at 109.22 167.64)
@@ -1496,6 +1507,12 @@
 		(uuid "c6ece0dd-2580-4b68-a848-7546ec543701")
 	)
 	(junction
+		(at 118.11 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce26116d-0979-4190-9dff-811e2a6e6c11")
+	)
+	(junction
 		(at 118.11 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1524,12 +1541,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df4029af-fd5e-476d-b5f7-b85e44c3ddad")
-	)
-	(junction
-		(at 118.11 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2228939-dd52-46b0-94ce-78494896cd50")
 	)
 	(junction
 		(at 54.61 158.75)
@@ -2817,7 +2828,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C3289463"
+		(property "LPN" "C3289463"
+			(at 115.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI7454FDP-T1-RE3"
 			(at 115.57 99.06 0)
 			(effects
 				(font
@@ -3997,6 +4017,105 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:Si7450DP")
+		(at 115.57 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34317716-3740-42e6-9d35-b7c0c0c24554")
+		(property "Reference" "Q4"
+			(at 111.76 48.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7450DP"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
+			(at 120.65 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
+			(at 120.65 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
+			(at 115.57 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C3289463"
+			(at 115.57 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI7454FDP-T1-RE3"
+			(at 115.57 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1d01371-e537-4168-b584-202fba10019b")
+		)
+		(pin "2"
+			(uuid "e0074705-62cf-49a0-ac8f-00a999d5d01e")
+		)
+		(pin "3"
+			(uuid "7fa4ef95-3072-4f1a-9baa-7715703f9391")
+		)
+		(pin "4"
+			(uuid "dff46eb2-c8cd-4c73-b1d9-638e3c3579e7")
+		)
+		(pin "5"
+			(uuid "71596257-ca5d-4cf8-afc0-7b5ae7aa1f37")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 125.73 62.23 180)
 		(unit 1)
@@ -4475,101 +4594,6 @@
 	)
 	(symbol
 		(lib_id "ucc27282:UCC27282DR")
-		(at 77.47 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56a940db-6295-405e-91d2-bb739b13986a")
-		(property "Reference" "U1"
-			(at 77.47 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UCC27282DR"
-			(at 77.47 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C2867844"
-			(at 77.47 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "c65a29ec-e99d-4ec4-b280-90d37a4d5ed2")
-		)
-		(pin "2"
-			(uuid "d7da57b5-6ec1-4468-944a-30e1c75a57dd")
-		)
-		(pin "4"
-			(uuid "d48b4583-3d4a-4a6a-8051-b9d407ff2fc1")
-		)
-		(pin "6"
-			(uuid "b8e25015-6674-44c6-a622-3d0df65e138a")
-		)
-		(pin "1"
-			(uuid "9bb751d1-d767-4248-bd8e-62ada2efa3a7")
-		)
-		(pin "3"
-			(uuid "e5b60d06-3417-45d6-bf18-02170b6b7bf9")
-		)
-		(pin "5"
-			(uuid "5e488a51-6dd2-49ce-9ac1-52ece9bd0bb1")
-		)
-		(pin "8"
-			(uuid "6ed63e84-2935-4978-891b-22ce8038026f")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ucc27282:UCC27282DR")
 		(at 77.47 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4594,16 +4618,15 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 77.47 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27282.pdf?ts=1746889589197&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fde-de%252FUCC27282"
 			(at 77.47 87.63 0)
 			(effects
 				(font
@@ -4622,6 +4645,15 @@
 			)
 		)
 		(property "LCSC Part Number" "C2867844"
+			(at 77.47 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "UCC27282DR"
 			(at 77.47 109.22 0)
 			(effects
 				(font
@@ -4873,6 +4905,105 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Si7450DP")
+		(at 115.57 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6beec963-53d2-4130-b6f2-96b27b345163")
+		(property "Reference" "Q3"
+			(at 111.76 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7450DP"
+			(at 120.65 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
+			(at 120.65 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C3289463"
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI7454FDP-T1-RE3"
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d81825be-0fc7-4a09-be8d-8380a5aaee2a")
+		)
+		(pin "2"
+			(uuid "77ed9107-4d09-4a64-bcdd-c2eca9b5135c")
+		)
+		(pin "3"
+			(uuid "d0c4c41a-7fda-42dc-8713-68d3fd49bb82")
+		)
+		(pin "4"
+			(uuid "52d35f2a-2f11-48fc-a2e3-b923bf488226")
+		)
+		(pin "5"
+			(uuid "b55786c5-f558-481c-828f-e60cf5b7659e")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -5383,15 +5514,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Si7450DP")
-		(at 115.57 33.02 0)
+		(at 115.57 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "94c9bc0e-799f-4677-bb37-c2de08f361c1")
-		(property "Reference" "Q3"
-			(at 102.616 24.384 0)
+		(uuid "92e7896f-8cd9-4dc2-8b23-0c31400174f3")
+		(property "Reference" "Q2"
+			(at 111.76 114.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5400,7 +5531,7 @@
 			)
 		)
 		(property "Value" "Si7450DP"
-			(at 120.65 33.02 0)
+			(at 120.65 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5409,7 +5540,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 120.65 34.925 0)
+			(at 120.65 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5420,7 +5551,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 120.65 36.83 0)
+			(at 120.65 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5561,7 @@
 			)
 		)
 		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 115.57 33.02 0)
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,8 +5569,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C3289463"
-			(at 115.57 33.02 0)
+		(property "LPN" "C3289463"
+			(at 115.57 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SI7454FDP-T1-RE3"
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,24 +5588,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc43c63b-c2c8-47db-9f8c-753aeb727a31")
+			(uuid "9c07d4b2-ae07-4d38-9165-9b1948e288a6")
 		)
 		(pin "2"
-			(uuid "1a53f1a5-ee94-4c2a-9bc7-d2a0d139c74b")
+			(uuid "ef401672-914c-4a5a-85d3-a586fcb7f9a3")
 		)
 		(pin "3"
-			(uuid "e1079887-4f2d-43f3-acbd-09e581bbf5cc")
+			(uuid "a86b9bbc-4b67-4897-b25b-b68bc46573ae")
 		)
 		(pin "4"
-			(uuid "bd4ef774-bcfc-4996-a06d-df9adf5e3537")
+			(uuid "72a49185-40cf-4c20-8f4d-860a2ab1e885")
 		)
 		(pin "5"
-			(uuid "bbcdc320-564a-4a6a-bbe9-c4b68a90e715")
+			(uuid "257aadb4-a561-4ea0-be55-2285069a211e")
 		)
 		(instances
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q3")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -5647,6 +5787,109 @@
 		)
 	)
 	(symbol
+		(lib_id "ucc27282:UCC27282DR")
+		(at 77.47 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b5e6e32-3579-4dcc-9530-803bdae8f47c")
+		(property "Reference" "U3"
+			(at 77.47 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UCC27282DR"
+			(at 77.47 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 77.47 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27282.pdf?ts=1746889589197&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fde-de%252FUCC27282"
+			(at 77.47 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2867844"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "UCC27282DR"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31f56062-fe6c-4f4f-8143-940cba756ed1")
+		)
+		(pin "2"
+			(uuid "a5ae8cff-07a9-4ced-a7eb-fde804f5031d")
+		)
+		(pin "4"
+			(uuid "6d549f9c-fee6-4bbc-9a36-b3d4914e215f")
+		)
+		(pin "6"
+			(uuid "9df75caf-099f-490f-976d-f9f2a7210a9e")
+		)
+		(pin "1"
+			(uuid "d0a30ce6-2c4a-4011-ab09-cb25b5dc5d9b")
+		)
+		(pin "3"
+			(uuid "550407df-0905-49eb-94f4-ed500e7926a9")
+		)
+		(pin "5"
+			(uuid "078dc982-7026-4589-89d4-53b9d151f211")
+		)
+		(pin "8"
+			(uuid "7f436294-84f6-4306-a0fd-03c97f07f5fb")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 64.77 163.83 180)
 		(unit 1)
@@ -5728,96 +5971,6 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 115.57 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9ec61a1e-1a4f-4c62-b443-0613d0ae4c81")
-		(property "Reference" "Q4"
-			(at 121.92 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Si7450DP"
-			(at 120.65 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 120.65 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 120.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 115.57 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C3289463"
-			(at 115.57 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4ec0e7c-ccc8-4a14-a72e-dee685f51799")
-		)
-		(pin "2"
-			(uuid "9da3bc8f-1e2b-4575-96bb-a8ab5e319173")
-		)
-		(pin "3"
-			(uuid "80adcdde-ba59-498f-bd07-9cd108f18d1a")
-		)
-		(pin "4"
-			(uuid "e35d55a0-1fbe-4133-aed9-0a338fc71cf5")
-		)
-		(pin "5"
-			(uuid "2b4ce616-12b6-47ce-8b18-71bdf9727a0d")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -6606,96 +6759,6 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 115.57 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e1fb0e06-a9e6-4e12-ad81-8fd42d39c8c7")
-		(property "Reference" "Q2"
-			(at 110.236 125.222 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Si7450DP"
-			(at 120.65 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 120.65 121.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 120.65 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 115.57 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C3289463"
-			(at 115.57 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38285f6a-bf94-4b69-a263-29210a9bf6b1")
-		)
-		(pin "2"
-			(uuid "29500ce6-828b-43e7-96ac-b2dc857d03e8")
-		)
-		(pin "3"
-			(uuid "10da29e7-5744-4b49-aa44-872a33543518")
-		)
-		(pin "4"
-			(uuid "5bd83bf1-7ba0-40f7-868f-4ebdc5698bbb")
-		)
-		(pin "5"
-			(uuid "0051e77b-f512-42d2-97c0-678abd89483d")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
