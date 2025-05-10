@@ -1,19 +1,10 @@
-# Ethernet
-- Validate the use of 33 nF capacitors, check the effect of it
-- Route the KSZ9031, base yourself on the LogicBone-example
-	- Start with power
-
-# Power
-- Go through the LTSpice model for the buck-converters, check why there's a difference
-- Add TVS current limiting
-
-# USB
-- Add USB PHY
-- Add USB power supply to FPGA board (5 V)
-
 # LED
 - Add LED's to FPGA (check pins that can drive them)
 - Add buttons to FPGA
+
+# Oscillator
+- Check which other oscillators we would need
+	- We have 125 MHz from 
 
 # Connectors to power board
 - Check whether it's best to put connectors above / below the board to connect to power board

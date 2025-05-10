@@ -169,9 +169,9 @@ Connected to bank 2
 	- Termination data strobe
 - ZQ: external reference for output drive calibration (should be tied to 240 ohm tied to DQ-ground)
 
+
+
 ### Clock speed
-
-
 #### Speed grade
 Take a look at the "speed grade".
 - JEDEC spec table (AZ electrical characteristics)
