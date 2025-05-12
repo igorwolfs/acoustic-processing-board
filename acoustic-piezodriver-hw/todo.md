@@ -1,5 +1,4 @@
 # TODO
-- Add 3 x LM3478
-	- Buck converter: to bring a voltage of between 15-20 volts down to 10 V (FET drivers)
-	- Buck converter: to bring a voltage of between 15-20 volts down to 5 V ()
+- Add 1 x LM3478 (doesn't require level-shifting circuitry)
 	- Boost converter: to bring a voltage of between 15-20 volts up to 40 V ()
+- Add 2 x buck-converter
