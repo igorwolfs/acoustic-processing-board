@@ -1,4 +1,5 @@
-# White noise from resistance
+# Noise types overview
+## White noise from resistance
 
 Noise produced by a resistor is.
 
@@ -24,13 +25,24 @@ $$
 
 So use low-pass filters to reduce noise.
 
-# Flicker noise
+## Flicker noise
 
 Noise proportional to the inverse of the frequency ($\frac{1}{f}$).
 
 Due to random fluctuation processing (charge carrier trapping / detrapping), mobility changes, material-structure shifts etc..
 
-# Shot noise
+## Shot noise
 
 Noise due to arrival of discrete charge carriers across a potential barrier.
 
+
+# Piezo-electric noise generation
+Sources of noise
+- Thermal noise
+- Polarization noise
+- Low-Frequency 1/f-noise
+
+## Characterizing the impedance
+- Using an RLC meter
+- Using a VNA that can go down to DC
+	- Most VNA's are characterized down to about 10-100 kHz minimum
