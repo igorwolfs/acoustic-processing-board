@@ -36,3 +36,5 @@
 
 Goal is to have a level shifter which always shifts 10 V independent of the input voltage.
 This way we can drive the piezo with lower and higher voltages, depending on what we want.
+
+# Boost

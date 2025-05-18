@@ -748,53 +748,48 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Si7450DP"
+		(symbol "custom_mosfet:NCE6005AS"
 			(pin_names
-				(hide yes)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+			(property "Reference" "U"
+				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Si7450DP"
-				(at 5.08 0 0)
+			(property "Value" "NCE6005AS"
+				(at 7.62 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-				(at 5.08 -1.905 0)
+			(property "Footprint" ""
+				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-				(at 5.08 -3.81 0)
+			(property "Datasheet" ""
+				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
+			(property "Description" "Dual N-channel Power MOSFET."
 				(at 0 0 0)
 				(effects
 					(font
@@ -803,7 +798,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel MOSFET"
+			(property "MPN" "NCE6005AS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -812,31 +807,18 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "PowerPAK*SO*Single*"
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "Si7450DP_0_1"
+			(symbol "NCE6005AS_1_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy -3.81 0) (xy -2.286 0)
 					)
 					(stroke
 						(width 0)
@@ -848,7 +830,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy -2.286 1.905) (xy -2.286 -1.905) (xy -2.286 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -860,7 +842,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
+						(xy -1.778 2.286) (xy -1.778 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -872,19 +854,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+						(xy -1.778 1.778) (xy 0 1.778)
 					)
 					(stroke
 						(width 0)
@@ -896,7 +866,55 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.778) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
 					)
 					(stroke
 						(width 0)
@@ -907,8 +925,8 @@
 					)
 				)
 				(circle
-					(center 1.651 0)
-					(radius 2.794)
+					(center -0.889 0)
+					(radius 2.8194)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -919,7 +937,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 0 3.81) (xy 0 1.778)
 					)
 					(stroke
 						(width 0)
@@ -930,19 +948,55 @@
 					)
 				)
 				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
+					(center 0 1.778)
+					(radius 0.2794)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
+					(center 0 -1.778)
+					(radius 0.2794)
 					(stroke
 						(width 0)
 						(type default)
@@ -953,7 +1007,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
 					)
 					(stroke
 						(width 0)
@@ -965,7 +1019,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
 					)
 					(stroke
 						(width 0)
@@ -975,24 +1029,10 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Si7450DP_1_1"
 				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
+					(at -8.89 0 0)
+					(length 5.08)
+					(name "G1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1008,9 +1048,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 0 6.35 270)
 					(length 2.54)
-					(name "D"
+					(name "D1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1026,16 +1066,17 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 0 6.35 270)
 					(length 2.54)
-					(name "S"
+					(hide yes)
+					(name "D1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1044,10 +1085,242 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 0 -6.35 90)
 					(length 2.54)
-					(hide yes)
-					(name "S"
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NCE6005AS_2_1"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.905) (xy -2.286 -1.905) (xy -2.286 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.778) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.889 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 1.778)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.778)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -8.89 0 0)
+					(length 5.08)
+					(name "G2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1063,17 +1336,53 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 0 6.35 270)
 					(length 2.54)
-					(hide yes)
-					(name "S"
+					(name "D2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(hide yes)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1732,6 +2041,12 @@
 		(uuid "abbeafe5-5787-4c83-9fa0-6e8ec92dee5a")
 	)
 	(junction
+		(at 252.73 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05ed6c29-92f6-42d9-be5c-c832b8593557")
+	)
+	(junction
 		(at 190.5 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1750,12 +2065,6 @@
 		(uuid "1c860ee4-ba6d-4e5f-8d9a-e940875b18c3")
 	)
 	(junction
-		(at 252.73 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "249d2f3a-2304-44e8-b267-c08c240a32ed")
-	)
-	(junction
 		(at 237.49 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1772,6 +2081,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dc25bf4-74f9-4e1c-9852-3fe5d618a0f6")
+	)
+	(junction
+		(at 252.73 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49417878-8d4d-4488-b321-9cf681948d81")
+	)
+	(junction
+		(at 252.73 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55d09455-8c12-4294-a066-f9b4cbac6326")
 	)
 	(junction
 		(at 130.81 35.56)
@@ -1822,6 +2143,12 @@
 		(uuid "a271f5f2-2e24-4842-9b8c-6928141e074e")
 	)
 	(junction
+		(at 252.73 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a734a147-3089-434d-a2dd-37fbc821da2d")
+	)
+	(junction
 		(at 82.55 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1864,16 +2191,10 @@
 		(uuid "cc12cb78-2382-4eae-a904-f4cb720bd50f")
 	)
 	(junction
-		(at 252.73 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce26116d-0979-4190-9dff-811e2a6e6c11")
-	)
-	(junction
 		(at 252.73 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ce6be863-7719-4dba-82e7-248889d1de39")
+		(uuid "cd02ea4c-5284-4139-93b5-f1402ed4d8a1")
 	)
 	(junction
 		(at 113.03 156.21)
@@ -1957,6 +2278,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 58.42) (xy 243.84 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "107ea08b-3e95-4062-83f7-523cc882e445")
+	)
+	(wire
+		(pts
 			(xy 252.73 44.45) (xy 260.35 44.45)
 		)
 		(stroke
@@ -1997,7 +2328,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 26.67) (xy 252.73 31.75)
+			(xy 252.73 26.67) (xy 252.73 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2007,7 +2338,17 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 41.91) (xy 252.73 44.45)
+			(xy 252.73 43.18) (xy 252.73 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e60ba62-183b-4eea-b16e-3d29ae97d3b1")
+	)
+	(wire
+		(pts
+			(xy 252.73 41.91) (xy 252.73 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2017,7 +2358,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 36.83) (xy 245.11 36.83)
+			(xy 228.6 36.83) (xy 243.84 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2057,6 +2398,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 101.6) (xy 227.33 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b6ffa2-e91b-4b1b-ba00-9afa68f7d8d3")
+	)
+	(wire
+		(pts
 			(xy 260.35 62.23) (xy 260.35 63.5)
 		)
 		(stroke
@@ -2077,16 +2428,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 123.19) (xy 245.11 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ea1d099-8b91-4abd-a447-a95a895a1687")
-	)
-	(wire
-		(pts
 			(xy 237.49 46.99) (xy 237.49 52.07)
 		)
 		(stroke
@@ -2094,6 +2435,16 @@
 			(type default)
 		)
 		(uuid "2f1ce236-8cd6-41d1-a3be-a4036e1f5a2a")
+	)
+	(wire
+		(pts
+			(xy 243.84 123.19) (xy 243.84 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3006b44c-75f2-4724-a409-5b8fcccd3ecc")
 	)
 	(wire
 		(pts
@@ -2107,6 +2458,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 114.3) (xy 252.73 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32429479-470f-4cde-b1f7-71e53f624014")
+	)
+	(wire
+		(pts
 			(xy 185.42 107.95) (xy 199.39 107.95)
 		)
 		(stroke
@@ -2117,13 +2478,13 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 109.22) (xy 252.73 109.22)
+			(xy 252.73 64.77) (xy 252.73 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33c3dc92-4306-43e1-89a6-9ae6f015790b")
+		(uuid "3365d23c-eefa-4abd-8421-2512398fcddb")
 	)
 	(wire
 		(pts
@@ -2207,6 +2568,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 101.6) (xy 243.84 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45cd9a6c-925d-4d28-94b3-19f276d9a9a9")
+	)
+	(wire
+		(pts
 			(xy 260.35 109.22) (xy 267.97 109.22)
 		)
 		(stroke
@@ -2237,16 +2608,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 102.87) (xy 245.11 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57129e9e-2798-4815-886b-5ed2f373b731")
-	)
-	(wire
-		(pts
 			(xy 190.5 64.77) (xy 190.5 62.23)
 		)
 		(stroke
@@ -2264,6 +2625,16 @@
 			(type default)
 		)
 		(uuid "5b597d54-71c1-4257-8dad-1218610d7e7b")
+	)
+	(wire
+		(pts
+			(xy 252.73 130.81) (xy 260.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe78221-4ecb-44ea-8164-502a51b3c62b")
 	)
 	(wire
 		(pts
@@ -2307,16 +2678,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 128.27) (xy 260.35 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d32a6c0-80ea-40ad-826e-dd4138557a03")
-	)
-	(wire
-		(pts
 			(xy 137.16 158.75) (xy 137.16 156.21)
 		)
 		(stroke
@@ -2324,6 +2685,16 @@
 			(type default)
 		)
 		(uuid "6d658e9d-3e42-4668-bfb4-140e5ac6ba05")
+	)
+	(wire
+		(pts
+			(xy 252.73 130.81) (xy 252.73 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76f47b01-c18c-4164-97f3-d5229b2c1a3e")
 	)
 	(wire
 		(pts
@@ -2407,16 +2778,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 128.27) (xy 252.73 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cc2d3e6-8891-4788-9ff6-f298dd7f3868")
-	)
-	(wire
-		(pts
 			(xy 224.79 107.95) (xy 227.33 107.95)
 		)
 		(stroke
@@ -2467,7 +2828,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 62.23) (xy 252.73 74.93)
+			(xy 252.73 62.23) (xy 252.73 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2517,16 +2878,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 114.3) (xy 252.73 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7fa1e59-81c4-412a-bd0e-e62195bbc569")
-	)
-	(wire
-		(pts
 			(xy 224.79 31.75) (xy 237.49 31.75)
 		)
 		(stroke
@@ -2544,16 +2895,6 @@
 			(type default)
 		)
 		(uuid "a950c5e2-1732-4315-ac21-a31ba21ab4f5")
-	)
-	(wire
-		(pts
-			(xy 227.33 57.15) (xy 245.11 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acce4ef6-38fd-480d-8c5a-b6aaeb31ea15")
 	)
 	(wire
 		(pts
@@ -2587,6 +2928,26 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 123.19) (xy 243.84 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ec84dc-1870-48d4-81ff-eee24ae65c10")
+	)
+	(wire
+		(pts
+			(xy 252.73 91.44) (xy 252.73 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9751513-83bf-4950-890c-cc01ab67248b")
+	)
+	(wire
+		(pts
 			(xy 237.49 52.07) (xy 224.79 52.07)
 		)
 		(stroke
@@ -2604,16 +2965,6 @@
 			(type default)
 		)
 		(uuid "bc44befd-35b1-4e91-8066-8be4cfddae70")
-	)
-	(wire
-		(pts
-			(xy 252.73 91.44) (xy 252.73 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf4fd571-e51b-4927-930c-8d4a46525d21")
 	)
 	(wire
 		(pts
@@ -2637,6 +2988,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 30.48) (xy 252.73 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1674e91-96e9-49b8-97c6-b13941f05be1")
+	)
+	(wire
+		(pts
 			(xy 130.81 34.29) (xy 130.81 35.56)
 		)
 		(stroke
@@ -2647,7 +3008,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 128.27) (xy 260.35 129.54)
+			(xy 260.35 130.81) (xy 260.35 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2694,6 +3055,16 @@
 			(type default)
 		)
 		(uuid "cb947b53-b4b5-4d79-8c65-f000b87586d3")
+	)
+	(wire
+		(pts
+			(xy 232.41 62.23) (xy 243.84 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe03397-0049-4e40-98c2-ddb98598872d")
 	)
 	(wire
 		(pts
@@ -3165,105 +3536,6 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 250.19 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02a2fe87-ac51-459a-bd8e-85c79613ea04")
-		(property "Reference" "Q1"
-			(at 246.38 98.298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Si7450DP"
-			(at 255.27 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 255.27 104.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 255.27 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 250.19 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C3289463"
-			(at 250.19 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SI7454FDP-T1-RE3"
-			(at 250.19 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "966f93ec-4092-4973-9ca6-1c43353bdf50")
-		)
-		(pin "2"
-			(uuid "24b5da9a-b479-4b26-9764-f17c28f54fe6")
-		)
-		(pin "3"
-			(uuid "bc6b159e-81d8-46fd-be1a-1b547d215bce")
-		)
-		(pin "4"
-			(uuid "77048fb0-170d-4a87-b7d5-64e713c2c6db")
-		)
-		(pin "5"
-			(uuid "c4da82e4-3b2b-4583-8d2d-41c7c807298e")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4072,7 +4344,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 139.7 0)
+		(at 260.35 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4081,7 +4353,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a679068-98a5-49b1-94fb-115808825b0b")
 		(property "Reference" "#PWR012"
-			(at 260.35 146.05 0)
+			(at 260.35 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,7 +4362,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 262.89 140.9699 0)
+			(at 262.89 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4371,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 139.7 0)
+			(at 260.35 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4108,7 +4380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 139.7 0)
+			(at 260.35 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4117,7 +4389,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 139.7 0)
+			(at 260.35 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4282,105 +4554,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 250.19 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "34317716-3740-42e6-9d35-b7c0c0c24554")
-		(property "Reference" "Q4"
-			(at 246.38 52.578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Si7450DP"
-			(at 255.27 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 255.27 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 255.27 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 250.19 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C3289463"
-			(at 250.19 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SI7454FDP-T1-RE3"
-			(at 250.19 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1d01371-e537-4168-b584-202fba10019b")
-		)
-		(pin "2"
-			(uuid "e0074705-62cf-49a0-ac8f-00a999d5d01e")
-		)
-		(pin "3"
-			(uuid "7fa4ef95-3072-4f1a-9baa-7715703f9391")
-		)
-		(pin "4"
-			(uuid "dff46eb2-c8cd-4c73-b1d9-638e3c3579e7")
-		)
-		(pin "5"
-			(uuid "71596257-ca5d-4cf8-afc0-7b5ae7aa1f37")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 260.35 66.04 180)
 		(unit 1)
@@ -4467,7 +4640,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 227.33 59.69 0)
+		(at 229.87 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4475,7 +4648,7 @@
 		(dnp no)
 		(uuid "389a9ce1-38ec-4dfb-9a51-ed8e0ee1323a")
 		(property "Reference" "R2"
-			(at 229.362 58.42 0)
+			(at 228.6 60.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,7 +4657,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 229.108 59.69 90)
+			(at 229.87 60.452 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4665,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 227.33 59.69 0)
+			(at 229.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4674,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 59.69 0)
+			(at 229.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,7 +4683,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 227.33 59.69 0)
+			(at 229.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4692,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C17903"
-			(at 227.33 59.69 0)
+			(at 229.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4701,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "1206W4F100JT5E"
-			(at 227.33 59.69 0)
+			(at 229.87 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,6 +4959,112 @@
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "C19")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "custom_mosfet:NCE6005AS")
+		(at 252.73 36.83 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "453fe82c-6464-4e94-a223-4c1232896cd6")
+		(property "Reference" "U6"
+			(at 256.54 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NCE6005AS"
+			(at 256.54 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 256.54 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881119395647488"
+			(at 256.54 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual N-channel Power MOSFET."
+			(at 252.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NCE6005AS"
+			(at 252.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C126151"
+			(at 252.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d2c87e40-3f3d-4c93-9e64-4888fc0ae760")
+		)
+		(pin "5"
+			(uuid "8401fe68-7139-4386-ad04-4e799a978203")
+		)
+		(pin "6"
+			(uuid "2cf0f18e-92c2-495d-a56e-3695e07e3362")
+		)
+		(pin "4"
+			(uuid "f143d630-8f02-4b25-88f4-5b2559e82770")
+		)
+		(pin "1"
+			(uuid "534547ec-8d57-480f-9935-8cc758868840")
+		)
+		(pin "3"
+			(uuid "1a110088-bba3-4809-9a14-78f52cec72f2")
+		)
+		(pin "8"
+			(uuid "3a543c49-2e4e-4c62-9a91-392e33ea7776")
+		)
+		(pin "2"
+			(uuid "7455d1e5-ede5-474b-9dec-1e7939a7ef08")
+		)
+		(instances
+			(project ""
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "U6")
+					(unit 2)
 				)
 			)
 		)
@@ -5241,105 +5520,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 250.19 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6beec963-53d2-4130-b6f2-96b27b345163")
-		(property "Reference" "Q3"
-			(at 246.38 32.258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Si7450DP"
-			(at 255.27 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 255.27 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 255.27 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C3289463"
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SI7454FDP-T1-RE3"
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d81825be-0fc7-4a09-be8d-8380a5aaee2a")
-		)
-		(pin "2"
-			(uuid "77ed9107-4d09-4a64-bcdd-c2eca9b5135c")
-		)
-		(pin "3"
-			(uuid "d0c4c41a-7fda-42dc-8713-68d3fd49bb82")
-		)
-		(pin "4"
-			(uuid "52d35f2a-2f11-48fc-a2e3-b923bf488226")
-		)
-		(pin "5"
-			(uuid "b55786c5-f558-481c-828f-e60cf5b7659e")
-		)
-		(instances
-			(project "acoustic-piezodriver-board"
-				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 260.35 102.87 0)
 		(unit 1)
@@ -5669,8 +5849,105 @@
 		)
 	)
 	(symbol
+		(lib_id "custom_mosfet:NCE6005AS")
+		(at 252.73 101.6 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e8f5d6e-368f-4ced-881a-6e081eeeace1")
+		(property "Reference" "U7"
+			(at 256.54 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NCE6005AS"
+			(at 256.54 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual N-channel Power MOSFET."
+			(at 252.73 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NCE6005AS"
+			(at 252.73 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "18262f66-45aa-46c2-b5b7-74e88506ab10")
+		)
+		(pin "3"
+			(uuid "38749177-1500-4563-9023-e574b9e5cd69")
+		)
+		(pin "8"
+			(uuid "fdeb8a28-4021-4dd2-a32d-dfeae8c4c76c")
+		)
+		(pin "5"
+			(uuid "35df9fb4-2404-4298-807d-70bed6f1ffc6")
+		)
+		(pin "4"
+			(uuid "613940fc-6287-4f25-9ba7-083e02fcf3d9")
+		)
+		(pin "1"
+			(uuid "eac5a079-2202-4daa-836c-363c95f67b17")
+		)
+		(pin "7"
+			(uuid "1c57ceef-0c8b-4db7-8919-f97414e5e99e")
+		)
+		(pin "2"
+			(uuid "850b8bd3-a26b-455f-b16f-a8c81af84131")
+		)
+		(instances
+			(project ""
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "U7")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
-		(at 260.35 132.08 180)
+		(at 260.35 135.89 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5678,7 +5955,7 @@
 		(dnp no)
 		(uuid "7fcbcf20-04b5-429d-9249-35cb206fc799")
 		(property "Reference" "R6"
-			(at 263.017 132.461 0)
+			(at 263.017 136.271 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5686,7 +5963,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 258.572 132.08 90)
+			(at 258.572 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +5971,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 260.35 132.08 0)
+			(at 260.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +5980,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 132.08 0)
+			(at 260.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5712,7 +5989,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 260.35 132.08 0)
+			(at 260.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5721,7 +5998,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C22936"
-			(at 260.35 132.08 90)
+			(at 260.35 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5730,7 +6007,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "0603WAF100KT5E"
-			(at 260.35 132.08 90)
+			(at 260.35 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,16 +6185,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Si7450DP")
-		(at 250.19 123.19 0)
+		(lib_id "custom_mosfet:NCE6005AS")
+		(at 252.73 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "92e7896f-8cd9-4dc2-8b23-0c31400174f3")
-		(property "Reference" "Q2"
-			(at 246.38 118.618 0)
+		(fields_autoplaced yes)
+		(uuid "924e0c75-7cfb-41ea-beb8-3d6f6c3f7693")
+		(property "Reference" "U7"
+			(at 256.54 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5925,8 +6203,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Si7450DP"
-			(at 255.27 123.19 0)
+		(property "Value" "NCE6005AS"
+			(at 256.54 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5934,29 +6212,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Single"
-			(at 255.27 125.095 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71432/si7450dp.pdf"
-			(at 255.27 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.3A Id, 200V Vds, 80mOhm Ron, PowerPAK-8"
-			(at 250.19 123.19 0)
+		(property "Footprint" ""
+			(at 256.54 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,8 +6221,8 @@
 				(hide yes)
 			)
 		)
-		(property "LPN" "C3289463"
-			(at 250.19 123.19 0)
+		(property "Datasheet" ""
+			(at 256.54 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,8 +6230,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SI7454FDP-T1-RE3"
-			(at 250.19 123.19 0)
+		(property "Description" "Dual N-channel Power MOSFET."
+			(at 252.73 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5982,25 +6239,43 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "9c07d4b2-ae07-4d38-9165-9b1948e288a6")
+		(property "MPN" "NCE6005AS"
+			(at 252.73 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "ef401672-914c-4a5a-85d3-a586fcb7f9a3")
+		(pin "6"
+			(uuid "18262f66-45aa-46c2-b5b7-74e88506ab11")
 		)
 		(pin "3"
-			(uuid "a86b9bbc-4b67-4897-b25b-b68bc46573ae")
+			(uuid "38749177-1500-4563-9023-e574b9e5cd6a")
 		)
-		(pin "4"
-			(uuid "72a49185-40cf-4c20-8f4d-860a2ab1e885")
+		(pin "8"
+			(uuid "fdeb8a28-4021-4dd2-a32d-dfeae8c4c76d")
 		)
 		(pin "5"
-			(uuid "257aadb4-a561-4ea0-be55-2285069a211e")
+			(uuid "35df9fb4-2404-4298-807d-70bed6f1ffc7")
+		)
+		(pin "4"
+			(uuid "613940fc-6287-4f25-9ba7-083e02fcf3da")
+		)
+		(pin "1"
+			(uuid "eac5a079-2202-4daa-836c-363c95f67b18")
+		)
+		(pin "7"
+			(uuid "1c57ceef-0c8b-4db7-8919-f97414e5e99f")
+		)
+		(pin "2"
+			(uuid "850b8bd3-a26b-455f-b16f-a8c81af84132")
 		)
 		(instances
-			(project "acoustic-piezodriver-board"
+			(project ""
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
-					(reference "Q2")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -6629,7 +6904,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 260.35 137.16 180)
+		(at 260.35 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6638,7 +6913,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8583bf1-7a93-4edf-9e42-4e87f913b051")
 		(property "Reference" "C9"
-			(at 262.89 135.8835 0)
+			(at 262.89 139.6935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6647,7 +6922,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 262.89 138.4235 0)
+			(at 262.89 142.2335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6656,7 +6931,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 260.35 137.16 0)
+			(at 260.35 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6665,7 +6940,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 137.16 0)
+			(at 260.35 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6674,7 +6949,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 260.35 137.16 0)
+			(at 260.35 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6683,7 +6958,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C15195"
-			(at 260.35 137.16 0)
+			(at 260.35 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +7181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705879345881088"
 			(at 228.6 39.37 0)
 			(effects
 				(font
@@ -6915,7 +7190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "250mW"
 			(at 228.6 39.37 0)
 			(effects
 				(font
@@ -7557,6 +7832,112 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "custom_mosfet:NCE6005AS")
+		(at 252.73 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbcc2bbe-46ab-4d5d-9b85-b92a4bd9be05")
+		(property "Reference" "U6"
+			(at 256.54 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NCE6005AS"
+			(at 256.54 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 256.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881119395647488"
+			(at 256.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual N-channel Power MOSFET."
+			(at 252.73 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NCE6005AS"
+			(at 252.73 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C126151"
+			(at 252.73 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d2c87e40-3f3d-4c93-9e64-4888fc0ae761")
+		)
+		(pin "5"
+			(uuid "8401fe68-7139-4386-ad04-4e799a978204")
+		)
+		(pin "6"
+			(uuid "2cf0f18e-92c2-495d-a56e-3695e07e3363")
+		)
+		(pin "4"
+			(uuid "f143d630-8f02-4b25-88f4-5b2559e82771")
+		)
+		(pin "1"
+			(uuid "534547ec-8d57-480f-9935-8cc758868841")
+		)
+		(pin "3"
+			(uuid "1a110088-bba3-4809-9a14-78f52cec72f3")
+		)
+		(pin "8"
+			(uuid "3a543c49-2e4e-4c62-9a91-392e33ea7777")
+		)
+		(pin "2"
+			(uuid "7455d1e5-ede5-474b-9dec-1e7939a7ef09")
+		)
+		(instances
+			(project ""
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "U6")
 					(unit 1)
 				)
 			)
