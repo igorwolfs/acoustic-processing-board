@@ -2,7 +2,7 @@
 - Add 1 x LM3478 (doesn't require level-shifting circuitry)
 	- Boost converter: to bring a voltage of between 15-20 volts up to 40 V ()
 - Add 1 x SEPIC converter for the level-shifting FET drivers
-- Add 1 x BUCK-converter for the 5 V power supply
+- Add 1 x SEPIC-converter for the 5 V power supply
 
 ## Goal
 - We want to be able to adapt the driving voltage dynamically
