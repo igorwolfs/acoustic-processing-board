@@ -23,18 +23,8 @@
 - Currents: max 10 amps RMS at 40 V
 
 
+
 **Bypass** 
 - Create a bypass for the boost converter (e.g.: simply 0-ohm high power resistor, or solderbridge) whenever you want to use pure battery voltage
 - When you want to use a voltage unreachable by your power supply (e.g.: 40 V)
 	- Make sure to use a boost converter, and set the input voltage between 10-20 Volts (to limit the stress on the passives)
-
-### DC-DC Drivers (5-20 V -> 10 V) (Sepic)
-
-- Input: between 5 and 20 volts
-- Output: should ALWAYS be 10 Volts
-- Currents: about 1-2 amps rms MAX
-
-Goal is to have a level shifter which always shifts 10 V independent of the input voltage.
-This way we can drive the piezo with lower and higher voltages, depending on what we want.
-
-# Boost
