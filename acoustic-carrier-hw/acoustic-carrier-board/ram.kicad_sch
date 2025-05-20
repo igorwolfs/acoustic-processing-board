@@ -11832,6 +11832,42 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 175.26 12.7)
+		(end 284.48 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6b1022f-544a-401d-bae1-1708285d5e60)
+	)
+	(rectangle
+		(start 25.4 26.67)
+		(end 170.18 142.24)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e0197d4a-9548-4ea6-8df7-2b6639bcbd17)
+	)
+	(text "RAM DDR3L"
+		(exclude_from_sim no)
+		(at 184.15 15.748 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "70698b2e-6415-4c9c-af81-2d26f60c6e30")
+	)
 	(text "Vref: \n- The DDR-logic requires an external 0.75 Volts (SSTL-15 standard).\n- External resistive divider required\nVcc: The DDRL-ram requires a 1.35 V supply voltage.\n- LDO / buck converter\nDQS-pins\n- Upper / Lower 8-bit synchronization for data\nData-pins:\n- upper 8 and lower 8 bits must belong to same DQS pins\nAddress / config pins\n- can be any DQ pins in the bank"
 		(exclude_from_sim no)
 		(at -67.31 37.084 0)
@@ -11843,9 +11879,21 @@
 		)
 		(uuid "72a973c4-d4b3-4f1d-8a8a-187db819798f")
 	)
+	(text "FPGA BANK DDR3L"
+		(exclude_from_sim no)
+		(at 42.164 32.258 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "74ca5297-5ca9-45d6-b348-f69b2646a49e")
+	)
 	(text "VREFCA, VREFDQ: \n- reference voltages separated for data and control/command address\n- Should be held at 0.675 V"
 		(exclude_from_sim no)
-		(at 265.938 78.74 0)
+		(at 310.388 34.036 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11856,7 +11904,7 @@
 	)
 	(text "CLK/CLK# Termination:\n6.5.2: differential termination (100 ohms) recommended\n- NOTE: probably internally implemented inside the DDR3L already"
 		(exclude_from_sim no)
-		(at 264.414 100.33 0)
+		(at 311.404 44.196 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14894,7 +14942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707307011465216"
 			(at 251.46 45.72 0)
 			(effects
 				(font
@@ -14911,7 +14959,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C15195"
+		(property "LCSC Part Number" ""
 			(at 251.46 44.45 0)
 			(effects
 				(font
@@ -14920,7 +14968,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B103KB5NNNC"
+		(property "Manufacturing Part Number" ""
+			(at 251.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "CL05B103KB5NNNC"
+			(at 251.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C15195"
 			(at 251.46 45.72 0)
 			(effects
 				(font
@@ -14997,7 +15063,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C253882"
+		(property "LCSC Part Number" ""
 			(at 207.01 80.01 0)
 			(effects
 				(font
@@ -15006,7 +15072,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "MT41K256M16TW-107:P"
+		(property "Manufacturing Part Number" ""
+			(at 207.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C253882"
+			(at 207.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MT41K256M16TW-107:P"
 			(at 207.01 80.01 0)
 			(effects
 				(font
@@ -15336,7 +15420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706862004473856"
 			(at 257.81 30.48 0)
 			(effects
 				(font
@@ -15353,7 +15437,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C28323"
+		(property "LCSC Part Number" ""
 			(at 257.81 30.48 0)
 			(effects
 				(font
@@ -15362,7 +15446,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL21B105KBFNNNE"
+		(property "Manufacturing Part Number" ""
+			(at 257.81 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C28323"
+			(at 257.81 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 257.81 30.48 0)
 			(effects
 				(font
@@ -15439,7 +15541,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C23350"
+		(property "LCSC Part Number" ""
 			(at 238.76 67.31 0)
 			(effects
 				(font
@@ -15448,7 +15550,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0603WAF2400T5E"
+		(property "Manufacturing Part Number" ""
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0603WAF2400T5E"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C23350"
 			(at 238.76 67.31 0)
 			(effects
 				(font
@@ -15575,7 +15695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 209.55 30.48 0)
 			(effects
 				(font
@@ -15592,7 +15712,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 209.55 29.21 0)
 			(effects
 				(font
@@ -15601,7 +15721,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 209.55 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 209.55 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 209.55 30.48 0)
 			(effects
 				(font
@@ -15729,7 +15867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 251.46 30.48 0)
 			(effects
 				(font
@@ -15746,7 +15884,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 251.46 29.21 0)
 			(effects
 				(font
@@ -15755,7 +15893,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 251.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 251.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 251.46 30.48 0)
 			(effects
 				(font
@@ -16691,7 +16847,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C59461"
+		(property "LCSC Part Number" ""
 			(at 265.43 30.48 0)
 			(effects
 				(font
@@ -16700,7 +16856,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL10A226MQ8NRNC"
+		(property "Manufacturing Part Number" ""
+			(at 265.43 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C59461"
+			(at 265.43 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 265.43 30.48 0)
 			(effects
 				(font
@@ -16761,7 +16935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 259.08 60.96 0)
 			(effects
 				(font
@@ -16778,7 +16952,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 259.08 59.69 0)
 			(effects
 				(font
@@ -16787,7 +16961,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 259.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 259.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 259.08 60.96 0)
 			(effects
 				(font
@@ -16847,7 +17039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706862004473856"
 			(at 223.52 30.48 0)
 			(effects
 				(font
@@ -16864,7 +17056,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C28323"
+		(property "LCSC Part Number" ""
 			(at 223.52 30.48 0)
 			(effects
 				(font
@@ -16873,7 +17065,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL21B105KBFNNNE"
+		(property "Manufacturing Part Number" ""
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C28323"
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 223.52 30.48 0)
 			(effects
 				(font
@@ -17065,7 +17275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 259.08 45.72 0)
 			(effects
 				(font
@@ -17082,7 +17292,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 259.08 44.45 0)
 			(effects
 				(font
@@ -17091,7 +17301,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 259.08 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 259.08 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 259.08 45.72 0)
 			(effects
 				(font
@@ -17168,7 +17396,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C59461"
+		(property "LCSC Part Number" ""
 			(at 231.14 30.48 0)
 			(effects
 				(font
@@ -17177,7 +17405,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL10A226MQ8NRNC"
+		(property "Manufacturing Part Number" ""
+			(at 231.14 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C59461"
+			(at 231.14 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 231.14 30.48 0)
 			(effects
 				(font
@@ -17210,10 +17456,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a1d46280-ae02-40b7-b015-7c06afd984cd")
 		(property "Reference" "IC1"
-			(at 29.21 89.3942 0)
+			(at 35.052 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17222,7 +17467,7 @@
 			)
 		)
 		(property "Value" "ECP5-BGA256"
-			(at 29.21 91.9342 0)
+			(at 44.958 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18098,7 +18343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707307011465216"
 			(at 252.73 60.96 0)
 			(effects
 				(font
@@ -18115,7 +18360,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C15195"
+		(property "LCSC Part Number" ""
 			(at 252.73 59.69 0)
 			(effects
 				(font
@@ -18124,7 +18369,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B103KB5NNNC"
+		(property "Manufacturing Part Number" ""
+			(at 252.73 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "CL05B103KB5NNNC"
+			(at 252.73 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C15195"
 			(at 252.73 60.96 0)
 			(effects
 				(font
@@ -18251,7 +18514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 217.17 30.48 0)
 			(effects
 				(font
@@ -18268,7 +18531,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 217.17 29.21 0)
 			(effects
 				(font
@@ -18277,7 +18540,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 217.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 217.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 217.17 30.48 0)
 			(effects
 				(font
@@ -18338,7 +18619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf"
 			(at 243.84 30.48 0)
 			(effects
 				(font
@@ -18355,7 +18636,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Number" "C307331"
+		(property "LCSC Part Number" ""
 			(at 243.84 29.21 0)
 			(effects
 				(font
@@ -18364,7 +18645,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "CL05B104KB54PNC"
+		(property "Manufacturing Part Number" ""
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C307331"
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KB54PNC"
 			(at 243.84 30.48 0)
 			(effects
 				(font

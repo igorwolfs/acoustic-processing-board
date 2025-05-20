@@ -6181,6 +6181,54 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 128.27 110.49)
+		(end 278.13 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ddbc853b-32d7-45f1-9199-6077304eb6db)
+	)
+	(rectangle
+		(start 138.43 20.32)
+		(end 267.97 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid eba88aa3-ed3c-4386-a744-28f99ba9fd15)
+	)
+	(rectangle
+		(start 16.51 16.51)
+		(end 86.36 115.57)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ed020036-fd75-4893-a1bb-0d9b60412e8d)
+	)
+	(text "SPI / JTAG PIO"
+		(exclude_from_sim no)
+		(at 157.226 23.368 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "1f6ecd14-2966-4643-949f-403f43c66229")
+	)
 	(text "similar component to orange-crab\n- nCS should be pulled low by master (FPGA)\n\nConsider using 1 Gbit in case you'd want to load firmware onto the device."
 		(exclude_from_sim no)
 		(at 289.56 136.906 0)
@@ -6216,13 +6264,37 @@
 	)
 	(text "pullups for Master SPI (MSPI) required by\nTN1260: lattice ECP5 sysCONFIG guide section 6"
 		(exclude_from_sim no)
-		(at 155.194 116.332 0)
+		(at 214.884 117.348 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "7e619366-2ba0-4960-89fd-656adaaf74dc")
+	)
+	(text "FLASH MODULES"
+		(exclude_from_sim no)
+		(at 141.478 114.046 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "b2287d89-b451-465c-8d4e-8efa4aed4f6b")
+	)
+	(text "FPGA CONFIG BANK"
+		(exclude_from_sim no)
+		(at 70.612 21.082 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f0179d6f-1dad-4145-a2ae-7148d5631458")
 	)
 	(junction
 		(at 170.18 120.65)
@@ -6315,14 +6387,14 @@
 		(uuid "c6674afd-bc54-41ff-b172-aeb631453885")
 	)
 	(junction
-		(at 240.03 133.35)
+		(at 236.22 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccecbc7d-ef77-47e4-87e9-5224665f0a16")
 	)
 	(wire
 		(pts
-			(xy 142.24 176.53) (xy 149.86 176.53)
+			(xy 165.1 33.02) (xy 172.72 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6372,7 +6444,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 130.81) (xy 240.03 133.35)
+			(xy 236.22 129.54) (xy 236.22 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6402,7 +6474,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 120.65) (xy 240.03 125.73)
+			(xy 236.22 119.38) (xy 236.22 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6522,7 +6594,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 179.07) (xy 149.86 179.07)
+			(xy 165.1 35.56) (xy 172.72 35.56)
 		)
 		(stroke
 			(width 0)
@@ -6572,7 +6644,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 146.05) (xy 245.11 146.05)
+			(xy 233.68 144.78) (xy 241.3 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6722,7 +6794,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 184.15) (xy 149.86 184.15)
+			(xy 165.1 40.64) (xy 172.72 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6772,7 +6844,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 245.11 135.89)
+			(xy 233.68 134.62) (xy 241.3 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6792,7 +6864,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 140.97) (xy 245.11 140.97)
+			(xy 233.68 139.7) (xy 241.3 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6862,7 +6934,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 143.51) (xy 245.11 143.51)
+			(xy 233.68 142.24) (xy 241.3 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6942,7 +7014,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 120.65) (xy 240.03 120.65)
+			(xy 241.3 119.38) (xy 236.22 119.38)
 		)
 		(stroke
 			(width 0)
@@ -7042,7 +7114,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 138.43) (xy 245.11 138.43)
+			(xy 233.68 137.16) (xy 241.3 137.16)
 		)
 		(stroke
 			(width 0)
@@ -7122,7 +7194,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 181.61) (xy 149.86 181.61)
+			(xy 165.1 38.1) (xy 172.72 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7152,7 +7224,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 123.19) (xy 255.27 128.27)
+			(xy 251.46 121.92) (xy 251.46 127)
 		)
 		(stroke
 			(width 0)
@@ -7202,7 +7274,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 173.99) (xy 149.86 173.99)
+			(xy 165.1 30.48) (xy 172.72 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7232,7 +7304,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 123.19) (xy 255.27 123.19)
+			(xy 259.08 121.92) (xy 251.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7242,7 +7314,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 133.35) (xy 240.03 133.35)
+			(xy 233.68 132.08) (xy 236.22 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7252,7 +7324,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 133.35) (xy 245.11 133.35)
+			(xy 236.22 132.08) (xy 241.3 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7262,7 +7334,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 186.69) (xy 149.86 186.69)
+			(xy 165.1 43.18) (xy 172.72 43.18)
 		)
 		(stroke
 			(width 0)
@@ -7341,7 +7413,7 @@
 		(uuid "029b2d49-96c1-4d3f-bb42-5efa3512e099")
 	)
 	(label "FLASH_MSPI_D3"
-		(at 142.24 186.69 180)
+		(at 165.1 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7351,7 +7423,7 @@
 		(uuid "02d49698-d259-4968-97d1-9aa6282d78c1")
 	)
 	(label "FLASH_MSPI_D2"
-		(at 237.49 143.51 180)
+		(at 233.68 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7361,7 +7433,7 @@
 		(uuid "07f91468-5b61-4060-a0e8-f58128617f0c")
 	)
 	(label "FLASH_MSPI_D1"
-		(at 142.24 181.61 180)
+		(at 165.1 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7401,7 +7473,7 @@
 		(uuid "167c4201-ae4f-45b7-a602-fe3b11a98d6d")
 	)
 	(label "FLASH_MSPI_D1"
-		(at 237.49 140.97 180)
+		(at 233.68 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7421,7 +7493,7 @@
 		(uuid "247023c1-96e3-44fd-b4c9-c1f2a985759b")
 	)
 	(label "FLASH_MSPI_MCLK"
-		(at 237.49 135.89 180)
+		(at 233.68 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7451,7 +7523,7 @@
 		(uuid "3554359c-4217-43a9-b6f5-73e180e16059")
 	)
 	(label "FLASH_MSPI_D3"
-		(at 237.49 146.05 180)
+		(at 233.68 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7481,7 +7553,7 @@
 		(uuid "45fa6220-f898-46f9-a93e-8147cb6cad2d")
 	)
 	(label "FLASH_MSPI_CSPPIn2"
-		(at 237.49 133.35 180)
+		(at 233.68 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7491,7 +7563,7 @@
 		(uuid "4b4631a3-f722-4481-a406-20ced09cb693")
 	)
 	(label "FLASH_MSPI_MCLK"
-		(at 142.24 176.53 180)
+		(at 165.1 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7501,7 +7573,7 @@
 		(uuid "4bfa4e31-886b-4c03-ab33-d9a41ad80711")
 	)
 	(label "FLASH_MSPI_CSPPIn"
-		(at 142.24 173.99 180)
+		(at 165.1 30.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7681,7 +7753,7 @@
 		(uuid "b5458a0d-0464-466b-8689-f7af340445ea")
 	)
 	(label "FLASH_MSPI_D0"
-		(at 237.49 138.43 180)
+		(at 233.68 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7701,7 +7773,7 @@
 		(uuid "c16c7fcf-9a5b-4a1c-b0be-d7874e43bf59")
 	)
 	(label "FLASH_MSPI_D0"
-		(at 142.24 179.07 180)
+		(at 165.1 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7711,7 +7783,7 @@
 		(uuid "d02f2880-7a53-4cc4-b392-8818e4120eaa")
 	)
 	(label "FLASH_MSPI_D2"
-		(at 142.24 184.15 180)
+		(at 165.1 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7774,7 +7846,7 @@
 	)
 	(global_label "Vcc_IO8"
 		(shape passive)
-		(at 262.89 123.19 0)
+		(at 259.08 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7784,7 +7856,7 @@
 		)
 		(uuid "1a8565a3-32a5-4c70-88bf-372e6322a4e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 272.1421 123.19 0)
+			(at 268.3321 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7884,7 +7956,7 @@
 	)
 	(global_label "Vcc_IO8"
 		(shape passive)
-		(at 245.11 120.65 0)
+		(at 241.3 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7894,7 +7966,7 @@
 		)
 		(uuid "f1ba5704-0d31-4eee-9e13-688b53591e80")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 254.3621 120.65 0)
+			(at 250.5521 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9034,7 +9106,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 240.03 88.9 0)
 			(effects
 				(font
@@ -9043,7 +9115,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 240.03 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 240.03 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 240.03 88.9 0)
 			(effects
 				(font
@@ -9122,7 +9212,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 248.92 88.9 0)
 			(effects
 				(font
@@ -9131,7 +9221,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 248.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 248.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 248.92 88.9 0)
 			(effects
 				(font
@@ -9277,7 +9385,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 232.41 88.9 0)
 			(effects
 				(font
@@ -9286,7 +9394,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 232.41 88.9 0)
 			(effects
 				(font
@@ -9365,7 +9491,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 240.03 63.5 0)
 			(effects
 				(font
@@ -9374,7 +9500,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 240.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 240.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 240.03 63.5 0)
 			(effects
 				(font
@@ -9474,7 +9618,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 240.03 128.27 0)
+		(at 236.22 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9482,7 +9626,7 @@
 		(dnp no)
 		(uuid "6f4a823e-e03e-4e8b-a241-1064df13923f")
 		(property "Reference" "R34"
-			(at 241.554 127 0)
+			(at 237.744 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9491,7 +9635,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 241.808 128.27 90)
+			(at 237.998 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9499,7 +9643,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 240.03 128.27 0)
+			(at 236.22 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9508,7 +9652,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 128.27 0)
+			(at 236.22 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9517,7 +9661,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 240.03 128.27 0)
+			(at 236.22 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9525,8 +9669,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
-			(at 240.03 128.27 0)
+		(property "LCSC Part Number" ""
+			(at 236.22 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9534,8 +9678,26 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
-			(at 240.03 128.27 0)
+		(property "Manufacturing Part Number" ""
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
+			(at 236.22 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9560,7 +9722,7 @@
 	)
 	(symbol
 		(lib_id "Memory_Flash:W25Q128JVS")
-		(at 255.27 140.97 0)
+		(at 251.46 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9569,7 +9731,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f8e5acb-7fab-4353-8e0b-3c4e585ad66b")
 		(property "Reference" "U9"
-			(at 266.7 139.6999 0)
+			(at 262.89 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9578,7 +9740,7 @@
 			)
 		)
 		(property "Value" "W25Q128JVS"
-			(at 266.7 142.2399 0)
+			(at 262.89 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9587,7 +9749,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
-			(at 255.27 118.11 0)
+			(at 251.46 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9596,7 +9758,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
-			(at 255.27 115.57 0)
+			(at 251.46 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9605,7 +9767,7 @@
 			)
 		)
 		(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
-			(at 255.27 113.03 0)
+			(at 251.46 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9613,8 +9775,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C113767"
-			(at 255.27 140.97 0)
+		(property "LCSC Part Number" ""
+			(at 251.46 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9622,8 +9784,26 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "W25Q128JVSIQ"
-			(at 255.27 140.97 0)
+		(property "Manufacturing Part Number" ""
+			(at 251.46 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C113767"
+			(at 251.46 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "W25Q128JVSIQ"
+			(at 251.46 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9717,7 +9897,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25744"
+		(property "LCSC Part Number" ""
 			(at 166.37 124.46 0)
 			(effects
 				(font
@@ -9726,7 +9906,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF1002TCE"
+		(property "Manufacturing Part Number" ""
+			(at 166.37 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF1002TCE"
+			(at 166.37 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25744"
 			(at 166.37 124.46 0)
 			(effects
 				(font
@@ -9803,7 +10001,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 177.8 124.46 0)
 			(effects
 				(font
@@ -9812,7 +10010,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 177.8 124.46 0)
 			(effects
 				(font
@@ -9838,7 +10054,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 153.67 0)
+		(at 251.46 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9846,7 +10062,7 @@
 		(dnp no)
 		(uuid "7cbf9edf-02e9-4c41-bb23-0d6f1effb83f")
 		(property "Reference" "#PWR043"
-			(at 255.27 160.02 0)
+			(at 251.46 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9855,7 +10071,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 255.27 157.48 0)
+			(at 251.46 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9863,7 +10079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 153.67 0)
+			(at 251.46 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9872,7 +10088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 153.67 0)
+			(at 251.46 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9881,7 +10097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 153.67 0)
+			(at 251.46 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10021,7 +10237,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 231.14 50.8 0)
 			(effects
 				(font
@@ -10030,7 +10246,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 231.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 231.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 231.14 50.8 0)
 			(effects
 				(font
@@ -10109,7 +10343,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C113767"
+		(property "LCSC Part Number" ""
 			(at 190.5 139.7 0)
 			(effects
 				(font
@@ -10118,7 +10352,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "W25Q128JVSIQ"
+		(property "Manufacturing Part Number" ""
+			(at 190.5 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C113767"
+			(at 190.5 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "W25Q128JVSIQ"
 			(at 190.5 139.7 0)
 			(effects
 				(font
@@ -10215,7 +10467,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 238.76 33.02 0)
 			(effects
 				(font
@@ -10224,7 +10476,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 238.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 238.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 238.76 33.02 0)
 			(effects
 				(font
@@ -10301,7 +10571,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25744"
+		(property "LCSC Part Number" ""
 			(at 162.56 124.46 0)
 			(effects
 				(font
@@ -10310,7 +10580,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF1002TCE"
+		(property "Manufacturing Part Number" ""
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF1002TCE"
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25744"
 			(at 162.56 124.46 0)
 			(effects
 				(font
@@ -10387,7 +10675,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25768"
+		(property "LCSC Part Number" ""
 			(at 173.99 124.46 0)
 			(effects
 				(font
@@ -10396,7 +10684,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF2202TCE"
+		(property "Manufacturing Part Number" ""
+			(at 173.99 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C25768"
+			(at 173.99 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF2202TCE"
 			(at 173.99 124.46 0)
 			(effects
 				(font
@@ -10608,7 +10914,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25744"
+		(property "LCSC Part Number" ""
 			(at 158.75 124.46 0)
 			(effects
 				(font
@@ -10617,7 +10923,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF1002TCE"
+		(property "Manufacturing Part Number" ""
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF1002TCE"
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25744"
 			(at 158.75 124.46 0)
 			(effects
 				(font
@@ -10694,7 +11018,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25744"
+		(property "LCSC Part Number" ""
 			(at 170.18 124.46 0)
 			(effects
 				(font
@@ -10703,7 +11027,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF1002TCE"
+		(property "Manufacturing Part Number" ""
+			(at 170.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF1002TCE"
+			(at 170.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25744"
 			(at 170.18 124.46 0)
 			(effects
 				(font
@@ -10782,7 +11124,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 246.38 33.02 0)
 			(effects
 				(font
@@ -10791,7 +11133,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 246.38 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 246.38 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 246.38 33.02 0)
 			(effects
 				(font
@@ -10870,7 +11230,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 231.14 33.02 0)
 			(effects
 				(font
@@ -10879,7 +11239,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 231.14 33.02 0)
 			(effects
 				(font
@@ -10958,7 +11336,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C25900"
+		(property "LCSC Part Number" ""
 			(at 248.92 76.2 0)
 			(effects
 				(font
@@ -10967,7 +11345,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturing Part Number" "0402WGF4701TCE"
+		(property "Manufacturing Part Number" ""
+			(at 248.92 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "0402WGF4701TCE"
+			(at 248.92 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25900"
 			(at 248.92 76.2 0)
 			(effects
 				(font
@@ -10993,7 +11389,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
-		(at 154.94 179.07 0)
+		(at 177.8 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11002,7 +11398,7 @@
 		(fields_autoplaced yes)
 		(uuid "d757103d-1872-4a6d-b5ba-7febf154461a")
 		(property "Reference" "J4"
-			(at 156.21 179.0699 0)
+			(at 179.07 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11011,7 +11407,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06_Socket"
-			(at 156.21 181.6099 0)
+			(at 179.07 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11020,7 +11416,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 179.07 0)
+			(at 177.8 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11029,7 +11425,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 179.07 0)
+			(at 177.8 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11038,7 +11434,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 154.94 179.07 0)
+			(at 177.8 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
