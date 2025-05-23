@@ -4557,7 +4557,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 133.35) (xy 241.3 133.35)
+			(xy 222.25 133.35) (xy 224.79 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5294,6 +5294,16 @@
 			(type default)
 		)
 		(uuid "dca3662e-e6a5-4b70-a10a-0664d465f5ea")
+	)
+	(wire
+		(pts
+			(xy 229.87 133.35) (xy 241.3 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddc49f57-956f-4202-b02d-40abab88dfdb")
 	)
 	(wire
 		(pts
@@ -6301,6 +6311,92 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/a0fbc78d-8163-4e6b-8d81-98a3dd6573cb"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 227.33 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bf1c53c-2549-438b-b556-4da9ae2674fe")
+		(property "Reference" "R35"
+			(at 227.33 128.27 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 227.33 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 227.33 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588882001185148928"
+			(at 227.33 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mW, change to damping resistor"
+			(at 227.33 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C15402"
+			(at 227.33 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAJ0000T5E"
+			(at 227.33 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3272f56f-0e40-48ee-9311-df81a09ca921")
+		)
+		(pin "2"
+			(uuid "b348c7ce-c999-446f-9dfc-71aad7da6e8b")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/a0fbc78d-8163-4e6b-8d81-98a3dd6573cb"
+					(reference "R35")
 					(unit 1)
 				)
 			)
