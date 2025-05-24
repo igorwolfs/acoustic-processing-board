@@ -6251,6 +6251,16 @@
 		)
 		(uuid "546eba1d-4953-4971-a13d-fd60b26f2369")
 	)
+	(text "Vcc_IO8"
+		(exclude_from_sim no)
+		(at 36.83 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "564f628a-228f-4757-b72d-f653af41bfd0")
+	)
 	(text "Pure signaling function\nFPGA_DONE: Startup sequence in prograss\nFPGA_INITn: Ready to be configured\nFPGRA_RESET: Initiates configuration sequence when asserted low"
 		(exclude_from_sim no)
 		(at 288.544 90.932 0)
@@ -6391,6 +6401,38 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccecbc7d-ef77-47e4-87e9-5224665f0a16")
+	)
+	(no_connect
+		(at 57.15 59.69)
+		(uuid "37b7939c-5633-45bb-bafd-cc4d84868ad6")
+	)
+	(no_connect
+		(at 57.15 49.53)
+		(uuid "3e83815c-17c5-4590-8ee1-0902230ca521")
+	)
+	(no_connect
+		(at 57.15 36.83)
+		(uuid "4707bd26-b348-4834-9983-1e3203b4e4ba")
+	)
+	(no_connect
+		(at 57.15 29.21)
+		(uuid "8a9261c8-e229-46a2-914e-169b5a73f602")
+	)
+	(no_connect
+		(at 57.15 52.07)
+		(uuid "9bb2d530-38a8-40b0-8258-86aa92e1c403")
+	)
+	(no_connect
+		(at 57.15 57.15)
+		(uuid "a9ec8387-5301-4f7f-aa33-e3feb37365cf")
+	)
+	(no_connect
+		(at 57.15 34.29)
+		(uuid "b1bf43fc-5bac-4639-9055-422f8703de41")
+	)
+	(no_connect
+		(at 57.15 31.75)
+		(uuid "b620d4b6-5df1-4fce-ac4c-e59b12b0acad")
 	)
 	(wire
 		(pts
@@ -6554,7 +6596,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 21.59) (xy 26.67 21.59)
+			(xy 26.67 21.59) (xy 31.75 21.59)
 		)
 		(stroke
 			(width 0)
@@ -7201,16 +7243,6 @@
 			(type default)
 		)
 		(uuid "c43e3b9a-355d-4222-a5a2-362b01868c0c")
-	)
-	(wire
-		(pts
-			(xy 57.15 59.69) (xy 63.5 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8c6dab6-dfa4-4df1-a922-9112961188be")
 	)
 	(wire
 		(pts
@@ -7978,7 +8010,7 @@
 	)
 	(global_label "Vcc_IO8"
 		(shape passive)
-		(at 29.21 21.59 0)
+		(at 31.75 21.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7988,7 +8020,7 @@
 		)
 		(uuid "f7ef97b3-f55a-4cfa-8b53-1d5f3d4848d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.4621 21.59 0)
+			(at 41.0021 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
