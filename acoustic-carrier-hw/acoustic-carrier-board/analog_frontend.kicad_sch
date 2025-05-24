@@ -9238,7 +9238,7 @@
 		)
 		(uuid bab6ff16-aa2f-4985-937e-371c8bd47ac7)
 	)
-	(text "- Ethernet magnetics by default for decoupling\n- 0 ohm resistor in series for LC damping purposes (single-ended use)\n- Alternative input with DC-blocking capacitors with RJ45\nLayout of transition between 2 ADC-inputs:\n- Use 0-ohm resistor to cross lower trace (instead of jumpers for signal integrity)\nMake sure the 0-ohm resistors and jumpers come together at the same spot\nLEDS:\n- Current through leds (3.3 - 2.2) / 2e3 = 0.55 mA (voltage drop 1.8-2.8 V)\n- Differential impedance: 100 ohms\n- Input capacitance: 300 nF, f_plateau = 1/[2*pi*C*(R_diff/2)] = 30 kHz\nMax offst: 4% <<<< 1' @ 1 MHz\n- Added 0-ohm series resistor in case of single-ended operation (LC damping)\nPin 13, 14: shield / frame connection"
+	(text "- Ethernet magnetics by default for decoupling\n- 0 ohm resistor in series for LC damping purposes (single-ended use)\n- Alternative input with DC-blocking capacitors with RJ45\nLayout of transition between 2 ADC-inputs:\n- Use 0-ohm resistor to cross lower trace (instead of jumpers for signal integrity)\nMake sure the 0-ohm resistors and jumpers come together at the same spot\nLEDS:\n- Current through leds (3.3 - 2.2) / 2e3 = 0.55 mA (voltage drop 1.8-2.8 V)\n- Differential impedance: 100 ohms\n- Input capacitance: 300 nF, f_plateau = 1/[2*pi*C*(R_diff/2)] = 30 kHz\nMax offst: 4% <<<< 1' @ 1 MHz\n- Added 0-ohm series resistor in case of single-ended operation (LC damping)\nPin 13, 14: shield / frame connection\nGround\n- Chassis ground vs signal ground connection"
 		(exclude_from_sim no)
 		(at 299.974 41.656 0)
 		(effects
@@ -9335,7 +9335,7 @@
 	)
 	(text "TODO:\n- Add extra BOOST/SEPIC-enable signals to connector"
 		(exclude_from_sim no)
-		(at -33.02 40.64 0)
+		(at -63.754 46.228 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9902,6 +9902,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 72.39) (xy 95.25 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a9e5a9c-bf20-4027-b5f6-b1142877aa0d")
+	)
+	(wire
+		(pts
 			(xy 250.19 66.04) (xy 254 66.04)
 		)
 		(stroke
@@ -10062,6 +10072,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 74.93) (xy 95.25 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34345ba0-fbdd-4914-b916-ae7496bf23f9")
+	)
+	(wire
+		(pts
 			(xy 29.21 180.34) (xy 29.21 181.61)
 		)
 		(stroke
@@ -10119,6 +10139,16 @@
 			(type default)
 		)
 		(uuid "3ba1484e-50ef-4767-80c3-48f4c9e13225")
+	)
+	(wire
+		(pts
+			(xy 90.17 69.85) (xy 95.25 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be849b1-9944-469c-9e0d-2e4f6afcb29f")
 	)
 	(wire
 		(pts
@@ -10442,6 +10472,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 82.55) (xy 95.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b52fa22-66a8-4eed-a2a2-5a1cd4a0e91c")
+	)
+	(wire
+		(pts
 			(xy 40.64 160.02) (xy 39.37 160.02)
 		)
 		(stroke
@@ -10519,6 +10559,16 @@
 			(type default)
 		)
 		(uuid "8b166ff2-eb84-4e75-abeb-f4f09e3d05e9")
+	)
+	(wire
+		(pts
+			(xy 90.17 80.01) (xy 95.25 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c005bea-5697-46d3-b9d5-515896985ed3")
 	)
 	(wire
 		(pts
@@ -10719,6 +10769,16 @@
 			(type default)
 		)
 		(uuid "af665953-31ba-4a55-b591-24b9bc5c2aa8")
+	)
+	(wire
+		(pts
+			(xy 90.17 77.47) (xy 95.25 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa600e3-f7c8-4d0a-b237-2de29c6faf26")
 	)
 	(wire
 		(pts
@@ -11856,6 +11916,94 @@
 			)
 		)
 	)
+	(global_label "SEPIC_10V_EN"
+		(shape output)
+		(at 90.17 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31eedc79-58db-4cea-ac14-6eabc983f745")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.7592 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_PWM_0"
+		(shape output)
+		(at 90.17 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "651c2410-c6ec-47b2-a570-89e2b7d3e61b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.1501 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BOOST_40V_EN"
+		(shape output)
+		(at 90.17 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8058983e-ec0e-4198-a064-1e32099c68da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.1544 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_PWM_2"
+		(shape output)
+		(at 90.17 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8379bd17-56f4-49aa-bea3-c4e9de35039c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.1501 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FPGA_PWM_1"
 		(shape input)
 		(at 33.02 49.53 180)
@@ -11896,6 +12044,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_PWM_1"
+		(shape output)
+		(at 90.17 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c042a7b7-9be1-4152-8ccc-0d09fb13226f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.1501 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_PWM_3"
+		(shape output)
+		(at 90.17 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd52d982-9d56-420b-9550-71dc1a6c2bb4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.1501 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)

@@ -28,3 +28,10 @@
 - Create a bypass for the boost converter (e.g.: simply 0-ohm high power resistor, or solderbridge) whenever you want to use pure battery voltage
 - When you want to use a voltage unreachable by your power supply (e.g.: 40 V)
 	- Make sure to use a boost converter, and set the input voltage between 10-20 Volts (to limit the stress on the passives)
+
+
+# NEXT
+- Add the additional power-converter-enabled-connector
+	- Instead of 2x4 make it 2x7, 2 times
+- Add a place for ferrites to the problematic power lines
+- Add temperatrue measurement sensors with data trigger lines
