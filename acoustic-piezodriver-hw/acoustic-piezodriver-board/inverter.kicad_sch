@@ -900,6 +900,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:SS14"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SS14"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1A Schottky Diode, SMA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SS14_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS14_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "custom_mosfet:NCE6005AS"
 			(pin_names
 				(offset 0)
@@ -2421,10 +2571,16 @@
 		(uuid "05ed6c29-92f6-42d9-be5c-c832b8593557")
 	)
 	(junction
-		(at 190.5 31.75)
+		(at 236.22 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0b13c429-d9c5-4743-a88a-ea90ae24af00")
+		(uuid "074baa7e-912f-4819-9b51-b000ec3b89bf")
+	)
+	(junction
+		(at 227.33 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09dd91ca-5789-47d0-aa96-6b147c227c10")
 	)
 	(junction
 		(at 260.35 109.22)
@@ -2437,6 +2593,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c860ee4-ba6d-4e5f-8d9a-e940875b18c3")
+	)
+	(junction
+		(at 227.33 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1caa7fb4-977b-46f6-8fed-d9f8581de2d3")
 	)
 	(junction
 		(at 237.49 114.3)
@@ -2511,6 +2673,12 @@
 		(uuid "9df14b9b-61e0-4e61-8cfb-67b8a72da165")
 	)
 	(junction
+		(at 190.5 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e3d01a3-7643-495e-878d-4bc856b4fcb7")
+	)
+	(junction
 		(at 252.73 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2523,10 +2691,22 @@
 		(uuid "a734a147-3089-434d-a2dd-37fbc821da2d")
 	)
 	(junction
+		(at 224.79 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b253b9f1-867d-4138-bc3d-3f214f8edf37")
+	)
+	(junction
 		(at 26.67 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2ab9220-3ff6-4a54-bee0-30da6946ba1f")
+	)
+	(junction
+		(at 234.95 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2ae01be-a63f-4c91-a87e-46b3df9f9426")
 	)
 	(junction
 		(at 46.99 179.07)
@@ -2547,10 +2727,22 @@
 		(uuid "bc95f036-8f05-4369-8286-7bd8347d8a10")
 	)
 	(junction
+		(at 234.95 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bef1814d-efc8-4493-a5e4-01c1a47d8932")
+	)
+	(junction
 		(at 252.73 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0492354-66e4-4b88-8ea1-dffb71a2db28")
+	)
+	(junction
+		(at 224.79 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c04a1379-4b58-4988-9a74-9c46d299f717")
 	)
 	(junction
 		(at 36.83 170.18)
@@ -2587,6 +2779,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d59c8689-e43f-412e-b364-50a2577023ba")
+	)
+	(junction
+		(at 240.03 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db265a25-09c2-439b-b6ad-89c15a83a8c8")
 	)
 	(junction
 		(at 260.35 44.45)
@@ -2642,6 +2840,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 101.6) (xy 243.84 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f01fa68-c02a-464b-92b4-b7ee7423f786")
+	)
+	(wire
+		(pts
 			(xy 260.35 27.94) (xy 260.35 26.67)
 		)
 		(stroke
@@ -2652,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 58.42) (xy 243.84 62.23)
+			(xy 240.03 58.42) (xy 240.03 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2692,13 +2900,33 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 31.75) (xy 190.5 27.94)
+			(xy 224.79 124.46) (xy 224.79 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18652361-984e-475c-a349-ce14a3eabb66")
+	)
+	(wire
+		(pts
+			(xy 190.5 30.48) (xy 190.5 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "19e63dc4-1b79-4845-94f3-875b91122ace")
+	)
+	(wire
+		(pts
+			(xy 190.5 26.67) (xy 190.5 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aefe97b-524a-4420-ad1f-f99158ea2d9f")
 	)
 	(wire
 		(pts
@@ -2732,7 +2960,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 36.83) (xy 243.84 36.83)
+			(xy 233.68 36.83) (xy 234.95 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2742,7 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 52.07) (xy 199.39 52.07)
+			(xy 196.85 48.26) (xy 198.12 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2782,16 +3010,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 101.6) (xy 227.33 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29b6ffa2-e91b-4b1b-ba00-9afa68f7d8d3")
-	)
-	(wire
-		(pts
 			(xy 260.35 62.23) (xy 260.35 63.5)
 		)
 		(stroke
@@ -2812,23 +3030,13 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 46.99) (xy 237.49 52.07)
+			(xy 237.49 46.99) (xy 237.49 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2f1ce236-8cd6-41d1-a3be-a4036e1f5a2a")
-	)
-	(wire
-		(pts
-			(xy 243.84 123.19) (xy 243.84 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3006b44c-75f2-4724-a409-5b8fcccd3ecc")
 	)
 	(wire
 		(pts
@@ -2882,6 +3090,26 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 124.46) (xy 236.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "392b1d72-83bb-42e2-a326-35d6b4a32b15")
+	)
+	(wire
+		(pts
+			(xy 223.52 36.83) (xy 227.33 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fb0e25-3b78-49a9-86f5-eb9e5943a18b")
+	)
+	(wire
+		(pts
 			(xy 67.31 179.07) (xy 57.15 179.07)
 		)
 		(stroke
@@ -2909,6 +3137,16 @@
 			(type default)
 		)
 		(uuid "3e3dd686-e61a-4fe6-9700-b096fc61dfe6")
+	)
+	(wire
+		(pts
+			(xy 196.85 48.26) (xy 196.85 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e77ac39-8043-42e8-8171-7e8dadb8fd09")
 	)
 	(wire
 		(pts
@@ -2952,13 +3190,23 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 101.6) (xy 243.84 101.6)
+			(xy 240.03 58.42) (xy 243.84 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45cd9a6c-925d-4d28-94b3-19f276d9a9a9")
+		(uuid "49eaaeee-aeb6-46e5-8541-5ce5525fa8f6")
+	)
+	(wire
+		(pts
+			(xy 227.33 58.42) (xy 227.33 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5129047c-d95c-436e-9bda-b09631862a5f")
 	)
 	(wire
 		(pts
@@ -2969,6 +3217,26 @@
 			(type default)
 		)
 		(uuid "51d2bf17-4f45-48cd-8125-ae34f8229d92")
+	)
+	(wire
+		(pts
+			(xy 196.85 52.07) (xy 186.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5374992f-12f2-4e7e-87d0-d58e5155418c")
+	)
+	(wire
+		(pts
+			(xy 224.79 128.27) (xy 227.33 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "548fb6b4-98d1-4efa-8d6d-ab094d1a4661")
 	)
 	(wire
 		(pts
@@ -2992,13 +3260,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 64.77) (xy 190.5 62.23)
+			(xy 190.5 64.77) (xy 190.5 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "597ef2ed-6a3e-4c1c-94ff-25ef6761800e")
+	)
+	(wire
+		(pts
+			(xy 224.79 105.41) (xy 224.79 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b55bd4b-dc2b-4da4-bbcf-b727e1cbe749")
 	)
 	(wire
 		(pts
@@ -3009,6 +3287,26 @@
 			(type default)
 		)
 		(uuid "5b597d54-71c1-4257-8dad-1218610d7e7b")
+	)
+	(wire
+		(pts
+			(xy 195.58 41.91) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf619e7-a3ef-44ad-a3f4-4a71b9d9ff3e")
+	)
+	(wire
+		(pts
+			(xy 234.95 128.27) (xy 236.22 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e22b3a4-f4a2-4eb6-8a9e-a8a5b858b662")
 	)
 	(wire
 		(pts
@@ -3072,6 +3370,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 38.1) (xy 195.58 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e18ae7a-3205-4597-a278-3edbe1c4539f")
+	)
+	(wire
+		(pts
 			(xy 54.61 144.78) (xy 54.61 143.51)
 		)
 		(stroke
@@ -3089,16 +3397,6 @@
 			(type default)
 		)
 		(uuid "76f47b01-c18c-4164-97f3-d5229b2c1a3e")
-	)
-	(wire
-		(pts
-			(xy 199.39 31.75) (xy 190.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77361f81-e23d-4de7-9d25-efce7b797d15")
 	)
 	(wire
 		(pts
@@ -3152,6 +3450,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 101.6) (xy 234.95 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828a979e-54c4-4210-bb07-c403b2743b64")
+	)
+	(wire
+		(pts
 			(xy 81.28 168.91) (xy 81.28 170.18)
 		)
 		(stroke
@@ -3159,6 +3467,16 @@
 			(type default)
 		)
 		(uuid "85a3c4f7-e37a-46dd-b507-7565df1b5fc5")
+	)
+	(wire
+		(pts
+			(xy 190.5 27.94) (xy 198.12 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876e7a9d-44d0-4f76-9031-1bfe4b4c3c74")
 	)
 	(wire
 		(pts
@@ -3172,6 +3490,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 58.42) (xy 227.33 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5be3b9-7bb4-47ff-bcb4-ebc498b7fd63")
+	)
+	(wire
+		(pts
 			(xy 49.53 144.78) (xy 54.61 144.78)
 		)
 		(stroke
@@ -3182,13 +3510,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 107.95) (xy 227.33 107.95)
+			(xy 223.52 36.83) (xy 223.52 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8fb167b5-8116-4f9e-9eb5-e8958c3e2c64")
+		(uuid "942dadd4-8133-498c-8da3-3c487de35ee4")
 	)
 	(wire
 		(pts
@@ -3199,6 +3527,16 @@
 			(type default)
 		)
 		(uuid "94362bca-7aec-4a22-99c4-ecab72b0653c")
+	)
+	(wire
+		(pts
+			(xy 224.79 105.41) (xy 227.33 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94911b89-687a-43cf-be9e-df1be863dfdc")
 	)
 	(wire
 		(pts
@@ -3272,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 62.23) (xy 199.39 62.23)
+			(xy 190.5 58.42) (xy 198.12 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3292,13 +3630,23 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 31.75) (xy 237.49 31.75)
+			(xy 223.52 27.94) (xy 237.49 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a8567a06-ab67-4ec2-ae92-d72343b92810")
+	)
+	(wire
+		(pts
+			(xy 190.5 35.56) (xy 190.5 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8abf52e-ea0c-4e0d-b569-8c9da2295710")
 	)
 	(wire
 		(pts
@@ -3322,13 +3670,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 128.27) (xy 227.33 128.27)
+			(xy 227.33 34.29) (xy 227.33 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aed8606d-fae4-4c06-9c04-00cbe68793a7")
+		(uuid "b02f344a-05e4-4379-9deb-bebcd0295aee")
 	)
 	(wire
 		(pts
@@ -3342,13 +3690,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 123.19) (xy 243.84 123.19)
+			(xy 234.95 36.83) (xy 243.84 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6ec84dc-1870-48d4-81ff-eee24ae65c10")
+		(uuid "b853d45d-f5f1-4c1d-9790-a2452cdf56ae")
 	)
 	(wire
 		(pts
@@ -3362,7 +3710,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 52.07) (xy 224.79 52.07)
+			(xy 237.49 48.26) (xy 223.52 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3382,7 +3730,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 62.23) (xy 224.79 62.23)
+			(xy 231.14 62.23) (xy 227.33 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3432,6 +3780,26 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 36.83) (xy 228.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c653a2ad-7ad7-4564-9b91-4f7453963943")
+	)
+	(wire
+		(pts
+			(xy 233.68 101.6) (xy 234.95 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c7bf3f-3381-4346-b5e4-078e1563535a")
+	)
+	(wire
+		(pts
 			(xy 190.5 97.79) (xy 190.5 93.98)
 		)
 		(stroke
@@ -3472,7 +3840,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 62.23) (xy 243.84 62.23)
+			(xy 236.22 62.23) (xy 240.03 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3492,7 +3860,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 41.91) (xy 199.39 41.91)
+			(xy 195.58 38.1) (xy 198.12 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3552,6 +3920,26 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 128.27) (xy 236.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3841e7c-b236-4b36-95e2-5b2cbd82e6ae")
+	)
+	(wire
+		(pts
+			(xy 224.79 101.6) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e40115e3-ec1f-477e-b967-8ef047225546")
+	)
+	(wire
+		(pts
 			(xy 99.06 177.8) (xy 99.06 179.07)
 		)
 		(stroke
@@ -3572,7 +3960,17 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 31.75) (xy 237.49 39.37)
+			(xy 224.79 124.46) (xy 228.6 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6ed5d29-5269-4811-848d-569660393abe")
+	)
+	(wire
+		(pts
+			(xy 237.49 27.94) (xy 237.49 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3582,13 +3980,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 41.91) (xy 224.79 41.91)
+			(xy 234.95 34.29) (xy 234.95 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eb2984e0-7b2a-4145-ae02-366d2b29bb90")
+		(uuid "e8fdcf83-c912-4a0c-b18d-cb07edd6a326")
 	)
 	(wire
 		(pts
@@ -3672,6 +4070,36 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 58.42) (xy 223.52 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fad54e4f-0245-4efc-8bde-2b485b46eb1d")
+	)
+	(wire
+		(pts
+			(xy 237.49 58.42) (xy 240.03 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb50ee23-ad04-4b16-b506-843a88a17fab")
+	)
+	(wire
+		(pts
+			(xy 236.22 124.46) (xy 243.84 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc81931f-a538-4ded-9af2-6f69e8c8ce59")
+	)
+	(wire
+		(pts
 			(xy 26.67 168.91) (xy 26.67 170.18)
 		)
 		(stroke
@@ -3679,6 +4107,16 @@
 			(type default)
 		)
 		(uuid "fcfa405a-2512-4b55-892c-a3cc3a1670c7")
+	)
+	(wire
+		(pts
+			(xy 224.79 101.6) (xy 228.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb8c944-ca5d-4781-b3d4-8b7968d52d70")
 	)
 	(label "INV_PWM0_HI"
 		(at 113.03 139.7 0)
@@ -4196,7 +4634,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 227.33 125.73 0)
+		(at 231.14 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4204,7 +4642,7 @@
 		(dnp no)
 		(uuid "0ce99a34-67b1-4821-a50e-d86049d43d06")
 		(property "Reference" "R4"
-			(at 229.362 124.46 0)
+			(at 232.41 126.492 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4213,7 +4651,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 229.108 125.73 90)
+			(at 231.14 126.238 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4221,7 +4659,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 227.33 125.73 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4230,7 +4668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 125.73 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4239,7 +4677,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 227.33 125.73 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4686,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C17903"
-			(at 227.33 125.73 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4695,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "1206W4F100JT5E"
-			(at 227.33 125.73 0)
+			(at 231.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,6 +5110,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS14")
+		(at 231.14 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "20c5ce92-2e1f-4239-982c-563ccd436a46")
+		(property "Reference" "D9"
+			(at 226.822 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS14"
+			(at 235.204 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 231.14 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 231.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 231.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2480"
+			(at 231.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS14"
+			(at 231.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "87b57e49-68c8-41c1-8b79-bfcf687106c2")
+		)
+		(pin "1"
+			(uuid "dfb0f674-397c-4efb-ace6-30a91d56c755")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 260.35 48.26 180)
 		(unit 1)
@@ -5054,7 +5577,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 229.87 62.23 90)
+		(at 233.68 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5062,7 +5585,7 @@
 		(dnp no)
 		(uuid "389a9ce1-38ec-4dfb-9a51-ed8e0ee1323a")
 		(property "Reference" "R2"
-			(at 228.6 60.198 0)
+			(at 232.41 60.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,7 +5594,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 229.87 60.452 90)
+			(at 233.68 60.452 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5079,7 +5602,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 229.87 62.23 0)
+			(at 233.68 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5088,7 +5611,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 229.87 62.23 0)
+			(at 233.68 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5620,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 229.87 62.23 0)
+			(at 233.68 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5629,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C17903"
-			(at 229.87 62.23 0)
+			(at 233.68 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5115,7 +5638,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "1206W4F100JT5E"
-			(at 229.87 62.23 0)
+			(at 233.68 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,6 +6653,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SS14")
+		(at 231.14 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7076a417-c709-47df-8d1f-d0adde10e7dd")
+		(property "Reference" "D11"
+			(at 226.822 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS14"
+			(at 235.204 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 231.14 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2480"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS14"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bd473908-144f-462f-a494-25299fa14ba2")
+		)
+		(pin "1"
+			(uuid "83ed2749-7a73-43b0-9e9c-01f0824ba74a")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+VDC")
 		(at 81.28 168.91 0)
 		(unit 1)
@@ -6197,7 +6805,7 @@
 	)
 	(symbol
 		(lib_id "power:+10V")
-		(at 190.5 27.94 0)
+		(at 190.5 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6206,7 +6814,7 @@
 		(fields_autoplaced yes)
 		(uuid "7cbb6b01-119c-4fdf-bccf-342c7973c6c1")
 		(property "Reference" "#PWR030"
-			(at 190.5 31.75 0)
+			(at 190.5 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6215,7 +6823,7 @@
 			)
 		)
 		(property "Value" "+10V"
-			(at 190.5 22.86 0)
+			(at 190.5 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6223,7 +6831,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 27.94 0)
+			(at 190.5 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6232,7 +6840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 27.94 0)
+			(at 190.5 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +6849,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+10V\""
-			(at 190.5 27.94 0)
+			(at 190.5 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,6 +7199,91 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS14")
+		(at 231.14 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "857a1992-c9db-4617-b837-27e1d8b537d2")
+		(property "Reference" "D8"
+			(at 226.822 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS14"
+			(at 235.204 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 231.14 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 231.14 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 231.14 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2480"
+			(at 231.14 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS14"
+			(at 231.14 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2d5bb1d-0a3e-41a6-be10-89a043b406a9")
+		)
+		(pin "1"
+			(uuid "acda03b2-dfd7-419e-8227-f1f6c567d226")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -7024,7 +7717,7 @@
 	)
 	(symbol
 		(lib_id "ucc27282:UCC27282DR")
-		(at 212.09 46.99 0)
+		(at 210.82 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7032,7 +7725,7 @@
 		(dnp no)
 		(uuid "9b5e6e32-3579-4dcc-9530-803bdae8f47c")
 		(property "Reference" "U3"
-			(at 212.09 24.13 0)
+			(at 210.82 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7040,7 +7733,7 @@
 			)
 		)
 		(property "Value" "UCC27282DR"
-			(at 212.09 26.67 0)
+			(at 210.82 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7048,7 +7741,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 220.726 21.336 0)
+			(at 219.456 17.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +7749,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27282.pdf?ts=1746889589197&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fde-de%252FUCC27282"
-			(at 212.09 25.4 0)
+			(at 210.82 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7758,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 46.99 0)
+			(at 210.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7074,7 +7767,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C2867844"
-			(at 212.09 46.99 0)
+			(at 210.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7083,7 +7776,7 @@
 			)
 		)
 		(property "MPN" "UCC27282DR"
-			(at 212.09 46.99 0)
+			(at 210.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7714,7 +8407,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 228.6 39.37 0)
+		(at 231.14 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7722,7 +8415,7 @@
 		(dnp no)
 		(uuid "c027131a-b3ac-47b5-a783-79b8b08cded7")
 		(property "Reference" "R1"
-			(at 230.632 38.1 0)
+			(at 232.41 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7731,7 +8424,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 230.378 39.37 90)
+			(at 231.14 38.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7739,7 +8432,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 228.6 39.37 0)
+			(at 231.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +8441,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705879345881088"
-			(at 228.6 39.37 0)
+			(at 231.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7757,7 +8450,7 @@
 			)
 		)
 		(property "Description" "250mW"
-			(at 228.6 39.37 0)
+			(at 231.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7766,7 +8459,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C17903"
-			(at 228.6 39.37 0)
+			(at 231.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7775,7 +8468,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "1206W4F100JT5E"
-			(at 228.6 39.37 0)
+			(at 231.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7800,7 +8493,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 227.33 105.41 0)
+		(at 231.14 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7808,7 +8501,7 @@
 		(dnp no)
 		(uuid "cb67be51-1e23-442b-8394-d2d9ac38994b")
 		(property "Reference" "R3"
-			(at 229.362 104.14 0)
+			(at 232.41 103.632 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7817,7 +8510,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 229.108 105.41 90)
+			(at 231.14 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7825,7 +8518,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 227.33 105.41 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7834,7 +8527,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 105.41 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +8536,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 227.33 105.41 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +8545,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C17903"
-			(at 227.33 105.41 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7861,7 +8554,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "1206W4F100JT5E"
-			(at 227.33 105.41 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7951,7 +8644,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 190.5 34.29 0)
+		(at 190.5 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7960,7 +8653,7 @@
 		(fields_autoplaced yes)
 		(uuid "d09b5337-35d5-4726-ba15-f5152dee579d")
 		(property "Reference" "C3"
-			(at 193.04 33.0262 0)
+			(at 193.04 31.7562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7969,7 +8662,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 193.04 35.5662 0)
+			(at 193.04 34.2962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7978,7 +8671,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 190.5 34.29 0)
+			(at 190.5 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7987,7 +8680,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 34.29 0)
+			(at 190.5 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7996,7 +8689,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 190.5 34.29 0)
+			(at 190.5 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,7 +8698,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" "CL21B105KBFNNNE"
-			(at 190.5 34.29 0)
+			(at 190.5 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8014,7 +8707,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C28323"
-			(at 190.5 34.29 0)
+			(at 190.5 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8099,6 +8792,91 @@
 			(project "acoustic-piezodriver-board"
 				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS14")
+		(at 233.68 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc36bb80-a282-48e9-a672-c12899cdec77")
+		(property "Reference" "D10"
+			(at 229.362 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS14"
+			(at 237.744 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 233.68 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 233.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 233.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2480"
+			(at 233.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS14"
+			(at 233.68 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bffc6d5f-fc58-46e6-a071-81febb5664e1")
+		)
+		(pin "1"
+			(uuid "dc92257a-f105-4861-b64d-676508c2f9ca")
+		)
+		(instances
+			(project "acoustic-piezodriver-board"
+				(path "/94cb090f-214e-44cc-b8ed-ae50ff29d2bf/0f73f174-3d76-44ea-b4fb-f42a113ccf94"
+					(reference "D10")
 					(unit 1)
 				)
 			)
