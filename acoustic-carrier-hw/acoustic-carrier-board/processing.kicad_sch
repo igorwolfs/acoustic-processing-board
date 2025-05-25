@@ -1235,7 +1235,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "BGA256C80P16X16_1400X1400X170"
+			(property "Footprint" "fpga:BGA256C80P16X16_1400X1400X170"
 				(at -81.28 87.63 0)
 				(effects
 					(font
@@ -1245,7 +1245,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588918730680111104"
 				(at -92.71 111.76 0)
 				(effects
 					(font
@@ -1275,13 +1275,22 @@
 					(hide yes)
 				)
 			)
-			(property "Part Number" "LFE5U-12F-6BG256C"
+			(property "LPN" "C1521614"
 				(at -91.44 130.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "LFE5U-25F-6BG256C "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
@@ -1948,7 +1957,7 @@
 			)
 			(symbol "ECP5-BGA256_2_1"
 				(rectangle
-					(start -8.89 31.75)
+					(start -19.05 31.75)
 					(end 8.89 -31.75)
 					(stroke
 						(width 0.3048)
@@ -1967,7 +1976,7 @@
 					)
 				)
 				(pin power_in line
-					(at -5.08 36.83 270)
+					(at -13.97 36.83 270)
 					(length 5.08)
 					(name "VCCIO0_2"
 						(effects
@@ -1985,7 +1994,7 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 36.83 270)
+					(at -11.43 36.83 270)
 					(length 5.08)
 					(name "VCCIO0_1"
 						(effects
@@ -2329,7 +2338,7 @@
 				(pin bidirectional line
 					(at 13.97 -16.51 180)
 					(length 5.08)
-					(name "PT24A"
+					(name "PT24A/GR_PCLK0_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2347,7 +2356,7 @@
 				(pin bidirectional line
 					(at 13.97 -19.05 180)
 					(length 5.08)
-					(name "PT24B"
+					(name "PT24B/GR_PCLK0_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2365,7 +2374,7 @@
 				(pin bidirectional line
 					(at 13.97 -21.59 180)
 					(length 5.08)
-					(name "PT27A"
+					(name "PT27A/PCLKT0_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2383,7 +2392,7 @@
 				(pin bidirectional line
 					(at 13.97 -24.13 180)
 					(length 5.08)
-					(name "PT27B"
+					(name "PT27B/PCLKC0_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2401,7 +2410,7 @@
 				(pin bidirectional line
 					(at 13.97 -26.67 180)
 					(length 5.08)
-					(name "PT29A"
+					(name "PT29A/PCLKT0_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2419,7 +2428,7 @@
 				(pin bidirectional line
 					(at 13.97 -29.21 180)
 					(length 5.08)
-					(name "PT29B"
+					(name "PT29B/PCLKC0_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2437,7 +2446,7 @@
 			)
 			(symbol "ECP5-BGA256_3_0"
 				(rectangle
-					(start -8.89 41.91)
+					(start -17.78 41.91)
 					(end 8.89 -41.91)
 					(stroke
 						(width 0.3048)
@@ -2458,7 +2467,7 @@
 					)
 				)
 				(pin power_in line
-					(at -5.08 46.99 270)
+					(at -13.97 46.99 270)
 					(length 5.08)
 					(name "VCCIO1_2"
 						(effects
@@ -2476,7 +2485,7 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 46.99 270)
+					(at -11.43 46.99 270)
 					(length 5.08)
 					(name "VCCIO1_1"
 						(effects
@@ -2496,7 +2505,7 @@
 				(pin bidirectional line
 					(at 13.97 39.37 180)
 					(length 5.08)
-					(name "PT33A"
+					(name "PT33A/PCLKT1_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2514,7 +2523,7 @@
 				(pin bidirectional line
 					(at 13.97 36.83 180)
 					(length 5.08)
-					(name "PT33B"
+					(name "PT33B/PCLKC1_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2532,7 +2541,7 @@
 				(pin bidirectional line
 					(at 13.97 34.29 180)
 					(length 5.08)
-					(name "PT35A"
+					(name "PT35A/PCLKT1_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2550,7 +2559,7 @@
 				(pin bidirectional line
 					(at 13.97 31.75 180)
 					(length 5.08)
-					(name "PT35B"
+					(name "PT35B/PCLKC1_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2568,7 +2577,7 @@
 				(pin bidirectional line
 					(at 13.97 29.21 180)
 					(length 5.08)
-					(name "PT38A"
+					(name "PT38A/GR_PCLK1_0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2586,7 +2595,7 @@
 				(pin bidirectional line
 					(at 13.97 26.67 180)
 					(length 5.08)
-					(name "PT38B"
+					(name "PT38B/GR_PCLK1_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6251,16 +6260,6 @@
 		)
 		(uuid "546eba1d-4953-4971-a13d-fd60b26f2369")
 	)
-	(text "Vcc_IO8"
-		(exclude_from_sim no)
-		(at 36.83 21.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "564f628a-228f-4757-b72d-f653af41bfd0")
-	)
 	(text "Pure signaling function\nFPGA_DONE: Startup sequence in prograss\nFPGA_INITn: Ready to be configured\nFPGRA_RESET: Initiates configuration sequence when asserted low"
 		(exclude_from_sim no)
 		(at 288.544 90.932 0)
@@ -6274,7 +6273,7 @@
 	)
 	(text "pullups for Master SPI (MSPI) required by\nTN1260: lattice ECP5 sysCONFIG guide section 6"
 		(exclude_from_sim no)
-		(at 214.884 117.348 0)
+		(at 218.186 113.792 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6367,6 +6366,12 @@
 		(uuid "43dc9977-aa42-4f62-8eb0-494baf2032a0")
 	)
 	(junction
+		(at 251.46 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e54743d-7b99-4e6a-9935-d8a8e9e637c6")
+	)
+	(junction
 		(at 177.8 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6402,6 +6407,12 @@
 		(color 0 0 0 0)
 		(uuid "ccecbc7d-ef77-47e4-87e9-5224665f0a16")
 	)
+	(junction
+		(at 190.5 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e41e5080-6669-448f-a22f-e6f05ce5e4fd")
+	)
 	(no_connect
 		(at 57.15 59.69)
 		(uuid "37b7939c-5633-45bb-bafd-cc4d84868ad6")
@@ -6413,10 +6424,6 @@
 	(no_connect
 		(at 57.15 36.83)
 		(uuid "4707bd26-b348-4834-9983-1e3203b4e4ba")
-	)
-	(no_connect
-		(at 57.15 29.21)
-		(uuid "8a9261c8-e229-46a2-914e-169b5a73f602")
 	)
 	(no_connect
 		(at 57.15 52.07)
@@ -6443,16 +6450,6 @@
 			(type default)
 		)
 		(uuid "04a0da82-6285-4477-a7d7-2408b3e5fb86")
-	)
-	(wire
-		(pts
-			(xy 181.61 120.65) (xy 181.61 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "072d11e5-56f2-48d2-8a03-f693e6f1da70")
 	)
 	(wire
 		(pts
@@ -6516,7 +6513,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 119.38) (xy 236.22 124.46)
+			(xy 236.22 121.92) (xy 236.22 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6596,7 +6593,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 21.59) (xy 31.75 21.59)
+			(xy 26.67 21.59) (xy 27.94 21.59)
 		)
 		(stroke
 			(width 0)
@@ -6696,7 +6693,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 58.42) (xy 240.03 58.42)
+			(xy 252.73 58.42) (xy 240.03 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6806,16 +6803,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 121.92) (xy 190.5 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b26574e-f7c1-4b35-8ef2-c86c86af5396")
-	)
-	(wire
-		(pts
 			(xy 156.21 144.78) (xy 158.75 144.78)
 		)
 		(stroke
@@ -6916,7 +6903,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 121.92) (xy 190.5 127)
+			(xy 190.5 120.65) (xy 190.5 127)
 		)
 		(stroke
 			(width 0)
@@ -6926,7 +6913,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 120.65) (xy 177.8 120.65)
+			(xy 177.8 120.65) (xy 190.5 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6996,7 +6983,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 85.09) (xy 248.92 85.09)
+			(xy 252.73 85.09) (xy 248.92 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7056,7 +7043,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 119.38) (xy 236.22 119.38)
+			(xy 236.22 121.92) (xy 251.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7093,6 +7080,16 @@
 			(type default)
 		)
 		(uuid "9a56d917-833a-4140-a8d9-5be104d843e9")
+	)
+	(wire
+		(pts
+			(xy 190.5 120.65) (xy 198.12 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a253c567-38fc-4cdd-853e-109376965a43")
 	)
 	(wire
 		(pts
@@ -7333,6 +7330,16 @@
 			(type default)
 		)
 		(uuid "dc4479e8-112d-4c2f-920a-e0fa7548d6d0")
+	)
+	(wire
+		(pts
+			(xy 57.15 29.21) (xy 62.23 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcf23698-a32f-4cea-b966-374adb113b54")
 	)
 	(wire
 		(pts
@@ -7854,95 +7861,7 @@
 		)
 		(uuid "f5de312c-0cad-40f1-b60c-47f5621377f6")
 	)
-	(global_label "Vcc_IO8"
-		(shape passive)
-		(at 181.61 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "057ba89b-c5e6-42ca-8289-9ea25f18d371")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 190.8621 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc_IO8"
-		(shape passive)
-		(at 259.08 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1a8565a3-32a5-4c70-88bf-372e6322a4e5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.3321 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc_IO8"
-		(shape passive)
-		(at 198.12 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7fd16f01-7034-4dfa-a257-706a67686452")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 207.3721 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc_IO8"
-		(shape passive)
-		(at 255.27 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b4349f9a-c66d-432e-9730-3e8dfbe55325")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.5221 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Vcc_IO8"
+	(global_label "VCORE_3V3"
 		(shape passive)
 		(at 219.71 26.67 180)
 		(fields_autoplaced yes)
@@ -7952,9 +7871,9 @@
 			)
 			(justify right)
 		)
-		(uuid "c129fb98-9fa8-40fe-b183-b5f9fa16bf76")
+		(uuid "7e3ae27c-5e0b-4ec8-b58f-62897928fee3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 210.4579 26.67 0)
+			(at 207.2528 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7964,9 +7883,9 @@
 			)
 		)
 	)
-	(global_label "Vcc_IO8"
+	(global_label "VCORE_3V3"
 		(shape passive)
-		(at 255.27 85.09 0)
+		(at 27.94 21.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7974,9 +7893,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e092e426-3934-4b3b-ba05-1f6facf7d880")
+		(uuid "a7a61c35-27b8-4890-880c-6eb4148063ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.5221 85.09 0)
+			(at 40.3972 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7986,9 +7905,9 @@
 			)
 		)
 	)
-	(global_label "Vcc_IO8"
+	(global_label "VCORE_3V3"
 		(shape passive)
-		(at 241.3 119.38 0)
+		(at 252.73 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7996,9 +7915,9 @@
 			)
 			(justify left)
 		)
-		(uuid "f1ba5704-0d31-4eee-9e13-688b53591e80")
+		(uuid "b0669423-9b55-4bc9-b57c-7b2f5a2fd1b3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.5521 119.38 0)
+			(at 265.1872 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8008,9 +7927,9 @@
 			)
 		)
 	)
-	(global_label "Vcc_IO8"
-		(shape passive)
-		(at 31.75 21.59 0)
+	(global_label "FPGA_USB_RTSn"
+		(shape input)
+		(at 62.23 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8018,9 +7937,75 @@
 			)
 			(justify left)
 		)
-		(uuid "f7ef97b3-f55a-4cfa-8b53-1d5f3d4848d6")
+		(uuid "b184e050-6740-4be7-818a-4807c5cbb413")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.0021 21.59 0)
+			(at 80.2737 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCORE_3V3"
+		(shape passive)
+		(at 198.12 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d80d639b-b88a-470f-8493-25956e8cf221")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.5772 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCORE_3V3"
+		(shape passive)
+		(at 252.73 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e4a22855-9dfc-471a-a472-8884b864d9dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.1872 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCORE_3V3"
+		(shape passive)
+		(at 259.08 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "faaaefcc-ff69-47f1-af08-80e42355a747")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.5372 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8040,7 +8025,7 @@
 		(dnp no)
 		(uuid "02654f3f-e114-43d5-8bd6-258b680851dc")
 		(property "Reference" "IC1"
-			(at 38.1 20.32 0)
+			(at 42.926 21.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8049,7 +8034,7 @@
 			)
 		)
 		(property "Value" "ECP5-BGA256"
-			(at 38.1 22.86 0)
+			(at 40.386 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8057,7 +8042,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BGA256C80P16X16_1400X1400X170"
+		(property "Footprint" "fpga:BGA256C80P16X16_1400X1400X170"
 			(at -44.45 -21.59 0)
 			(effects
 				(font
@@ -8077,7 +8062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FPGA - Field Programmable Gate Array ECP5; 12k LUTs; 1.1V"
+		(property "Description" "FPGA - Field Programmable Gate Array ECP5; 25k LUTs; 1.1V"
 			(at -55.88 -43.18 0)
 			(effects
 				(font
@@ -8097,13 +8082,32 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "LFE5U-12F-6BG256C"
+		(property "Part Number" "LFE5U-25F-6BG256C "
 			(at -54.61 -64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C1521614"
+			(at -54.61 -64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LFE5U-25F-6BG256C "
+			(at 36.83 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -10368,24 +10372,6 @@
 		)
 		(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 190.5 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 190.5 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" ""
-			(at 190.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)

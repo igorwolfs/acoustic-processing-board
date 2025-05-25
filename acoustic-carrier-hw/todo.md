@@ -12,3 +12,7 @@
 - Check whether it's best to put connectors above / below the board to connect to power board
 - Foresee 4 PWM connectors to power board
 - Check which connectors to place below FPGA board to connect to power-board.
+
+# DDR3
+- Add symbol
+- Add footprint
