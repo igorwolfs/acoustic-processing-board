@@ -114,8 +114,6 @@ Strobe for the upper byte (DQ8-15) (group B)
 ### CK / CK#
 - Should (preferably) use the same bank as the bank where the address and config pins.
 
-
-
 # Examples
 
 ## OrangeCrab
@@ -133,9 +131,6 @@ MT41K64M16 – 8 Meg x 16 x 8 banks
 - So this is 8 x 16 Mbits per bank = 128 Mbits per bank.
 - 8 banks
 - So 128 MBytes of RAM
-
-
-
 
 ### Pins
 #### Data pins
