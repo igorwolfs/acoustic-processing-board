@@ -16,3 +16,15 @@
 # DDR3
 - Add symbol
 - Add footprint
+
+# FPGA
+- Issues with 
+	- BGA256
+
+- IC1 has in the units E and G unplaced
+	- Directional pins
+	- Current supply pins
+	- Units
+
+## Bank 0:
+- 
