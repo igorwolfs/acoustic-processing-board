@@ -32,6 +32,10 @@ OK
 - AIN1, REFTS: differential pairs
 - Center tap: vdd/2 OK
 
+## Resistors connecting
+- RJ45 regular connector
+- 
+
 ## TODO
 - Add a low-pass filter at the input
 	- Add a common mode choke like this one in series: https://jlcpcb.com/parts/2nd/Filters/Common_Mode_Filters_3124
