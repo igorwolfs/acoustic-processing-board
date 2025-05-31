@@ -3,8 +3,8 @@ SymbolType BLOCK
 RECTANGLE Normal -80 -72 80 72
 WINDOW 0 0 -72 Bottom 2
 WINDOW 3 0 72 Top 2
-SYMATTR Prefix X
 SYMATTR Value THS4521
+SYMATTR Prefix X
 SYMATTR ModelFile C:\users\iwolfs\Favorites\acoustic-material-characterization\acoustic-carrier-hw\simulations\libs\ths4521_a.lib
 PIN -80 -48 LEFT 8
 PINATTR PinName IN+

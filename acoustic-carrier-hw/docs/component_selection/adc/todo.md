@@ -4,3 +4,6 @@
 - Check how much current the common mode pin requires and how much decoupling it needs
 	- You might have to setup your own buffered common mode voltage
 	
+
+# Issue: THS4521 simulation
+For some reason simulating this element gives a shitty result, not exactly sure what's going on here.
