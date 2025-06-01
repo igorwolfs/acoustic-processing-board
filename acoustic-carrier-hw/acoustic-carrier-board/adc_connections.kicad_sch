@@ -7475,6 +7475,12 @@
 		(color 0 0 0 0)
 		(uuid "eeb643df-206e-4878-88ba-415e0d3f4cd3")
 	)
+	(junction
+		(at 52.07 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1555acc-4c62-4687-99a1-41e96e0e8f9b")
+	)
 	(no_connect
 		(at 143.51 85.09)
 		(uuid "0566fb40-ab1b-4bb4-bca7-e60a1e45b65a")
@@ -7502,16 +7508,6 @@
 			(type default)
 		)
 		(uuid "018b69aa-cb76-4afe-be36-2b5ccbd67dc4")
-	)
-	(wire
-		(pts
-			(xy 46.99 143.51) (xy 46.99 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05381915-d6c7-40d0-b1f5-e90b4b84f39f")
 	)
 	(wire
 		(pts
@@ -7692,6 +7688,16 @@
 			(type default)
 		)
 		(uuid "24ad4b06-29a5-40a8-bc18-ce023fb10897")
+	)
+	(wire
+		(pts
+			(xy 52.07 143.51) (xy 52.07 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b4cce1-335b-4b8d-a932-d4abcd5aaebc")
 	)
 	(wire
 		(pts
@@ -8122,6 +8128,16 @@
 			(type default)
 		)
 		(uuid "62b7f72b-83cf-4254-a3fe-6f8f404534e3")
+	)
+	(wire
+		(pts
+			(xy 52.07 143.51) (xy 46.99 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "662c4a2f-80ca-489d-aaa6-b2b2bdc03377")
 	)
 	(wire
 		(pts
@@ -8655,7 +8671,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 143.51) (xy 46.99 143.51)
+			(xy 59.69 143.51) (xy 52.07 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8782,6 +8798,16 @@
 			(type default)
 		)
 		(uuid "e5ffddb5-270e-49ee-9646-9c09e330191f")
+	)
+	(wire
+		(pts
+			(xy 46.99 143.51) (xy 46.99 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb7b346a-b252-4fa2-a821-e8f877fec602")
 	)
 	(wire
 		(pts
@@ -9023,16 +9049,6 @@
 		)
 		(uuid "47159f45-3ef7-4016-885d-b046bd542602")
 	)
-	(label "ADC_AIN1"
-		(at 30.48 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b3e8581-47b2-4db8-90c9-5569065a0369")
-	)
 	(label "FPGA_ADC_LED2"
 		(at 138.43 62.23 180)
 		(effects
@@ -9074,7 +9090,7 @@
 		(uuid "69d39959-646c-44bf-9757-1280d0ed8c50")
 	)
 	(label "ADC_REFTS"
-		(at 50.8 143.51 0)
+		(at 59.69 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9232,16 +9248,6 @@
 			(justify right bottom)
 		)
 		(uuid "bbff5bda-c36d-4a69-9ca9-dc0bec05ea4f")
-	)
-	(label "ADC_VDDA_2"
-		(at 62.23 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c6c60fc8-45e1-40d0-bee1-5c50d7c4031e")
 	)
 	(label "FPGA_ADC_D3"
 		(at 82.55 68.58 0)
@@ -9585,6 +9591,28 @@
 			)
 		)
 	)
+	(global_label "ADC_AIN-"
+		(shape input)
+		(at 52.07 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5e5f797-36d3-4a87-8417-1b0e89afa535")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.2477 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FPGA_PWM_0"
 		(shape input)
 		(at 149.86 179.07 90)
@@ -9647,6 +9675,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADC_AINP"
+		(shape input)
+		(at 30.48 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c479901e-dc05-4f69-89b8-fede403b032c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.6047 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
