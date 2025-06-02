@@ -55,7 +55,7 @@ power_pins = df[condition_POWER_PINS]
 # print(power_pins)
 
 #### SELECT ONLY BANK 
-print(f"BANK: 3")
-df_bank1 = df[df['bank'] == '3']
+print(f"BANK: 2")
+df_bank1 = df[df['bank'] == '2']
 
 print(df_bank1)
