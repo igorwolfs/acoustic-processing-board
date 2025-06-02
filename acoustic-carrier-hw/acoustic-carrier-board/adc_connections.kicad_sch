@@ -7207,7 +7207,7 @@
 	)
 	(text "ADC"
 		(exclude_from_sim no)
-		(at 40.132 19.812 0)
+		(at 20.066 19.05 0)
 		(effects
 			(font
 				(size 2 2)
@@ -7303,7 +7303,7 @@
 	)
 	(text "FPGA BANK"
 		(exclude_from_sim no)
-		(at 154.432 21.59 0)
+		(at 150.368 19.558 0)
 		(effects
 			(font
 				(size 2 2)
@@ -7320,16 +7320,16 @@
 		(uuid "03244f0c-1f20-448d-a651-074e1fb96fe6")
 	)
 	(junction
-		(at 41.91 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05f7c57b-ea19-443d-aeab-e41466c047b4")
-	)
-	(junction
 		(at 44.45 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "072f8872-8d6c-44b2-a792-f7a3b2514a74")
+	)
+	(junction
+		(at 41.91 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17f0ecd1-0799-4bb7-bb7b-519afcb97c7d")
 	)
 	(junction
 		(at 116.84 161.29)
@@ -7408,12 +7408,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b99b50c-40c9-4365-9814-4d6eb050234e")
-	)
-	(junction
-		(at 86.36 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a16d6985-525f-4ad9-9b7e-d5f972db77b6")
 	)
 	(junction
 		(at 74.93 38.1)
@@ -7499,6 +7493,12 @@
 		(color 0 0 0 0)
 		(uuid "eeb643df-206e-4878-88ba-415e0d3f4cd3")
 	)
+	(junction
+		(at 85.09 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f278c843-fb95-4558-9942-04231ad0e255")
+	)
 	(no_connect
 		(at 163.83 87.63)
 		(uuid "0ace3475-28d0-4362-a5da-313c8d819bd3")
@@ -7535,7 +7535,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 38.1) (xy 86.36 52.07)
+			(xy 85.09 38.1) (xy 85.09 52.07)
 		)
 		(stroke
 			(width 0)
@@ -7592,16 +7592,6 @@
 			(type default)
 		)
 		(uuid "153e15e1-e646-47e9-8f09-a341a5567910")
-	)
-	(wire
-		(pts
-			(xy 41.91 87.63) (xy 63.5 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15b16379-be03-40f9-9c43-8f89bd9fb59b")
 	)
 	(wire
 		(pts
@@ -7765,16 +7755,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 85.09) (xy 41.91 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dde3371-9b31-46da-b676-c9455b1f5dd5")
-	)
-	(wire
-		(pts
 			(xy 158.75 52.07) (xy 163.83 52.07)
 		)
 		(stroke
@@ -7835,7 +7815,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 38.1) (xy 80.01 38.1)
+			(xy 74.93 38.1) (xy 77.47 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7905,7 +7885,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 97.79) (xy 85.09 101.6)
+			(xy 85.09 97.79) (xy 85.09 100.33)
 		)
 		(stroke
 			(width 0)
@@ -8115,7 +8095,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 143.51) (xy 59.69 143.51)
+			(xy 46.99 143.51) (xy 52.07 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8132,16 +8112,6 @@
 			(type default)
 		)
 		(uuid "6b1fd5d4-18ec-4b9b-b600-d9ccd26ad0d3")
-	)
-	(wire
-		(pts
-			(xy 41.91 87.63) (xy 41.91 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "703d2d46-4547-46cc-84fc-33edcd0b11fe")
 	)
 	(wire
 		(pts
@@ -8185,6 +8155,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 38.1) (xy 90.17 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d12108f-1609-4375-9202-8088ebdda9c9")
+	)
+	(wire
+		(pts
 			(xy 158.75 31.75) (xy 163.83 31.75)
 		)
 		(stroke
@@ -8212,6 +8192,16 @@
 			(type default)
 		)
 		(uuid "81241ebf-5ad4-4069-a701-dbfaf4690a11")
+	)
+	(wire
+		(pts
+			(xy 41.91 87.63) (xy 41.91 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81f38c63-3ad7-4e3c-aea3-d064e01301c8")
 	)
 	(wire
 		(pts
@@ -8445,16 +8435,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 38.1) (xy 90.17 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad15de8c-1319-4342-aa70-f9090845cac8")
-	)
-	(wire
-		(pts
 			(xy 78.74 185.42) (xy 80.01 185.42)
 		)
 		(stroke
@@ -8595,16 +8575,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 52.07) (xy 85.09 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c55efb6f-bfb1-4970-bfe3-9b68504da961")
-	)
-	(wire
-		(pts
 			(xy 95.25 38.1) (xy 95.25 39.37)
 		)
 		(stroke
@@ -8612,6 +8582,16 @@
 			(type default)
 		)
 		(uuid "c5f8e87a-e9ab-4fb5-8bb5-62ac3a44d28b")
+	)
+	(wire
+		(pts
+			(xy 41.91 85.09) (xy 41.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c66badd2-6102-4317-a9d5-f2c5280bae1c")
 	)
 	(wire
 		(pts
@@ -8815,7 +8795,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 38.1) (xy 86.36 38.1)
+			(xy 82.55 38.1) (xy 85.09 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8845,6 +8825,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 87.63) (xy 41.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1675109-4910-48d0-b7fe-206d7276ba14")
+	)
+	(wire
+		(pts
 			(xy 40.64 68.58) (xy 43.18 68.58)
 		)
 		(stroke
@@ -8862,6 +8852,16 @@
 			(type default)
 		)
 		(uuid "f42f0218-1643-453d-8732-a96c8ad76ea3")
+	)
+	(wire
+		(pts
+			(xy 59.69 87.63) (xy 63.5 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4cf9872-1521-4aa9-bc0c-607f52e5f662")
 	)
 	(wire
 		(pts
@@ -9064,7 +9064,7 @@
 		(uuid "69d39959-646c-44bf-9757-1280d0ed8c50")
 	)
 	(label "ADC_REFTS"
-		(at 59.69 143.51 0)
+		(at 52.07 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9323,7 +9323,29 @@
 		)
 		(uuid "fe5b4c64-60c0-4f30-bf90-54a0baedf647")
 	)
-	(global_label "SEPIC_10V_EN"
+	(global_label "ADC_IN12_SW"
+		(shape output)
+		(at 158.75 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "192ac0ab-c9d9-484a-8c60-a6cbd05540de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.1858 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SIG_S10V_EN"
 		(shape input)
 		(at 116.84 148.59 90)
 		(fields_autoplaced yes)
@@ -9335,7 +9357,7 @@
 		)
 		(uuid "2118acf7-7dbd-4de7-876d-c5fe333126ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.84 132.1792 90)
+			(at 116.84 133.3887 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9367,29 +9389,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_IN12_SW"
-		(shape output)
-		(at 158.75 85.09 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "360bd771-6f79-4778-ba7c-bf4eddc5a453")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.0972 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "FPGA_PWM_1"
+	(global_label "SIG_PWM1"
 		(shape output)
 		(at 158.75 72.39 180)
 		(fields_autoplaced yes)
@@ -9401,7 +9401,7 @@
 		)
 		(uuid "398328a0-79bc-4bd6-9d4b-d6324bf6729f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.7301 72.39 0)
+			(at 146.3306 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9411,7 +9411,7 @@
 			)
 		)
 	)
-	(global_label "T_SDA"
+	(global_label "SIG_T_SDA"
 		(shape output)
 		(at 158.75 82.55 180)
 		(fields_autoplaced yes)
@@ -9423,7 +9423,7 @@
 		)
 		(uuid "3b45d45b-4cd7-4e8d-ad8b-ddc78f339b92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.2615 82.55 0)
+			(at 146.2096 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9433,7 +9433,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_0"
+	(global_label "SIG_PWM0"
 		(shape output)
 		(at 158.75 69.85 180)
 		(fields_autoplaced yes)
@@ -9445,7 +9445,7 @@
 		)
 		(uuid "3d821cae-a55a-4cbd-a6f5-d98f181208a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.7301 69.85 0)
+			(at 146.3306 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9455,7 +9455,7 @@
 			)
 		)
 	)
-	(global_label "T_SCL"
+	(global_label "SIG_T_SCL"
 		(shape output)
 		(at 158.75 80.01 180)
 		(fields_autoplaced yes)
@@ -9467,7 +9467,7 @@
 		)
 		(uuid "4e193d33-6cbf-4970-94fb-d918d5f0246f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.322 80.01 0)
+			(at 146.2701 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9477,7 +9477,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_2"
+	(global_label "SIG_PWM2"
 		(shape output)
 		(at 158.75 74.93 180)
 		(fields_autoplaced yes)
@@ -9489,7 +9489,7 @@
 		)
 		(uuid "71e2a88d-379a-4a82-87b9-bcfaf8a7556c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.7301 74.93 0)
+			(at 146.3306 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9499,7 +9499,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_1"
+	(global_label "SIG_PWM1"
 		(shape input)
 		(at 124.46 148.59 90)
 		(fields_autoplaced yes)
@@ -9511,7 +9511,7 @@
 		)
 		(uuid "7cfc5173-c776-49cb-a9d6-e5b81454e3bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.46 133.5701 90)
+			(at 124.46 136.1706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9521,7 +9521,7 @@
 			)
 		)
 	)
-	(global_label "BOOST_40V_EN"
+	(global_label "SIG_B40V_EN"
 		(shape output)
 		(at 158.75 67.31 180)
 		(fields_autoplaced yes)
@@ -9533,7 +9533,7 @@
 		)
 		(uuid "850fda60-15a7-4b94-8aff-72a2985e48a3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.7344 67.31 0)
+			(at 143.4882 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9565,7 +9565,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_3"
+	(global_label "SIG_PWM3"
 		(shape input)
 		(at 119.38 148.59 90)
 		(fields_autoplaced yes)
@@ -9577,7 +9577,7 @@
 		)
 		(uuid "98a13e4a-b81a-4e5f-9554-83310ca9d020")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.38 133.5701 90)
+			(at 119.38 136.1706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9587,7 +9587,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_ADC_LED1"
+	(global_label "FPGA_LED1"
 		(shape output)
 		(at 158.75 59.69 180)
 		(fields_autoplaced yes)
@@ -9599,7 +9599,7 @@
 		)
 		(uuid "a2069c24-f12a-4c2b-9f16-48d80d696381")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.8272 59.69 0)
+			(at 145.4234 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9631,7 +9631,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_ADC_LED0"
+	(global_label "FPGA_LED0"
 		(shape output)
 		(at 158.75 62.23 180)
 		(fields_autoplaced yes)
@@ -9643,7 +9643,7 @@
 		)
 		(uuid "adf8db65-dff1-4a8d-8fa0-8ab277ea9be8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.8272 62.23 0)
+			(at 145.4234 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9653,7 +9653,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_0"
+	(global_label "SIG_PWM0"
 		(shape input)
 		(at 127 148.59 90)
 		(fields_autoplaced yes)
@@ -9665,7 +9665,7 @@
 		)
 		(uuid "b1851779-b8d1-410a-8fcc-04a459bf5e15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127 133.5701 90)
+			(at 127 136.1706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,7 +9675,7 @@
 			)
 		)
 	)
-	(global_label "T_SCL"
+	(global_label "SIG_T_SCL"
 		(shape input)
 		(at 111.76 146.05 90)
 		(fields_autoplaced yes)
@@ -9687,7 +9687,7 @@
 		)
 		(uuid "b74d920c-f6de-43cd-ad7a-216c7e1c91ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 137.622 90)
+			(at 111.76 133.5701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9697,7 +9697,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_2"
+	(global_label "SIG_PWM2"
 		(shape input)
 		(at 121.92 148.59 90)
 		(fields_autoplaced yes)
@@ -9709,7 +9709,7 @@
 		)
 		(uuid "c12bf5ce-a3cf-4341-a5af-77dbe2bc8a13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.92 133.5701 90)
+			(at 121.92 136.1706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9741,7 +9741,7 @@
 			)
 		)
 	)
-	(global_label "T_SDA"
+	(global_label "SIG_T_SDA"
 		(shape input)
 		(at 109.22 146.05 90)
 		(fields_autoplaced yes)
@@ -9753,7 +9753,7 @@
 		)
 		(uuid "e0938aa5-426e-42a6-9ac9-df987620f78f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.22 137.5615 90)
+			(at 109.22 133.5096 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9763,7 +9763,7 @@
 			)
 		)
 	)
-	(global_label "BOOST_40V_EN"
+	(global_label "SIG_B40V_EN"
 		(shape input)
 		(at 114.3 148.59 90)
 		(fields_autoplaced yes)
@@ -9775,7 +9775,7 @@
 		)
 		(uuid "e203dd66-91bb-4af5-bd15-4170be768a88")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3 131.5744 90)
+			(at 114.3 133.3282 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9785,7 +9785,7 @@
 			)
 		)
 	)
-	(global_label "SEPIC_10V_EN"
+	(global_label "SIG_S10V_EN"
 		(shape output)
 		(at 158.75 64.77 180)
 		(fields_autoplaced yes)
@@ -9797,7 +9797,7 @@
 		)
 		(uuid "eb116561-ed03-4e87-99b2-08968ff51c3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.3392 64.77 0)
+			(at 143.5487 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9807,7 +9807,7 @@
 			)
 		)
 	)
-	(global_label "FPGA_PWM_3"
+	(global_label "SIG_PWM3"
 		(shape output)
 		(at 158.75 77.47 180)
 		(fields_autoplaced yes)
@@ -9819,7 +9819,7 @@
 		)
 		(uuid "f731ff3a-3dcb-4411-8689-851d811fe49c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.7301 77.47 0)
+			(at 146.3306 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9913,7 +9913,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 115.824 179.832 0)
+			(at 115.57 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10017,7 +10017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
 			(at 95.25 41.91 0)
 			(effects
 				(font
@@ -10026,25 +10026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" ""
+		(property "Description" "X7R"
 			(at 95.25 41.91 0)
 			(effects
 				(font
@@ -10063,42 +10045,6 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SN-DK" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
 			(at 95.25 41.91 0)
 			(effects
 				(font
@@ -10471,6 +10417,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 57.15 87.63 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1da6e396-1db9-42fa-a62e-2f6e2779cce1")
+		(property "Reference" "R79"
+			(at 55.88 86.36 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 52.324 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 57.15 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720"
+			(at 57.15 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 57.15 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C21189"
+			(at 57.15 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF0000T5E"
+			(at 57.15 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e937441a-27df-4fb0-a837-665c93b2357b")
+		)
+		(pin "2"
+			(uuid "6e1d0df1-9ba2-456b-9f22-abd7f80076c9")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
+					(reference "R79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 107.95 99.06 90)
 		(unit 1)
@@ -10826,7 +10858,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 101.6 0)
+		(at 85.09 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10834,7 +10866,7 @@
 		(dnp no)
 		(uuid "26023187-a1d0-4386-9246-4bb834211b94")
 		(property "Reference" "#PWR0112"
-			(at 85.09 107.95 0)
+			(at 85.09 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10843,7 +10875,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.106 101.854 0)
+			(at 87.63 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10852,7 +10884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 101.6 0)
+			(at 85.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10861,7 +10893,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 101.6 0)
+			(at 85.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10870,7 +10902,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 101.6 0)
+			(at 85.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11567,25 +11599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" ""
+		(property "Description" "X7R"
 			(at 63.5 41.91 0)
 			(effects
 				(font
@@ -11604,42 +11618,6 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" ""
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SN-DK" ""
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" ""
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
 			(at 63.5 41.91 0)
 			(effects
 				(font
@@ -11774,7 +11752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Check availability (waiting for new lead time)"
+		(property "Description" ""
 			(at 80.01 71.12 0)
 			(effects
 				(font
@@ -11997,7 +11975,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 82.55 38.1 270)
+		(at 80.01 38.1 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12006,7 +11984,7 @@
 		(dnp no)
 		(uuid "8ac03557-b46c-437c-a8b3-2eaea31ea3e1")
 		(property "Reference" "L8"
-			(at 82.55 34.29 90)
+			(at 80.01 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12014,7 +11992,7 @@
 			)
 		)
 		(property "Value" "100@100MHz"
-			(at 82.55 31.496 90)
+			(at 79.756 36.322 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12022,7 +12000,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 82.55 38.1 0)
+			(at 80.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12030,8 +12008,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 82.55 38.1 0)
+		(property "Datasheet" "https://evelta.com/content/datasheets/212-Ferrite-2012.pdf?srsltid=AfmBOooIaIBTDyAN72yrZoxwkUca105kmrozh_WidW95l5Oggr1J46Nq"
+			(at 80.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12040,7 +12018,7 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
-			(at 82.55 38.1 0)
+			(at 80.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12049,7 +12027,7 @@
 			)
 		)
 		(property "LPN" "C1015"
-			(at 82.55 38.1 90)
+			(at 80.01 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12058,43 +12036,7 @@
 			)
 		)
 		(property "MPN" "GZ2012D101TF"
-			(at 82.55 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" ""
-			(at 82.55 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SN-DK" ""
-			(at 82.55 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" ""
-			(at 82.55 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 82.55 38.1 90)
+			(at 80.01 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12250,25 +12192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" ""
+		(property "Description" "X5R"
 			(at 68.58 41.91 0)
 			(effects
 				(font
@@ -12287,42 +12211,6 @@
 			)
 		)
 		(property "MPN" "CL10A106KP8NNNC"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" ""
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SN-DK" ""
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" ""
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
 			(at 68.58 41.91 0)
 			(effects
 				(font
@@ -13552,25 +13440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" ""
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturing Part Number" ""
+		(property "Description" "X5R"
 			(at 90.17 41.91 0)
 			(effects
 				(font
@@ -13589,42 +13459,6 @@
 			)
 		)
 		(property "MPN" "CL10A106KP8NNNC"
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" ""
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SN-DK" ""
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" ""
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
 			(at 90.17 41.91 0)
 			(effects
 				(font
@@ -14452,7 +14286,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 121.158 181.864 0)
+			(at 122.428 174.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
