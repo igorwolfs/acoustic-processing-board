@@ -54,7 +54,8 @@ power_pins = df[condition_POWER_PINS]
 # condition = df['pin/ball_function'].str.contains('VCC', case=False, na=False, regex=False) | df['pin/ball_function'].str.contains('VSS', case=False, na=False, regex=False)
 # print(power_pins)
 
-#### SELECT ONLY BANK 1
-df_bank1 = df[df['bank'] == '0']
+#### SELECT ONLY BANK 
+print(f"BANK: 3")
+df_bank1 = df[df['bank'] == '3']
 
 print(df_bank1)
