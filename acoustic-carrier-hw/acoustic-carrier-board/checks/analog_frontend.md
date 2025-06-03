@@ -103,3 +103,30 @@ NC3: Connected to test-connectors
 
 - Low harmonic distortion
 - Low crosstalk
+
+### Footprint
+- ok
+
+
+## ADC Input Buffer
+### Pins / Components
+- Simulated completely in Tina-TI
+	- Nice band-pass characteristic
+	- Schematic simply copied
+	- Added testpoints right after switch
+- Decoupling: 10 uF, 100nF, 10nF OK
+- PDn: should be high so NOT power down
+- Vocm: should be set to 1.65 V with a 0.1 uF decoupling capacitor -> chose 220 nF OK (X7R)
+
+### Footprint
+- Layout: ok
+- Pins: ok
+
+## Testpoints U.FL.
+- Component: OK
+### Footprint
+- Layout: ok
+- Pin1: coax source (also in pin number)
+- Pin2: shield (alson in pin number)
+
+So OK!
