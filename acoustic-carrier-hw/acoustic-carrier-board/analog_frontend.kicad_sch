@@ -3376,7 +3376,7 @@
 		)
 		(uuid "1657207f-ce6c-4dc8-a4a0-9741a372ee8b")
 	)
-	(text "VOCM buffering\n- Reducing source impedance of resistive divider\n- buffer configuration for OPAMP to drive COMP pin\n	- Damping resistor added at output due to big capacitive load\n- Maximum output current: 5-40 mA\n	- Maximum current: 1.6 V / 75 ohms = 21.33 mA\nDifferential mode biasing\n- 10 kOhm, 0.80 uA input bias for ths4521 -> 10e3 * 0.80e-6 = 8 mV offset at worst"
+	(text "VOCM buffering\n- Reducing source impedance of resistive divider\n- buffer configuration for OPAMP to drive COMP pin\n	- Damping resistor added at output due to big capacitive load\n- Maximum output current: 5-40 mA\n	- Maximum current: 1.6 V / 75 ohms = 21.33 mA\nDifferential mode biasing\n- 10 kOhm, 0.80 uA input bias for ths4521 -> 10e3 * 0.80e-6 = 8 mV offset at worst\nUse LMV321\n- Higher current than precision amplifier (biasing current requirement + THS4521 input"
 		(exclude_from_sim no)
 		(at 181.864 125.73 0)
 		(effects
@@ -8605,6 +8605,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:LMV321")
+		(at 151.13 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75fab0ab-0501-4205-9f53-b047fc7670e7")
+		(property "Reference" "U12"
+			(at 161.29 134.5498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV321"
+			(at 161.29 137.0898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 151.13 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
+			(at 151.13 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
+			(at 151.13 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C7972"
+			(at 151.13 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LMV321IDBVR"
+			(at 151.13 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aebd2a89-daf1-401f-8cf7-2f82a7929d27")
+		)
+		(pin "3"
+			(uuid "9d93dc46-1421-4a42-b879-a34e8b8ce184")
+		)
+		(pin "1"
+			(uuid "663f71ea-1cbf-4b27-a23e-a2b27d11cf75")
+		)
+		(pin "5"
+			(uuid "a4accef8-a920-4329-881d-014d274f050d")
+		)
+		(pin "4"
+			(uuid "2bd81bd4-2879-419c-aaf7-6214cc1bafd2")
+		)
+		(instances
+			(project ""
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/2e3c577d-8737-43a3-b422-36e75ce65de9"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 44.45 96.52 90)
 		(unit 1)
@@ -9320,103 +9416,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/2e3c577d-8737-43a3-b422-36e75ce65de9"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LMV321")
-		(at 151.13 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a052a9a-fb30-41f3-b426-f50e71f89034")
-		(property "Reference" "U5"
-			(at 151.638 141.478 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LMV321"
-			(at 144.78 140.716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 151.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
-			(at 151.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
-			(at 151.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C7972"
-			(at 151.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "LMV321IDBVR"
-			(at 151.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c53af749-687b-44cb-87d7-3bfe74947977")
-		)
-		(pin "4"
-			(uuid "fb459a63-392d-47c2-9815-aebd81336d80")
-		)
-		(pin "3"
-			(uuid "8cbcb0c2-489e-4417-8178-ced406a3dfa9")
-		)
-		(pin "1"
-			(uuid "dde328b0-6f50-4c71-9a7c-6d868410e95c")
-		)
-		(pin "5"
-			(uuid "a199e38f-63ff-4ffb-8967-d837619d64d0")
-		)
-		(instances
-			(project ""
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/2e3c577d-8737-43a3-b422-36e75ce65de9"
-					(reference "U5")
 					(unit 1)
 				)
 			)
