@@ -66,12 +66,45 @@ Tina-TI simulation: looks great
 
 -> Use this instead of the resistive divider, it provides a stable output for DDR3L and its reference.
 
-### DDR3 examples
-- Butterstick
-- Logicbone
-- Trellisboard
-- ulx3s
-- lit3rck
-- pic0rick
-- multi-channel-oscilloscope
-- VNA
+### ACTUAL CHOICE OPA376xxDBV
+- Simulated using tina-ti: works
+- Input voltage: 5 V
+- Reference input 1.35 / 2
+
+#### Footprint
+- SOT-23-5
+- Pins: ok
+- Package: ok
+- Damping resistor: ok
+
+## Core supply
+
+Simulation shows stable output voltage
+### Output Bulk
+- 3x10 uF pin
+- 1x1 uF
+- 1x4.7 uF
+- 47 uF
+
+### Vcore decoupling
+- 2x0.470 nF
+- 11x0.1 uF
+- 2x10uF
+
+### VBUS USB
+- 0 ohm resistor
+- Shottky diode: can carry 5 Amps
+### Shottky diode
+- Vdrop: 0.55 V
+#### Footprint
+ok
+
+#### Pins 
+- 1: kathode
+- 2: anode
+
+
+### Connector
+
+- Footprint looks ok
+- Female
