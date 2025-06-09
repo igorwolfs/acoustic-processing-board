@@ -26,3 +26,5 @@ in 3.3 V mode
 - VOH: Vcc - 0.6 V - Vcc
 
 vds
+
+# USB3300-EZK
