@@ -14550,7 +14550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "fpga:L_Changjiang_FNR4018S"
+		(property "Footprint" "iw-inductor:L_Changjiang_FNR4018S"
 			(at 57.15 135.89 0)
 			(effects
 				(font
@@ -15020,91 +15020,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 53.34 33.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ce72a2a-7f56-45fe-b8bf-63a23d9a3008")
-		(property "Reference" "L7"
-			(at 53.34 28.4288 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2uH"
-			(at 53.34 30.7275 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "fpga:L_Changjiang_FNR4018S"
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.2A, +-20%, 0.05 Rdc"
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C28642347"
-			(at 53.34 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NR4018S2R2MT"
-			(at 53.34 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29a51ab1-1cfa-4c1f-a565-bd89e8955425")
-		)
-		(pin "2"
-			(uuid "1d66248e-fa6e-4045-b7cb-fdf676f047b0")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
-					(reference "L7")
 					(unit 1)
 				)
 			)
@@ -16080,6 +15995,91 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 57.15 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4746d39b-14ec-47f8-8796-7b2aa8695783")
+		(property "Reference" "L2"
+			(at 57.15 81.7688 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 57.15 84.0675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "iw-inductor:L_Changjiang_FNR4018S"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.2A, +-20%, 0.05 Rdc"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C28642347"
+			(at 57.15 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NR4018S2R2MT"
+			(at 57.15 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a73e5ba4-4282-4bde-82fb-29a9474b9104")
+		)
+		(pin "2"
+			(uuid "8889bed0-dadf-4794-a923-04b257344229")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -17769,6 +17769,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Small")
+		(at 53.34 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "610ca807-6177-49e9-bcbb-182f77619ca4")
+		(property "Reference" "L3"
+			(at 53.34 179.5588 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 53.34 181.8575 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "iw-inductor:L_Changjiang_FNR4018S"
+			(at 53.34 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
+			(at 53.34 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.2A, +-20%, 0.05 Rdc"
+			(at 53.34 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C28642347"
+			(at 53.34 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NR4018S2R2MT"
+			(at 53.34 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd863e0e-435e-4afe-a473-6e74d85cd9f9")
+		)
+		(pin "2"
+			(uuid "4afe2ffe-8d64-4ac9-9e5d-c463a4ddec74")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x08_Odd_Even")
 		(at 387.35 68.58 0)
 		(unit 1)
@@ -18048,91 +18133,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 53.34 184.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6451a5cf-946b-4971-b4f8-dffa1b3c6d7d")
-		(property "Reference" "L13"
-			(at 53.34 179.5588 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2uH"
-			(at 53.34 181.8575 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "fpga:L_Changjiang_FNR4018S"
-			(at 53.34 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
-			(at 53.34 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.2A, +-20%, 0.05 Rdc"
-			(at 53.34 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C28642347"
-			(at 53.34 184.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NR4018S2R2MT"
-			(at 53.34 184.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c97fc7fb-f810-488e-a4ea-64cd0375a8a0")
-		)
-		(pin "2"
-			(uuid "bd66e1e0-4427-4ecc-8f7b-a2b665da8093")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
-					(reference "L13")
 					(unit 1)
 				)
 			)
@@ -23801,6 +23801,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Small")
+		(at 53.34 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e583eff0-4db2-410e-8ff1-65cf239d28af")
+		(property "Reference" "L7"
+			(at 53.34 28.4288 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 53.34 30.7275 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "iw-inductor:L_Changjiang_FNR4018S"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.2A, +-20%, 0.05 Rdc"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C28642347"
+			(at 53.34 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NR4018S2R2MT"
+			(at 53.34 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e7ab53a-ec08-4717-aee0-7e8ac26db6d0")
+		)
+		(pin "2"
+			(uuid "ec558d80-1800-4844-adc1-62bf3276b218")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "L7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 91.44 33.02 90)
 		(unit 1)
@@ -24655,91 +24740,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "#FLG06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 57.15 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fe71b2e6-a554-4344-aa91-466ec3c6056b")
-		(property "Reference" "L2"
-			(at 57.15 81.7688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2uH"
-			(at 57.15 84.0675 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "fpga:L_Changjiang_FNR4018S"
-			(at 57.15 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603363847160020992"
-			(at 57.15 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.2A, +-20%, 0.05 Rdc"
-			(at 57.15 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C28642347"
-			(at 57.15 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NR4018S2R2MT"
-			(at 57.15 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d59e8d3-17b2-47dc-a067-c5f9b7b5beba")
-		)
-		(pin "2"
-			(uuid "da30d223-0496-4921-82ee-4cb8eb5d5e1c")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
-					(reference "L2")
 					(unit 1)
 				)
 			)
