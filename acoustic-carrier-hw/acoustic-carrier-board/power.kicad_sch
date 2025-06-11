@@ -8862,6 +8862,12 @@
 		(uuid "918a6cb2-34ed-4935-bea2-20fd6ae7c679")
 	)
 	(junction
+		(at 198.12 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "959f2ccf-8674-401b-93c4-50df6129c9ac")
+	)
+	(junction
 		(at 148.59 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9142,6 +9148,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6e95ba7-38a2-4a4b-a051-b756db02cefb")
+	)
+	(junction
+		(at 153.67 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7755eb2-ee83-41d0-b74c-14f2febb86ee")
 	)
 	(junction
 		(at 273.05 220.98)
@@ -9813,6 +9825,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 72.39) (xy 165.1 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24739902-203d-4ae4-b757-4207c9c3fa77")
+	)
+	(wire
+		(pts
 			(xy 128.27 212.09) (xy 128.27 214.63)
 		)
 		(stroke
@@ -9963,7 +9985,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 43.18) (xy 200.66 43.18)
+			(xy 195.58 43.18) (xy 198.12 43.18)
 		)
 		(stroke
 			(width 0)
@@ -11150,6 +11172,16 @@
 			(type default)
 		)
 		(uuid "866508b5-303d-4f24-a426-c693710b6625")
+	)
+	(wire
+		(pts
+			(xy 198.12 43.18) (xy 200.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86693383-8ae9-4417-a43e-88947ff24df6")
 	)
 	(wire
 		(pts
@@ -12883,7 +12915,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 72.39) (xy 165.1 72.39)
+			(xy 139.7 72.39) (xy 153.67 72.39)
 		)
 		(stroke
 			(width 0)
@@ -17937,6 +17969,71 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
+		(at 153.67 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5232a5e3-86e2-4b25-87d2-97072f54de85")
+		(property "Reference" "#FLG021"
+			(at 153.67 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 149.86 68.072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7df54610-f9c8-4744-88e6-66c3d72061e1")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "#FLG021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
 		(at 102.87 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19378,6 +19475,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 198.12 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "681fbe2e-9d3a-41a7-9507-a104fe0313f8")
+		(property "Reference" "#FLG014"
+			(at 198.12 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 194.31 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f367ed8e-1fe9-43bc-9fba-d7ec306c8d77")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "#FLG014")
 					(unit 1)
 				)
 			)
@@ -23910,7 +24072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 201.93 80.01 0)
 			(effects
 				(font
