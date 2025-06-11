@@ -108,3 +108,17 @@ ok
 
 - Footprint looks ok
 - Female
+
+
+# Checking decoupling with Hardware checklist
+- 3.1. Recommended Power Filtering Groups and Components
+
+## VCC
+- VCC 10 µF x 3 + 100 nF per pin
+	- DONE
+
+## VCC_AUX
+- VCCAUX 120 Ω FB + 10 µF + 100 nF per pin Auxiliary power supply 
+	- DONE (22 uF + 4.7 uF instead of 10 uF)
+	- 0.1 uF per pin
+

@@ -5416,7 +5416,7 @@
 	)
 	(text "RECOMMENDED:\n- min 100 nF per pin\n- 1 uF for extra decoupling\n- Extra 22 uF due to ferrite"
 		(exclude_from_sim no)
-		(at 92.71 109.22 0)
+		(at 91.694 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5569,6 +5569,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "834bf344-9706-4003-9144-b0b11f8960f6")
+	)
+	(junction
+		(at 170.18 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86703fdd-785e-45aa-97d9-150eaa6810b4")
+	)
+	(junction
+		(at 163.83 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89dd75d5-90c8-4ff5-99f4-a8269110ba97")
 	)
 	(junction
 		(at 138.43 60.96)
@@ -5850,7 +5862,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 68.58) (xy 157.48 68.58)
+			(xy 157.48 68.58) (xy 163.83 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6030,6 +6042,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 60.96) (xy 176.53 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4580b86c-f956-49b7-a633-3258930f5ec7")
+	)
+	(wire
+		(pts
 			(xy 214.63 88.9) (xy 214.63 91.44)
 		)
 		(stroke
@@ -6060,7 +6082,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 60.96) (xy 176.53 60.96)
+			(xy 163.83 60.96) (xy 170.18 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6230,6 +6252,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 60.96) (xy 170.18 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96b227a2-4ea7-4e7a-9ee2-a66983651816")
+	)
+	(wire
+		(pts
 			(xy 158.75 125.73) (xy 158.75 124.46)
 		)
 		(stroke
@@ -6267,6 +6299,16 @@
 			(type default)
 		)
 		(uuid "9cda8f91-5730-4a78-995a-9bb002813043")
+	)
+	(wire
+		(pts
+			(xy 170.18 67.31) (xy 170.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e84ef46-528b-45c7-a41b-e4a9af15d34d")
 	)
 	(wire
 		(pts
@@ -6367,6 +6409,16 @@
 			(type default)
 		)
 		(uuid "ad53e4b1-f200-4098-9651-838051f2edba")
+	)
+	(wire
+		(pts
+			(xy 163.83 68.58) (xy 170.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d33383-fc1c-42aa-b342-5ae1d929038b")
 	)
 	(wire
 		(pts
@@ -9346,6 +9398,129 @@
 			(project ""
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
 					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5e6bd10-dc4f-4b41-a988-0f55eb3db4cf")
+		(property "Reference" "C54"
+			(at 164.592 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 170.434 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "X5R, 10V"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C19702"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ""
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SN-DK" ""
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0c25c18a-f4c7-4eda-abc8-7126a124a6cc")
+		)
+		(pin "1"
+			(uuid "6dde3db4-d65c-40dd-bc43-28b2cf21e4a1")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/aad6bec2-3cac-4ef0-abf0-8e1f80301155"
+					(reference "C54")
 					(unit 1)
 				)
 			)

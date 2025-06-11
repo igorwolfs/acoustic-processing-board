@@ -17,6 +17,17 @@
 		)
 		(uuid e55cf712-d404-4fe9-b0dd-6f9ffb4f69b8)
 	)
+	(text "GENERAL FPGA NOTES"
+		(exclude_from_sim no)
+		(at 103.886 -9.652 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "37bbccb5-68b1-4cbf-811e-00b9d04d21be")
+	)
 	(text "ECP5U-25F-FPGA"
 		(exclude_from_sim no)
 		(at 143.256 35.56 0)
@@ -28,6 +39,39 @@
 			)
 		)
 		(uuid "5ed746f4-8846-46ed-8fc1-4cb08fcfbd1c")
+	)
+	(text "POWER RECOMMENDATIONS\n- Check 3.1 TN-02038 for filtering and decoupling\n- Used banks: extra decoupling capacitance"
+		(exclude_from_sim no)
+		(at 104.394 -1.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a1535c8-db71-4835-918d-647222fa8a3e")
+	)
+	(text "CONNECTORS\n- Connectors bound to a peripheral are kept in the same schematic\n- Connectors indifferent to FPGA bank are put in \"connectors\""
+		(exclude_from_sim no)
+		(at 188.468 -2.794 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "95ca3e34-fbbc-4a62-9f01-c31a96182e60")
+	)
+	(text "DESIGN RULES"
+		(exclude_from_sim no)
+		(at 187.96 -10.668 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef6c620e-7c7f-422f-b2b3-7e37ba61ac34")
 	)
 	(bus
 		(pts
@@ -78,16 +122,6 @@
 			(type default)
 		)
 		(uuid "2ae2f9e7-ae66-4363-844a-79b1d1f38d8a")
-	)
-	(wire
-		(pts
-			(xy 87.63 39.37) (xy 97.79 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "425d5529-661f-4298-816d-52a600a717a6")
 	)
 	(bus
 		(pts
@@ -151,7 +185,7 @@
 	)
 	(bus
 		(pts
-			(xy 168.91 92.71) (xy 214.63 92.71)
+			(xy 168.91 92.71) (xy 213.36 92.71)
 		)
 		(stroke
 			(width 0)
@@ -179,16 +213,6 @@
 		)
 		(uuid "cc18f98c-c4df-4166-a9d1-b865004e067e")
 	)
-	(wire
-		(pts
-			(xy 203.2 99.06) (xy 214.63 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dba4cfed-d824-40a9-813f-041f7cdde6d5")
-	)
 	(bus
 		(pts
 			(xy 77.47 95.25) (xy 116.84 95.25)
@@ -208,26 +232,6 @@
 			(type default)
 		)
 		(uuid "f19925ce-b04b-4a19-bc51-9fba9c0405c2")
-	)
-	(label "BP_5V"
-		(at 203.2 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2ee56c78-1807-4400-b16d-dc06c28a655e")
-	)
-	(label "BP_5V"
-		(at 97.79 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f65b9346-5e7b-4ae7-b8ef-58aacf7febe9")
 	)
 	(sheet
 		(at 39.37 27.94)
@@ -273,16 +277,6 @@
 				(justify left)
 			)
 		)
-		(pin "BP_5V" input
-			(at 87.63 39.37 0)
-			(uuid "85ef4ce5-8e05-4601-b042-31b4ebf93775")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100"
@@ -292,8 +286,8 @@
 		)
 	)
 	(sheet
-		(at 147.32 125.73)
-		(size 21.59 16.51)
+		(at 149.86 125.73)
+		(size 43.18 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -308,7 +302,7 @@
 		)
 		(uuid "36da1f88-b4f8-4b81-86e1-fac0fb6202fa")
 		(property "Sheetname" "FPGA-CONFIG-FLASH"
-			(at 147.32 125.0184 0)
+			(at 149.86 125.0184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -317,7 +311,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga-config-flash.kicad_sch"
-			(at 147.32 142.8246 0)
+			(at 149.86 142.8246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -530,8 +524,8 @@
 		)
 	)
 	(sheet
-		(at 116.84 125.73)
-		(size 20.32 16.51)
+		(at 104.14 125.73)
+		(size 39.37 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -546,7 +540,7 @@
 		)
 		(uuid "aad6bec2-3cac-4ef0-abf0-8e1f80301155")
 		(property "Sheetname" "FPGA-POWER"
-			(at 116.84 125.0184 0)
+			(at 104.14 125.0184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -555,7 +549,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga-power.kicad_sch"
-			(at 116.84 142.8246 0)
+			(at 104.14 142.8246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -564,7 +558,7 @@
 			)
 		)
 		(property "Field2" ""
-			(at 116.84 125.73 0)
+			(at 104.14 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -652,7 +646,7 @@
 		)
 	)
 	(sheet
-		(at 214.63 85.09)
+		(at 213.36 85.09)
 		(size 40.64 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -668,7 +662,7 @@
 		)
 		(uuid "bc102b0c-2088-41b9-b570-4eb098131c8b")
 		(property "Sheetname" "CONNECTORS"
-			(at 214.63 84.3784 0)
+			(at 213.36 84.3784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -677,7 +671,7 @@
 			)
 		)
 		(property "Sheetfile" "connectors.kicad_sch"
-			(at 214.63 104.7246 0)
+			(at 213.36 104.7246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -686,18 +680,8 @@
 			)
 		)
 		(pin "{SIGCON1}" bidirectional
-			(at 214.63 92.71 180)
+			(at 213.36 92.71 180)
 			(uuid "fd198a31-1945-4181-a590-dcfaec6e0c0b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BP_5V" output
-			(at 214.63 99.06 180)
-			(uuid "89c702ad-bd11-4c90-b0a9-94209e730e7f")
 			(effects
 				(font
 					(size 1.27 1.27)

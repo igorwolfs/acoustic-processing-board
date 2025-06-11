@@ -7036,7 +7036,7 @@
 		(uuid "96d7bc9d-7cf2-498f-b664-847d4dd24a76")
 	)
 	(junction
-		(at 113.03 38.1)
+		(at 113.03 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e88839c-b4e6-4ee6-9f63-f8fb4f4b0d0e")
@@ -7102,7 +7102,7 @@
 		(uuid "e74e8b44-5e0b-4550-a1a5-137af685d506")
 	)
 	(junction
-		(at 113.03 33.02)
+		(at 113.03 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e78d6975-9f59-46ba-b08b-89149ce3b824")
@@ -7669,7 +7669,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 27.94) (xy 113.03 33.02)
+			(xy 113.03 33.02) (xy 113.03 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7879,7 +7879,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 38.1) (xy 119.38 38.1)
+			(xy 113.03 43.18) (xy 119.38 43.18)
 		)
 		(stroke
 			(width 0)
@@ -8016,6 +8016,16 @@
 			(type default)
 		)
 		(uuid "38c19eeb-97aa-4d7f-8d38-444f73bf5db8")
+	)
+	(wire
+		(pts
+			(xy 113.03 60.96) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a99f176-4d40-46e4-916c-a95cc65d57e4")
 	)
 	(wire
 		(pts
@@ -8529,6 +8539,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 69.85) (xy 113.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a7d73c-e94e-4a10-9808-b45d9dead0fb")
+	)
+	(wire
+		(pts
 			(xy 220.98 46.99) (xy 271.78 46.99)
 		)
 		(stroke
@@ -8619,7 +8639,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 27.94) (xy 113.03 27.94)
+			(xy 119.38 33.02) (xy 113.03 33.02)
 		)
 		(stroke
 			(width 0)
@@ -8809,7 +8829,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 38.1) (xy 113.03 40.64)
+			(xy 113.03 43.18) (xy 113.03 45.72)
 		)
 		(stroke
 			(width 0)
@@ -9159,7 +9179,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 33.02) (xy 119.38 33.02)
+			(xy 113.03 38.1) (xy 119.38 38.1)
 		)
 		(stroke
 			(width 0)
@@ -9266,6 +9286,16 @@
 			(type default)
 		)
 		(uuid "f52d4d70-2144-4d12-adfe-c3f870d3b2bd")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.96) (xy 113.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f836311b-aa09-4a27-a479-ad4d5363e3aa")
 	)
 	(wire
 		(pts
@@ -9647,7 +9677,7 @@
 		)
 		(uuid "85eb0089-435d-426a-b1ae-b1e8e06e8a53")
 	)
-	(label "FPGA_INITn"
+	(label "~{FPGA_INIT}"
 		(at 270.51 67.31 180)
 		(effects
 			(font
@@ -9737,7 +9767,7 @@
 		)
 		(uuid "b14bf272-59e8-49fa-831c-c7b840172986")
 	)
-	(label "FPGA_INITn"
+	(label "~{FPGA_INIT}"
 		(at 82.55 104.14 0)
 		(effects
 			(font
@@ -9911,6 +9941,28 @@
 	)
 	(global_label "VCORE_3V3"
 		(shape passive)
+		(at 116.84 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a0465cc-8cf1-4989-b59a-780b58b2d68e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.2972 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCORE_3V3"
+		(shape passive)
 		(at 199.39 30.48 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9933,7 +9985,7 @@
 	)
 	(global_label "VCORE_3V3"
 		(shape passive)
-		(at 119.38 27.94 0)
+		(at 119.38 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9943,7 +9995,7 @@
 		)
 		(uuid "7f567617-aee4-41d1-adb5-2e1392049e20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.8372 27.94 0)
+			(at 131.8372 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10086,7 +10138,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 119.38 35.56 0)
+		(at 119.38 40.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10095,7 +10147,7 @@
 		(dnp no)
 		(uuid "09b329b3-8195-49dd-a920-3aa362c8c249")
 		(property "Reference" "C20"
-			(at 121.412 33.528 0)
+			(at 121.412 38.608 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10104,7 +10156,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 122.682 37.846 0)
+			(at 122.682 42.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10113,7 +10165,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10122,7 +10174,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10131,7 +10183,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10140,7 +10192,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10149,7 +10201,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10158,7 +10210,7 @@
 			)
 		)
 		(property "LPN" "CL05B103KB5NNNC"
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10167,7 +10219,7 @@
 			)
 		)
 		(property "MPN" "C15195"
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10176,7 +10228,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10185,7 +10237,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10194,7 +10246,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10203,7 +10255,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 119.38 35.56 0)
+			(at 119.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10691,6 +10743,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49b09543-79bf-4160-bd68-47f77313f3c8")
+		(property "Reference" "#PWR040"
+			(at 113.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c2ff4d8-4326-4ec0-8088-cb5375b22285")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -11756,7 +11873,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 40.64 0)
+		(at 113.03 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11764,7 +11881,7 @@
 		(dnp no)
 		(uuid "c3549a09-eb55-4eaf-ad66-7f3dd640bd5d")
 		(property "Reference" "#PWR032"
-			(at 113.03 46.99 0)
+			(at 113.03 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11773,7 +11890,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.126 43.18 0)
+			(at 119.126 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11781,7 +11898,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 40.64 0)
+			(at 113.03 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11790,7 +11907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 40.64 0)
+			(at 113.03 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11799,7 +11916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 40.64 0)
+			(at 113.03 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11926,7 +12043,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 113.03 35.56 0)
+		(at 113.03 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11934,7 +12051,7 @@
 		(dnp no)
 		(uuid "d624bca8-467e-4bd4-a6e3-b74c230af986")
 		(property "Reference" "C19"
-			(at 107.95 33.782 0)
+			(at 107.95 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11943,7 +12060,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 106.934 37.846 0)
+			(at 106.934 42.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11952,7 +12069,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.03 35.56 0)
+			(at 113.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11961,7 +12078,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 35.56 0)
+			(at 113.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11970,7 +12087,7 @@
 			)
 		)
 		(property "Description" "X7R"
-			(at 113.03 35.56 0)
+			(at 113.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11979,7 +12096,7 @@
 			)
 		)
 		(property "LPN" "C307331"
-			(at 113.03 35.56 0)
+			(at 113.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11988,7 +12105,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 113.03 35.56 0)
+			(at 113.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13167,6 +13284,129 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
 					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 113.03 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5ecb5bb-07b5-4c16-9175-51e16f9d7958")
+		(property "Reference" "C53"
+			(at 113.03 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 118.872 68.072 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707315714920448"
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "X5R, 10V"
+			(at 116.332 65.532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C23733"
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05A475MP5NRNC"
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" ""
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SN-DK" ""
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92d40d30-672f-4a65-8b96-3da74bed66d0")
+		)
+		(pin "1"
+			(uuid "59e231bd-d6bc-47db-9ee6-9df66ad6b78a")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
+					(reference "C53")
 					(unit 1)
 				)
 			)
