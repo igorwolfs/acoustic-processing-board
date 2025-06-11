@@ -9999,6 +9999,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(bus_alias "FPGA_ADC"
+		(members "D[0..9]" "OTR" "CLK")
+	)
+	(bus_alias "SIGCON1"
+		(members "PWM[0..3]" "S10V_EN" "B40_EN" "T_SCL" "T_SDA")
+	)
 	(rectangle
 		(start 77.47 152.4)
 		(end 157.48 222.25)
@@ -10024,8 +10030,8 @@
 		(uuid 47fe73b7-d6df-4888-a744-14b5084dba44)
 	)
 	(rectangle
-		(start 396.24 158.75)
-		(end 320.04 248.92)
+		(start 320.04 158.75)
+		(end 396.24 248.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -11763,7 +11769,7 @@
 	)
 	(bus
 		(pts
-			(xy 392.43 245.11) (xy 386.08 245.11)
+			(xy 392.43 241.3) (xy 379.73 241.3)
 		)
 		(stroke
 			(width 0)
@@ -12603,7 +12609,7 @@
 	)
 	(bus
 		(pts
-			(xy 222.25 179.07) (xy 222.25 180.34)
+			(xy 222.25 177.8) (xy 222.25 180.34)
 		)
 		(stroke
 			(width 0)
@@ -12953,7 +12959,7 @@
 	)
 	(bus
 		(pts
-			(xy 180.34 179.07) (xy 222.25 179.07)
+			(xy 209.55 177.8) (xy 222.25 177.8)
 		)
 		(stroke
 			(width 0)
@@ -13003,7 +13009,7 @@
 	)
 	(bus
 		(pts
-			(xy 392.43 233.68) (xy 392.43 245.11)
+			(xy 392.43 233.68) (xy 392.43 241.3)
 		)
 		(stroke
 			(width 0)
@@ -14901,7 +14907,7 @@
 		)
 		(uuid "002263f3-4630-494d-b373-853814487534")
 	)
-	(label "SIG.S10V_EN"
+	(label "S10V_EN"
 		(at 377.19 223.52 0)
 		(effects
 			(font
@@ -14910,6 +14916,16 @@
 			(justify left bottom)
 		)
 		(uuid "01076108-c6e6-49ce-9f47-c92714258954")
+	)
+	(label "S10V_EN"
+		(at 212.09 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "02632c50-028e-4f93-8c34-7f27544d9e16")
 	)
 	(label "ADC_VREF"
 		(at 154.94 205.74 180)
@@ -14931,7 +14947,7 @@
 		)
 		(uuid "087461d3-1bd2-4022-915d-07053461053b")
 	)
-	(label "SIG.B40_EN"
+	(label "B40_EN"
 		(at 377.19 226.06 0)
 		(effects
 			(font
@@ -14941,15 +14957,15 @@
 		)
 		(uuid "09faf9f2-2241-4272-83f2-ca29f2d4f3bd")
 	)
-	(label "FPGA_ADC.D3"
-		(at 377.19 182.88 0)
+	(label "D5"
+		(at 386.08 187.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1606e3f1-2ad6-438f-aef5-7fc0e608d412")
+		(uuid "11b7fa8e-f775-47d9-b0f1-316e456f50c0")
 	)
 	(label "ADC_VOCM_BUFF"
 		(at 163.83 91.44 180)
@@ -14960,16 +14976,6 @@
 			(justify right bottom)
 		)
 		(uuid "16ae3b49-5341-4157-93e0-41ede2ae79c6")
-	)
-	(label "FPGA_ADC.D0"
-		(at 377.19 175.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1725b176-c3b6-45c0-b988-b0eb09be83a4")
 	)
 	(label "ADC_REFTF"
 		(at 325.12 81.28 0)
@@ -14991,16 +14997,6 @@
 		)
 		(uuid "20733400-50b6-4f40-9dba-55fc1e654162")
 	)
-	(label "FPGA_ADC.D5"
-		(at 377.19 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2142a33c-1a3d-4912-a523-78361321e7c2")
-	)
 	(label "ADC_REFTF"
 		(at 394.97 24.13 0)
 		(effects
@@ -15011,6 +15007,16 @@
 		)
 		(uuid "23158949-a581-490c-8515-6af805372d73")
 	)
+	(label "PWM3"
+		(at 205.74 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24103557-0272-4adc-b6f5-290c9233be10")
+	)
 	(label "ADC_IN12_SW"
 		(at 135.89 96.52 180)
 		(effects
@@ -15020,26 +15026,6 @@
 			(justify right bottom)
 		)
 		(uuid "278b02b5-4b1f-4af5-994c-d3195e6a9566")
-	)
-	(label "SIG.T_SDA"
-		(at 205.74 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2848c00e-a57d-4c4c-a310-2e3d90d3c2a7")
-	)
-	(label "SIG.PWM0"
-		(at 205.8797 200.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "298928cc-b6aa-4403-bb93-524f0e8dd058")
 	)
 	(label "ADC_VDDA_2"
 		(at 78.74 177.8 0)
@@ -15061,16 +15047,6 @@
 		)
 		(uuid "2c1e59fb-8c83-4684-80c8-43d8be1d8ae6")
 	)
-	(label "SIG.PWM3"
-		(at 205.74 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2ec1129d-0769-4c79-9ac5-5a085434e062")
-	)
 	(label "ADC_REFBF"
 		(at 394.97 29.21 0)
 		(effects
@@ -15091,7 +15067,17 @@
 		)
 		(uuid "348c9fea-fcf3-466d-9402-52b0ec9fe5e9")
 	)
-	(label "FPGA_ADC.D7"
+	(label "{SIGCON1}"
+		(at 209.55 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34d6aca4-156e-497a-9ce3-c6c7de5952c0")
+	)
+	(label "D7"
 		(at 377.19 95.25 0)
 		(effects
 			(font
@@ -15111,16 +15097,6 @@
 		)
 		(uuid "3b7cb9a9-f22d-460d-abcd-2ef8d3d524f3")
 	)
-	(label "FPGA_ADC.D8"
-		(at 377.19 195.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cc14d49-3ed1-4921-95b5-36e00e49b006")
-	)
 	(label "ADC_IN12_SW"
 		(at 389.89 208.28 180)
 		(effects
@@ -15131,7 +15107,7 @@
 		)
 		(uuid "43736f1d-4c20-4b83-a213-0af415e158ca")
 	)
-	(label "SIG.T_SCL"
+	(label "T_SCL"
 		(at 377.19 228.6 0)
 		(effects
 			(font
@@ -15161,7 +15137,7 @@
 		)
 		(uuid "487053fd-e2e9-4295-8628-1ef42d3db934")
 	)
-	(label "FPGA_ADC{CLK D[0..9] OTR}"
+	(label "{FPGA_ADC}"
 		(at 363.22 154.94 0)
 		(effects
 			(font
@@ -15171,15 +15147,35 @@
 		)
 		(uuid "4c0244e5-33be-48f1-954f-877c7e7f8ee2")
 	)
-	(label "FPGA_ADC.D6"
-		(at 377.19 190.5 0)
+	(label "D3"
+		(at 386.08 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "538f8c21-baea-4876-8044-9a6b7c2fada0")
+		(uuid "53cf8401-4985-49b7-b688-f365d2ce7a9f")
+	)
+	(label "T_SDA"
+		(at 212.09 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a037765-dcc5-4f6b-87af-785424fcfb3e")
+	)
+	(label "D2"
+		(at 386.08 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a748a4a-5b4d-43e7-bd77-38d58b294f87")
 	)
 	(label "ADC_VOCM_REF"
 		(at 116.84 254 180)
@@ -15191,7 +15187,7 @@
 		)
 		(uuid "5f459bb9-492a-4897-b9c4-4d6d58a172c8")
 	)
-	(label "FPGA_ADC.CLK"
+	(label "CLK"
 		(at 377.19 72.39 0)
 		(effects
 			(font
@@ -15201,7 +15197,7 @@
 		)
 		(uuid "604f396f-c26e-4e28-8e95-4d4af40d85ea")
 	)
-	(label "SIG.PWM0"
+	(label "PWM0"
 		(at 377.3297 213.36 0)
 		(effects
 			(font
@@ -15211,17 +15207,7 @@
 		)
 		(uuid "6289f922-3ea4-4e1b-8e81-8a05cb095f30")
 	)
-	(label "FPGA_ADC.D4"
-		(at 377.19 185.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6588d701-5fa1-4444-937a-74c95cdaa446")
-	)
-	(label "FPGA_ADC.D9"
+	(label "D9"
 		(at 377.19 100.33 0)
 		(effects
 			(font
@@ -15231,35 +15217,25 @@
 		)
 		(uuid "68f08d0b-e928-476d-8b8c-8f8b04e6dc40")
 	)
-	(label "SIG.PWM2"
-		(at 205.74 195.58 0)
+	(label "{SIGCON1}"
+		(at 379.73 241.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
-		)
-		(uuid "6c729791-cdbc-487c-a53c-240cbd38b2de")
-	)
-	(label "FPGA_ADC.CLK"
-		(at 375.92 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c804eae-7216-4849-8360-1f6ec7a2f6cf")
-	)
-	(label "SIG{T_SDA T_SCL B40_EN S10V_EN PWM[0..3]}"
-		(at 386.08 245.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
 		)
 		(uuid "6cc9867f-716c-4b2e-a77a-5fb3e7a31aca")
+	)
+	(label "D0"
+		(at 386.08 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f977460-5d69-4e63-865b-58fc77a156f4")
 	)
 	(label "ADC_REFTS"
 		(at 114.3 170.18 0)
@@ -15270,6 +15246,26 @@
 			(justify left bottom)
 		)
 		(uuid "76af2232-0058-4e83-846c-1451f5bcfd9b")
+	)
+	(label "CLK"
+		(at 386.08 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "782b0ad8-b192-4512-8c81-fa5b50c292ec")
+	)
+	(label "T_SCL"
+		(at 212.09 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78cc271c-f7f3-40e9-87ae-ad004e2c2c10")
 	)
 	(label "ADC_MODE"
 		(at 326.39 106.68 0)
@@ -15291,15 +15287,35 @@
 		)
 		(uuid "79de3efc-37cc-48be-bc7a-6dd20a8e4ce8")
 	)
-	(label "SIG.PWM1"
-		(at 205.74 198.12 0)
+	(label "D8"
+		(at 386.08 195.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "7bc92ccb-cf6d-4b5f-98f8-5c3e3f680648")
+		(uuid "7be44b27-3ffc-40f9-88d6-70b96ee33dcf")
+	)
+	(label "D1"
+		(at 386.08 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d40ed00-a438-435a-ba6c-3c5879aa6250")
+	)
+	(label "PWM0"
+		(at 205.8797 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e3cd5e2-500d-49df-9323-fb6dc621f3b0")
 	)
 	(label "FPGA_LED1"
 		(at 57.15 41.91 0)
@@ -15311,7 +15327,7 @@
 		)
 		(uuid "80082234-b1a9-480d-bdff-dd4bf883448d")
 	)
-	(label "FPGA_ADC.D8"
+	(label "D8"
 		(at 377.19 97.79 0)
 		(effects
 			(font
@@ -15321,7 +15337,7 @@
 		)
 		(uuid "816e0939-9575-405c-afe3-f41af3c9f8bf")
 	)
-	(label "FPGA_ADC.OTR"
+	(label "OTR"
 		(at 377.19 104.14 0)
 		(effects
 			(font
@@ -15341,17 +15357,7 @@
 		)
 		(uuid "90277d8d-3f38-412c-aff5-96e6a0541712")
 	)
-	(label "FPGA_ADC.OTR"
-		(at 375.92 200.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "93435851-ca95-409d-866d-43817c66b230")
-	)
-	(label "SIG.PWM1"
+	(label "PWM1"
 		(at 377.19 215.9 0)
 		(effects
 			(font
@@ -15361,7 +15367,7 @@
 		)
 		(uuid "99b77f8b-e576-42a2-80d0-1fa078672eb6")
 	)
-	(label "FPGA_ADC.D5"
+	(label "D5"
 		(at 377.19 90.17 0)
 		(effects
 			(font
@@ -15370,6 +15376,16 @@
 			(justify left bottom)
 		)
 		(uuid "a0b83b04-2898-4712-8798-9a95362920d2")
+	)
+	(label "OTR"
+		(at 386.08 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad4aca0c-32fa-4e1b-b1a2-3b83982926ef")
 	)
 	(label "ADC_AIN+"
 		(at 314.96 72.39 180)
@@ -15381,7 +15397,7 @@
 		)
 		(uuid "ae18d461-b9cf-443e-af2e-ab3944ee2b93")
 	)
-	(label "FPGA_ADC.D0"
+	(label "D0"
 		(at 377.19 77.47 0)
 		(effects
 			(font
@@ -15401,17 +15417,7 @@
 		)
 		(uuid "b08228e2-f872-4aeb-9457-e77313067aac")
 	)
-	(label "SIG{T_SDA T_SCL B40_EN S10V_EN PWM[0..3]}"
-		(at 180.34 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0dee6bb-3a90-4c7a-b9dd-45e103f840cf")
-	)
-	(label "FPGA_ADC.D6"
+	(label "D6"
 		(at 377.19 92.71 0)
 		(effects
 			(font
@@ -15441,16 +15447,6 @@
 		)
 		(uuid "b801ee79-fb24-4b37-9ac3-d0607afe6445")
 	)
-	(label "FPGA_ADC.D7"
-		(at 377.19 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b89bb773-8cbd-4316-9ff6-e3eb20eac271")
-	)
 	(label "FPGA_LED0"
 		(at 377.19 205.74 0)
 		(effects
@@ -15460,16 +15456,6 @@
 			(justify left bottom)
 		)
 		(uuid "bdb5078f-1964-4b7d-89bc-22890d3077d2")
-	)
-	(label "SIG.B40_EN"
-		(at 205.74 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be6fde09-ea21-446f-b3e6-9f737c4a8bdb")
 	)
 	(label "ADC_VOCM_BUFF"
 		(at 156.21 74.93 0)
@@ -15481,7 +15467,17 @@
 		)
 		(uuid "c50cd827-58a4-4ac2-8483-6c633caa306a")
 	)
-	(label "FPGA_ADC.D3"
+	(label "D7"
+		(at 386.08 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6f9b387-5ca1-4c4c-aec8-56fbf6d9057d")
+	)
+	(label "D3"
 		(at 377.19 85.09 0)
 		(effects
 			(font
@@ -15491,7 +15487,17 @@
 		)
 		(uuid "c7c5a933-4d9c-474c-8917-0c116abdde55")
 	)
-	(label "FPGA_ADC.D4"
+	(label "D4"
+		(at 386.08 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c85bc044-1117-4b7f-a688-aac6bb155a70")
+	)
+	(label "D4"
 		(at 377.19 87.63 0)
 		(effects
 			(font
@@ -15501,7 +15507,7 @@
 		)
 		(uuid "c9013923-1a33-492c-9988-bc3cb2fcbcba")
 	)
-	(label "FPGA_ADC.D2"
+	(label "D2"
 		(at 377.19 82.55 0)
 		(effects
 			(font
@@ -15511,7 +15517,7 @@
 		)
 		(uuid "c9fd9726-2b1b-4c13-8109-0b4df6bb43c1")
 	)
-	(label "SIG.PWM2"
+	(label "PWM2"
 		(at 377.19 218.44 0)
 		(effects
 			(font
@@ -15541,7 +15547,27 @@
 		)
 		(uuid "d23ab819-5310-475c-bd79-1fdd90d5e2a2")
 	)
-	(label "SIG.PWM3"
+	(label "D9"
+		(at 386.08 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d471cf6d-4652-49bc-bde7-dca135e738c3")
+	)
+	(label "PWM2"
+		(at 205.74 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d603181f-448f-497c-b42d-a108f6282c24")
+	)
+	(label "PWM3"
 		(at 377.19 220.98 0)
 		(effects
 			(font
@@ -15550,6 +15576,16 @@
 			(justify left bottom)
 		)
 		(uuid "d78f5819-88a8-42af-89e1-b00cda36c4d9")
+	)
+	(label "PWM1"
+		(at 205.74 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db8d84ad-0c24-4486-b453-dc63e4a665b4")
 	)
 	(label "ADC_REFSENSE"
 		(at 113.03 205.74 0)
@@ -15581,47 +15617,17 @@
 		)
 		(uuid "e8354765-fe23-4c09-95f8-3c23129a0a81")
 	)
-	(label "SIG.S10V_EN"
-		(at 205.74 190.5 0)
+	(label "B40_EN"
+		(at 212.09 187.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "ebd6285f-aae6-43ab-8ca2-d90c655225e6")
+		(uuid "e8e2c5d3-04aa-4fc2-af21-9d181324504f")
 	)
-	(label "SIG.T_SCL"
-		(at 205.74 185.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee130b51-cb2b-434d-a187-d12326a87013")
-	)
-	(label "FPGA_ADC.D2"
-		(at 377.19 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "efc2c856-2b6a-4e4c-a4a3-a9ab9a6d13de")
-	)
-	(label "FPGA_ADC.D9"
-		(at 377.19 198.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "efc419b8-d6c9-4728-b7a6-0e220a768936")
-	)
-	(label "SIG.T_SDA"
+	(label "T_SDA"
 		(at 377.19 231.14 0)
 		(effects
 			(font
@@ -15631,7 +15637,7 @@
 		)
 		(uuid "f0e35c64-a7ba-48c9-8dab-d449d2ad9d30")
 	)
-	(label "FPGA_ADC.D1"
+	(label "D1"
 		(at 377.19 80.01 0)
 		(effects
 			(font
@@ -15641,15 +15647,15 @@
 		)
 		(uuid "f2bbcef0-7b8e-4b74-a940-9577b84d81f6")
 	)
-	(label "FPGA_ADC.D1"
-		(at 377.19 177.8 0)
+	(label "D6"
+		(at 386.08 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "f8cad09c-03fc-4348-931d-5686e6e2adf3")
+		(uuid "f6d90b93-0535-45c4-a6da-e3f88197eea3")
 	)
 	(label "FPGA_LED1"
 		(at 377.19 203.2 0)
