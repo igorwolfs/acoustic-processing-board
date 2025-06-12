@@ -19,7 +19,7 @@
 	- 2x0.1 uF
 
 VDDR_IO and VDDR_CORE are split with a ferrite
-- both have 10 uF, 3x100 nF, 3x10nF capacitance
+- both have 22 uF, 3x100 nF, 3x10nF capacitance
 
 So more decoupling than logic bone, however no ferrite -> should be good though
 

@@ -116,9 +116,44 @@ ok
 ## VCC
 - VCC 10 µF x 3 + 100 nF per pin
 	- DONE
+- SIM: ok
 
 ## VCC_AUX
 - VCCAUX 120 Ω FB + 10 µF + 100 nF per pin Auxiliary power supply 
 	- DONE (22 uF + 4.7 uF instead of 10 uF)
 	- 0.1 uF per pin
+- SIM: ok
 
+## VDDR
+- SIM: ok -> probably a bit off due to sim-model
+
+## VCCIO[0-8] 
+- 10 µF + 100 nF per pin
+	- 
+## VETH
+- OK
+
+# SWITCH
+## Footprint
+
+### Shape: ok
+- VQFN-HR-12
+
+### Pins:
+- ok
+
+## Configuration
+- Overvoltage protection: 
+
+# MOSFET AO3401A
+
+## Footprint
+- Pins: ok
+- Shape: ok
+
+## SIM: ok
+
+# Zener diode
+- OK
+## Footprint: 
+- 
