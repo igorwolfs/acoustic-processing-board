@@ -76,7 +76,6 @@ Big CONS:
 
 Better: in this case the signal only needs to travel from layer 1->3 or 3->5.
 
-
 # Sources:
 - [LIVE] How to Achieve Proper Grounding - Rick Hartley - Expert Live Training (US), **Link:** https://www.youtube.com/watch?v=ySuUZEjARPY&ab_channel=Altium
 

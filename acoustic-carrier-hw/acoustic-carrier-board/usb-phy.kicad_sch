@@ -3130,6 +3130,17 @@
 		)
 		(uuid "1a74db6f-3261-4052-bc15-bb4a03b542ce")
 	)
+	(text "USB3300\nID PIN: \n- internally pulled HIGH (peripheral function, USB-B)\nDP\n- Termination included where necessary"
+		(exclude_from_sim no)
+		(at 81.28 38.608 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25a38ff5-eeca-45f6-a091-352be35e24cd")
+	)
 	(text "USB_CC1: high -> USB_DIFF_SW: high -> D2 ACTIVE\nUSB_CC2: high -> USB_DIFF_SW: low -> D1 ACTIVE"
 		(exclude_from_sim no)
 		(at 225.298 33.528 0)
@@ -3528,6 +3539,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b37d53b0-060f-4247-9dd9-d412c7f73468")
+	)
+	(junction
+		(at 144.78 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4115815-15a1-4fef-8568-837b3e127584")
 	)
 	(junction
 		(at 182.88 172.72)
@@ -4746,6 +4763,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 38.1) (xy 144.78 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ac6d28-3702-42e9-a291-525a95529eb6")
+	)
+	(wire
+		(pts
 			(xy 88.9 240.03) (xy 88.9 243.84)
 		)
 		(stroke
@@ -5736,6 +5763,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 60.96) (xy 130.81 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92bb1f9-88cf-4d8a-8247-121d04ccb0d7")
+	)
+	(wire
+		(pts
 			(xy 313.69 82.55) (xy 332.74 82.55)
 		)
 		(stroke
@@ -5746,7 +5783,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 60.96) (xy 129.54 60.96)
+			(xy 133.35 60.96) (xy 130.81 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6274,7 +6311,7 @@
 		)
 		(uuid "37741d40-d745-452b-a824-afba15dda4fd")
 	)
-	(label "USBDP1"
+	(label "USB_DP1"
 		(at 325.12 80.01 0)
 		(effects
 			(font
@@ -6344,7 +6381,7 @@
 		)
 		(uuid "5cd53631-a4ea-4cdd-a361-10c5e350e9e0")
 	)
-	(label "USBDN2"
+	(label "USB_DN2"
 		(at 325.12 77.47 0)
 		(effects
 			(font
@@ -6394,7 +6431,7 @@
 		)
 		(uuid "86e82c2e-f157-414f-ac05-22c1b5d01832")
 	)
-	(label "USBDN1"
+	(label "USB_DN1"
 		(at 325.12 82.55 0)
 		(effects
 			(font
@@ -6404,7 +6441,7 @@
 		)
 		(uuid "8a8f061d-fac0-43de-ae04-8b5e9ecd106c")
 	)
-	(label "USBDP2"
+	(label "USB_DP2"
 		(at 325.12 74.93 0)
 		(effects
 			(font
@@ -6572,28 +6609,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCORE_3V3"
-		(shape passive)
-		(at 129.54 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "53486125-2327-480d-ae5a-4ee7e379d3fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.0828 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
