@@ -4,6 +4,12 @@
 Make sure to add vias for high-speed signal so the return path can travel along a path of minimum impedance (so close to the signal path on a ground plane / power plane).
 
 # Stackup
+## JLCPCB-Stackup choice
+- JLC06161H-3313
+
+Non-coplanar differential pair
+- 
+
 ## Signal-Ground Separation
 Planes that are further apart, have a higher impedance characteristics (so less capacitance, more inductance).
 The fields have to spread so widely that EMI problems will be caused.

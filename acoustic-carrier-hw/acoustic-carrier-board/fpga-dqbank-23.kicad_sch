@@ -6099,16 +6099,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 125.73) (xy 71.12 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fd9da0a-312d-4f05-b977-b988433b91ca")
-	)
-	(wire
-		(pts
 			(xy 123.19 111.76) (xy 123.19 113.03)
 		)
 		(stroke
@@ -6539,16 +6529,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 123.19) (xy 71.12 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5df93438-2090-4375-b8b7-0cb4dbd76e12")
-	)
-	(wire
-		(pts
 			(xy 48.26 43.18) (xy 48.26 52.07)
 		)
 		(stroke
@@ -6656,6 +6636,16 @@
 			(type default)
 		)
 		(uuid "7174fc34-5b03-49eb-b2a4-3bac4c976e19")
+	)
+	(wire
+		(pts
+			(xy 71.12 123.19) (xy 86.36 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a98703-dd7b-45c8-af2b-1b1866eaacbe")
 	)
 	(wire
 		(pts
@@ -7009,7 +6999,7 @@
 	)
 	(bus
 		(pts
-			(xy 260.35 67.31) (xy 276.86 67.31)
+			(xy 265.43 66.04) (xy 276.86 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7149,13 +7139,23 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 67.31) (xy 276.86 72.39)
+			(xy 276.86 66.04) (xy 276.86 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f87dee2e-0bd3-4e1e-8bba-334ccf106914")
+	)
+	(wire
+		(pts
+			(xy 71.12 125.73) (xy 86.36 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8b5af39-a8ff-43c5-88c2-cb0c83f5ca83")
 	)
 	(bus
 		(pts
@@ -7167,8 +7167,8 @@
 		)
 		(uuid "fbddb7a1-9437-4644-ae15-4c05d7ecc712")
 	)
-	(label "DQ8"
-		(at 80.01 115.57 180)
+	(label "DDR3.DQ8"
+		(at 82.55 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7177,8 +7177,8 @@
 		)
 		(uuid "014836c9-a537-412f-88a4-6ab5690ea08a")
 	)
-	(label "CLK"
-		(at 251.46 69.85 180)
+	(label "USB.CLK"
+		(at 256.54 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7187,8 +7187,8 @@
 		)
 		(uuid "0303cb1c-e612-4176-b4b3-eb59ef87c403")
 	)
-	(label "DQ15"
-		(at 81.28 138.43 180)
+	(label "DDR3.DQ15"
+		(at 83.82 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7197,8 +7197,8 @@
 		)
 		(uuid "052e1a7a-1179-45aa-a18d-2e97ddd43905")
 	)
-	(label "D7"
-		(at 251.46 110.49 180)
+	(label "USB.D7"
+		(at 255.27 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7207,7 +7207,7 @@
 		)
 		(uuid "0542faca-708f-48fe-b2bc-264f31f4547b")
 	)
-	(label "DQ3"
+	(label "DDR3.DQ3"
 		(at 74.93 69.85 0)
 		(effects
 			(font
@@ -7217,8 +7217,8 @@
 		)
 		(uuid "1513c233-4af9-4adc-956c-5b9ed55690bc")
 	)
-	(label "RST"
-		(at 251.46 80.01 180)
+	(label "USB.RST"
+		(at 255.27 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7227,8 +7227,8 @@
 		)
 		(uuid "24b00a69-0e60-4a21-8d9b-330216a27027")
 	)
-	(label "D5"
-		(at 251.46 105.41 180)
+	(label "USB.D5"
+		(at 255.27 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7237,8 +7237,8 @@
 		)
 		(uuid "25662a26-1810-4a1b-b609-16fea9a6c221")
 	)
-	(label "D2"
-		(at 251.46 97.79 180)
+	(label "USB.D2"
+		(at 255.27 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7247,8 +7247,8 @@
 		)
 		(uuid "39cab2ef-52d8-49a5-8039-00fd24044a27")
 	)
-	(label "D3"
-		(at 251.46 100.33 180)
+	(label "USB.D3"
+		(at 255.27 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7257,8 +7257,8 @@
 		)
 		(uuid "3ec8344a-db2d-4863-8b3a-eec5940937f9")
 	)
-	(label "D4"
-		(at 251.46 102.87 180)
+	(label "USB.D4"
+		(at 255.27 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7267,8 +7267,8 @@
 		)
 		(uuid "40967522-6671-4392-aa26-cc0a19ec43a1")
 	)
-	(label "D1"
-		(at 251.46 95.25 180)
+	(label "USB.D1"
+		(at 255.27 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7277,7 +7277,7 @@
 		)
 		(uuid "47b674d9-fd33-4c77-bafb-cc614ef99bff")
 	)
-	(label "DQ5"
+	(label "DDR3.DQ5"
 		(at 74.93 74.93 0)
 		(effects
 			(font
@@ -7297,8 +7297,8 @@
 		)
 		(uuid "5fd4f729-787a-48a8-a50c-adc0b344b100")
 	)
-	(label "NXT"
-		(at 251.46 90.17 180)
+	(label "USB.NXT"
+		(at 256.54 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7307,7 +7307,7 @@
 		)
 		(uuid "620a3293-d866-45b3-86b9-e09d0cfef175")
 	)
-	(label "DQ7"
+	(label "DDR3.DQ7"
 		(at 74.93 80.01 0)
 		(effects
 			(font
@@ -7317,8 +7317,8 @@
 		)
 		(uuid "622ee56b-a108-4fb5-8721-765819b9f6a8")
 	)
-	(label "UDQS#"
-		(at 82.55 125.73 180)
+	(label "DDR3.UDQS#"
+		(at 85.09 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7327,8 +7327,8 @@
 		)
 		(uuid "64908db1-1ceb-45a5-aa8d-7477d4b3775e")
 	)
-	(label "UDQS"
-		(at 81.28 123.19 180)
+	(label "DDR3.UDQS"
+		(at 83.82 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7337,8 +7337,8 @@
 		)
 		(uuid "66df4977-f67e-4911-8746-4596645f3460")
 	)
-	(label "DIR"
-		(at 251.46 87.63 180)
+	(label "USB.DIR"
+		(at 255.27 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7347,7 +7347,7 @@
 		)
 		(uuid "71384b98-0538-4417-bea6-984ee8e92adb")
 	)
-	(label "DQ1"
+	(label "DDR3.DQ1"
 		(at 74.93 64.77 0)
 		(effects
 			(font
@@ -7367,8 +7367,8 @@
 		)
 		(uuid "7a03ed8b-43f6-4339-87af-33a8e7353d8a")
 	)
-	(label "UDM"
-		(at 81.28 140.97 180)
+	(label "DDR3.UDM"
+		(at 82.55 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7377,8 +7377,8 @@
 		)
 		(uuid "7f0b2afa-de79-47ee-b475-1a109412e6ae")
 	)
-	(label "DQ9"
-		(at 80.01 118.11 180)
+	(label "DDR3.DQ9"
+		(at 82.55 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7387,7 +7387,7 @@
 		)
 		(uuid "8a849c5a-d18d-4d7b-b95b-40855ca31ba7")
 	)
-	(label "DQ6"
+	(label "DDR3.DQ6"
 		(at 74.93 77.47 0)
 		(effects
 			(font
@@ -7397,8 +7397,8 @@
 		)
 		(uuid "8bd429fa-206f-4c33-8fe3-09714d3e7b7d")
 	)
-	(label "D0"
-		(at 251.46 92.71 180)
+	(label "USB.D0"
+		(at 255.27 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7407,8 +7407,8 @@
 		)
 		(uuid "9f3908cd-eba1-4730-97de-54199931b160")
 	)
-	(label "D6"
-		(at 251.46 107.95 180)
+	(label "USB.D6"
+		(at 255.27 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7417,8 +7417,8 @@
 		)
 		(uuid "a03927eb-577a-4b7c-9ed4-d2abe2ed7ce6")
 	)
-	(label "DQ11"
-		(at 81.28 128.27 180)
+	(label "DDR3.DQ11"
+		(at 83.82 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7427,7 +7427,7 @@
 		)
 		(uuid "a373e16e-d865-4e30-9565-876773916c3a")
 	)
-	(label "LDQS#"
+	(label "DDR3.LDQS#"
 		(at 74.93 85.09 0)
 		(effects
 			(font
@@ -7437,7 +7437,7 @@
 		)
 		(uuid "a3c1efb2-74f8-44f2-bfd6-7e864d92c13d")
 	)
-	(label "LDM"
+	(label "DDR3.LDM"
 		(at 74.93 87.63 0)
 		(effects
 			(font
@@ -7447,7 +7447,7 @@
 		)
 		(uuid "a8a9dd6b-e85e-47bb-ba99-5f879d31d42c")
 	)
-	(label "DQ4"
+	(label "DDR3.DQ4"
 		(at 74.93 72.39 0)
 		(effects
 			(font
@@ -7457,8 +7457,8 @@
 		)
 		(uuid "b9a51094-d801-4e61-8d9f-1daff1484fc5")
 	)
-	(label "STP"
-		(at 251.46 85.09 180)
+	(label "USB.STP"
+		(at 255.27 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7467,7 +7467,7 @@
 		)
 		(uuid "be0d3d77-1aff-430b-8d3c-413193c1200b")
 	)
-	(label "DQ0"
+	(label "DDR3.DQ0"
 		(at 74.93 62.23 0)
 		(effects
 			(font
@@ -7477,8 +7477,8 @@
 		)
 		(uuid "bf9b5140-3a9c-48c9-86ec-8cc70efa38ea")
 	)
-	(label "DQ12"
-		(at 81.28 130.81 180)
+	(label "DDR3.DQ12"
+		(at 83.82 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7487,8 +7487,8 @@
 		)
 		(uuid "e51daa5d-0258-4663-8858-6a20526acd8b")
 	)
-	(label "DQ10"
-		(at 81.28 120.65 180)
+	(label "DDR3.DQ10"
+		(at 83.82 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7497,8 +7497,8 @@
 		)
 		(uuid "e5acb277-7a06-45be-8148-e6a973dbbb77")
 	)
-	(label "DQ13"
-		(at 81.28 133.35 180)
+	(label "DDR3.DQ13"
+		(at 83.82 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7507,8 +7507,8 @@
 		)
 		(uuid "e629e969-c168-4894-bd92-c6bf38a169e7")
 	)
-	(label "DQ14"
-		(at 81.28 135.89 180)
+	(label "DDR3.DQ14"
+		(at 83.82 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7517,7 +7517,7 @@
 		)
 		(uuid "e7262d77-c186-42cf-86d3-5d532a33dd2d")
 	)
-	(label "LDQS"
+	(label "DDR3.LDQS"
 		(at 74.93 82.55 0)
 		(effects
 			(font
@@ -7527,7 +7527,7 @@
 		)
 		(uuid "ec7d6eed-83d0-4f5d-929a-70bd5e90c863")
 	)
-	(label "DQ2"
+	(label "DDR3.DQ2"
 		(at 74.93 67.31 0)
 		(effects
 			(font
@@ -7537,7 +7537,7 @@
 		)
 		(uuid "fbc28b1c-ccbb-40ac-9a9c-6618fb4f0baf")
 	)
-	(global_label "VLPDDR3_0.675"
+	(global_label "VLPDDR3_V675"
 		(shape passive)
 		(at 73.66 107.95 0)
 		(fields_autoplaced yes)
@@ -7549,7 +7549,7 @@
 		)
 		(uuid "2d05b0b5-3d04-462e-8ded-057fa26632a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.3505 107.95 0)
+			(at 89.6248 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7625,7 +7625,7 @@
 			)
 		)
 	)
-	(global_label "VDDR3L_1.35"
+	(global_label "VDDR3L_1V35"
 		(shape passive)
 		(at 113.03 43.18 0)
 		(fields_autoplaced yes)
@@ -7637,7 +7637,7 @@
 		)
 		(uuid "866c031d-eaf0-4238-89e5-ea2ebb674350")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.241 43.18 0)
+			(at 127.7248 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7669,7 +7669,7 @@
 			)
 		)
 	)
-	(global_label "VDRR3L_0.675"
+	(global_label "VDRR3L_V675"
 		(shape passive)
 		(at 134.62 111.76 0)
 		(fields_autoplaced yes)
@@ -7681,7 +7681,7 @@
 		)
 		(uuid "b0f4d6f5-ce78-4ebf-89ef-3f527a12d39f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.0405 111.76 0)
+			(at 149.3148 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7713,9 +7713,9 @@
 			)
 		)
 	)
-	(hierarchical_label "{USB_ULPI}"
+	(hierarchical_label "USB{USB_ULPI}"
 		(shape input)
-		(at 260.35 67.31 180)
+		(at 265.43 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7724,7 +7724,7 @@
 		)
 		(uuid "02821df8-e277-4a07-8bc0-e75312d00ffe")
 	)
-	(hierarchical_label "{LPDDR3_DQL}"
+	(hierarchical_label "DDR3{LPDDR3_DQL}"
 		(shape input)
 		(at 95.25 58.42 0)
 		(effects
@@ -7735,7 +7735,7 @@
 		)
 		(uuid "86897ce8-3c92-49fa-a05a-527f7184d1a6")
 	)
-	(hierarchical_label "{LPDDR3_DQU}"
+	(hierarchical_label "DDR3{LPDDR3_DQU}"
 		(shape input)
 		(at 85.09 147.32 180)
 		(effects
@@ -7939,6 +7939,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 93.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "76fe895a-96c1-4417-905d-c77de435ba92")
 		)
@@ -8018,6 +8189,177 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 262.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 262.89 53.34 0)
 			(effects
 				(font
@@ -8216,6 +8558,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "08aa389a-6403-4181-8643-419176330871")
 		)
@@ -8311,6 +8824,177 @@
 		)
 		(property "MPN" "LFE5U-25F-6BG256C "
 			(at 209.296 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 228.6 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 228.6 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9268,6 +9952,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 107.95 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b09554d2-2345-4fc9-8186-7f880d5398a9")
 		)
@@ -9319,7 +10174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707307011465216"
 			(at 115.57 115.57 0)
 			(effects
 				(font
@@ -9337,7 +10192,7 @@
 				(hide yes)
 			)
 		)
-		(property "LPN" "CL05B103KB5NNNC"
+		(property "LPN" "C15195"
 			(at 115.57 115.57 0)
 			(effects
 				(font
@@ -9346,7 +10201,178 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C15195"
+		(property "MPN" "CL05B103KB5NNNC"
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 115.57 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 115.57 115.57 0)
 			(effects
 				(font
@@ -9507,6 +10533,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6c824d9b-717f-4559-ac7b-addb694c45d4")
 		)
@@ -9630,6 +10827,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "919f4cf9-447d-4ef0-b3e8-10e469226cc4")
 		)
@@ -9724,6 +11092,177 @@
 		)
 		(property "MPN" "LFE5U-25F-6BG256C "
 			(at 37.846 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 57.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 57.15 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10580,6 +12119,177 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ba918a09-becc-4835-9706-5af71e9bd3e8")
 		)
@@ -10714,6 +12424,177 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 82.55 46.99 0)
 			(effects
 				(font
