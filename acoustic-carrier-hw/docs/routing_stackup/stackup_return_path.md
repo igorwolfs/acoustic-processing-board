@@ -7,17 +7,42 @@ Make sure to add vias for high-speed signal so the return path can travel along 
 ## JLCPCB-Stackup choice
 - JLC06161H-3313 standard / finished thickness 1.54mm +-10%
 
-### JLCPCB calculator
-50 ohms coplanar single-ended:
-- 50, Coplanar Single Ended, L1, /, L2, width: 0.1565, /, distance from GND: 0.5080
-
-100 ohms coplanar differential pair:
-- 100, L1, /, L2, width: 0.1217, trace_width: 0.2032, distance from GND: 0.2032
+### Calculating impedance-matched signals
 
 90 ohms coplanar differential pair:
 - 90 Coplanar Differential Pair, L1, /, L2, width: 0.1554, trace_width: 0.2032, distance from GND: 0.2032
 
-### Choice
+### Quick check using the kicad-calculator
+Data on dielectric and FR4 constants: https://jlcpcb.com/de/impedance.
+
+- dielectric constant 3313: 4.1
+- Height (L1 -> L2): 0,09940 mm
+- Top height: infinity
+- Trace thickness T: 0,035 mm
+
+#### 50 ohms non-coplanar single-ended (logicbone-like)
+JLCPCB CALCULATOR:
+- Resulting trace geometry data:
+	- W - width: 0.1565 mm
+
+KICAD CALCULATOR
+- 54.53 ohms
+
+SATURN PCB CALCULATOR
+- 51.48 ohms
+
+
+#### 100 ohms non-coplanar differential
+JLCPCB CALCUALTOR:
+- Resulting trace geometry data:
+	- W - width: 0.1240
+	- S - distance between traces: 0.2032
+
+
+SATURN PCB CALCULATOR
+- 95.018 ohms differential impedance
+
+## Choice
 Choose the stackup
 - SIG - GND - (CORE) - PWR/SIG - GND - (CORE) - GND - SIG
 

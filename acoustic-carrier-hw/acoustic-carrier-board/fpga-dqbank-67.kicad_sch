@@ -309,6 +309,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -5697,7 +5823,7 @@
 		(uuid 0f412dcd-b281-4b82-9da2-4676646076fc)
 	)
 	(rectangle
-		(start 22.86 33.02)
+		(start 15.24 33.02)
 		(end 154.94 158.75)
 		(stroke
 			(width 0)
@@ -5757,7 +5883,7 @@
 		(uuid "0eb556b6-5fd4-4ced-9778-5a236e89ffc0")
 	)
 	(junction
-		(at 114.3 76.2)
+		(at 119.38 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "119fb37e-52c7-4863-8ac7-3ae73cf9ad94")
@@ -5769,16 +5895,10 @@
 		(uuid "4b54ca7d-ef56-49dc-828c-03315ae207d0")
 	)
 	(junction
-		(at 107.95 68.58)
+		(at 113.03 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d4f3ee1-f3a3-4528-8fa1-205e94c40151")
-	)
-	(junction
-		(at 107.95 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ec67f95-990c-4191-922f-d1b1053ea247")
 	)
 	(junction
 		(at 196.85 48.26)
@@ -5793,7 +5913,7 @@
 		(uuid "af51b137-5e7b-4b8b-bf9d-f8b7f173eb75")
 	)
 	(junction
-		(at 119.38 76.2)
+		(at 124.46 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b912f227-92a2-41b5-bfa7-43d16c939ef9")
@@ -5811,19 +5931,19 @@
 		(uuid "c642d7bc-0214-4369-90c9-b9df67931661")
 	)
 	(junction
-		(at 119.38 68.58)
+		(at 124.46 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb68bd67-6dad-44f9-8ca4-f47f4bbdd716")
 	)
 	(junction
-		(at 124.46 68.58)
+		(at 129.54 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cddd46b3-3db4-4944-9dbe-e10c18fb868c")
 	)
 	(junction
-		(at 114.3 68.58)
+		(at 119.38 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da4f1a38-b6f0-4d29-9e3d-9540a09fe3f3")
@@ -5834,8 +5954,14 @@
 		(color 0 0 0 0)
 		(uuid "e166069e-17e5-431a-93b3-a940645c77da")
 	)
+	(junction
+		(at 127 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e444787d-c7e3-49e0-9b35-bd05f7c0f9e9")
+	)
 	(no_connect
-		(at 71.12 92.71)
+		(at 73.66 96.52)
 		(uuid "07d16213-d823-46ae-b721-428bf6cbc40f")
 	)
 	(no_connect
@@ -5867,7 +5993,7 @@
 		(uuid "5984bd56-f8cf-4655-b449-15c1071dd884")
 	)
 	(no_connect
-		(at 71.12 102.87)
+		(at 73.66 106.68)
 		(uuid "5d81be4d-ca30-4667-85ea-a69bb14a2e3f")
 	)
 	(no_connect
@@ -5879,7 +6005,7 @@
 		(uuid "698feae8-f8ee-415d-be2c-edecdc9918fb")
 	)
 	(no_connect
-		(at 71.12 105.41)
+		(at 73.66 109.22)
 		(uuid "6c34dbe2-4df8-49b6-bf21-c55e14e639cb")
 	)
 	(no_connect
@@ -5939,7 +6065,7 @@
 		(uuid "c92192fb-7bf3-4a3d-97e9-e5351aa3aa70")
 	)
 	(no_connect
-		(at 71.12 100.33)
+		(at 73.66 104.14)
 		(uuid "da967456-e665-4977-8e61-18ed63e580ca")
 	)
 	(no_connect
@@ -5975,7 +6101,7 @@
 		(uuid "ff9440cf-3e56-4d56-94be-7cae7d2eac48")
 	)
 	(bus_entry
-		(at 92.71 120.65)
+		(at 95.25 124.46)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -5984,7 +6110,7 @@
 		(uuid "0d0749ee-8e0b-46e0-8241-3abb61782b95")
 	)
 	(bus_entry
-		(at 92.71 118.11)
+		(at 95.25 121.92)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -5993,7 +6119,7 @@
 		(uuid "275ea394-d7dd-4855-b814-26de2a562cfc")
 	)
 	(bus_entry
-		(at 92.71 128.27)
+		(at 95.25 132.08)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6002,7 +6128,7 @@
 		(uuid "2939df12-6336-42da-934a-bacea83c0b71")
 	)
 	(bus_entry
-		(at 92.71 80.01)
+		(at 95.25 83.82)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6011,7 +6137,7 @@
 		(uuid "2af7448e-0795-44bc-a08d-e820560d5e07")
 	)
 	(bus_entry
-		(at 92.71 107.95)
+		(at 95.25 111.76)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6020,7 +6146,7 @@
 		(uuid "306df6a4-0386-4f17-a01c-9e40cb4b07ba")
 	)
 	(bus_entry
-		(at 92.71 62.23)
+		(at 95.25 66.04)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6029,7 +6155,7 @@
 		(uuid "36139b6d-bf80-4564-b81a-8d53cfa792a7")
 	)
 	(bus_entry
-		(at 92.71 72.39)
+		(at 95.25 76.2)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6038,7 +6164,7 @@
 		(uuid "3654a21e-560c-4e5b-ab8f-7e6db516a10d")
 	)
 	(bus_entry
-		(at 92.71 74.93)
+		(at 95.25 78.74)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6047,7 +6173,7 @@
 		(uuid "3c814648-6b0e-4b0e-a4d9-665958ac4729")
 	)
 	(bus_entry
-		(at 92.71 67.31)
+		(at 95.25 71.12)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6056,7 +6182,7 @@
 		(uuid "3cea4c27-db9f-4a1f-930e-60a4c0390102")
 	)
 	(bus_entry
-		(at 92.71 95.25)
+		(at 95.25 99.06)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6065,7 +6191,7 @@
 		(uuid "4694f96b-a08b-4289-815f-88d4dbf63b43")
 	)
 	(bus_entry
-		(at 92.71 57.15)
+		(at 95.25 60.96)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6074,7 +6200,7 @@
 		(uuid "49c18255-2df5-4458-b514-1b4ca383d589")
 	)
 	(bus_entry
-		(at 92.71 105.41)
+		(at 95.25 109.22)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6083,7 +6209,7 @@
 		(uuid "4a0763fe-a704-43ad-b956-1aaa7cf38be9")
 	)
 	(bus_entry
-		(at 92.71 115.57)
+		(at 95.25 119.38)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6092,7 +6218,7 @@
 		(uuid "52bd2983-77ab-4e22-8e9f-5bc3375818b0")
 	)
 	(bus_entry
-		(at 92.71 113.03)
+		(at 95.25 116.84)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6101,7 +6227,7 @@
 		(uuid "535fa5c5-631f-4c4d-a79d-8cedaa669cad")
 	)
 	(bus_entry
-		(at 92.71 82.55)
+		(at 95.25 86.36)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6110,7 +6236,7 @@
 		(uuid "6d45c229-5b08-486a-87bd-565b1edd81d5")
 	)
 	(bus_entry
-		(at 92.71 130.81)
+		(at 95.25 134.62)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6119,7 +6245,7 @@
 		(uuid "7e69d416-b18c-4a13-9746-73f40269b60b")
 	)
 	(bus_entry
-		(at 92.71 69.85)
+		(at 95.25 73.66)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6128,7 +6254,7 @@
 		(uuid "a5ea84cb-7176-4be0-a567-ded9a120694a")
 	)
 	(bus_entry
-		(at 92.71 85.09)
+		(at 95.25 88.9)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6137,7 +6263,7 @@
 		(uuid "a808772c-1cf8-48b9-a176-9a52916e4c97")
 	)
 	(bus_entry
-		(at 92.71 133.35)
+		(at 95.25 137.16)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6146,7 +6272,7 @@
 		(uuid "aba0c3cf-09e6-42b6-b2ff-9c638a7a9259")
 	)
 	(bus_entry
-		(at 92.71 125.73)
+		(at 95.25 129.54)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6155,7 +6281,7 @@
 		(uuid "b522b401-a948-4d50-9d6c-2303a19ff0b4")
 	)
 	(bus_entry
-		(at 92.71 110.49)
+		(at 95.25 114.3)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6164,7 +6290,7 @@
 		(uuid "b6c600a7-68a1-459d-801c-7946bd117294")
 	)
 	(bus_entry
-		(at 92.71 77.47)
+		(at 95.25 81.28)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6173,7 +6299,7 @@
 		(uuid "ba0f3596-b2c1-4b47-8bcf-67f6c7fd4dae")
 	)
 	(bus_entry
-		(at 92.71 54.61)
+		(at 95.25 58.42)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6182,7 +6308,7 @@
 		(uuid "c1b03378-b498-450f-8ee7-1b15efeb9df3")
 	)
 	(bus_entry
-		(at 92.71 64.77)
+		(at 95.25 68.58)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6191,7 +6317,7 @@
 		(uuid "dd912a8f-c732-4a1d-9cf8-d6f3925d64f4")
 	)
 	(bus_entry
-		(at 92.71 59.69)
+		(at 95.25 63.5)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6200,7 +6326,7 @@
 		(uuid "e8218faf-0a0e-4458-9f29-ccc5f697653f")
 	)
 	(bus_entry
-		(at 92.71 92.71)
+		(at 95.25 96.52)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6209,7 +6335,7 @@
 		(uuid "f0714005-b442-4e30-b98f-6accb9c05864")
 	)
 	(bus_entry
-		(at 92.71 123.19)
+		(at 95.25 127)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -6219,7 +6345,27 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 68.58) (xy 124.46 69.85)
+			(xy 72.39 81.28) (xy 92.71 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01f0f84a-47fd-4d8c-b5c6-ffd059261f33")
+	)
+	(wire
+		(pts
+			(xy 72.39 60.96) (xy 92.71 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024ccf7c-2948-4656-9602-e29b5c280b83")
+	)
+	(wire
+		(pts
+			(xy 129.54 40.64) (xy 129.54 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6239,33 +6385,23 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 76.2) (xy 114.3 76.2)
+			(xy 127 48.26) (xy 124.46 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b937d8d-bd8e-4d59-8dd1-1a6fe491864c")
+		(uuid "06eba1ba-34c5-43ee-9fe3-a8ae13d527bc")
 	)
 	(wire
 		(pts
-			(xy 71.12 62.23) (xy 90.17 62.23)
+			(xy 72.39 116.84) (xy 92.71 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0dd949c9-5d72-4f1b-92e1-73ab1def721b")
-	)
-	(wire
-		(pts
-			(xy 71.12 67.31) (xy 90.17 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10c892c9-173a-44fc-ace8-0f3ea7479886")
+		(uuid "0cc17945-13cf-48a3-9ea4-7410234f31b6")
 	)
 	(wire
 		(pts
@@ -6287,9 +6423,19 @@
 		)
 		(uuid "12422bc5-b6b7-49e6-838f-6913c981cc92")
 	)
+	(wire
+		(pts
+			(xy 72.39 127) (xy 92.71 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ea1e72-0786-4b63-a8a3-8d538a328bcd")
+	)
 	(bus
 		(pts
-			(xy 92.71 57.15) (xy 92.71 59.69)
+			(xy 95.25 60.96) (xy 95.25 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6299,7 +6445,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 128.27) (xy 92.71 130.81)
+			(xy 95.25 132.08) (xy 95.25 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6309,7 +6455,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 110.49) (xy 92.71 113.03)
+			(xy 95.25 114.3) (xy 95.25 116.84)
 		)
 		(stroke
 			(width 0)
@@ -6317,9 +6463,49 @@
 		)
 		(uuid "161de77a-38b5-4a5e-9e8d-8571ee3a1328")
 	)
+	(wire
+		(pts
+			(xy 72.39 63.5) (xy 92.71 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a88b28-d90f-4ae4-bafc-4a94e45b94cf")
+	)
+	(wire
+		(pts
+			(xy 72.39 114.3) (xy 92.71 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18506de2-625c-4bc8-9ae1-50da744a85df")
+	)
+	(wire
+		(pts
+			(xy 52.07 86.36) (xy 67.31 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b619b6d-667c-4cfe-ab59-565bc8559ba6")
+	)
+	(wire
+		(pts
+			(xy 52.07 101.6) (xy 67.31 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c59eefa-98c7-4bf3-8055-f2f9ad6d223d")
+	)
 	(bus
 		(pts
-			(xy 92.71 120.65) (xy 92.71 123.19)
+			(xy 95.25 124.46) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
@@ -6329,7 +6515,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 77.47) (xy 107.95 76.2)
+			(xy 127 49.53) (xy 127 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6339,7 +6525,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 130.81) (xy 92.71 133.35)
+			(xy 95.25 134.62) (xy 95.25 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6349,33 +6535,13 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 45.72) (xy 92.71 54.61)
+			(xy 95.25 49.53) (xy 95.25 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "236a7670-067f-428a-85e3-05a2128f2ac0")
-	)
-	(wire
-		(pts
-			(xy 71.12 125.73) (xy 90.17 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "252ef1c9-76c3-4017-9c70-5109185c994c")
-	)
-	(wire
-		(pts
-			(xy 71.12 82.55) (xy 90.17 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "256536cb-a12e-4961-863b-351d472d9999")
 	)
 	(wire
 		(pts
@@ -6389,7 +6555,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 68.58) (xy 114.3 68.58)
+			(xy 124.46 40.64) (xy 119.38 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6399,7 +6565,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 64.77) (xy 92.71 67.31)
+			(xy 95.25 68.58) (xy 95.25 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6409,7 +6575,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 74.93) (xy 92.71 77.47)
+			(xy 95.25 78.74) (xy 95.25 81.28)
 		)
 		(stroke
 			(width 0)
@@ -6419,7 +6585,27 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 76.2) (xy 119.38 76.2)
+			(xy 72.39 73.66) (xy 92.71 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c7675a6-de3e-460b-8274-d98210c63f2a")
+	)
+	(wire
+		(pts
+			(xy 52.07 66.04) (xy 67.31 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b1a1ce6-474a-4e15-aa00-83d6042df5a9")
+	)
+	(wire
+		(pts
+			(xy 129.54 48.26) (xy 127 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6429,17 +6615,47 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 113.03) (xy 90.17 113.03)
+			(xy 52.07 76.2) (xy 67.31 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "44832ec6-c1cd-4e84-a730-a02c1df0ffae")
+		(uuid "41c71e05-c136-4c27-b0bc-ddc22898b170")
 	)
 	(wire
 		(pts
-			(xy 43.18 49.53) (xy 45.72 49.53)
+			(xy 52.07 78.74) (xy 67.31 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438943cd-0cee-454a-9d7d-3ca86df6fe0b")
+	)
+	(wire
+		(pts
+			(xy 72.39 121.92) (xy 92.71 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4564e9f0-8e2d-4935-a4eb-8a3566671367")
+	)
+	(wire
+		(pts
+			(xy 52.07 111.76) (xy 67.31 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "458a2a27-bc4b-4e81-819d-f67d74b3016a")
+	)
+	(wire
+		(pts
+			(xy 24.13 53.34) (xy 26.67 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6449,27 +6665,47 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 69.85) (xy 90.17 69.85)
+			(xy 52.07 81.28) (xy 67.31 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a7fd90a-c2cb-456b-8cd5-e35aef67b1ca")
+		(uuid "49ad5b91-4895-434f-b8db-d80b9c4ee4ff")
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 90.17 59.69)
+			(xy 52.07 124.46) (xy 67.31 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4cd1b7d2-1190-4712-9ac6-58fe56df2046")
+		(uuid "4aff1f49-5476-4fd5-a908-d693a92fcfcb")
+	)
+	(wire
+		(pts
+			(xy 52.07 114.3) (xy 67.31 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b9ef557-f5c1-454f-80d3-6da3a3c26f15")
+	)
+	(wire
+		(pts
+			(xy 72.39 86.36) (xy 92.71 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cad90bb-d330-42ab-bf64-7fd9e704cae6")
 	)
 	(bus
 		(pts
-			(xy 92.71 82.55) (xy 92.71 85.09)
+			(xy 95.25 86.36) (xy 95.25 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6479,17 +6715,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 74.93) (xy 90.17 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e9c97e3-0987-4731-88c8-975265fb29b8")
-	)
-	(wire
-		(pts
-			(xy 120.65 111.76) (xy 120.65 114.3)
+			(xy 132.08 152.4) (xy 132.08 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6499,17 +6725,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 107.95) (xy 90.17 107.95)
+			(xy 72.39 111.76) (xy 92.71 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "50b9da16-8de8-419e-834c-6e0adc44ae37")
+		(uuid "50ad99aa-32d7-471f-bddc-70ccdf534ae0")
 	)
 	(wire
 		(pts
-			(xy 120.65 104.14) (xy 124.46 104.14)
+			(xy 132.08 144.78) (xy 135.89 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6529,17 +6755,27 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 72.39) (xy 90.17 72.39)
+			(xy 52.07 93.98) (xy 76.2 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54ac08c8-6999-45a4-a894-5e671379a926")
+		(uuid "5357f5bf-833e-4f8f-848b-ca19365acd07")
+	)
+	(wire
+		(pts
+			(xy 52.07 60.96) (xy 67.31 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53848980-e0b5-4222-a290-adc7ee22ee39")
 	)
 	(bus
 		(pts
-			(xy 92.71 105.41) (xy 92.71 107.95)
+			(xy 95.25 109.22) (xy 95.25 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6547,9 +6783,19 @@
 		)
 		(uuid "54e51a84-6840-460d-b9d4-4ae4cbaac27b")
 	)
+	(wire
+		(pts
+			(xy 52.07 137.16) (xy 67.31 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55f58ad4-3b5c-4891-9add-c9734b53e5d8")
+	)
 	(bus
 		(pts
-			(xy 92.71 113.03) (xy 92.71 115.57)
+			(xy 95.25 116.84) (xy 95.25 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6559,7 +6805,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 115.57) (xy 92.71 118.11)
+			(xy 95.25 119.38) (xy 95.25 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6569,7 +6815,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 69.85) (xy 92.71 72.39)
+			(xy 95.25 73.66) (xy 95.25 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6579,7 +6825,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 68.58) (xy 124.46 68.58)
+			(xy 124.46 48.26) (xy 119.38 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b87bb7b-8641-4ad8-b7bd-38432dd99f7b")
+	)
+	(wire
+		(pts
+			(xy 124.46 40.64) (xy 129.54 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6599,23 +6855,33 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 97.79) (xy 90.17 97.79)
+			(xy 52.07 132.08) (xy 67.31 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62d2bda2-ca2f-4334-a398-9bda8b735c95")
+		(uuid "65c4d9aa-322c-481c-9615-cd0b1026952a")
 	)
 	(wire
 		(pts
-			(xy 114.3 74.93) (xy 114.3 76.2)
+			(xy 119.38 46.99) (xy 119.38 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6765a749-30ec-435b-bae4-a63dbaf9b898")
+	)
+	(wire
+		(pts
+			(xy 73.66 96.52) (xy 52.07 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67b55417-84cc-4035-8b2c-8f1406829597")
 	)
 	(wire
 		(pts
@@ -6629,7 +6895,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 74.93) (xy 124.46 76.2)
+			(xy 129.54 46.99) (xy 129.54 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6639,7 +6905,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 77.47) (xy 92.71 80.01)
+			(xy 95.25 81.28) (xy 95.25 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6647,9 +6913,19 @@
 		)
 		(uuid "720786f8-c04b-4630-aab9-17906b83c656")
 	)
+	(wire
+		(pts
+			(xy 73.66 104.14) (xy 52.07 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7381e3b1-7008-4116-a829-58b427ed6fe1")
+	)
 	(bus
 		(pts
-			(xy 92.71 80.01) (xy 92.71 82.55)
+			(xy 95.25 83.82) (xy 95.25 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6659,7 +6935,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 69.85) (xy 114.3 68.58)
+			(xy 119.38 41.91) (xy 119.38 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6669,7 +6945,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 67.31) (xy 92.71 69.85)
+			(xy 95.25 71.12) (xy 95.25 73.66)
 		)
 		(stroke
 			(width 0)
@@ -6699,27 +6975,27 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 77.47) (xy 90.17 77.47)
+			(xy 52.07 129.54) (xy 67.31 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ce69551-0313-412a-8844-445e08b9aba6")
+		(uuid "788aa1ad-128e-42d0-8ea3-45094287f069")
 	)
 	(wire
 		(pts
-			(xy 71.12 110.49) (xy 90.17 110.49)
+			(xy 72.39 66.04) (xy 92.71 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "807009e0-e091-42f0-88eb-cf6c8b95b984")
+		(uuid "7f1d3257-d7f6-41f8-a52b-dd33e6c4e8e5")
 	)
 	(bus
 		(pts
-			(xy 92.71 118.11) (xy 92.71 120.65)
+			(xy 95.25 121.92) (xy 95.25 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6729,17 +7005,37 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 95.25) (xy 90.17 95.25)
+			(xy 52.07 63.5) (xy 67.31 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8409895f-7ad8-4e3a-862d-b7962dd17b94")
+		(uuid "83e6d756-82a6-45e7-ad8e-dedacd52201a")
 	)
 	(wire
 		(pts
-			(xy 107.95 68.58) (xy 104.14 68.58)
+			(xy 52.07 99.06) (xy 67.31 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840705a0-cf46-4bcf-bf68-b560ba8e7f5f")
+	)
+	(wire
+		(pts
+			(xy 52.07 73.66) (xy 67.31 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86ff14e7-92b1-418b-a260-fa2d3c928bf0")
+	)
+	(wire
+		(pts
+			(xy 113.03 40.64) (xy 110.49 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6769,17 +7065,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 123.19) (xy 90.17 123.19)
+			(xy 72.39 124.46) (xy 92.71 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ce5c4c2-119e-4b6c-a5ee-fec92af94c6f")
+		(uuid "8de28a19-648c-4bc3-95ea-97cf02bc19e6")
 	)
 	(wire
 		(pts
-			(xy 134.62 68.58) (xy 132.08 68.58)
+			(xy 139.7 40.64) (xy 137.16 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6789,7 +7085,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 85.09) (xy 92.71 92.71)
+			(xy 95.25 88.9) (xy 95.25 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6809,13 +7105,23 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 107.95) (xy 92.71 110.49)
+			(xy 95.25 111.76) (xy 95.25 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8ed2d6e8-8aec-4ae3-b9b3-e1136d65e620")
+	)
+	(wire
+		(pts
+			(xy 72.39 71.12) (xy 92.71 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fcff564-ee6c-4fc4-b423-747f3d3c0215")
 	)
 	(wire
 		(pts
@@ -6829,17 +7135,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 115.57) (xy 90.17 115.57)
+			(xy 72.39 139.7) (xy 92.71 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92d397e6-7835-4d60-bd5d-a59e64143ed6")
+		(uuid "95caf520-af49-405a-8cca-e64bc0f2b179")
 	)
 	(wire
 		(pts
-			(xy 120.65 104.14) (xy 120.65 106.68)
+			(xy 132.08 144.78) (xy 132.08 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6849,17 +7155,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 80.01) (xy 90.17 80.01)
+			(xy 72.39 137.16) (xy 92.71 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9684d2da-b3b1-4d3e-8d26-f79f310682ba")
+		(uuid "967451c2-95c3-43a0-9890-259d735b971a")
 	)
 	(bus
 		(pts
-			(xy 92.71 123.19) (xy 92.71 125.73)
+			(xy 95.25 127) (xy 95.25 129.54)
 		)
 		(stroke
 			(width 0)
@@ -6869,17 +7175,27 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 135.89) (xy 90.17 135.89)
+			(xy 72.39 88.9) (xy 92.71 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3660aad-a451-4b06-af8e-3e87aa661327")
+		(uuid "979ca6ca-932d-465e-9abd-71065855e4e6")
 	)
 	(wire
 		(pts
-			(xy 107.95 68.58) (xy 107.95 69.85)
+			(xy 52.07 139.7) (xy 67.31 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9997d5fb-3087-4d43-a33e-9a9889e2e3e3")
+	)
+	(wire
+		(pts
+			(xy 113.03 40.64) (xy 113.03 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6887,9 +7203,19 @@
 		)
 		(uuid "a6cdad41-21a8-478d-8251-525c92455efb")
 	)
+	(wire
+		(pts
+			(xy 52.07 71.12) (xy 67.31 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8a57a72-9dd5-401a-bb70-4f5c4ef8c232")
+	)
 	(bus
 		(pts
-			(xy 92.71 59.69) (xy 92.71 62.23)
+			(xy 95.25 63.5) (xy 95.25 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6909,17 +7235,27 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17) (xy 71.12 90.17)
+			(xy 52.07 68.58) (xy 67.31 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aef06bbe-2a76-43d3-8fa2-26863284b09f")
+		(uuid "af3236ad-170c-45fa-892a-6f0f7ae97ff6")
 	)
 	(wire
 		(pts
-			(xy 124.46 68.58) (xy 127 68.58)
+			(xy 72.39 91.44) (xy 92.71 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07a5e33-1c3e-4125-b994-7484e0da0342")
+	)
+	(wire
+		(pts
+			(xy 129.54 40.64) (xy 132.08 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6939,17 +7275,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 133.35) (xy 90.17 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b323de52-8c4d-4ead-9c76-a3bce6a61c3d")
-	)
-	(wire
-		(pts
-			(xy 114.3 68.58) (xy 107.95 68.58)
+			(xy 119.38 40.64) (xy 113.03 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6957,9 +7283,19 @@
 		)
 		(uuid "b9cedde5-3187-4f3f-a26f-9b0ebc138a40")
 	)
+	(wire
+		(pts
+			(xy 52.07 116.84) (xy 67.31 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc58de0b-8382-400d-bbab-cdbbe8f78271")
+	)
 	(bus
 		(pts
-			(xy 92.71 95.25) (xy 92.71 105.41)
+			(xy 95.25 99.06) (xy 95.25 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6969,7 +7305,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 69.85) (xy 119.38 68.58)
+			(xy 124.46 41.91) (xy 124.46 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6979,7 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 76.2) (xy 107.95 76.2)
+			(xy 119.38 48.26) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6989,7 +7325,27 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 74.93) (xy 107.95 76.2)
+			(xy 72.39 101.6) (xy 92.71 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5791acc-bbbe-4871-bdb8-c00536d6c4a4")
+	)
+	(wire
+		(pts
+			(xy 52.07 83.82) (xy 67.31 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6f3dfad-4840-4b27-b49c-3bd487284227")
+	)
+	(wire
+		(pts
+			(xy 113.03 46.99) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6999,33 +7355,33 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 87.63) (xy 90.17 87.63)
+			(xy 52.07 134.62) (xy 67.31 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc2616ab-9f40-4dce-a233-35aa61b347c2")
+		(uuid "ccc497a8-6299-4bcc-b94c-a6ff4d4646d9")
 	)
 	(wire
 		(pts
-			(xy 71.12 85.09) (xy 90.17 85.09)
+			(xy 72.39 83.82) (xy 92.71 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cced69ab-0100-4fd6-a369-34c1555aa3f5")
+		(uuid "d24c9760-210a-4fa1-b98f-cf359eec35ec")
 	)
 	(wire
 		(pts
-			(xy 71.12 57.15) (xy 90.17 57.15)
+			(xy 52.07 119.38) (xy 67.31 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d68a67ec-4b4d-4406-9783-5486f3105f2c")
+		(uuid "d510c7ea-3372-475b-855b-1ab452455fa6")
 	)
 	(wire
 		(pts
@@ -7039,7 +7395,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 62.23) (xy 92.71 64.77)
+			(xy 95.25 66.04) (xy 95.25 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7047,25 +7403,75 @@
 		)
 		(uuid "d8f9c70d-a7c1-4785-a62e-b0e3360de0c1")
 	)
-	(wire
-		(pts
-			(xy 71.12 128.27) (xy 90.17 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db4880de-ac50-40ef-b664-7fcae81be367")
-	)
 	(bus
 		(pts
-			(xy 92.71 54.61) (xy 92.71 57.15)
+			(xy 95.25 58.42) (xy 95.25 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db762011-fcde-47ed-b0a7-2f0f829c6851")
+	)
+	(wire
+		(pts
+			(xy 72.39 119.38) (xy 92.71 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbca42e1-c857-46a8-9ed1-e60558dd25b6")
+	)
+	(wire
+		(pts
+			(xy 72.39 76.2) (xy 92.71 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de34cb7c-620b-4102-800a-9b20c821dc82")
+	)
+	(wire
+		(pts
+			(xy 52.07 91.44) (xy 67.31 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0702970-f41f-4dd0-aebd-b6ac018e50fe")
+	)
+	(wire
+		(pts
+			(xy 72.39 132.08) (xy 92.71 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e15f57d1-8f23-4361-b8cb-b65cb9863bcf")
+	)
+	(wire
+		(pts
+			(xy 72.39 129.54) (xy 92.71 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2bb2f5c-ea14-4dc9-9c71-37228185700e")
+	)
+	(wire
+		(pts
+			(xy 52.07 121.92) (xy 67.31 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e511b3e2-ba01-4f21-8b29-d340a5d8de66")
 	)
 	(wire
 		(pts
@@ -7077,19 +7483,9 @@
 		)
 		(uuid "e5f186be-ff7b-4a2c-8bc6-70cf8b1be9d5")
 	)
-	(wire
-		(pts
-			(xy 71.12 120.65) (xy 90.17 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e69e1453-52b2-442f-9ad9-23af4a3e8fce")
-	)
 	(bus
 		(pts
-			(xy 92.71 125.73) (xy 92.71 128.27)
+			(xy 95.25 129.54) (xy 95.25 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7099,17 +7495,27 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 64.77) (xy 90.17 64.77)
+			(xy 52.07 88.9) (xy 67.31 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e91a7beb-ab83-4aa2-a045-3fd1169041c2")
+		(uuid "e72d85c6-8b47-4964-8be5-0fc59b54c614")
+	)
+	(wire
+		(pts
+			(xy 52.07 127) (xy 67.31 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec21f723-1b20-4d91-b3e5-e205bd93fb89")
 	)
 	(bus
 		(pts
-			(xy 87.63 45.72) (xy 92.71 45.72)
+			(xy 90.17 49.53) (xy 95.25 49.53)
 		)
 		(stroke
 			(width 0)
@@ -7119,7 +7525,37 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 67.31) (xy 107.95 68.58)
+			(xy 72.39 99.06) (xy 92.71 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f85d1d-bef7-4798-927c-0645628839d2")
+	)
+	(wire
+		(pts
+			(xy 73.66 109.22) (xy 52.07 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0fbeaaf-4b94-4148-aad0-742fc8c069ff")
+	)
+	(wire
+		(pts
+			(xy 72.39 78.74) (xy 92.71 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34fea7f-83e9-4160-bf52-df29c7ebb448")
+	)
+	(wire
+		(pts
+			(xy 113.03 39.37) (xy 113.03 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7139,7 +7575,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 92.71) (xy 92.71 95.25)
+			(xy 95.25 96.52) (xy 95.25 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7149,17 +7585,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 118.11) (xy 90.17 118.11)
+			(xy 72.39 134.62) (xy 92.71 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7f5a6bd-2c53-432f-8475-8f08b8553b25")
+		(uuid "f7d7cc0c-b327-4b90-affe-010c6330a4c5")
 	)
 	(bus
 		(pts
-			(xy 92.71 72.39) (xy 92.71 74.93)
+			(xy 95.25 76.2) (xy 95.25 78.74)
 		)
 		(stroke
 			(width 0)
@@ -7169,13 +7605,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 130.81) (xy 90.17 130.81)
+			(xy 72.39 68.58) (xy 92.71 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "facad0b8-aab6-443a-a1fb-a55bd858cda0")
+		(uuid "fa209ecc-2b88-4719-8be4-a14a40d44fdb")
+	)
+	(wire
+		(pts
+			(xy 73.66 106.68) (xy 52.07 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3eaa4d-007b-4008-bf15-4e13a3b0ff67")
 	)
 	(wire
 		(pts
@@ -7189,7 +7635,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 74.93) (xy 119.38 76.2)
+			(xy 124.46 46.99) (xy 124.46 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7197,8 +7643,18 @@
 		)
 		(uuid "fe758c4e-22d0-4f63-8221-a207397ce3e6")
 	)
+	(label "DDR3_A6"
+		(at 53.34 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0144bfbc-a4c1-4f97-8852-903d0aaa9b2b")
+	)
 	(label "DDR3.A5"
-		(at 74.93 80.01 0)
+		(at 77.47 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7208,7 +7664,7 @@
 		(uuid "03e76853-51e9-40d9-ae4d-cc97600192cc")
 	)
 	(label "VDDR_BANK"
-		(at 44.45 49.53 0)
+		(at 25.4 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7217,8 +7673,28 @@
 		)
 		(uuid "060f8eb6-8fce-4998-8458-172d01eeb6f9")
 	)
+	(label "DDR3_A3"
+		(at 53.34 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c2439fa-27ec-4c96-800b-d8f20c953052")
+	)
+	(label "DDR3_A11"
+		(at 53.34 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c73c956-13d3-4cf7-a2aa-52e28e382b8a")
+	)
 	(label "DDR3.A8"
-		(at 74.93 72.39 0)
+		(at 77.47 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7227,8 +7703,18 @@
 		)
 		(uuid "1142d99d-7d62-47fe-9d1b-3a076a9a9b01")
 	)
+	(label "DDR3_A2"
+		(at 53.34 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1244bba4-6948-4aa9-9f81-015f4db2d7ff")
+	)
 	(label "DDR3.CS#"
-		(at 72.39 110.49 0)
+		(at 74.93 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7237,8 +7723,18 @@
 		)
 		(uuid "140a3e9a-2ab5-45b3-a68c-9f438aa7879c")
 	)
+	(label "DDR3_A13"
+		(at 53.34 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23d7ab94-1b45-4c8f-981b-e8dcc3db2b41")
+	)
 	(label "DDR3.CKE"
-		(at 72.39 135.89 0)
+		(at 74.93 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7248,7 +7744,7 @@
 		(uuid "29146216-1595-41ff-9b06-550238d2eafc")
 	)
 	(label "VDDR_BANK"
-		(at 104.14 68.58 180)
+		(at 110.49 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7257,8 +7753,18 @@
 		)
 		(uuid "2c8d9bad-073e-4499-95c6-d41b4fafd341")
 	)
+	(label "DDR3_A4"
+		(at 53.34 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35514bda-a8d4-4dd5-8c57-a3b6b87d54db")
+	)
 	(label "DDR3.A6"
-		(at 74.93 77.47 0)
+		(at 77.47 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7268,7 +7774,7 @@
 		(uuid "36145cd1-0c78-4a8e-9af0-47f2bef88628")
 	)
 	(label "DDR3.A7"
-		(at 74.93 74.93 0)
+		(at 77.47 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7278,7 +7784,7 @@
 		(uuid "40571052-f342-4934-b227-0f0742f20b7b")
 	)
 	(label "DDR3.A11"
-		(at 74.93 64.77 0)
+		(at 77.47 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7288,7 +7794,7 @@
 		(uuid "4451e434-68b3-485e-8812-d4908bcf2562")
 	)
 	(label "DDR3.A14"
-		(at 74.93 57.15 0)
+		(at 77.47 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7297,8 +7803,18 @@
 		)
 		(uuid "464bae90-f12f-4e1e-8981-12a92df89ef1")
 	)
+	(label "DDR3_A8"
+		(at 53.34 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "498d69e2-7e43-4e90-a700-e1b3b615361a")
+	)
 	(label "DDR3.BA2"
-		(at 72.39 118.11 0)
+		(at 74.93 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7307,8 +7823,28 @@
 		)
 		(uuid "4ea8166b-2653-4397-a56e-8bbb8f0ac877")
 	)
+	(label "DDR3_A1"
+		(at 53.34 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "528bd3d9-cdc3-4b49-94b0-c18dbefe22b4")
+	)
+	(label "DDR3_CAS#"
+		(at 53.34 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fabb273-f8cd-469f-b3a6-df3a6ed90611")
+	)
 	(label "DDR3.RAS#"
-		(at 72.39 128.27 0)
+		(at 74.93 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7318,7 +7854,7 @@
 		(uuid "6a92b08b-4b7a-4762-b630-a010c54b06ab")
 	)
 	(label "DDR3.A3"
-		(at 74.93 85.09 0)
+		(at 77.47 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7327,8 +7863,38 @@
 		)
 		(uuid "6b095474-ee1c-432c-b4e6-9a3cf9dd4d44")
 	)
+	(label "DDR3_BA0"
+		(at 53.34 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c40bffd-5a5f-49aa-bcc9-cfe42f4b11be")
+	)
+	(label "DDR3_A14"
+		(at 53.34 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76d4c1fe-5593-4e5c-bee0-1bff55530edb")
+	)
+	(label "DDR3_BA2"
+		(at 53.34 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7779b4d6-7149-42af-b993-52a478bccd62")
+	)
 	(label "DDR3.A12"
-		(at 74.93 62.23 0)
+		(at 77.47 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7338,7 +7904,7 @@
 		(uuid "7b256da1-a1bd-41b0-bb84-195a074535bf")
 	)
 	(label "DDR3.BA0"
-		(at 72.39 123.19 0)
+		(at 74.93 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7348,7 +7914,7 @@
 		(uuid "7efdec2f-7fe3-436f-b345-127fe6f8e5c0")
 	)
 	(label "DDR3.A4"
-		(at 74.93 82.55 0)
+		(at 77.47 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7357,8 +7923,18 @@
 		)
 		(uuid "8b527f28-b526-458f-b067-36bc45a12fd2")
 	)
+	(label "DDR3_A0"
+		(at 53.34 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d557b98-23f0-47b1-8608-f4c6aa12844a")
+	)
 	(label "DDR3.A2"
-		(at 74.93 87.63 0)
+		(at 77.47 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7368,7 +7944,7 @@
 		(uuid "8f4b46e7-39f6-4023-b6a4-d5582d50bd8b")
 	)
 	(label "DDR3.A9"
-		(at 74.93 69.85 0)
+		(at 77.47 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7377,8 +7953,18 @@
 		)
 		(uuid "8f703ca3-f756-46aa-8aa1-afc35efd7277")
 	)
+	(label "DDR3_WE#"
+		(at 53.34 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90fdf244-2c2e-4184-b646-5f1a12db7b8a")
+	)
 	(label "DDR3.A0"
-		(at 74.93 97.79 0)
+		(at 77.47 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7388,7 +7974,7 @@
 		(uuid "9b8191ec-bd9f-44d0-8523-1c054af74860")
 	)
 	(label "DDR3.A1"
-		(at 74.93 95.25 0)
+		(at 77.47 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7398,7 +7984,7 @@
 		(uuid "9ee8797d-23de-442f-861f-9a0cbf188211")
 	)
 	(label "DDR3.ODT"
-		(at 72.39 107.95 0)
+		(at 74.93 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7408,7 +7994,7 @@
 		(uuid "a940b7d8-61d1-43b5-941e-c7715e0298bc")
 	)
 	(label "DDR3.RESET#"
-		(at 72.39 115.57 0)
+		(at 74.93 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7418,7 +8004,7 @@
 		(uuid "ab1c782e-9d4b-41f8-8902-a691842fb4aa")
 	)
 	(label "DDR3.A13"
-		(at 74.93 59.69 0)
+		(at 77.47 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7427,8 +8013,48 @@
 		)
 		(uuid "ac38d67c-deb1-4708-a35f-7f339408cd36")
 	)
+	(label "DDR3_ODT"
+		(at 53.34 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afc5e0e5-f017-4e9c-94f5-c5e6b2e23f8a")
+	)
+	(label "DDR3_A5"
+		(at 53.34 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7cca41a-b3d1-41fa-8b57-d5cae437a086")
+	)
+	(label "DDR3_A12"
+		(at 53.34 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf27cd45-459e-4730-a0c3-f04197e583d0")
+	)
+	(label "DDR3_A10"
+		(at 53.34 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4e1ec83-ecc2-4ed2-b4dd-ba4ba34c6f68")
+	)
 	(label "DDR3.CAS#"
-		(at 72.39 125.73 0)
+		(at 74.93 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7437,8 +8063,18 @@
 		)
 		(uuid "c6a085d5-d437-4fbf-b9d6-822719f6aeca")
 	)
+	(label "DDR3_RAS#"
+		(at 53.34 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d048b785-e4e3-4714-8686-5416d4c73832")
+	)
 	(label "DDR3.A10"
-		(at 74.93 67.31 0)
+		(at 77.47 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7447,8 +8083,18 @@
 		)
 		(uuid "d3da3bc8-eb2d-49b4-a9c2-9449c7074c26")
 	)
+	(label "DDR3_A7"
+		(at 53.34 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8e91be1-0b51-4d6e-8a1b-4a3f4cbfb3bf")
+	)
 	(label "DDR3.WE#"
-		(at 72.39 113.03 0)
+		(at 74.93 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7457,8 +8103,38 @@
 		)
 		(uuid "da4da7a1-443d-4276-b295-43e28c45c309")
 	)
+	(label "DDR3_CK#"
+		(at 53.34 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecc9ffdb-4c6f-43f6-bfaf-af22fa90c315")
+	)
+	(label "DDR3_A9"
+		(at 53.34 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ece24dc6-c185-4f2b-b8b2-9f2c85610dc7")
+	)
+	(label "DDR3_CS#"
+		(at 53.34 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f11362ea-095a-486b-8ed3-d67cd542ce3c")
+	)
 	(label "DDR3.CK#"
-		(at 72.39 133.35 0)
+		(at 74.93 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7468,7 +8144,7 @@
 		(uuid "f15c9d20-2447-489f-adc7-4706a1efddcc")
 	)
 	(label "DDR3.BA1"
-		(at 72.39 120.65 0)
+		(at 74.93 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7477,8 +8153,28 @@
 		)
 		(uuid "f485241f-59dd-4fbf-a4fd-4a13e9ac4e52")
 	)
+	(label "DDR3_RESET#"
+		(at 53.34 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f665cb2b-625d-4997-8764-81dd80136e8e")
+	)
+	(label "DDR3_CKE"
+		(at 53.34 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f93e2f29-38ef-405e-a0f0-8adc218de4ff")
+	)
 	(label "DDR3.CK"
-		(at 72.39 130.81 0)
+		(at 74.93 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7487,9 +8183,29 @@
 		)
 		(uuid "fa270c3f-2ec2-4752-8933-1de71e5ec6ee")
 	)
+	(label "DDR3_CK"
+		(at 53.34 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fcec811d-dd78-4532-9ae1-4cd063c0b5db")
+	)
+	(label "DDR3_BA1"
+		(at 53.34 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffc84e08-f235-4598-84ff-0c9999bbe481")
+	)
 	(global_label "VDRR3L_V675"
 		(shape passive)
-		(at 124.46 104.14 0)
+		(at 135.89 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7499,7 +8215,7 @@
 		)
 		(uuid "3ad7d1c0-4bb5-4da8-8b0f-2e81a9b6ae98")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.1548 104.14 0)
+			(at 150.5848 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,7 +8227,7 @@
 	)
 	(global_label "VDDR3L_1V35"
 		(shape passive)
-		(at 134.62 68.58 0)
+		(at 139.7 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7521,7 +8237,7 @@
 		)
 		(uuid "6b73fa07-361c-4612-8c2a-70a93f002e1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.3148 68.58 0)
+			(at 154.3948 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7555,7 +8271,7 @@
 	)
 	(global_label "VDRR3L_V675"
 		(shape passive)
-		(at 73.66 90.17 0)
+		(at 76.2 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7565,7 +8281,7 @@
 		)
 		(uuid "c00b9b06-4044-4f24-8101-97aea5df2153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.3548 90.17 0)
+			(at 90.8948 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7621,7 +8337,7 @@
 	)
 	(hierarchical_label "DDR3{LPDDR3_CTL}"
 		(shape input)
-		(at 87.63 45.72 180)
+		(at 90.17 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7629,6 +8345,216 @@
 			(justify right)
 		)
 		(uuid "d8e7e4da-ab88-494d-b2eb-5f83cb9405c9")
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "002a1c14-c5f0-4f62-bf5e-79f0833197fd")
+		(property "Reference" "NT623"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03b0984b-2599-48c4-bd33-8ec5e3ea4ed7")
+		)
+		(pin "2"
+			(uuid "ee285b3a-c564-4e7b-8f29-9ef263cbc239")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT623")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a12e65b-69c8-4ee5-9192-893faa4d6b2b")
+		(property "Reference" "NT605"
+			(at 69.85 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c616a7e-b1ad-4344-998e-d268286ec5ea")
+		)
+		(pin "2"
+			(uuid "d328b448-41c2-416c-975d-bf28839fe1d9")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT605")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1623564e-4ed8-4a6b-ace5-174a50f045f9")
+		(property "Reference" "NT626"
+			(at 69.85 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b13ede47-c794-42f8-a8db-578551136b2a")
+		)
+		(pin "2"
+			(uuid "16351b54-14f2-41de-abf0-55d636181108")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT626")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7697,8 +8623,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19d65b91-58cd-42be-9e4f-c763c46b6018")
+		(property "Reference" "NT604"
+			(at 69.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aeb3eb4-b6ed-4d7d-acac-909b5d3f5f76")
+		)
+		(pin "2"
+			(uuid "0523dd6e-9f49-4c0b-a5dd-1586bcb97505")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT604")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "246a306c-a717-48c9-9ce7-aa50920d70f2")
+		(property "Reference" "NT620"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb390a4e-4c83-4c1a-b81c-b492cac4101a")
+		)
+		(pin "2"
+			(uuid "69d875bb-af71-49c6-bb75-c66623a0c84d")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT620")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 119.38 72.39 0)
+		(at 124.46 44.45 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7707,7 +8773,7 @@
 		(dnp no)
 		(uuid "304eb5ec-2285-4fce-88ff-142750b822f6")
 		(property "Reference" "C606"
-			(at 116.078 71.12 0)
+			(at 121.158 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7716,7 +8782,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 119.126 74.422 0)
+			(at 124.206 46.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7725,7 +8791,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7734,7 +8800,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707307011465216"
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7743,7 +8809,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7752,7 +8818,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7761,7 +8827,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7770,7 +8836,7 @@
 			)
 		)
 		(property "LPN" "C15195"
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7779,7 +8845,7 @@
 			)
 		)
 		(property "MPN" "CL05B103KB5NNNC"
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7788,7 +8854,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7797,7 +8863,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +8872,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7815,7 +8881,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7824,7 +8890,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +8899,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7842,7 +8908,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7851,7 +8917,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,7 +8926,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,7 +8935,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7878,7 +8944,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7887,7 +8953,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +8962,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,7 +8971,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7914,7 +8980,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7923,7 +8989,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,7 +8998,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7941,7 +9007,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7950,7 +9016,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7959,7 +9025,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7968,7 +9034,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7977,7 +9043,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7986,7 +9052,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 119.38 72.39 0)
+			(at 124.46 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8004,6 +9070,216 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
 					(reference "C606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42fab0c8-8f19-42c3-aaa7-bea02b203ac9")
+		(property "Reference" "NT613"
+			(at 69.85 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3de2611b-c93c-4d14-802a-e1bb2dd02cc4")
+		)
+		(pin "2"
+			(uuid "27900b30-17e7-4f1c-a65b-bc32f4706e61")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT613")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "453c10fc-2333-4186-8598-f1e2734d32cf")
+		(property "Reference" "NT624"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72a5d18e-7cb1-458e-8dff-f1a54d668eb1")
+		)
+		(pin "2"
+			(uuid "ff5c86a9-b155-4aec-9a24-1b3c9a074d08")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT624")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46507bd4-2116-490f-8e68-1f93b0d22eb1")
+		(property "Reference" "NT601"
+			(at 69.85 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e1e86df-eb87-4fb1-bc8d-cf5a8837cca3")
+		)
+		(pin "2"
+			(uuid "d91594fd-8b5c-4e3a-a5e0-b1b6997c8f1d")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT601")
 					(unit 1)
 				)
 			)
@@ -8305,7 +9581,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 120.65 109.22 0)
+		(at 132.08 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8313,7 +9589,7 @@
 		(dnp no)
 		(uuid "623ca006-fdf3-44d8-beee-e474cf288e67")
 		(property "Reference" "C608"
-			(at 118.11 107.442 0)
+			(at 129.54 148.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8322,7 +9598,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 119.38 111.252 0)
+			(at 130.81 151.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8331,7 +9607,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 121.158 112.522 0)
+			(at 132.588 153.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8340,7 +9616,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240"
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8349,7 +9625,7 @@
 			)
 		)
 		(property "Description" "X7R, +-10%"
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8358,7 +9634,7 @@
 			)
 		)
 		(property "LPN" "C307331"
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8367,7 +9643,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8376,7 +9652,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8385,7 +9661,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8394,7 +9670,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8403,7 +9679,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8412,7 +9688,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,7 +9697,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8430,7 +9706,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8439,7 +9715,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8448,7 +9724,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8457,7 +9733,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8466,7 +9742,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8475,7 +9751,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8484,7 +9760,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8493,7 +9769,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8502,7 +9778,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8511,7 +9787,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,7 +9796,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8529,7 +9805,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8538,7 +9814,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 120.65 109.22 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8563,16 +9839,15 @@
 	)
 	(symbol
 		(lib_id "iw-fpga_mcu:ECP5-BGA256")
-		(at 57.15 96.52 0)
+		(at 38.1 100.33 0)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "642a98aa-57b2-468a-929a-6b3dcded1c54")
 		(property "Reference" "IC1"
-			(at 36.83 98.2842 0)
+			(at 24.638 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8581,7 +9856,7 @@
 			)
 		)
 		(property "Value" "ECP5-BGA256"
-			(at 36.83 100.8242 0)
+			(at 32.258 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8590,7 +9865,7 @@
 			)
 		)
 		(property "Footprint" "iw-fpga_mcu:BGA256C80P16X16_1400X1400X170"
-			(at -24.13 8.89 0)
+			(at -43.18 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,7 +9875,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588918730680111104"
-			(at -35.56 -15.24 0)
+			(at -54.61 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8610,7 +9885,7 @@
 			)
 		)
 		(property "Description" "FPGA - Field Programmable Gate Array ECP5; 12k LUTs; 1.1V"
-			(at -35.56 -12.7 0)
+			(at -54.61 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8620,7 +9895,7 @@
 			)
 		)
 		(property "Manufacturer" "Lattice"
-			(at -34.29 -36.83 0)
+			(at -53.34 -33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8630,7 +9905,7 @@
 			)
 		)
 		(property "LPN" "C1521614"
-			(at -34.29 -34.29 0)
+			(at -53.34 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8640,7 +9915,7 @@
 			)
 		)
 		(property "MPN" "LFE5U-25F-6BG256C "
-			(at 37.846 96.266 0)
+			(at 18.796 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8649,7 +9924,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8658,7 +9933,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8667,7 +9942,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8676,7 +9951,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8685,7 +9960,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +9969,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +9978,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +9987,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8721,7 +9996,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8730,7 +10005,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8739,7 +10014,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8748,7 +10023,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8757,7 +10032,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,7 +10041,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8775,7 +10050,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8784,7 +10059,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +10068,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,7 +10077,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8811,7 +10086,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 57.15 96.52 0)
+			(at 38.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9598,7 +10873,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 107.95 67.31 0)
+		(at 113.03 39.37 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9608,7 +10883,7 @@
 		(fields_autoplaced yes)
 		(uuid "68594e8a-d3b2-4655-ba70-43f7dd04b24e")
 		(property "Reference" "#FLG0601"
-			(at 107.95 65.405 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9617,7 +10892,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 107.95 62.23 0)
+			(at 113.03 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9625,7 +10900,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 67.31 0)
+			(at 113.03 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9634,7 +10909,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 67.31 0)
+			(at 113.03 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9643,7 +10918,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 107.95 67.31 0)
+			(at 113.03 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9664,8 +10939,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f8cc0ae-8ea1-4411-9f35-6e0a5f7005de")
+		(property "Reference" "NT621"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2d89f24-d727-4156-80e9-09cb7fca02b7")
+		)
+		(pin "2"
+			(uuid "def57cbb-e62f-4238-9a68-f549914f29f5")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT621")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70f640cb-6ed2-4d73-adf0-905823f8666a")
+		(property "Reference" "NT609"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83e55236-cd90-47e5-b4f7-0cdf788e3ea2")
+		)
+		(pin "2"
+			(uuid "46a84e5e-00e2-4b02-b20f-a39107f0888a")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT609")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 120.65 114.3 0)
+		(at 132.08 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9673,7 +11088,7 @@
 		(dnp no)
 		(uuid "76232b86-9f5b-4cce-b9c7-d7d100e3d875")
 		(property "Reference" "#PWR0603"
-			(at 120.65 120.65 0)
+			(at 132.08 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9682,7 +11097,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 126.746 116.84 0)
+			(at 138.176 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9690,7 +11105,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 114.3 0)
+			(at 132.08 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9699,7 +11114,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 114.3 0)
+			(at 132.08 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9708,7 +11123,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 114.3 0)
+			(at 132.08 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9723,6 +11138,146 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
 					(reference "#PWR0603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f8903ff-0d9e-4209-ae77-6f4da99b9eca")
+		(property "Reference" "NT614"
+			(at 69.85 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08a7a6ca-2e5b-41cc-b787-7bd425fd441e")
+		)
+		(pin "2"
+			(uuid "539a2fd8-4f0f-48ca-9cdf-2c4ceb353c20")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT614")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ee0dbbc-682e-40bf-a93d-f57189dd4069")
+		(property "Reference" "NT603"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94f57b97-03b7-4e46-a4b9-a7f3fda8b1bb")
+		)
+		(pin "2"
+			(uuid "e25b776a-da3e-4be9-8085-b3c6041621e4")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT603")
 					(unit 1)
 				)
 			)
@@ -11075,35 +12630,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 114.3 72.39 0)
-		(mirror y)
+		(lib_id "Device:NetTie_2")
+		(at 69.85 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "a7b8c6d7-b558-4540-91a5-848d3e08d3c7")
-		(property "Reference" "C605"
-			(at 120.904 71.12 0)
+		(fields_autoplaced yes)
+		(uuid "95bec331-79ac-44ec-829b-84a7a59f1479")
+		(property "Reference" "NT602"
+			(at 69.85 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 113.792 74.168 0)
+		(property "Value" "NetTie_2"
+			(at 69.85 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 114.3 72.39 0)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11112,7 +12667,217 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 72.39 0)
+			(at 69.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd8b51a7-89f7-4785-98a9-d748682681b2")
+		)
+		(pin "2"
+			(uuid "041ea008-3143-4608-9cc6-39ce7dbf6c75")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98afb927-d2fc-4b7b-8184-6aa6eb97fede")
+		(property "Reference" "NT616"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "670a2fbc-80e3-4199-b6af-de4d716745f8")
+		)
+		(pin "2"
+			(uuid "8542367c-1abc-4ddf-95f9-1d625566752e")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT616")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99111348-6800-49ec-aa8b-66ce4afa2d1d")
+		(property "Reference" "NT608"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa57ce40-4eb9-46fa-a195-9a6d6815d81b")
+		)
+		(pin "2"
+			(uuid "b6129d83-0d2b-42ce-aa05-6dfff3c320d1")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT608")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 119.38 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7b8c6d7-b558-4540-91a5-848d3e08d3c7")
+		(property "Reference" "C605"
+			(at 125.984 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 118.872 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 119.38 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11121,7 +12886,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11130,7 +12895,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11139,7 +12904,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11148,7 +12913,7 @@
 			)
 		)
 		(property "LPN" "C307331"
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11157,7 +12922,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11166,7 +12931,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11175,7 +12940,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11184,7 +12949,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11193,7 +12958,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11202,7 +12967,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11211,7 +12976,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11220,7 +12985,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11229,7 +12994,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11238,7 +13003,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11247,7 +13012,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11256,7 +13021,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11265,7 +13030,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11274,7 +13039,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11283,7 +13048,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11292,7 +13057,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11301,7 +13066,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11310,7 +13075,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11319,7 +13084,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11328,7 +13093,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11337,7 +13102,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11346,7 +13111,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11355,7 +13120,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11364,7 +13129,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 114.3 72.39 0)
+			(at 119.38 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11717,35 +13482,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 107.95 72.39 0)
-		(mirror y)
+		(lib_id "Device:NetTie_2")
+		(at 69.85 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "b8029cb5-4c32-4fab-b803-76d434263192")
-		(property "Reference" "C604"
-			(at 107.95 70.104 0)
+		(fields_autoplaced yes)
+		(uuid "af8bc3be-bc01-42ea-9eb5-8e2c4713c19b")
+		(property "Reference" "NT612"
+			(at 69.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 107.696 74.422 0)
+		(property "Value" "NetTie_2"
+			(at 69.85 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 107.95 72.39 0)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1240mm"
+			(at 69.85 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11754,7 +13519,287 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 72.39 0)
+			(at 69.85 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc48f5c4-486a-4818-90de-4f4bcb958903")
+		)
+		(pin "2"
+			(uuid "43c383db-7f6c-4821-8b8f-45a0e18e0ee5")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT612")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b10d3c52-1615-4100-abb6-40a9bec1febb")
+		(property "Reference" "NT606"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff223456-4fd7-449a-90a6-c263be3997e5")
+		)
+		(pin "2"
+			(uuid "5263fcc3-d3e4-4aac-a600-438b6854ae48")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1adfc6c-5bcb-47b6-be18-e126eea7c5f8")
+		(property "Reference" "NT618"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d10a356-31f6-4009-864f-192b32b296b0")
+		)
+		(pin "2"
+			(uuid "8e0aad75-46ae-42c6-8217-c05c056bc07d")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT618")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b344035e-9417-43bc-b280-d51f60756d0a")
+		(property "Reference" "NT611"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1240mm"
+			(at 69.85 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb4d7e76-8f9c-4862-934e-cdabaf19d050")
+		)
+		(pin "2"
+			(uuid "897191b5-d15c-4776-be51-19eb2154654e")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT611")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 113.03 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8029cb5-4c32-4fab-b803-76d434263192")
+		(property "Reference" "C604"
+			(at 113.03 42.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 112.776 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 113.03 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11763,7 +13808,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11772,7 +13817,7 @@
 			)
 		)
 		(property "LCSC Part Number" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11781,7 +13826,7 @@
 			)
 		)
 		(property "Manufacturing Part Number" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11790,7 +13835,7 @@
 			)
 		)
 		(property "LPN" "C307331"
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11799,7 +13844,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11808,7 +13853,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11817,7 +13862,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11826,7 +13871,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11835,7 +13880,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11844,7 +13889,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11853,7 +13898,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11862,7 +13907,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11871,7 +13916,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11880,7 +13925,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11889,7 +13934,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11898,7 +13943,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11907,7 +13952,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11916,7 +13961,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11925,7 +13970,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11934,7 +13979,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11943,7 +13988,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11952,7 +13997,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11961,7 +14006,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11970,7 +14015,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11979,7 +14024,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11988,7 +14033,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11997,7 +14042,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12006,7 +14051,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 107.95 72.39 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12095,8 +14140,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c75d4d7a-41c7-4a5b-a08b-f503814dff9b")
+		(property "Reference" "NT619"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f59dff73-765c-4a61-a5e8-b9df92361a28")
+		)
+		(pin "2"
+			(uuid "66107dbb-3fbe-4fba-b7a1-c74ff5c32d00")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT619")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8e754b-da56-471d-98ae-94987cd27539")
+		(property "Reference" "NT622"
+			(at 69.85 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65e836cc-4f62-4ac9-b9dd-227d7c3b7f27")
+		)
+		(pin "2"
+			(uuid "2c246372-f864-48ef-a315-df2f073f3aff")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT622")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 107.95 77.47 0)
+		(at 127 49.53 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12105,7 +14290,7 @@
 		(dnp no)
 		(uuid "ce7051c5-4ab7-4cba-8e3b-6dbd649febc0")
 		(property "Reference" "#PWR0602"
-			(at 107.95 83.82 0)
+			(at 127 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12114,7 +14299,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 78.74 0)
+			(at 123.19 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12122,7 +14307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 77.47 0)
+			(at 127 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12131,7 +14316,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 77.47 0)
+			(at 127 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12140,7 +14325,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 77.47 0)
+			(at 127 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12155,6 +14340,76 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
 					(reference "#PWR0602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce7347b6-40ed-4cdc-8b14-495d0308b6b5")
+		(property "Reference" "NT607"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75f98391-a699-43c6-88b6-25a6b4bd99d2")
+		)
+		(pin "2"
+			(uuid "ecb01805-c308-49f1-9f65-731aa352a798")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT607")
 					(unit 1)
 				)
 			)
@@ -12413,6 +14668,146 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
 					(reference "C601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de66d50b-f5c1-43f4-b01d-d744e072f176")
+		(property "Reference" "NT617"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88f61202-8135-4dcf-976e-e1c10b90a671")
+		)
+		(pin "2"
+			(uuid "faf110a3-efbc-491f-a8ff-8eacfdfbda40")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT617")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e54538e7-3dd1-4d6a-9d94-b943705cf95a")
+		(property "Reference" "NT610"
+			(at 69.85 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "352d890b-cf03-4787-9f5b-dfe8827d5cfc")
+		)
+		(pin "2"
+			(uuid "e9b94fe4-b5e5-46e3-878a-c5a8c6e5cf11")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT610")
 					(unit 1)
 				)
 			)
@@ -12725,7 +15120,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 124.46 72.39 0)
+		(at 129.54 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12733,7 +15128,7 @@
 		(dnp no)
 		(uuid "ea730cd4-2c8b-4ffd-980f-5b05b1d0c785")
 		(property "Reference" "C607"
-			(at 124.46 70.612 0)
+			(at 129.54 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12742,7 +15137,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 130.302 74.422 0)
+			(at 135.382 46.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12751,7 +15146,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12760,7 +15155,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707315714920448"
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12769,7 +15164,7 @@
 			)
 		)
 		(property "Description" "X5R, 10V"
-			(at 127.762 71.882 0)
+			(at 132.842 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12778,7 +15173,7 @@
 			)
 		)
 		(property "LPN" "C23733"
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12787,7 +15182,7 @@
 			)
 		)
 		(property "MPN" "CL05A475MP5NRNC"
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12796,7 +15191,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12805,7 +15200,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12814,7 +15209,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12823,7 +15218,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12832,7 +15227,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12841,7 +15236,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12850,7 +15245,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12859,7 +15254,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12868,7 +15263,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12877,7 +15272,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12886,7 +15281,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12895,7 +15290,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12904,7 +15299,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12913,7 +15308,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12922,7 +15317,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12931,7 +15326,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12940,7 +15335,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12949,7 +15344,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12958,7 +15353,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12967,7 +15362,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12976,7 +15371,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12985,7 +15380,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12994,7 +15389,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 124.46 72.39 0)
+			(at 129.54 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13018,8 +15413,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed565464-0240-4e16-9484-782c6f0f1b4c")
+		(property "Reference" "NT615"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "716baba7-8101-439b-a8b9-377d5f80496b")
+		)
+		(pin "2"
+			(uuid "49898b3c-2605-4863-a1e7-94aa5c5fc629")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT615")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Small")
-		(at 129.54 68.58 90)
+		(at 134.62 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13027,7 +15492,7 @@
 		(dnp no)
 		(uuid "fb271768-c288-4a5b-b731-880fce56a4d2")
 		(property "Reference" "L601"
-			(at 129.794 66.294 90)
+			(at 134.874 38.354 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13035,7 +15500,7 @@
 			)
 		)
 		(property "Value" "120@100MHz"
-			(at 130.556 64.516 90)
+			(at 135.636 36.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13043,7 +15508,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 129.54 68.58 0)
+			(at 134.62 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13052,7 +15517,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588898925176217600"
-			(at 129.54 68.58 0)
+			(at 134.62 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13061,7 +15526,7 @@
 			)
 		)
 		(property "Description" "25mOhm, 1-3A"
-			(at 129.54 68.58 0)
+			(at 134.62 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13070,7 +15535,7 @@
 			)
 		)
 		(property "LPN" "C113030"
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13079,7 +15544,7 @@
 			)
 		)
 		(property "MPN" "BLM18SG121TN1D"
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13088,7 +15553,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13097,7 +15562,7 @@
 			)
 		)
 		(property "SN-DK" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13106,7 +15571,7 @@
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13115,7 +15580,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13124,7 +15589,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13133,7 +15598,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13142,7 +15607,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13151,7 +15616,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13160,7 +15625,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13169,7 +15634,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13178,7 +15643,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13187,7 +15652,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13196,7 +15661,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13205,7 +15670,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13214,7 +15679,7 @@
 			)
 		)
 		(property "Mfg" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13223,7 +15688,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13232,7 +15697,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13241,7 +15706,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13250,7 +15715,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13259,7 +15724,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13268,7 +15733,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13277,7 +15742,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13286,7 +15751,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 129.54 68.58 90)
+			(at 134.62 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13873,6 +16338,146 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
 					(reference "R601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fef90f76-6729-4370-b3af-5953b4849872")
+		(property "Reference" "NT625"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60941651-7f48-4069-aaa5-aa7a3b82d87b")
+		)
+		(pin "2"
+			(uuid "e7d607be-4741-4a13-985b-45c9e9967ba3")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT625")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 69.85 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffce530b-9577-4baa-bcf1-63f2bd853757")
+		(property "Reference" "NT627"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iw-misc:NetTie-2_SMD_Pad0.1565mm"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8057ec98-9e6a-461b-a4b0-8e9e8d1875ab")
+		)
+		(pin "2"
+			(uuid "b7aa00b5-91d0-46ed-9864-8521c9e058b2")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/9b4bf25f-717e-478b-8aa4-28cd7b267efe"
+					(reference "NT627")
 					(unit 1)
 				)
 			)
