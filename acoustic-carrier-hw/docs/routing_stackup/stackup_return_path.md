@@ -5,10 +5,21 @@ Make sure to add vias for high-speed signal so the return path can travel along 
 
 # Stackup
 ## JLCPCB-Stackup choice
-- JLC06161H-3313
+- JLC06161H-3313 standard / finished thickness 1.54mm +-10%
 
-Non-coplanar differential pair
-- 
+### JLCPCB calculator
+50 ohms coplanar single-ended:
+- 50, Coplanar Single Ended, L1, /, L2, width: 0.1565, /, distance from GND: 0.5080
+
+100 ohms coplanar differential pair:
+- 100, L1, /, L2, width: 0.1217, trace_width: 0.2032, distance from GND: 0.2032
+
+90 ohms coplanar differential pair:
+- 90 Coplanar Differential Pair, L1, /, L2, width: 0.1554, trace_width: 0.2032, distance from GND: 0.2032
+
+### Choice
+Choose the stackup
+- SIG - GND - (CORE) - PWR/SIG - GND - (CORE) - GND - SIG
 
 ## Signal-Ground Separation
 Planes that are further apart, have a higher impedance characteristics (so less capacitance, more inductance).

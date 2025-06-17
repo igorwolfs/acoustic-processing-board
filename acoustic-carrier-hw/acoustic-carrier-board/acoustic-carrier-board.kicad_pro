@@ -56,6 +56,16 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2032,
+          "via_gap": 0.2032,
+          "width": 0.1554
+        },
+        {
+          "gap": 0.1217,
+          "via_gap": 0.2032,
+          "width": 0.2032
         }
       ],
       "drc_exclusions": [],
@@ -123,23 +133,23 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.09,
+        "min_connection": 0.09,
+        "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.5,
+        "min_microvia_diameter": 0.3,
+        "min_microvia_drill": 0.2,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_silk_clearance": 0.16,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.16,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.09,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_via_diameter": 0.2,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -187,7 +197,11 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.0762,
+        0.1,
+        0.1565,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -219,6 +233,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.2,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.3,
+          "drill": 0.2
         }
       ],
       "zones_allow_external_fillets": false
@@ -471,7 +493,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.09,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -488,45 +510,95 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1217,
         "name": "analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 11,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "analog-frontend",
+        "pcb_color": "rgb(132, 0, 132)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "ddr3_diff",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "ddr3_se",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "name": "connectors",
+        "pcb_color": "rgb(0, 132, 0)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
+        "name": "ddr3",
+        "pcb_color": "rgb(0, 132, 132)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1217,
+        "name": "ddr3_diff",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.5,
+        "name": "ddr3_se",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1565
+      },
+      {
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1217,
         "name": "eth_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "eth_se",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
-        "name": "power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "name": "ethernet-phy",
+        "pcb_color": "rgb(132, 132, 0)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "gnd",
+        "pcb_color": "rgb(72, 72, 72)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
+        "name": "power",
+        "pcb_color": "rgb(255, 0, 0)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "usb-phy",
+        "pcb_color": "rgb(0, 0, 194)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1554,
         "name": "usb_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -556,6 +628,12 @@
       "/ANALOG-FRONTEND/RJ45_ADC_AIN-": [
         "analog"
       ],
+      "Net-(C1012-Pad1)": [
+        "analog"
+      ],
+      "Net-(C1016-Pad2)": [
+        "analog"
+      ],
       "Net-(C111-Pad1)": [
         "analog"
       ],
@@ -564,6 +642,21 @@
       ],
       "Net-(Q2-D)": [
         "power"
+      ],
+      "Net-(Q201-D)": [
+        "power"
+      ],
+      "Net-(R1007-Pad2)": [
+        "analog"
+      ],
+      "Net-(R1009-Pad1)": [
+        "analog"
+      ],
+      "Net-(R1018-Pad1)": [
+        "analog"
+      ],
+      "Net-(R1019-Pad1)": [
+        "analog"
       ],
       "Net-(R132-Pad1)": [
         "analog"
@@ -575,6 +668,18 @@
         "analog"
       ],
       "Net-(R142-Pad1)": [
+        "analog"
+      ],
+      "Net-(U1002-+)": [
+        "analog"
+      ],
+      "Net-(U1002--)": [
+        "analog"
+      ],
+      "Net-(U1003-COM1)": [
+        "analog"
+      ],
+      "Net-(U1003-COM2)": [
         "analog"
       ],
       "Net-(U2-COM1)": [
@@ -632,11 +737,11 @@
         "pattern": "*3V3*"
       },
       {
-        "netclass": "Default",
+        "netclass": "power",
         "pattern": "*USB_VBUS*"
       },
       {
-        "netclass": "Default",
+        "netclass": "power",
         "pattern": "*5V*"
       },
       {
@@ -646,6 +751,34 @@
       {
         "netclass": "power",
         "pattern": "*1V*"
+      },
+      {
+        "netclass": "analog-frontend",
+        "pattern": "/ANALOG-FRONTEND/*"
+      },
+      {
+        "netclass": "ethernet-phy",
+        "pattern": "/ETHERNET-PHY/*"
+      },
+      {
+        "netclass": "ddr3",
+        "pattern": "/DDR3/*"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/POWER/*"
+      },
+      {
+        "netclass": "usb-phy",
+        "pattern": "/USB-PHY/*"
+      },
+      {
+        "netclass": "connectors",
+        "pattern": "/CONNECTORS/*"
+      },
+      {
+        "netclass": "gnd",
+        "pattern": "GND"
       }
     ]
   },
@@ -664,7 +797,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 200,
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -1016,6 +1149,10 @@
       "USB-PHY"
     ],
     [
+      "bc102b0c-2088-41b9-b570-4eb098131c8b",
+      "CONNECTORS"
+    ],
+    [
       "94142f45-8b3d-48ce-ac4d-b9c7695832d7",
       "ANALOG-FRONTEND"
     ],
@@ -1026,10 +1163,6 @@
     [
       "d85f0c18-d011-408e-9192-d89f0585c7ff",
       "ETHERNET-PHY"
-    ],
-    [
-      "bc102b0c-2088-41b9-b570-4eb098131c8b",
-      "CONNECTORS"
     ]
   ],
   "text_variables": {}
