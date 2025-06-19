@@ -75,7 +75,17 @@
 	)
 	(bus
 		(pts
-			(xy 180.34 57.15) (xy 212.09 57.15)
+			(xy 175.26 52.07) (xy 212.09 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c9fd97-76c6-4086-84b8-3c8f9ca20fe5")
+	)
+	(bus
+		(pts
+			(xy 181.61 57.15) (xy 212.09 57.15)
 		)
 		(stroke
 			(width 0)
@@ -125,13 +135,13 @@
 	)
 	(bus
 		(pts
-			(xy 77.47 73.66) (xy 116.84 73.66)
+			(xy 116.84 50.8) (xy 83.82 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47b8351f-5ab5-40e9-adfd-86f181b4f4fd")
+		(uuid "48bdb46b-a42a-4d49-8345-d500be3d3901")
 	)
 	(wire
 		(pts
@@ -145,16 +155,6 @@
 	)
 	(bus
 		(pts
-			(xy 167.64 52.07) (xy 212.09 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50b5b8fb-edee-4dd1-b244-b9786090c965")
-	)
-	(bus
-		(pts
 			(xy 189.23 76.2) (xy 168.91 76.2)
 		)
 		(stroke
@@ -165,13 +165,23 @@
 	)
 	(bus
 		(pts
-			(xy 180.34 57.15) (xy 180.34 71.12)
+			(xy 181.61 57.15) (xy 181.61 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "645026c0-ace5-4766-ab51-60704162e2b1")
+	)
+	(bus
+		(pts
+			(xy 83.82 50.8) (xy 83.82 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c8f29ba-013e-4471-b7b0-72b00fa6a19d")
 	)
 	(bus
 		(pts
@@ -195,6 +205,16 @@
 	)
 	(bus
 		(pts
+			(xy 168.91 67.31) (xy 175.26 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fda278f-1cc2-41b6-ad3e-051a06c29bbd")
+	)
+	(bus
+		(pts
 			(xy 168.91 92.71) (xy 213.36 92.71)
 		)
 		(stroke
@@ -212,6 +232,26 @@
 			(type default)
 		)
 		(uuid "b22bbb0f-4efe-43bc-aa21-723ebe66fd6d")
+	)
+	(bus
+		(pts
+			(xy 83.82 73.66) (xy 77.47 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be2bab38-ca68-4520-9337-4e8e52e4ab24")
+	)
+	(bus
+		(pts
+			(xy 175.26 67.31) (xy 175.26 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea924c1-f16d-4819-97cd-feed917855b6")
 	)
 	(bus
 		(pts
@@ -235,7 +275,7 @@
 	)
 	(bus
 		(pts
-			(xy 180.34 71.12) (xy 168.91 71.12)
+			(xy 181.61 71.12) (xy 168.91 71.12)
 		)
 		(stroke
 			(width 0)
@@ -371,7 +411,7 @@
 				(justify left top)
 			)
 		)
-		(pin "RGMII{RGMII_RX}" input
+		(pin "RGMII_RX{RGMII_RX}" input
 			(at 116.84 99.06 180)
 			(uuid "53b39bc7-5be7-4cd3-8345-73325fe7737c")
 			(effects
@@ -381,7 +421,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII{RGMII_MDIO}" input
+		(pin "RGMII_MDIO{RGMII_MDIO}" input
 			(at 116.84 91.44 180)
 			(uuid "73148659-070c-4a0f-acfa-b844238adcc1")
 			(effects
@@ -401,7 +441,7 @@
 				(justify left)
 			)
 		)
-		(pin "RGMII{RGMII_TX}" input
+		(pin "RGMII_TX{RGMII_TX}" input
 			(at 116.84 95.25 180)
 			(uuid "86fac572-0390-432e-be30-fbb3102e84b3")
 			(effects
@@ -515,14 +555,14 @@
 				(justify left top)
 			)
 		)
-		(pin "DDR3{LPDDR3_CTL}" input
-			(at 167.64 52.07 0)
-			(uuid "ca64496b-bedf-46a1-91ca-aa25f76f14cc")
+		(pin "USB{USB_ULPI}" input
+			(at 116.84 50.8 180)
+			(uuid "14f47cff-a8fb-427c-8277-b3f5d8d3d9d3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
@@ -617,16 +657,6 @@
 				(justify left top)
 			)
 		)
-		(pin "USB{USB_ULPI}" input
-			(at 116.84 73.66 180)
-			(uuid "579fc63f-21f1-44da-8e15-b66624362d39")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "DDR3{LPDDR3_DQL}" input
 			(at 168.91 71.12 0)
 			(uuid "4005bb8f-9967-49ea-86b3-754dc2da9374")
@@ -640,6 +670,16 @@
 		(pin "DDR3{LPDDR3_DQU}" input
 			(at 168.91 76.2 0)
 			(uuid "6b2d907a-7c35-4c8a-a945-08b61750e975")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DDR3{LPDDR3_CTL}" input
+			(at 168.91 67.31 0)
+			(uuid "7cff2998-765f-474d-8a69-32e58f29b069")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -811,7 +851,7 @@
 				)
 			)
 		)
-		(pin "RGMII{RGMII_TX}" input
+		(pin "RGMII_TX{RGMII_TX}" input
 			(at 77.47 95.25 0)
 			(uuid "4fc20981-a5e5-4702-8bca-4996992b50fe")
 			(effects
@@ -821,7 +861,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII{RGMII_RX}" input
+		(pin "RGMII_RX{RGMII_RX}" input
 			(at 77.47 99.06 0)
 			(uuid "362b7cab-7aae-4ad8-a3ff-09af7e94ad07")
 			(effects
@@ -831,7 +871,7 @@
 				(justify right)
 			)
 		)
-		(pin "RGMII{RGMII_MDIO}" input
+		(pin "RGMII_MDIO{RGMII_MDIO}" input
 			(at 77.47 91.44 0)
 			(uuid "90898e3d-5f32-4646-a7b0-582bbe035a74")
 			(effects
