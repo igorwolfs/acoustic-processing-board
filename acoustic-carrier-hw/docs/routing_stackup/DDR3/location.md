@@ -1,9 +1,4 @@
-# Top
-## Left
-GND, VDD, GND, VDD, 
-## Right
-
-# Bottom
-## Left
-
-## Right
+# Switching
+DQ12 -> DQ9
+DQ9 -> DQ15
+DQ15 -> DQ12

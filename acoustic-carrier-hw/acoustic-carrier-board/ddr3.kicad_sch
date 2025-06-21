@@ -2458,14 +2458,14 @@
 	)
 	(bus_alias "LPDDR3_CTL"
 		(members "A[14..0]" "ODT" "CS#" "WE#" "RESET#" "BA[2..0]" "CAS#" "RAS#"
-			"CK" "CK#" "CKE"
+			"CK+" "CK-" "CKE"
 		)
 	)
 	(bus_alias "LPDDR3_DQL"
-		(members "DQ[0..7]" "LDQS" "LDQS#" "LDM")
+		(members "DQ[0..7]" "LDQS+" "LDQS-" "LDM")
 	)
 	(bus_alias "LPDDR3_DQU"
-		(members "DQ[8..15]" "UDQS" "UDQS#" "UDM")
+		(members "DQ[8..15]" "UDQS+" "UDQS-" "UDM")
 	)
 	(rectangle
 		(start 135.89 17.78)
@@ -6038,7 +6038,7 @@
 		)
 		(uuid "024eb27c-38b1-4613-82b3-cc9bd67a79a7")
 	)
-	(label "DDR3.CK#"
+	(label "DDR3.CK-"
 		(at 261.62 127 0)
 		(effects
 			(font
@@ -6108,7 +6108,7 @@
 		)
 		(uuid "2ac7a93c-e02a-47b6-99c9-f1e4f9c76261")
 	)
-	(label "DDR3.LDQS#"
+	(label "DDR3.LDQS-"
 		(at 182.88 87.63 180)
 		(effects
 			(font
@@ -6188,7 +6188,7 @@
 		)
 		(uuid "59e75dca-3567-4f1b-85b7-6d8ed3ff909d")
 	)
-	(label "DDR3.UDQS"
+	(label "DDR3.UDQS-"
 		(at 171.45 55.88 0)
 		(effects
 			(font
@@ -6208,7 +6208,7 @@
 		)
 		(uuid "6193fae1-3960-47d7-9a37-13ff1462b685")
 	)
-	(label "DDR3.CK"
+	(label "DDR3.CK+"
 		(at 261.62 124.46 0)
 		(effects
 			(font
@@ -6298,7 +6298,7 @@
 		)
 		(uuid "9a720fb2-7e99-4240-ae77-0c6f6c501811")
 	)
-	(label "DDR3.UDQS#"
+	(label "DDR3.UDQS+"
 		(at 171.45 53.34 0)
 		(effects
 			(font
@@ -6378,7 +6378,7 @@
 		)
 		(uuid "c227ff1f-5c81-4a90-bcfc-834342d16afa")
 	)
-	(label "DDR3.LDQS"
+	(label "DDR3.LDQS+"
 		(at 181.61 85.09 180)
 		(effects
 			(font
