@@ -5,7 +5,7 @@
 	(uuid "d8fcc475-2eaf-4b0e-8edd-b0ad6179ca9b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
+		(symbol "Connector_Generic:Conn_02x06_Odd_Even"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,8 +21,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x05_Odd_Even"
-				(at 1.27 -7.62 0)
+			(property "Value" "Conn_02x06_Odd_Even"
+				(at 1.27 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,10 +74,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x05_Odd_Even_1_1"
+			(symbol "Conn_02x06_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 6.35)
-					(end 3.81 -6.35)
+					(end 3.81 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -142,6 +142,17 @@
 					)
 				)
 				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
 					(start 3.81 5.207)
 					(end 2.54 4.953)
 					(stroke
@@ -188,6 +199,17 @@
 				(rectangle
 					(start 3.81 -4.953)
 					(end 2.54 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -7.493)
+					(end 2.54 -7.747)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -287,6 +309,24 @@
 					)
 				)
 				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 7.62 5.08 180)
 					(length 3.81)
 					(name "Pin_2"
@@ -369,6 +409,24 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 3.81)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6612,12 +6670,20 @@
 		(uuid "ff78ad52-8d2c-4130-96d0-6257b042e36a")
 	)
 	(no_connect
+		(at 39.37 151.13)
+		(uuid "107e73a7-e31d-489a-b7a3-634fbc68eefb")
+	)
+	(no_connect
 		(at 26.67 156.21)
 		(uuid "250d1a8c-67b4-4b1f-b5f4-8e21d603dcad")
 	)
 	(no_connect
 		(at 71.12 151.13)
 		(uuid "25d9c8e5-e19b-4e05-9d73-bcfa68b9a660")
+	)
+	(no_connect
+		(at 182.88 49.53)
+		(uuid "2dab48e6-0d2c-42e6-945d-aa033e0886d0")
 	)
 	(no_connect
 		(at 60.96 59.69)
@@ -6636,12 +6702,20 @@
 		(uuid "4f8aa11e-dd6d-4eeb-937e-12ea80e8cb9d")
 	)
 	(no_connect
+		(at 195.58 49.53)
+		(uuid "77419a25-52d9-423b-9f58-d5b6334f2bcf")
+	)
+	(no_connect
 		(at 228.6 43.18)
 		(uuid "900a5e1f-cb51-4333-aca5-c2be202b3261")
 	)
 	(no_connect
 		(at 60.96 52.07)
 		(uuid "9bb2d530-38a8-40b0-8258-86aa92e1c403")
+	)
+	(no_connect
+		(at 26.67 151.13)
+		(uuid "a153b563-7ed6-4d2c-9d94-3125df2f7ad3")
 	)
 	(no_connect
 		(at 60.96 34.29)
@@ -9791,116 +9865,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 190.5 57.15 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "046527df-ee91-4711-9490-1975156ffcca")
-		(property "Reference" "J701"
-			(at 189.23 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x05_Odd_Even"
-			(at 189.23 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Horizontal"
-			(at 190.5 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588944816709242880"
-			(at 190.5 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 190.5 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PM254-2-05-W-8.5 "
-			(at 190.5 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C2897425"
-			(at 190.5 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "6deaff97-e10d-4b28-a375-706d7ec52483")
-		)
-		(pin "8"
-			(uuid "7018ee25-31af-4c31-bb82-7239580cf249")
-		)
-		(pin "3"
-			(uuid "cd879f9b-65a5-4173-85fc-f920e14c1b0e")
-		)
-		(pin "10"
-			(uuid "5a13301a-71ea-40f3-b92e-39c2c76d5f96")
-		)
-		(pin "5"
-			(uuid "9cfeb721-f2bd-4391-a1c5-530e0fd040e0")
-		)
-		(pin "1"
-			(uuid "515132f5-38eb-4b86-91b8-bc9acbd3df16")
-		)
-		(pin "7"
-			(uuid "87107948-1841-43e6-adf8-ae000a320252")
-		)
-		(pin "4"
-			(uuid "82139363-bd13-437d-ae0e-acaffca7327b")
-		)
-		(pin "2"
-			(uuid "de43c43a-608a-4c39-9fdf-e0ba53c376a4")
-		)
-		(pin "9"
-			(uuid "79520acf-c647-4b38-937d-a3e49b40a69a")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
-					(reference "J701")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 105.41 36.83 0)
 		(mirror y)
@@ -10208,6 +10172,122 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
 					(reference "C703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
+		(at 187.96 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f03d39f-fa77-4a7e-94d2-f4cb76585059")
+		(property "Reference" "J701"
+			(at 189.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x06_Odd_Even"
+			(at 189.23 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal"
+			(at 187.96 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 187.96 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2897426"
+			(at 187.96 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PM254-2-06-W-8.5 "
+			(at 187.96 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "656c93d0-0406-4ce5-815c-4c70c4ee6eb8")
+		)
+		(pin "11"
+			(uuid "c376dafb-dd7a-4d1a-a5d5-94c577bb1e01")
+		)
+		(pin "3"
+			(uuid "5af2c4de-4cb7-4a34-9bda-b0643ca71132")
+		)
+		(pin "7"
+			(uuid "c8be55b8-e0de-4252-a2c3-4db6e3bc3b44")
+		)
+		(pin "4"
+			(uuid "a8f482e9-bbcb-44bc-89de-375c77aa7ee8")
+		)
+		(pin "10"
+			(uuid "5c5b8e20-ae35-4193-b031-5d4e94739813")
+		)
+		(pin "2"
+			(uuid "46c5f9cf-0929-48ab-bba7-6faba7f8c12c")
+		)
+		(pin "9"
+			(uuid "5d35153a-8446-4d20-9416-3847d9aa0914")
+		)
+		(pin "1"
+			(uuid "fefbc243-cb47-4066-a796-73bd02aa06c0")
+		)
+		(pin "6"
+			(uuid "602e8189-dc6a-4618-b12d-654f6c95ee70")
+		)
+		(pin "12"
+			(uuid "93b1c758-5087-4f4a-9984-d1bbeef146bf")
+		)
+		(pin "8"
+			(uuid "0eb062e8-d97f-4c76-9459-f41bcf3eb17d")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
+					(reference "J701")
 					(unit 1)
 				)
 			)
@@ -11651,116 +11731,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
 					(reference "C705")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 34.29 158.75 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "589f7801-da69-4569-941f-980f07702ef0")
-		(property "Reference" "J703"
-			(at 33.02 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x05_Odd_Even"
-			(at 33.02 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Horizontal"
-			(at 34.29 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588944816709242880"
-			(at 34.29 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 34.29 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PM254-2-05-W-8.5 "
-			(at 34.29 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C2897425"
-			(at 34.29 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "999ba886-01fe-4d63-a0d5-4e17eb9ef91a")
-		)
-		(pin "8"
-			(uuid "bdedae01-86f6-4a43-b073-94dd870d72a2")
-		)
-		(pin "3"
-			(uuid "0393630e-db41-4cbc-a730-905751affcb1")
-		)
-		(pin "10"
-			(uuid "913536c5-1e7b-4392-8c50-0a30c9331be3")
-		)
-		(pin "5"
-			(uuid "2c44b404-aea2-44b3-9cf5-2fad056e2707")
-		)
-		(pin "1"
-			(uuid "8dbc80c5-774c-4dc9-a229-2ddf739de63c")
-		)
-		(pin "7"
-			(uuid "4b7bf809-6ac0-4495-b06e-e8e317a34b1f")
-		)
-		(pin "4"
-			(uuid "44a2c043-febd-4aab-9bf6-d6e94d9109e6")
-		)
-		(pin "2"
-			(uuid "186ac06b-1109-4d8a-ac7c-35496b2a02d9")
-		)
-		(pin "9"
-			(uuid "105667d8-a9bf-452a-87bf-fc17409c8d8c")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
-					(reference "J703")
 					(unit 1)
 				)
 			)
@@ -16113,6 +16083,122 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
 					(reference "C704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
+		(at 31.75 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f95a34bc-d535-4642-a22a-7041a4106672")
+		(property "Reference" "J703"
+			(at 33.02 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x06_Odd_Even"
+			(at 33.02 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal"
+			(at 31.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 31.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C2897426"
+			(at 31.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PM254-2-06-W-8.5 "
+			(at 31.75 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "a169a2e0-9582-4ad9-82a6-c7df7a747db3")
+		)
+		(pin "11"
+			(uuid "c1c09974-7e0b-4826-b51f-dbf84529cfcd")
+		)
+		(pin "3"
+			(uuid "e217fbec-c575-43d4-81f8-ede2102d1ad0")
+		)
+		(pin "7"
+			(uuid "5ba6b3f6-7fba-4a0a-98ed-ceedaad3128c")
+		)
+		(pin "4"
+			(uuid "68351273-7b21-4d3b-b79e-e71559e1579f")
+		)
+		(pin "10"
+			(uuid "21a8a25b-dfb5-446a-acfb-2198a4994f03")
+		)
+		(pin "2"
+			(uuid "1545db37-a8e0-4ca9-98f5-dc5207f59398")
+		)
+		(pin "9"
+			(uuid "b6807b0d-cecf-41b3-9bda-55358f23b4be")
+		)
+		(pin "1"
+			(uuid "e37ef655-9170-4140-9efd-18d7197cd2e8")
+		)
+		(pin "6"
+			(uuid "20fb0d55-5cff-46ae-bf6e-3b35fe143629")
+		)
+		(pin "12"
+			(uuid "e538ff5f-543d-4462-90e9-4c8983fe2a69")
+		)
+		(pin "8"
+			(uuid "f0ebb408-a515-478a-9af9-1934295d0d19")
+		)
+		(instances
+			(project ""
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/36da1f88-b4f8-4b81-86e1-fac0fb6202fa"
+					(reference "J703")
 					(unit 1)
 				)
 			)
