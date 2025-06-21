@@ -26,5 +26,17 @@
 	- Current supply pins
 	- Units
 
-## Bank 0:
-- 
+## TODO
+- Switch ethernet and usb
+- Put power in between ethernet and USB
+- Make sure there's enough filtering, and have 4 local power planes sufficiently close to the power-circuitry (3.3V, AUX, ETH, DDR3)
+- The 3V3 power plane should propagate all the way, and should have big vias around it on the analog side
+- Probably the same should happen surrounding the power supply circuitry
+- USB and power connector should both be together on the side of the USB and power supply
+
+
+## ON SUB-BOARDS (driver, receiver)
+- Make a single board that can both be driven through one high-power path
+	- There is a switch that can take part of the sent signal that goes into the piezo (maybe with some coupling)
+		- Sends it back to the ADC
+	- There is a switch that can send the received signal on 
