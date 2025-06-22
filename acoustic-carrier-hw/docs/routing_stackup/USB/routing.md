@@ -1,0 +1,6 @@
+- USB0..7
+- CLK: E13
+- STP: E12
+- DTR: E11
+- NXT: D13
+- RST: C13
