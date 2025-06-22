@@ -200,6 +200,7 @@
         0.0,
         0.09,
         0.1,
+        0.127,
         0.1565,
         0.5
       ],
@@ -545,7 +546,8 @@
         "name": "ddr3_diff",
         "pcb_color": "rgb(0, 194, 194)",
         "priority": 8,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1565
       },
       {
         "clearance": 0.1,
@@ -784,6 +786,14 @@
       {
         "netclass": "gnd",
         "pattern": "GND"
+      },
+      {
+        "netclass": "ddr3_diff",
+        "pattern": "*DDR3.CK+"
+      },
+      {
+        "netclass": "ddr3_diff",
+        "pattern": "*DDR3.CK-"
       }
     ]
   },

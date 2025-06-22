@@ -1,0 +1,2 @@
+- DQ5: furthest
+- DQ7: closer
