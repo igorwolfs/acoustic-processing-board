@@ -16,4 +16,5 @@
 ### RGMII
 - Length Matching
 
-### 
+### Config files / Ethernet
+- Make sure to redo the pull-ups pull-downs according to how it was in the original schematics.
