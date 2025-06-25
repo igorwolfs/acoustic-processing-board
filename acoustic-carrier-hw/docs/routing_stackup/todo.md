@@ -8,3 +8,12 @@
 - ETH RGMII: 
 - ETH diff: 100 ohms
 - USB diff: 90 ohms
+
+## Ethernet
+### Differential
+- Length Matching
+
+### RGMII
+- Length Matching
+
+### 

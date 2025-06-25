@@ -24,6 +24,7 @@ Data on dielectric and FR4 constants: https://jlcpcb.com/de/impedance.
 JLCPCB CALCULATOR:
 - Resulting trace geometry data:
 	- W - width: 0.1565 mm
+	- Max distance to ground?
 
 KICAD CALCULATOR
 - 54.53 ohms
@@ -31,6 +32,11 @@ KICAD CALCULATOR
 SATURN PCB CALCULATOR
 - 51.48 ohms
 
+Minimal distance between microstrip traces
+- 3W
+
+In case of critical frequencies:
+- 5W
 
 #### 100 ohms non-coplanar differential
 JLCPCB CALCUALTOR:

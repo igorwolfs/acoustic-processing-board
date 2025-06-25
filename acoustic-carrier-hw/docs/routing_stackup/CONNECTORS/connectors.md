@@ -1,0 +1,3 @@
+CFG1 <- TCK
+CFG2 <- TDI
+1 <- RESET
