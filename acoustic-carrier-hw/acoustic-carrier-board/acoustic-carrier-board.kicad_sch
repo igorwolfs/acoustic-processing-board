@@ -145,6 +145,16 @@
 	)
 	(bus
 		(pts
+			(xy 175.26 92.71) (xy 179.07 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df4283f-3caf-4b8f-8e3d-38c4dc684f0f")
+	)
+	(bus
+		(pts
 			(xy 223.52 97.79) (xy 226.06 97.79)
 		)
 		(stroke
@@ -255,16 +265,6 @@
 	)
 	(bus
 		(pts
-			(xy 173.99 52.07) (xy 176.53 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5eeae6d-285d-4eb1-b43b-10e0bf46c869")
-	)
-	(bus
-		(pts
 			(xy 123.19 50.8) (xy 121.92 50.8)
 		)
 		(stroke
@@ -333,7 +333,7 @@
 		)
 		(uuid "2daf777e-2760-44be-afa9-f37d7f324306")
 	)
-	(label "CON1{SIGCON1}"
+	(label "SIGCON{SIGCON}"
 		(at 223.52 92.71 180)
 		(effects
 			(font
@@ -383,15 +383,15 @@
 		)
 		(uuid "4e9e4164-5925-4bbb-86ed-641b7d5080bc")
 	)
-	(label "CON1{SIGCON1}"
-		(at 176.53 52.07 0)
+	(label "SIGCON{SIGCON}"
+		(at 179.07 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4fb493f5-02cb-404d-9267-adfed28da69c")
+		(uuid "68c62a28-f543-496c-a7a9-b4186c2584e5")
 	)
 	(label "ADC{FPGA_ADC}"
 		(at 60.96 118.11 0)
@@ -601,6 +601,16 @@
 				(justify left)
 			)
 		)
+		(pin "SIGCON{SIGCON}" bidirectional
+			(at 175.26 92.71 0)
+			(uuid "4e2b95b3-e658-4fbc-8056-82b4cc32bd63")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100"
@@ -703,16 +713,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "CON1{SIGCON1}" bidirectional
-			(at 173.99 52.07 0)
-			(uuid "03d10647-4c98-4301-8d8c-095d9ab594a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "RGMII_RX{RGMII_RX}" input
@@ -919,7 +919,7 @@
 				(justify left top)
 			)
 		)
-		(pin "CON1{SIGCON1}" bidirectional
+		(pin "SIGCON{SIGCON}" bidirectional
 			(at 226.06 92.71 180)
 			(uuid "fd198a31-1945-4181-a590-dcfaec6e0c0b")
 			(effects

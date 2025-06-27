@@ -1,3 +1,9 @@
-CFG1 <- TCK
-CFG2 <- TDI
-1 <- RESET
+B3, 2 (IO1)
+A2, 3 (IO2)
+B4, 4 (IO3)
+A3, 6 (IO4)
+B5, 8 (IO6)
+A4, 7 (IO5)
+B6, 10 (IO7)
+A5, 11 (IO8)
+A6, 12 (IO9)
