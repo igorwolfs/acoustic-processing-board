@@ -1,4 +1,4 @@
-# Switching
-DQ12 -> DQ9
-DQ9 -> DQ15
-DQ15 -> DQ12
+# Address Bus Matching: 60 mm
+- CKE: ok
+- CK+, CK-: ok
+- BA1: ok
