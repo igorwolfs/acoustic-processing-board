@@ -6990,12 +6990,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(bus_alias "FLASH_MSPI"
-		(members "D[0..3]" "CSn" "CSPPIn1" "CSPPIn2" "MCLK")
-	)
-	(bus_alias "JTAG"
-		(members "TMS" "TCK" "TDI" "TDO")
-	)
 	(rectangle
 		(start 317.246 120.65)
 		(end 405.13 181.61)
@@ -7080,20 +7074,9 @@
 		)
 		(uuid "1f6ecd14-2966-4643-949f-403f43c66229")
 	)
-	(text "similar component to orange-crab\n- nCS should be pulled low by master (FPGA)\n\nConsider using 1 Gbit in case you'd want to load firmware onto the device."
-		(exclude_from_sim no)
-		(at 289.56 136.906 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52dce02a-b4ee-48f2-bebe-cc14be2a079c")
-	)
 	(text "DEFAULT => CFG[2:0] = (010) -> MSPI2\nINPUT PINS => CFG[2:0] = (001) -> SSPI"
 		(exclude_from_sim no)
-		(at 289.56 46.99 0)
+		(at 268.732 51.054 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7104,7 +7087,7 @@
 	)
 	(text "Pure signaling function\nFPGA_DONE: Startup sequence in prograss\nFPGA_INITn: Ready to be configured\nFPGRA_RESET: Initiates configuration sequence when asserted low"
 		(exclude_from_sim no)
-		(at 288.544 90.932 0)
+		(at 330.962 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7115,7 +7098,7 @@
 	)
 	(text "pullups for Master SPI (MSPI) required by\nTN1260: lattice ECP5 sysCONFIG guide section 6"
 		(exclude_from_sim no)
-		(at 223.266 113.792 0)
+		(at 64.77 195.834 0)
 		(effects
 			(font
 				(size 1.27 1.27)

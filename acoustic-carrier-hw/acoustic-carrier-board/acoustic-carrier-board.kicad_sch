@@ -145,6 +145,16 @@
 	)
 	(bus
 		(pts
+			(xy 223.52 97.79) (xy 226.06 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340b59c3-0a23-4fcb-804a-a1e8d56df6c2")
+	)
+	(bus
+		(pts
 			(xy 116.84 113.03) (xy 123.19 113.03)
 		)
 		(stroke
@@ -222,6 +232,16 @@
 			(type default)
 		)
 		(uuid "7390b40c-3a3c-4837-80d4-fe6cefdf824a")
+	)
+	(bus
+		(pts
+			(xy 173.99 48.26) (xy 176.53 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c3318d-afef-4791-bd6a-da600d82fc5c")
 	)
 	(bus
 		(pts
@@ -323,6 +343,16 @@
 		)
 		(uuid "2ecfec59-06e6-4a9d-90d0-521d45f2bb71")
 	)
+	(label "PMOD_IO{PMOD_IO}"
+		(at 223.52 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3685f8e1-e418-42d9-9092-d6638d5b95df")
+	)
 	(label "RGMII_TX{RGMII_TX}"
 		(at 60.96 96.52 0)
 		(effects
@@ -342,6 +372,16 @@
 			(justify right bottom)
 		)
 		(uuid "4b5b53d7-f6ed-4cce-98dc-5c55d3580c96")
+	)
+	(label "PMOD_IO{PMOD_IO}"
+		(at 176.53 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e9e4164-5925-4bbb-86ed-641b7d5080bc")
 	)
 	(label "CON1{SIGCON1}"
 		(at 176.53 52.07 0)
@@ -705,6 +745,16 @@
 				(justify right)
 			)
 		)
+		(pin "PMOD_IO{PMOD_IO}" bidirectional
+			(at 173.99 48.26 0)
+			(uuid "8acafb85-72f0-4d30-8608-66bcdd48b1ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100"
@@ -872,6 +922,16 @@
 		(pin "CON1{SIGCON1}" bidirectional
 			(at 226.06 92.71 180)
 			(uuid "fd198a31-1945-4181-a590-dcfaec6e0c0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PMOD_IO{PMOD_IO}" bidirectional
+			(at 226.06 97.79 180)
+			(uuid "706a68e3-63ab-4302-9075-6a6276d084e1")
 			(effects
 				(font
 					(size 1.27 1.27)
