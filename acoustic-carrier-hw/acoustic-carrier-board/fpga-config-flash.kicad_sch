@@ -8388,6 +8388,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 74.93) (xy 184.15 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3575f493-ecfd-47f5-be79-8e629e809fd8")
+	)
+	(wire
+		(pts
 			(xy 341.63 49.53) (xy 389.89 49.53)
 		)
 		(stroke
@@ -9398,7 +9408,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 77.47) (xy 190.5 77.47)
+			(xy 184.15 77.47) (xy 196.85 77.47)
 		)
 		(stroke
 			(width 0)
@@ -9575,16 +9585,6 @@
 			(type default)
 		)
 		(uuid "acb8a992-f07e-4c18-bfda-e9a7e95520bb")
-	)
-	(wire
-		(pts
-			(xy 184.15 74.93) (xy 190.5 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acbef659-69f0-4b86-a847-d3b9e93a6b9d")
 	)
 	(wire
 		(pts
@@ -9828,16 +9828,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 80.01) (xy 190.5 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf853708-45ea-467b-acf0-dfb9461d3b9d")
-	)
-	(wire
-		(pts
 			(xy 367.03 157.48) (xy 383.54 157.48)
 		)
 		(stroke
@@ -9865,6 +9855,16 @@
 			(type default)
 		)
 		(uuid "d385c9e7-7bd0-47d1-b769-13f72f86bdd2")
+	)
+	(wire
+		(pts
+			(xy 184.15 80.01) (xy 198.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4112120-15a8-440b-aa28-b7bd332e7e03")
 	)
 	(wire
 		(pts
@@ -9998,6 +9998,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 73.66) (xy 186.69 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3703e31-1fef-4c0d-bbd3-a0b9c3d92c16")
+	)
+	(wire
+		(pts
 			(xy 199.39 133.35) (xy 204.47 133.35)
 		)
 		(stroke
@@ -10055,6 +10065,16 @@
 			(type default)
 		)
 		(uuid "ebb01bd8-46c8-448e-9e2c-36953dc3a695")
+	)
+	(wire
+		(pts
+			(xy 190.5 73.66) (xy 186.69 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd2c3ec-ebb6-453f-88d2-25fa91f98164")
 	)
 	(wire
 		(pts
@@ -10776,6 +10796,16 @@
 		)
 		(uuid "ad055ab8-20a5-46e2-874d-a8ef7b3ae930")
 	)
+	(label "FPGA_DONE"
+		(at 198.12 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ae9385eb-2ccb-4296-96ba-9a839b336735")
+	)
 	(label "~{FPGA_INIT}"
 		(at 388.62 64.77 180)
 		(effects
@@ -10876,16 +10906,6 @@
 		)
 		(uuid "cb9b27e9-6a56-4f5b-8363-a00d62bb42e8")
 	)
-	(label "FPGA_RESET"
-		(at 190.5 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ccc6c4f1-6943-4459-b317-a5d8f3959b5b")
-	)
 	(label "QSPI.CSn"
 		(at 27.94 161.29 0)
 		(effects
@@ -10905,16 +10925,6 @@
 			(justify left bottom)
 		)
 		(uuid "d888a971-21e8-4ed5-8377-19f37e4b4523")
-	)
-	(label "FPGA_DONE"
-		(at 190.5 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d8c77c31-8dbb-44eb-b238-0db0893da552")
 	)
 	(label "JTAG.TDI"
 		(at 67.31 72.39 0)
@@ -10957,12 +10967,12 @@
 		(uuid "f92243b7-8e17-4055-bdf9-cb6e9b58929e")
 	)
 	(label "~{FPGA_INIT}"
-		(at 190.5 77.47 0)
+		(at 196.85 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fb00707d-a228-4a9e-94cb-20d7879c2a36")
 	)
@@ -11028,6 +11038,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCORE_3V3"
+		(shape passive)
+		(at 190.5 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f1b481f-c0d7-4bbe-9e4f-5228f8acbc46")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.9572 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
