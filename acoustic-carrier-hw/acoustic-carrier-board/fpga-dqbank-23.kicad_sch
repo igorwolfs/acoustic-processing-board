@@ -5529,10 +5529,6 @@
 		(uuid "fffda305-4065-4943-a8b4-3c2c3525a8ea")
 	)
 	(no_connect
-		(at 71.12 64.77)
-		(uuid "11a225e0-2888-44e0-98b7-79cc2967c3b6")
-	)
-	(no_connect
 		(at 71.12 97.79)
 		(uuid "4019796f-1074-4091-b250-9104cd2c2ad6")
 	)
@@ -6333,6 +6329,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 63.5) (xy 74.93 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c5c504a-e947-4029-af1c-9af042bd435c")
+	)
+	(wire
+		(pts
 			(xy 245.11 36.83) (xy 245.11 38.1)
 		)
 		(stroke
@@ -6740,6 +6746,16 @@
 			(type default)
 		)
 		(uuid "7d9128f4-7d53-42c7-864f-626d36043398")
+	)
+	(wire
+		(pts
+			(xy 74.93 64.77) (xy 71.12 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82547954-b04b-49a7-b2af-8417d475dd0e")
 	)
 	(bus
 		(pts
@@ -7551,6 +7567,16 @@
 		)
 		(uuid "f20f5a00-66a9-494c-9a7f-818acb7a9fb8")
 	)
+	(wire
+		(pts
+			(xy 74.93 63.5) (xy 77.47 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3cb65f7-2e51-405e-bc99-794d2c08fc0a")
+	)
 	(bus
 		(pts
 			(xy 105.41 87.63) (xy 105.41 85.09)
@@ -8176,6 +8202,28 @@
 		(uuid "2d05b0b5-3d04-462e-8ded-057fa26632a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 89.6248 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_USB_SENSE"
+		(shape input)
+		(at 77.47 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "670dc239-6aae-4c0d-bd2e-5b887509195e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.9651 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
