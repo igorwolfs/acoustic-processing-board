@@ -32,6 +32,7 @@
 - All signals should be within 0.5 inches of CLKOUT
 	- 0,5 inches = 12.7 mm
 - Deepseek: < 25 mm mismatch for data lines
+- Other models: 500 ps -> 3 inches -> 76 mm
 - clock should be matched to data lines with +- 5 mm?
 
 ## Extra resistors
@@ -86,18 +87,22 @@ Setup-time margin (Time for the data to be stable before the clock-edge at the P
 * Margin = Cycle time - FPGA's clock to output delay - PHY setup time	
 	= T_cycle - T_CO(max) - T_su - T_skew [T_skew = T_data_trace - T_clk_trace]
 	* Time it takes for the data to get to the receiver: T_CO(max) + T_data_trace
+* Margin = 16.667 ns - 6.8 ns - 5 ns - T_skew = 4.867 ns - T_skew
+	* So T_skew setup margin is huge (about 5 ns)
+
 
 Hold-time margin (Positive means hold-time is met)
 * Margin = Datapath delay (min) - Hold time requirement = Clock to output delay (FPGA_min) + PCB trace delay - PHY hold-time
 	* Should be positive (so there's time let for the USB-PHY)
+* Margin = Datapath-delay - 0 ns + 5 ns (so the hold-time margin is also pretty huge)
 
 #### USB3300 PHY -> FPGA
-Setup-time margin
-* Margin = Cycle time - PHY's clock to output delay - FPGA setup time
+* Setup-time margin = T_cycle - T_CO(max) - T_su - T_skew [T_skew = T_data_trace - T_clk_trace]
+* 16.6667 - 5 ns - 0 ns + T_SKEW = 11.667 ns + T_SKEW (so T_SKEW can be huge)
 
 Hold-time margin (Positive means hold time is met)
 * Margin = Cycle time - PHY clock to output delay - FPGA hold time
-
+* = 16.667 ns - 5 ns - 0 ns = 11.667 ns
 
 ## Sources
 - https://ww1.microchip.com/downloads/en/AppNotes/en562704.pdf
