@@ -5455,7 +5455,7 @@
 		)
 		(uuid "0d7f4599-27a7-42c3-8760-a776e203832c")
 	)
-	(text "BANK1: ETHERNET"
+	(text "BANK1: ULPI\n"
 		(exclude_from_sim no)
 		(at 248.666 40.894 0)
 		(effects
@@ -5583,10 +5583,6 @@
 		(uuid "0c26cc6f-0dcc-4004-b603-e9eee983afeb")
 	)
 	(no_connect
-		(at 237.49 82.55)
-		(uuid "0cee24ec-6a76-4acd-b870-0330f495a0cd")
-	)
-	(no_connect
 		(at 237.49 59.69)
 		(uuid "0e79f57d-c9da-4a3c-918a-9d52f69976ad")
 	)
@@ -5619,6 +5615,10 @@
 		(uuid "2e064a81-7bab-4fed-8180-8e1c686380e4")
 	)
 	(no_connect
+		(at 237.49 95.25)
+		(uuid "2e42568a-a26e-42ca-9ec9-53f37f67940c")
+	)
+	(no_connect
 		(at 237.49 87.63)
 		(uuid "35205e43-23e4-43e5-ac25-b4c1dce1e42d")
 	)
@@ -5629,10 +5629,6 @@
 	(no_connect
 		(at 237.49 128.27)
 		(uuid "3bd1bab3-effe-4e33-aa81-728a421067aa")
-	)
-	(no_connect
-		(at 237.49 80.01)
-		(uuid "45bf3ccb-f905-4bf4-b0c6-2fa11984e74f")
 	)
 	(no_connect
 		(at 237.49 90.17)
@@ -5689,6 +5685,10 @@
 	(no_connect
 		(at 237.49 118.11)
 		(uuid "bc985226-10d2-4ff4-a14d-ba33ce75b95a")
+	)
+	(no_connect
+		(at 237.49 92.71)
+		(uuid "c0d30662-b16c-48e9-aaba-bf340d0bad0b")
 	)
 	(no_connect
 		(at 82.55 120.65)
@@ -6142,16 +6142,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 92.71) (xy 232.41 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4167bac9-b872-4b2d-bcf1-f3dff6cc81f7")
-	)
-	(wire
-		(pts
 			(xy 237.49 113.03) (xy 218.44 113.03)
 		)
 		(stroke
@@ -6199,6 +6189,16 @@
 			(type default)
 		)
 		(uuid "4a3aa150-48c1-4d40-8edf-496446d959aa")
+	)
+	(wire
+		(pts
+			(xy 237.49 80.01) (xy 232.41 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aaecac9-dfc4-4af5-bcdf-b6f16178503a")
 	)
 	(wire
 		(pts
@@ -6472,6 +6472,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 82.55) (xy 232.41 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c142c514-be8c-4c68-acdd-ca209fe4ed6a")
+	)
+	(wire
+		(pts
 			(xy 190.5 50.8) (xy 196.85 50.8)
 		)
 		(stroke
@@ -6659,16 +6669,6 @@
 			(type default)
 		)
 		(uuid "fa50a188-68d9-4117-8362-c2f826537bdc")
-	)
-	(wire
-		(pts
-			(xy 237.49 95.25) (xy 232.41 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "facc9b81-a238-474b-9e46-f8cd87fa26ca")
 	)
 	(bus
 		(pts
@@ -6900,28 +6900,6 @@
 		)
 		(uuid "fea81f43-ffb4-449a-b16b-7b1bf2925d06")
 	)
-	(global_label "FPGA_CC2"
-		(shape input)
-		(at 232.41 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f33f601-a764-4076-804d-e5c4943343ae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.9905 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VCORE_3V3"
 		(shape passive)
 		(at 64.77 46.99 0)
@@ -6968,7 +6946,7 @@
 	)
 	(global_label "FPGA_CC1"
 		(shape input)
-		(at 232.41 92.71 180)
+		(at 232.41 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6976,9 +6954,31 @@
 			)
 			(justify right)
 		)
-		(uuid "65e0de05-129c-432b-b57b-dccd8cffa08a")
+		(uuid "a17fa61d-b3bb-48e9-864c-5d247ed907fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.9905 92.71 0)
+			(at 219.9905 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_CC2"
+		(shape input)
+		(at 232.41 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b987633e-7706-4430-a6d0-580633447f4c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.9905 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
