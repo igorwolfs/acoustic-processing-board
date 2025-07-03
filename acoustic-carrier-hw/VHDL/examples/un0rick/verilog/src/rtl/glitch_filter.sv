@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------
-// Remove all glitchces less than reference clock period
+// Remove all glitches less than reference clock period
 // Based on US8558579B2 patent.
 //
 //-------------------------------------------------------------------
