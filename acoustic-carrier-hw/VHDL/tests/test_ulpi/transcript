@@ -1,0 +1,77 @@
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/simulation/simulation.mdo}
+# Loading project simulation
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:16 on Jul 04,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v 
+# -- Compiling module ulpi
+# 
+# Top level modules:
+# 	ulpi
+# End time: 13:46:16 on Jul 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:17 on Jul 04,2025
+# vlog -reportprogress 300 -sv -mfcu "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv 
+# -- Compiling module ulpi_testbench
+# 
+# Top level modules:
+# 	ulpi_testbench
+# End time: 13:46:17 on Jul 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u ulpi_testbench 
+# Start time: 13:46:17 on Jul 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ulpi_testbench(fast)
+# Loading work.ulpi(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ----------------------------------------------------
+# Starting ULPI Interface Testbench at time 0
+# ----------------------------------------------------
+# 
+# [TEST] Applying Reset...
+# [INFO] Reset released at time 75000
+# 
+# [TEST] Simulating data reception from PHY...
+# [INFO] PHY sending data 0xDE
+# ** Error: [FAIL] FPGA received 00 instead of 0xDE
+#    Time: 125010 ps  Scope: ulpi_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv Line: 91
+# [INFO] PHY sending data 0xAD
+# ** Error: [FAIL] FPGA received de instead of 0xAD
+#    Time: 158346 ps  Scope: ulpi_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv Line: 107
+# 
+# [TEST] Simulating data transmission from FPGA...
+# [INFO] FPGA sending data 0xBE
+# ** Error: [FAIL] ULPI_DATA bus shows 00 instead of 0xBE
+#    Time: 208350 ps  Scope: ulpi_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv Line: 135
+# [INFO] FPGA sending data 0xEF
+# ** Error: [FAIL] ULPI_DATA bus shows be instead of 0xEF
+#    Time: 241686 ps  Scope: ulpi_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv Line: 150
+# 
+# ----------------------------------------------------
+# Testbench finished at time 258000
+# ----------------------------------------------------
+# ** Note: $finish    : /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv(159)
+#    Time: 258354 ps  Iteration: 1  Instance: /ulpi_testbench
+# 1
+# Break in Module ulpi_testbench at /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/testbench_ulpi.sv line 159
+step -over
+# Next activity is in 8334 ps.
+# End time: 15:06:26 on Jul 04,2025, Elapsed time: 1:20:09
+# Errors: 4, Warnings: 6

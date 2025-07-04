@@ -1,0 +1,162 @@
+`timescale 1ns / 1ps
+
+module ulpi_testbench;
+
+    // Clock period for 60 MHz -> 1 / 60e6 = 16.667 ns
+    localparam CLK_PERIOD = 16.667;
+
+    // --- Testbench signals to connect to the DUT ---
+    logic        ULPI_CLK;
+    logic        ULPI_RST;
+    wire  [7:0]  ULPI_DATA; // Must be a wire for inout connection
+    logic        ULPI_DIR;
+    logic        ULPI_NXT;
+    wire         ULPI_STP; // Output from DUT
+
+    logic [7:0]  DATA_FROM_PHY; // Output from DUT
+    logic [7:0]  DATA_TO_PHY;
+    logic        TX_VALID;
+
+    // --- Testbench driver for the bidirectional bus ---
+    // This register holds the value the testbench wants to drive onto the bus.
+    logic [7:0]  tb_data_drive = 8'hZZ; 
+    
+    // The testbench (acting as the PHY) drives the bus only when DIR is 1.
+    // Otherwise, it's high-impedance, allowing the DUT to drive.
+    assign ULPI_DATA = (ULPI_DIR == 1) ? tb_data_drive : 8'hZZ;
+
+
+    // --- Instantiate the Device Under Test (DUT) ---
+    ulpi_interface dut (
+        .ULPI_CLK      (ULPI_CLK),
+        .ULPI_RST      (ULPI_RST),
+        .ULPI_DATA     (ULPI_DATA), // Now connected to a wire
+        .ULPI_DIR      (ULPI_DIR),
+        .ULPI_NXT      (ULPI_NXT),
+        .ULPI_STP      (ULPI_STP),
+        .DATA_FROM_PHY (DATA_FROM_PHY),
+        .DATA_TO_PHY   (DATA_TO_PHY),
+        .TX_VALID      (TX_VALID)
+    );
+
+    // --- Clock Generation ---
+    // Generate a continuous clock signal.
+    initial begin
+        ULPI_CLK = 0;
+        forever #(CLK_PERIOD / 2) ULPI_CLK = ~ULPI_CLK;
+    end
+
+    // --- Main Test Sequence ---
+    initial begin
+        $display("----------------------------------------------------");
+        $display("Starting ULPI Interface Testbench at time %0t", $time);
+        $display("----------------------------------------------------");
+
+        // --- 1. Initialization and Reset ---
+        $display("\n[TEST] Applying Reset...");
+        ULPI_RST      = 1;
+        ULPI_DIR      = 0; // Default to FPGA driving
+        ULPI_NXT      = 0;
+        DATA_TO_PHY   = 8'h00;
+        TX_VALID      = 0;
+        tb_data_drive = 8'hZZ; // Start with bus in high-impedance
+
+        repeat(5) @(posedge ULPI_CLK); // Wait for a few clock cycles
+        
+        ULPI_RST = 0;
+        $display("[INFO] Reset released at time %0t", $time);
+        @(posedge ULPI_CLK);
+
+
+        // --- 2. Test Case: Data Reception (PHY -> FPGA) ---
+        $display("\n[TEST] Simulating data reception from PHY...");
+        
+        // The PHY (testbench) is driving the data bus towards the FPGA
+        ULPI_DIR = 1;
+        
+        // Wait one cycle for direction change to propagate
+        @(posedge ULPI_CLK); 
+
+        // PHY sends first byte of data
+        $display("[INFO] PHY sending data 0xDE");
+        tb_data_drive = 8'hDE; // Drive the value onto our testbench register
+        ULPI_NXT      = 1;     // Assert NXT to indicate valid data
+        @(posedge ULPI_CLK);
+        ULPI_NXT = 0; // De-assert NXT
+
+        // Check if FPGA captured the data
+        if (DATA_FROM_PHY === 8'hDE) begin
+            $display("[PASS] FPGA correctly received 0xDE");
+        end else begin
+            $error("[FAIL] FPGA received %h instead of 0xDE", DATA_FROM_PHY);
+        end
+        
+        @(posedge ULPI_CLK);
+
+        // PHY sends second byte of data
+        $display("[INFO] PHY sending data 0xAD");
+        tb_data_drive = 8'hAD;
+        ULPI_NXT      = 1;
+        @(posedge ULPI_CLK);
+        ULPI_NXT = 0;
+
+        // Check if FPGA captured the data
+        if (DATA_FROM_PHY === 8'hAD) begin
+            $display("[PASS] FPGA correctly received 0xAD");
+        end else begin
+            $error("[FAIL] FPGA received %h instead of 0xAD", DATA_FROM_PHY);
+        end
+
+        // Set bus to high-Z as PHY is done sending for now
+        tb_data_drive = 8'hZZ;
+        @(posedge ULPI_CLK);
+
+
+        // --- 3. Test Case: Data Transmission (FPGA -> PHY) ---
+        $display("\n[TEST] Simulating data transmission from FPGA...");
+
+        // The FPGA is driving the data bus towards the PHY
+        ULPI_DIR = 0;
+        
+        // Wait one cycle for direction change
+        @(posedge ULPI_CLK);
+
+        // FPGA sends first byte of data
+        $display("[INFO] FPGA sending data 0xBE");
+        DATA_TO_PHY = 8'hBE;
+        TX_VALID    = 1; // Assert valid to trigger transmission
+        @(posedge ULPI_CLK);
+        TX_VALID = 0; // De-assert valid
+
+        // Check if the DUT is driving the bus correctly
+        if (ULPI_DATA === 8'hBE) begin
+            $display("[PASS] ULPI_DATA bus correctly driven with 0xBE");
+        end else begin
+            $error("[FAIL] ULPI_DATA bus shows %h instead of 0xBE", ULPI_DATA);
+        end
+
+        @(posedge ULPI_CLK);
+
+        // FPGA sends second byte of data
+        $display("[INFO] FPGA sending data 0xEF");
+        DATA_TO_PHY = 8'hEF;
+        TX_VALID    = 1;
+        @(posedge ULPI_CLK);
+        TX_VALID = 0;
+
+        if (ULPI_DATA === 8'hEF) begin
+            $display("[PASS] ULPI_DATA bus correctly driven with 0xEF");
+        end else begin
+            $error("[FAIL] ULPI_DATA bus shows %h instead of 0xEF", ULPI_DATA);
+        end
+
+        @(posedge ULPI_CLK);
+        
+        // --- 4. End Simulation ---
+        $display("\n----------------------------------------------------");
+        $display("Testbench finished at time %0t", $time);
+        $display("----------------------------------------------------");
+        $finish;
+    end
+
+endmodule

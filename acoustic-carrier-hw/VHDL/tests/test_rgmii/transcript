@@ -1,0 +1,52 @@
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/simulation/simulation.mdo}
+# Loading project simulation
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 15:32:56 on Jul 04,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v 
+# -- Compiling module rgmii
+# 
+# Top level modules:
+# 	rgmii
+# End time: 15:32:56 on Jul 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 15:32:56 on Jul 04,2025
+# vlog -reportprogress 300 -sv -mfcu "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv 
+# -- Compiling module rgmii_testbench
+# 
+# Top level modules:
+# 	rgmii_testbench
+# End time: 15:32:56 on Jul 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u rgmii_testbench 
+# Start time: 15:32:56 on Jul 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 9.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20): (vopt-2718) [TFMPC] - Missing connection for port 'SYS_CLK'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.rgmii_testbench(fast)
+# Loading work.rgmii(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/rgmii_testbench/RGMII_TX_CLK', driven via a port connection, is multiply driven. See /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /rgmii_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 40
+# ** Error (suppressible): (vsim-3839) Variable '/rgmii_testbench/RGMII_TX_CLK', driven via a port connection, is multiply driven. See /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /rgmii_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 35
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/simulation/simulation.mdo PAUSED at line 17
