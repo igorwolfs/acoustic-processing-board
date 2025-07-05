@@ -1,6 +1,6 @@
 MODULE_NAME = test_ulpi
 MODULES_DIR := ../${MODULE_NAME}
-
+CPP_FILE = ${MODULE_NAME}.cpp
 
 ifeq (${MODULE_NAME}, test_ulpi)
 	TOP_NAME := testbench_ulpi
@@ -10,10 +10,14 @@ ifeq (${MODULE_NAME}, test_ulpi)
 	SRC_FILE := $(shell find $(SRC_DIRS) -name '*.vh') $(shell find $(SRC_DIRS) -name '*.svh') \
 				$(shell find $(SRC_DIRS) -name '*.v') $(shell find $(SRC_DIRS) -name '*.sv') \
 
-else ifeq (${MODULE_NAME}, )
-    CPP_FILE = sim_main_simple.cpp
-else
-    CPP_FILE = INVALID_TOP_NAME
+else ifeq (${MODULE_NAME}, test_ddr3)
+
+else ifeq (${MODULE_NAME}, test_rgmii.cpp)
+
+else ifeq (${MODULE_NAME}, test_pin_setup.cpp)
+
+else 
+
 endif
 
 

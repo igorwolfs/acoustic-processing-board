@@ -14,7 +14,7 @@ if {![file exists "/home/iwolfs/Work/Projects/electromechanical/acoustic-materia
 	project open "/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/simulation/simulation"
 	project compileoutofdate
 }
-vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  rgmii_testbench
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench_rgmii
 view wave
 add wave /*
 run 1000ns

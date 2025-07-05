@@ -1,0 +1,240 @@
+[[Info]]
+_PARENT: none
+_FAMILY: sa5p00
+_FILE_FORMAT: 1.00
+_DATA_VALUES: 1.00
+_STATUS: Advanced
+
+[[Project]]
+DesignName: test_ddr3
+Family: ECP5U
+Device: LFE5U-25F
+Package: CABGA381
+Operating: Commercial
+Version: 1.0
+Performance: -6
+PartName: LFE5U-25F-6BG381C
+
+[[Settings]]
+EstimationMode: Medium
+ProcessType: Typical
+SoftwareMode: Estimation
+TempAmbX: Ambient Temperature
+SectionY: Total Power
+SectionX: Vcc
+SectionLowerLimit: 0.0000
+SectionUpperLimit: 0.0000
+SectionResolution: 0.0000
+TempAmbY: Ambient Temperature
+TempAmbLowerLimit: -30.0000
+TempAmbUpperLimit: 115.0000
+TempAmbResolution: 29.0000
+FreqY: Total Power
+FreqX: No Clocks Found!
+FreqLowerLimit: 10.0000
+FreqUpperLimit: 100.0000
+FreqAmbResolution: 20.0000
+PowerMode: Normal
+DisableBandgap: false
+DisablePor: false
+DisableDll: false
+DisableOsc: false
+DisableMACOMAC2EMACA0: false
+DisableMACOMAC2EMACA1: false
+DisableMACOMAC2EMACA2: false
+DisableMACOMAC2EMACA3: false
+DisableMACOMAC2EMACB0: false
+DisableMACOMAC2EMACB1: false
+DisableMACOMAC2EMACB2: false
+DisableMACOMAC2EMACB3: false
+DisableMACOMAC2XMAC: false
+DisableMACOMAC3EMACA0: false
+DisableMACOMAC3EMACA1: false
+DisableMACOMAC3EMACA2: false
+DisableMACOMAC3EMACA3: false
+DisableMACOMAC3EMACB0: false
+DisableMACOMAC3EMACB1: false
+DisableMACOMAC3EMACB2: false
+DisableMACOMAC3EMACB3: false
+DisableMACOMAC3XMAC: false
+DisableMACOPCIEPCIE: false
+DisableMACOSRIOEMAC0: false
+DisableMACOSRIOEMAC1: false
+DisableMACOSRIOEMAC2: false
+DisableMACOSRIOEMAC3: false
+DisableMACOSRIOSRIO: false
+DisablePUSL0: false
+DisablePUSL1: false
+DisablePUSL2: false
+DisablePUSL3: false
+DisablePUSL4: false
+DisablePUSL5: false
+DisablePUSL6: false
+DisablePUSL7: false
+DisableDDRDLLBL0: false
+DisableDDRDLLBL1: false
+DisableDDRDLLBR0: false
+DisableDDRDLLBR1: false
+DisableDDRDLLTL0: false
+DisableDDRDLLTL1: false
+DisableDDRDLLTR0: false
+DisableDDRDLLTR1: false
+DisablePLLBL0: false
+DisablePLLBL1: false
+DisablePLLBR0: false
+DisablePLLBR1: false
+DisablePLLTL0: false
+DisablePLLTL1: false
+DisablePLLTR0: false
+DisablePLLTR1: false
+DisableInRd0: false
+DisableInRd1: false
+DisableInRd2: false
+DisableInRd3: false
+DisableInRd4: false
+DisableInRd5: false
+DisableInRd6: false
+DisableInRd7: false
+EnablePg0: false
+EnablePg1: false
+EnablePg2: false
+EnablePg3: false
+EnablePg4: false
+EnablePg5: false
+EnablePg6: false
+EnablePg7: false
+DisableLVDS: false
+DisableLVDS1: false
+DisableLVDS2: false
+DisableLVDS3: false
+DisableLVDS4: false
+DisableLVDS5: false
+DisableLVDS6: false
+DisableLVDS7: false
+DisableSlewrate0: false
+DisableSlewrate1: false
+DisableSlewrate2: false
+DisableSlewrate3: false
+DisableSlewrate4: false
+DisableSlewrate5: false
+
+[[Thermal]]
+Airflow: 200 LFM
+AmbientTemperature: 25
+CustomThetaSA: -1
+JunctionTemperature: 25.66
+MaxSafeAmbient: 83.55
+ThetaBA: 10.0
+ThetaCS: 0
+ThetaEffective: 11.51279826
+ThetaJA: 20.59
+ThetaJB: 12.88
+ThetaJC: 0
+ThetaSA: -1
+UserThetaBA: No
+UserThetaCS: No
+UserThetaEffective: No
+UserThetaJA: No
+UserThetaJB: No
+UserThetaJC: No
+UserThetaSA: No
+thetaBoard: Medium Board
+thetaHeatSink: No Heat Sink
+thetaOption: ThermalModels
+
+[[VDPM]]
+Supply = Voltage, DPM
+Vcc = 1.100, 1.00
+Vccaux = 2.500, 1.00
+Vccio 3.3 = 3.300, 1.00
+Vccio 2.5 = 2.500, 1.00
+Vccio 1.8 = 1.800, 1.00
+Vccio 1.5 = 1.500, 1.00
+Vccio 1.35 = 1.350, 1.00
+Vccio 1.2 = 1.200, 1.00
+Vcchtx = 1.100, 1.00
+Vcchrx = 1.100, 1.00
+Vcca = 1.100, 1.00
+Vccauxa = 2.500, 1.00
+
+[[Logic]]
+Clk = F, AF, LUT, RAM, RIPPLE, REG, X0, X1, X2, X6, ISB, ISBLUT, ISBCE, ISBLSR, ISBM, ISBCLK
+
+[[Clocks]]
+Clk = F, Duty, DCC, Pfeed, Ptrunk, Pspine, Ptap, Etb, Ebg, Elr
+
+[[Input Output]]
+Clk = _Type, _Mode, F, AF, IP, OP, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+
+[[Bidi]]
+ClkInpName = _Type, _Mode, InpF, InpAF, Bidi, ClkOutName, OutF, OutAF, Duty, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+
+[[Bank Voltage]]
+Bank = Voltage, InRD, LVDSO
+0 = Vccio 2.5, N/A, N/A
+1 = Vccio 2.5, N/A, N/A
+2 = Vccio 2.5, No, No
+3 = Vccio 2.5, No, No
+6 = Vccio 2.5, No, No
+7 = Vccio 2.5, No, No
+8 = Vccio 2.5, N/A, N/A
+
+[[Termination]]
+_Type = IP, OP, Bidi, Duty, Bank, Rth, Vth
+
+[[PRADD9]]
+Clk = F, AF, PRADD9, X0, X1, X2, X6, ISB
+
+[[PRADD18]]
+Clk = F, AF, PRADD18, Type, X0, X1, X2, X6, ISB
+
+[[M9X9]]
+Clk = F, AF, M9X9, X0, X1, X2, X6, ISB
+
+[[M18X18]]
+Clk = F, AF, M18X18, Type, X0, X1, X2, X6, ISB
+
+[[ALU24]]
+Clk = F, AF, ALU24, X0, X1, X2, X6, ISB
+
+[[ALU54]]
+Clk = F, AF, ALU54, Type, X0, X1, X2, X6, ISB
+
+[[PLL]]
+OutClk = inF, N, V, M, PLL, PLLID, STANDBY
+
+[[DP RAM]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[DP RAM True]]
+ClkA = aF, aAF, EBR, ClkB, bF, bAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[DDRDLL]]
+Clk = F, DDRDLLID, STANDBY, DDRDLL
+
+[[DQS]]
+Clk = F, DQS
+
+[[DLLDEL]]
+Clk = F, DLLDEL
+
+[[CLKDIV]]
+Clk = F, AF, CLKDIV
+
+[[CIBTEST]]
+CIBTEST = 
+
+[[MCLK]]
+Clk = F, AF, MCLK, MCLKF, SEDF
+_CLKNAME = 310.0000, 100.000, 1, 2.4000, 2.4000
+
+[[JTAG]]
+Clk = F, AF, Input, Output
+clk1 = 25, 100, 3, 1
+
+[[SED]]
+_Mode = SED, STATUS
+
+[[DTR]]
+Clk = F, AF, DTR
+

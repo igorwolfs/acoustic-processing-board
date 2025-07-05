@@ -11,7 +11,7 @@ set ::bali::simulation::Para(COMPLIST) {"VERILOG" "VERILOG" }
 set ::bali::simulation::Para(LANGSTDLIST) {"Verilog 2001" "System Verilog" }
 set ::bali::simulation::Para(SIMLIBLIST) {pmi_work ovi_ecp5u}
 set ::bali::simulation::Para(MACROLIST) {}
-set ::bali::simulation::Para(SIMULATIONTOPMODULE) {rgmii_testbench}
+set ::bali::simulation::Para(SIMULATIONTOPMODULE) {testbench_rgmii}
 set ::bali::simulation::Para(SIMULATIONINSTANCE) {}
 set ::bali::simulation::Para(LANGUAGE) {}
 set ::bali::simulation::Para(SDFPATH)  {}

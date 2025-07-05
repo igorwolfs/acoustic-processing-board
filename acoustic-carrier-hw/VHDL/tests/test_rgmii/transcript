@@ -15,38 +15,56 @@
 # do {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/simulation/simulation.mdo}
 # Loading project simulation
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 15:32:56 on Jul 04,2025
+# Start time: 17:33:19 on Jul 04,2025
 # vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v 
 # -- Compiling module rgmii
 # 
 # Top level modules:
 # 	rgmii
-# End time: 15:32:56 on Jul 04,2025, Elapsed time: 0:00:00
+# End time: 17:33:19 on Jul 04,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 15:32:56 on Jul 04,2025
+# Start time: 17:33:19 on Jul 04,2025
 # vlog -reportprogress 300 -sv -mfcu "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv 
-# -- Compiling module rgmii_testbench
+# -- Compiling module testbench_rgmii
 # 
 # Top level modules:
-# 	rgmii_testbench
-# End time: 15:32:56 on Jul 04,2025, Elapsed time: 0:00:00
+# 	testbench_rgmii
+# End time: 17:33:19 on Jul 04,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u rgmii_testbench 
-# Start time: 15:32:56 on Jul 04,2025
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u testbench_rgmii 
+# Start time: 17:33:19 on Jul 04,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 10, found 9.
-# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20): (vopt-2718) [TFMPC] - Missing connection for port 'SYS_CLK'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.rgmii_testbench(fast)
+# Loading work.testbench_rgmii(fast)
+# Loading ovi_ecp5u.PUR(fast)
+# Loading ovi_ecp5u.GSR(fast)
 # Loading work.rgmii(fast)
-# ** Error (suppressible): (vsim-3839) Variable '/rgmii_testbench/RGMII_TX_CLK', driven via a port connection, is multiply driven. See /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20).
-#    Time: 0 ps  Iteration: 0  Instance: /rgmii_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 40
-# ** Error (suppressible): (vsim-3839) Variable '/rgmii_testbench/RGMII_TX_CLK', driven via a port connection, is multiply driven. See /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(20).
-#    Time: 0 ps  Iteration: 0  Instance: /rgmii_testbench File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 35
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/simulation/simulation.mdo PAUSED at line 17
+# Loading ovi_ecp5u.IDDRX1F(fast)
+# Loading ovi_ecp5u.ODDRX1F(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ----------------------------------------------------
+# Starting RGMII Application Testbench at time 0
+# ----------------------------------------------------
+# [INFO] Reset released at time 36000
+# [TB PHY] Sending byte 0xa5 at time 52000
+# [TB PHY] Sending byte 0xb6 at time 68000
+# [TB PHY] Sending byte 0xc7 at time 84000
+# [TB PHY] Detected RGMII_TX_CTL high at time 100000
+# ** Error: [FAIL] Expected 0xA5, got 0xxx
+#    Time: 112 ns  Scope: testbench_rgmii.data_checker_thread File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 142
+# [PASS] Correctly looped back 0xb6
+# ** Error: [FAIL] Expected 0xC7, got 0xxx
+#    Time: 128 ns  Scope: testbench_rgmii.data_checker_thread File: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv Line: 158
+# 
+# ----------------------------------------------------
+# Testbench finished at time 204000
+# ----------------------------------------------------
+# ** Note: $finish    : /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv(167)
+#    Time: 204 ns  Iteration: 1  Instance: /testbench_rgmii
+# 1
+# Break in Module testbench_rgmii at /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/testbench_rgmii.sv line 167
+# End time: 12:57:52 on Jul 05,2025, Elapsed time: 19:24:33
+# Errors: 2, Warnings: 6
