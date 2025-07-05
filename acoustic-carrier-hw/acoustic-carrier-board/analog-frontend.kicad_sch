@@ -5004,12 +5004,6 @@
 		(uuid "497c5370-7f04-454c-855e-5ab010ca7194")
 	)
 	(junction
-		(at 133.35 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "51b04349-ad39-47af-bfa9-fada4e7075b4")
-	)
-	(junction
 		(at 182.88 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5206,6 +5200,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c076769e-1008-478e-8614-4ec7fa4e8194")
+	)
+	(junction
+		(at 128.27 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0daee87-3a40-4053-b1bd-4018351e6cfd")
 	)
 	(junction
 		(at 182.88 99.06)
@@ -5524,16 +5524,6 @@
 			(type default)
 		)
 		(uuid "09f11cbf-8207-4fd6-aff9-5025c7054041")
-	)
-	(wire
-		(pts
-			(xy 133.35 93.98) (xy 120.65 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0acf6431-4ba4-4695-869a-ca59c4c91c49")
 	)
 	(wire
 		(pts
@@ -6347,7 +6337,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 97.79) (xy 133.35 93.98)
+			(xy 128.27 93.98) (xy 128.27 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6897,6 +6887,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 93.98) (xy 133.35 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a9bcc0-3af9-41fd-9424-07ad546adb0e")
+	)
+	(wire
+		(pts
 			(xy 339.09 53.34) (xy 339.09 50.8)
 		)
 		(stroke
@@ -7394,6 +7394,16 @@
 			(type default)
 		)
 		(uuid "abe4ac0c-a53d-413d-8bfb-c8374b241774")
+	)
+	(wire
+		(pts
+			(xy 128.27 93.98) (xy 120.65 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf9b558-e408-4836-b28f-6af1738119d0")
 	)
 	(wire
 		(pts
@@ -9165,7 +9175,7 @@
 	)
 	(global_label "FPGA_ADC_SW"
 		(shape input)
-		(at 133.35 97.79 270)
+		(at 128.27 97.79 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9175,7 +9185,7 @@
 		)
 		(uuid "5533d556-3a84-492a-b0cb-af56437e855f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.35 113.7171 90)
+			(at 128.27 113.7171 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12982,7 +12992,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 134.366 93.472 90)
+			(at 134.62 91.948 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24831,7 +24841,7 @@
 		(dnp no)
 		(uuid "9fe5b403-99ce-41b0-8b59-294459219423")
 		(property "Reference" "TP1005"
-			(at 130.048 93.472 90)
+			(at 132.842 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24840,7 +24850,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 130.048 96.012 90)
+			(at 133.096 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)

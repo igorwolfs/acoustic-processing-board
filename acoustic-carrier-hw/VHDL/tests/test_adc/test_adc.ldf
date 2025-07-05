@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="test_adc" device="LFE5U-25F-6BG381C" default_implementation="test_adc">
+    <Options/>
+    <Implementation title="test_adc" dir="test_adc" description="test_adc" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="testbench_adc"/>
+        <Source name="adc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="testbench_adc.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="testbench_adc"/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="test_adc.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="test_adc1.sty"/>
+</BaliProject>

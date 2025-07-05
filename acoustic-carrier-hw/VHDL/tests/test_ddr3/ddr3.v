@@ -51,12 +51,16 @@ module lpddr3 (
     // Parameters are now set using attributes, which is the correct Lattice syntax.
     // This example generates a 400 MHz clock from a 50 MHz input.
     // You MUST adjust these parameters to match your system clock and target speed.
-    (* FREQUENCY_PIN_CLKI="50.0" *)
+    (* FREQUENCY_PIN_CLKI="100.0" *)
     (* FREQUENCY_PIN_CLKOP="400.0" *)
     (* FEEDBACK_PATH="CLKOP" *)
     (* CLKOP_ENABLE="ENABLED" *)
     (* CLKOS_ENABLE="ENABLED" *) // Enable the secondary differential output
-    EHXPLLL pll_inst (
+    EHXPLLL  #(
+        .CLKI_DIV(1),
+        .CLKFB_DIV(3),
+        .CLKOP_DIV(1)
+        ) pll_inst (
         .CLKI(SYS_CLK),
         .CLKFB(pll_clk_out), // Feedback from the primary output
         .CLKOP(pll_clk_out), // Primary clock output (drives internal logic)

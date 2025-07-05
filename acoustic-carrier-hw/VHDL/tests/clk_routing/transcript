@@ -1,0 +1,128 @@
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/simulation/simulation.mdo}
+# Loading project simulation
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v 
+# -- Compiling module ulpi
+# 
+# Top level modules:
+# 	ulpi
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v 
+# -- Compiling module rgmii
+# 
+# Top level modules:
+# 	rgmii
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v 
+# -- Compiling module lpddr3
+# 
+# Top level modules:
+# 	lpddr3
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v 
+# -- Compiling module adc_interface
+# 
+# Top level modules:
+# 	adc_interface
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v 
+# -- Compiling module clk_routing
+# 
+# Top level modules:
+# 	clk_routing
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:54:55 on Jul 05,2025
+# vlog -reportprogress 300 -sv -mfcu "+incdir+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing" -work work /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/testbench_clk_routing.sv 
+# -- Compiling module testbench_clk_routing
+# 
+# Top level modules:
+# 	testbench_clk_routing
+# End time: 21:54:55 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u testbench_clk_routing 
+# Start time: 21:54:55 on Jul 05,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rel2/3_14p.75/rtf/ispfpga/cae_library/simulation/verilog/ecp5u/EHXPLLL.v(2399): (vopt-2182) 'stdby_state' might be read before written in always_comb or always @* block.
+# ** Warning: /home/rel2/3_14p.75/rtf/ispfpga/cae_library/simulation/verilog/ecp5u/EHXPLLL.v(2399): (vopt-2182) 'stdby_state' might be read before written in always_comb or always @* block.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2685) [TFMPC] - Too few port connections for 'pll_inst'.  Expected 22, found 7.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'CLKINTFB'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'REFCLK'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'INTLOCK'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'CLKOS3'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'CLKOS2'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS3'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS2'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOP'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PLLWAKESYNC'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PHASELOADREG'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESTEP'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PHASEDIR'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESEL0'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESEL1'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v(176): (vopt-2685) [TFMPC] - Too few port connections for 'u_rgmii'.  Expected 14, found 13.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v(176): (vopt-2718) [TFMPC] - Missing connection for port 'ETH_REFCLK'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2685) [TFMPC] - Too few port connections for 'pll_inst'.  Expected 22, found 6.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'CLKINTFB'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'REFCLK'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'INTLOCK'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'CLKOS3'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'CLKOS2'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'CLKOS'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS3'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS2'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOS'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'ENCLKOP'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PLLWAKESYNC'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PHASELOADREG'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESTEP'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PHASEDIR'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESEL0'.
+# ** Warning: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'PHASESEL1'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=38.
+# Loading sv_std.std
+# Loading work.testbench_clk_routing(fast)
+# Loading ovi_ecp5u.PUR(fast)
+# Loading ovi_ecp5u.GSR(fast)
+# Loading work.clk_routing(fast)
+# Loading work.adc_interface(fast)
+# Loading ovi_ecp5u.EHXPLLL(fast)
+# Loading work.lpddr3(fast)
+# Loading ovi_ecp5u.EHXPLLL(fast__1)
+# Loading ovi_ecp5u.ODDRX1F(fast)
+# Loading ovi_ecp5u.BB(fast)
+# Loading work.rgmii(fast)
+# Loading ovi_ecp5u.IDDRX1F(fast)
+# Loading work.ulpi(fast)
+# End time: 21:54:57 on Jul 05,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 47
