@@ -5507,12 +5507,6 @@
 		(uuid "1d224fae-1347-4060-b4cd-97bf8eef76df")
 	)
 	(junction
-		(at 215.9 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "204d883a-1ebb-40e9-9942-9f117aefef06")
-	)
-	(junction
 		(at 96.52 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5547,6 +5541,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64ebf6db-020f-487d-8155-070506614cf1")
+	)
+	(junction
+		(at 215.9 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a2b5ef6-f1f5-45a1-8a0e-efd8308b17dd")
 	)
 	(junction
 		(at 262.89 49.53)
@@ -5912,7 +5912,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 67.31) (xy 215.9 105.41)
+			(xy 215.9 67.31) (xy 215.9 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6282,7 +6282,7 @@
 	)
 	(bus
 		(pts
-			(xy 213.36 105.41) (xy 215.9 105.41)
+			(xy 213.36 99.06) (xy 215.9 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6430,6 +6430,16 @@
 		)
 		(uuid "9e25b2a1-e8bf-4f92-a299-45f01583507b")
 	)
+	(bus
+		(pts
+			(xy 215.9 99.06) (xy 215.9 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b2191e-fad2-42ab-af7e-914bc04e088c")
+	)
 	(wire
 		(pts
 			(xy 82.55 95.25) (xy 97.79 95.25)
@@ -6549,16 +6559,6 @@
 			(type default)
 		)
 		(uuid "d5fc0d55-852b-400d-80e3-e672c3479ed6")
-	)
-	(bus
-		(pts
-			(xy 215.9 105.41) (xy 215.9 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6eb757b-0e5b-4881-ac17-8522906a4163")
 	)
 	(wire
 		(pts
@@ -7056,7 +7056,7 @@
 	)
 	(hierarchical_label "USB{USB_ULPI}"
 		(shape input)
-		(at 213.36 105.41 180)
+		(at 213.36 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
