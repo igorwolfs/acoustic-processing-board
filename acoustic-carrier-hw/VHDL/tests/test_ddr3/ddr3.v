@@ -38,7 +38,7 @@ module lpddr3 (
     // Data Bus (Bidirectional)
     output [1:0] DM,         // Data Mask
     inout  [1:0] DQS_P,      // Differential Data Strobe
-    inout  [1:0] DQS_N,
+    inout  [1:0] DQS_N,		
     inout [15:0] DQ          // Data
 );
 
@@ -56,24 +56,34 @@ module lpddr3 (
     (* FEEDBACK_PATH="CLKOP" *)
     (* CLKOP_ENABLE="ENABLED" *)
     (* CLKOS_ENABLE="ENABLED" *) // Enable the secondary differential output
-    EHXPLLL  #(
+	EHXPLLL #(
         .CLKI_DIV(1),
         .CLKFB_DIV(3),
-        .CLKOP_DIV(1)
-        ) pll_inst (
+        .CLKOP_DIV(1),
+		.CLKOP_DIV(1)
+    ) pll_inst (
         .CLKI(SYS_CLK),
-        .CLKFB(pll_clk_out), // Feedback from the primary output
-        .CLKOP(pll_clk_out), // Primary clock output (drives internal logic)
-        .CLKOS(CK_P),        // Secondary output for differential pair (positive)
-        // The negative side (CK_N) is generated implicitly by the I/O buffer
-        // when constrained as a differential pair in the .lpf file.
-        // For simulation, we will manually invert it.
+        .CLKFB(pll_clk_out),
+        .CLKOP(pll_clk_out),
         .LOCK(pll_locked),
         .RST(rst),
-        .STDBY(1'b0)
-        // Unconnected ports will be handled by the tool
+        .STDBY(1'b0),
+
+        // --- Explicitly tie unused ports to 0 to remove warnings ---
+        .PHASESEL1(1'b0),
+        .PHASESEL0(1'b0),
+        .PHASEDIR(1'b0),
+        .PHASESTEP(1'b0),
+        .PHASELOADREG(1'b0),
+        .PLLWAKESYNC(1'b0),
+        .ENCLKOP(1'b0),
+        .ENCLKOS(1'b0),
+        .ENCLKOS2(1'b0),
+        .ENCLKOS3(1'b0)
     );
-    
+
+	
+	
     // For simulation purposes, create the negative clock signal.
     // In hardware, the differential buffer handles this.
     assign CK_N = ~CK_P;

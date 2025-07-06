@@ -52,8 +52,6 @@ add_file -verilog -vlog_std v2001 {/home/iwolfs/Work/Projects/electromechanical/
 add_file -verilog -vlog_std v2001 {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v}
 add_file -verilog -vlog_std v2001 {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v}
 
-#-- top module name
-set_option -top_module clk_routing
 
 #-- set result format/file last
 project -result_file {/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing.edi}

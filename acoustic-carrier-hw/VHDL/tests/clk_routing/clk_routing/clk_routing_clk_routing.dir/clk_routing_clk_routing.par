@@ -1,0 +1,32 @@
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Jul  6 16:46:39 2025
+
+/home/iwolfs/lscc/diamond/3.14/ispfpga/bin/lin64/par -f
+clk_routing_clk_routing.p2t clk_routing_clk_routing_map.ncd
+clk_routing_clk_routing.dir clk_routing_clk_routing.prf -gui -msgset
+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/promote.xml
+
+
+Preference file: clk_routing_clk_routing.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1          -            -            -            -            -            25           Failed
+
+* : Design saved.
+
+INFO - par: Iteration 5_1 failed due to design error(s).
+
+ERROR - par: All 1 iterations failed with design error(s). It is recommended to correct all design errors before running multiple iterations. Please check the Place and Route reports (.par) for the individual iterations under the directory "/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing.dir".
+
+Total (real) run time for 1-seed: 25 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

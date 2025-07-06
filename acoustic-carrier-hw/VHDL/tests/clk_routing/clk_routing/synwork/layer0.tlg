@@ -1,0 +1,59 @@
+Selecting top level module clk_routing
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+Finished optimization stage 1 on EHXPLLL (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v":12:7:12:9|Synthesizing module adc in library work.
+Running optimization stage 1 on adc .......
+Finished optimization stage 1 on adc (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1646:7:1646:13|Synthesizing module ODDRX1F in library work.
+Running optimization stage 1 on ODDRX1F .......
+Finished optimization stage 1 on ODDRX1F (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":20:7:20:12|Synthesizing module lpddr3 in library work.
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":55:7:55:8|Synthesizing module BB in library work.
+Running optimization stage 1 on BB .......
+Finished optimization stage 1 on BB (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@W: CG360 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|Removing wire CK_P, as there is no assignment to it.
+Running optimization stage 1 on lpddr3 .......
+@W: CL318 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|*Output CK_P has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on lpddr3 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1621:7:1621:13|Synthesizing module IDDRX1F in library work.
+Running optimization stage 1 on IDDRX1F .......
+Finished optimization stage 1 on IDDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":14:7:14:11|Synthesizing module rgmii in library work.
+Running optimization stage 1 on rgmii .......
+Finished optimization stage 1 on rgmii (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v":4:7:4:10|Synthesizing module ulpi in library work.
+Running optimization stage 1 on ulpi .......
+Finished optimization stage 1 on ulpi (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Synthesizing module clk_routing in library work.
+@W: CG781 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":169:10:169:16|Input ETH_REFCLK on instance u_rgmii is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+Running optimization stage 1 on clk_routing .......
+Finished optimization stage 1 on clk_routing (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on clk_routing .......
+@N: CL159 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":42:18:42:29|Input RGMII_RX_CLK is unused.
+Finished optimization stage 2 on clk_routing (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on ulpi .......
+Finished optimization stage 2 on ulpi (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on rgmii .......
+@N: CL159 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":38:17:38:24|Input MDIO_CLK is unused.
+@W: CL158 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":39:17:39:25|Inout MDIO_DATA is unused
+Finished optimization stage 2 on rgmii (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on IDDRX1F .......
+Finished optimization stage 2 on IDDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on BB .......
+Finished optimization stage 2 on BB (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on lpddr3 .......
+@W: CL156 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|*Input CK_P to expression [not] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Finished optimization stage 2 on lpddr3 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on ODDRX1F .......
+Finished optimization stage 2 on ODDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on adc .......
+Finished optimization stage 2 on adc (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on EHXPLLL .......
+Finished optimization stage 2 on EHXPLLL (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/layer0.duruntime
+
+

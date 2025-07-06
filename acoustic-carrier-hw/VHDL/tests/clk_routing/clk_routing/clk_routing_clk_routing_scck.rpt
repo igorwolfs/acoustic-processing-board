@@ -1,0 +1,66 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+
+# Written on Sun Jul  6 18:53:20 2025
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                 Requested     Requested     Clock        Clock               Clock
+Level     Clock                                 Frequency     Period        Type         Group               Load 
+------------------------------------------------------------------------------------------------------------------
+0 -       System                                200.0 MHz     5.000         system       system_clkgroup     0    
+                                                                                                                  
+0 -       clk_routing|ULPI_CLK                  200.0 MHz     5.000         inferred     (multiple)          19   
+                                                                                                                  
+0 -       lpddr3|pll_clk_out_inferred_clock     200.0 MHz     5.000         inferred     (multiple)          8    
+                                                                                                                  
+0 -       clk_routing|CLK_100MHZ                200.0 MHz     5.000         inferred     (multiple)          3    
+                                                                                                                  
+0 -       clk_routing|ETH_REFCLK                200.0 MHz     5.000         inferred     (multiple)          3    
+==================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                      Clock     Source                               Clock Pin                          Non-clock Pin     Non-clock Pin
+Clock                                 Load      Pin                                  Seq Example                        Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                0         -                                    -                                  -                 -            
+                                                                                                                                                       
+clk_routing|ULPI_CLK                  19        ULPI_CLK(port)                       ulpi_counter[7:0].C                -                 -            
+                                                                                                                                                       
+lpddr3|pll_clk_out_inferred_clock     8         u_lpddr3.pll_inst.CLKOP(EHXPLLL)     u_lpddr3.toggle_counter[7:0].C     -                 -            
+                                                                                                                                                       
+clk_routing|CLK_100MHZ                3         CLK_100MHZ(port)                     reset_sync_100mhz[0].C             -                 -            
+                                                                                                                                                       
+clk_routing|ETH_REFCLK                3         ETH_REFCLK(port)                     reset_sync_rgmii[0].C              -                 -            
+=======================================================================================================================================================

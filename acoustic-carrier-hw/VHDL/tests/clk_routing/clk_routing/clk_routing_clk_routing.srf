@@ -1,0 +1,1111 @@
+#Build: Synplify Pro (R) V-2023.09L-2, Build 349R, Sep 17 2024
+#install: /home/iwolfs/lscc/diamond/3.14/synpbase
+#OS: Linux 
+#Hostname: iwolfs-Aspire-A14-51z
+
+# Sun Jul  6 18:53:18 2025
+
+#Implementation: clk_routing
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys HDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:30:48, @5637152
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys Verilog Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:30:48, @5637152
+
+@N|Running in 64-bit mode
+@I::"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v" (library work)
+@I::"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v" (library work)
+@I::"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v" (library work)
+@I::"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v" (library work)
+@I::"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v" (library work)
+@I::"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v" (library work)
+@N|stack limit increased to max
+Verilog syntax check successful!
+File /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v changed - recompiling
+Selecting top level module clk_routing
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1696:7:1696:13|Synthesizing module EHXPLLL in library work.
+Running optimization stage 1 on EHXPLLL .......
+Finished optimization stage 1 on EHXPLLL (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v":12:7:12:9|Synthesizing module adc in library work.
+Running optimization stage 1 on adc .......
+Finished optimization stage 1 on adc (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1646:7:1646:13|Synthesizing module ODDRX1F in library work.
+Running optimization stage 1 on ODDRX1F .......
+Finished optimization stage 1 on ODDRX1F (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":20:7:20:12|Synthesizing module lpddr3 in library work.
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":55:7:55:8|Synthesizing module BB in library work.
+Running optimization stage 1 on BB .......
+Finished optimization stage 1 on BB (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@W: CG360 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|Removing wire CK_P, as there is no assignment to it.
+Running optimization stage 1 on lpddr3 .......
+@W: CL318 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|*Output CK_P has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on lpddr3 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1621:7:1621:13|Synthesizing module IDDRX1F in library work.
+Running optimization stage 1 on IDDRX1F .......
+Finished optimization stage 1 on IDDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":14:7:14:11|Synthesizing module rgmii in library work.
+Running optimization stage 1 on rgmii .......
+Finished optimization stage 1 on rgmii (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v":4:7:4:10|Synthesizing module ulpi in library work.
+Running optimization stage 1 on ulpi .......
+Finished optimization stage 1 on ulpi (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Synthesizing module clk_routing in library work.
+@W: CG781 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":169:10:169:16|Input ETH_REFCLK on instance u_rgmii is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+Running optimization stage 1 on clk_routing .......
+Finished optimization stage 1 on clk_routing (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on clk_routing .......
+@N: CL159 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":42:18:42:29|Input RGMII_RX_CLK is unused.
+Finished optimization stage 2 on clk_routing (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on ulpi .......
+Finished optimization stage 2 on ulpi (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on rgmii .......
+@N: CL159 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":38:17:38:24|Input MDIO_CLK is unused.
+@W: CL158 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":39:17:39:25|Inout MDIO_DATA is unused
+Finished optimization stage 2 on rgmii (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on IDDRX1F .......
+Finished optimization stage 2 on IDDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on BB .......
+Finished optimization stage 2 on BB (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on lpddr3 .......
+@W: CL156 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|*Input CK_P to expression [not] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Finished optimization stage 2 on lpddr3 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on ODDRX1F .......
+Finished optimization stage 2 on ODDRX1F (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on adc .......
+Finished optimization stage 2 on adc (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on EHXPLLL .......
+Finished optimization stage 2 on EHXPLLL (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 187MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jul  6 18:53:18 2025
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:30:48, @5637152
+
+@N|Running in 64-bit mode
+File /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/layer0.srs changed - recompiling
+@N: NF107 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Selected library: work cell: clk_routing view verilog as top level
+@N: NF107 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Selected library: work cell: clk_routing view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 186MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jul  6 18:53:18 2025
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/clk_routing_clk_routing_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 37MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jul  6 18:53:18 2025
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:30:48, @5637152
+
+@N|Running in 64-bit mode
+File /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/clk_routing_clk_routing_comp.srs changed - recompiling
+@N: NF107 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Selected library: work cell: clk_routing view verilog as top level
+@N: NF107 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Selected library: work cell: clk_routing view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 187MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jul  6 18:53:20 2025
+
+###########################################################]
+# Sun Jul  6 18:53:20 2025
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 191R, Built Sep 17 2024 09:08:23, @5637152
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 440MB peak: 440MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 454MB peak: 455MB)
+
+@A: MF827 |No constraint file specified.
+@L: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing_scck.rpt 
+See clock summary report "/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 454MB peak: 455MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 454MB peak: 455MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 458MB peak: 458MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 460MB peak: 460MB)
+
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "000" on instance reset_sync_100mhz[2:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "000" on instance reset_sync_rgmii[2:0].
+@N: FX493 |Applying initial value "000" on instance reset_sync_ulpi[2:0].
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+@N: MO111 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|Tristate driver CK_P (in view: work.lpddr3(verilog)) on net CK_P (in view: work.lpddr3(verilog)) has its enable tied to GND.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+@N: BN362 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v":91:4:91:9|Removing sequential instance app_data_reg[9:0] (in view: work.adc(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v":91:4:91:9|Removing sequential instance app_data_valid_reg (in view: work.adc(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v":47:4:47:9|Removing sequential instance DATA_FROM_PHY[7:0] (in view: work.ulpi(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+mixed edge conversion for GCC is OFF
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=56 on top level netlist clk_routing 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                 Requested     Requested     Clock        Clock               Clock
+Level     Clock                                 Frequency     Period        Type         Group               Load 
+------------------------------------------------------------------------------------------------------------------
+0 -       System                                200.0 MHz     5.000         system       system_clkgroup     0    
+                                                                                                                  
+0 -       clk_routing|ULPI_CLK                  200.0 MHz     5.000         inferred     (multiple)          19   
+                                                                                                                  
+0 -       lpddr3|pll_clk_out_inferred_clock     200.0 MHz     5.000         inferred     (multiple)          8    
+                                                                                                                  
+0 -       clk_routing|CLK_100MHZ                200.0 MHz     5.000         inferred     (multiple)          3    
+                                                                                                                  
+0 -       clk_routing|ETH_REFCLK                200.0 MHz     5.000         inferred     (multiple)          3    
+==================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                      Clock     Source                               Clock Pin                          Non-clock Pin     Non-clock Pin
+Clock                                 Load      Pin                                  Seq Example                        Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                0         -                                    -                                  -                 -            
+                                                                                                                                                       
+clk_routing|ULPI_CLK                  19        ULPI_CLK(port)                       ulpi_counter[7:0].C                -                 -            
+                                                                                                                                                       
+lpddr3|pll_clk_out_inferred_clock     8         u_lpddr3.pll_inst.CLKOP(EHXPLLL)     u_lpddr3.toggle_counter[7:0].C     -                 -            
+                                                                                                                                                       
+clk_routing|CLK_100MHZ                3         CLK_100MHZ(port)                     reset_sync_100mhz[0].C             -                 -            
+                                                                                                                                                       
+clk_routing|ETH_REFCLK                3         ETH_REFCLK(port)                     reset_sync_rgmii[0].C              -                 -            
+=======================================================================================================================================================
+
+@W: MT529 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v":34:4:34:9|Found inferred clock clk_routing|ULPI_CLK which controls 19 sequential elements including u_ulpi.data_out_reg[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":84:4:84:9|Found inferred clock clk_routing|CLK_100MHZ which controls 3 sequential elements including reset_sync_100mhz[2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":94:4:94:9|Found inferred clock clk_routing|ETH_REFCLK which controls 3 sequential elements including reset_sync_rgmii[2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":95:4:95:9|Found inferred clock lpddr3|pll_clk_out_inferred_clock which controls 8 sequential elements including u_lpddr3.toggle_counter[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+4 non-gated/non-generated clock tree(s) driving 33 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+====================================== Non-Gated/Non-Generated Clocks ======================================
+Clock Tree ID     Driving Element             Drive Element Type     Fanout     Sample Instance             
+------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       ULPI_CLK                    port                   19         reset_sync_ulpi[2]          
+@KP:ckid0_1       u_lpddr3.pll_inst.CLKOP     EHXPLLL                8          u_lpddr3.toggle_counter[7:0]
+@KP:ckid0_2       ETH_REFCLK                  port                   3          reset_sync_rgmii[2]         
+@KP:ckid0_3       CLK_100MHZ                  port                   3          reset_sync_100mhz[2]        
+============================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 420MB peak: 508MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul  6 18:53:20 2025
+
+###########################################################]
+# Sun Jul  6 18:53:20 2025
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 191R, Built Sep 17 2024 09:08:23, @5637152
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 440MB peak: 440MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 453MB peak: 455MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 453MB peak: 455MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 457MB peak: 457MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 459MB peak: 459MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 506MB peak: 506MB)
+
+@N: MO111 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":26:17:26:20|Tristate driver CK_P (in view: work.lpddr3(verilog)) on net CK_P (in view: work.lpddr3(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver LPDDR_CLK_P_t (in view: work.clk_routing(verilog)) on net LPDDR_CLK_P (in view: work.clk_routing(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net LPDDR_CLK_P has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[0] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[1] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[2] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[3] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[4] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[5] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[6] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[7] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net u_rgmii.rst_sync has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net u_lpddr3.pll_clk_out has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net u_lpddr3.rst has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 507MB peak: 507MB)
+
+@N: MO231 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":95:4:95:9|Found counter in view:work.clk_routing(verilog) instance u_lpddr3.toggle_counter[7:0] 
+@N: FX493 |Applying initial value "0" on instance reset_sync_100mhz[0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance reset_sync_100mhz[1].
+@N: FX493 |Applying initial value "0" on instance reset_sync_100mhz[2].
+@N: FX493 |Applying initial value "0" on instance reset_sync_rgmii[0].
+@N: FX493 |Applying initial value "0" on instance reset_sync_rgmii[1].
+@N: FX493 |Applying initial value "0" on instance reset_sync_rgmii[2].
+@N: FX493 |Applying initial value "0" on instance reset_sync_ulpi[0].
+@N: FX493 |Applying initial value "0" on instance reset_sync_ulpi[1].
+@N: FX493 |Applying initial value "0" on instance reset_sync_ulpi[2].
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_59 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_60 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_61 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_62 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_63 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_64 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_65 has multiple drivers .
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 507MB peak: 507MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 507MB peak: 507MB)
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 507MB peak: 507MB)
+
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net LPDDR_CLK_P has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[0] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[1] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[2] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[3] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[4] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[5] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[6] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[7] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_0 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_1 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_2 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_3 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_4 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_5 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_6 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net un2_ulpi_counter_axb_7 has multiple drivers .
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net u_lpddr3.toggle_counter has multiple drivers .
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     2.97ns		  14 /        33
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":26:18:26:28|Tristate driver LPDDR_CLK_P_obuft.un1[0] (in view: work.clk_routing(verilog)) on net LPDDR_CLK_P (in view: work.clk_routing(verilog)) has its enable tied to GND.
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net LPDDR_CLK_P has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[0] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[1] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[2] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[3] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[4] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[5] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[6] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net ULPI_DATA[7] has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_785 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_787 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_789 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_791 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_793 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_795 has multiple drivers .
+@W: BN161 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":15:7:15:17|Net N_797 has multiple drivers .
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+Writing Analyst data base /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/clk_routing_clk_routing_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 508MB peak: 508MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 515MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 515MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 515MB)
+
+@W: MT246 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":105:20:105:34|Blackbox ODDRX1F is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":64:20:64:34|Blackbox IDDRX1F is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":64:6:64:13|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock clk_routing|ULPI_CLK with period 5.00ns. Please declare a user-defined clock on port ULPI_CLK.
+@W: MT420 |Found inferred clock clk_routing|CLK_100MHZ with period 5.00ns. Please declare a user-defined clock on port CLK_100MHZ.
+@W: MT420 |Found inferred clock clk_routing|ETH_REFCLK with period 5.00ns. Please declare a user-defined clock on port ETH_REFCLK.
+@W: MT420 |Found inferred clock lpddr3|pll_clk_out_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_lpddr3.pll_clk_out.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun Jul  6 18:53:21 2025
+#
+
+
+Top view:               clk_routing
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.115
+
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+                                      Requested     Estimated      Requested     Estimated               Clock        Clock          
+Starting Clock                        Frequency     Frequency      Period        Period        Slack     Type         Group          
+-------------------------------------------------------------------------------------------------------------------------------------
+clk_routing|CLK_100MHZ                200.0 MHz     1102.5 MHz     5.000         0.907         4.093     inferred     (multiple)     
+clk_routing|ETH_REFCLK                200.0 MHz     1102.5 MHz     5.000         0.907         4.093     inferred     (multiple)     
+clk_routing|ULPI_CLK                  200.0 MHz     354.7 MHz      5.000         2.820         2.180     inferred     (multiple)     
+lpddr3|pll_clk_out_inferred_clock     200.0 MHz     346.6 MHz      5.000         2.885         2.115     inferred     (multiple)     
+System                                200.0 MHz     545.1 MHz      5.000         1.834         3.166     system       system_clkgroup
+=====================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                           Ending                             |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                             System                             |  5.000       5.000  |  No paths    -      |  No paths    -      |  No paths    -    
+System                             lpddr3|pll_clk_out_inferred_clock  |  5.000       3.166  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_routing|ULPI_CLK               clk_routing|ULPI_CLK               |  5.000       2.180  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_routing|CLK_100MHZ             System                             |  5.000       3.667  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_routing|CLK_100MHZ             clk_routing|CLK_100MHZ             |  5.000       4.093  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_routing|ETH_REFCLK             System                             |  5.000       3.721  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_routing|ETH_REFCLK             clk_routing|ETH_REFCLK             |  5.000       4.093  |  No paths    -      |  No paths    -      |  No paths    -    
+lpddr3|pll_clk_out_inferred_clock  System                             |  5.000       3.331  |  No paths    -      |  No paths    -      |  No paths    -    
+lpddr3|pll_clk_out_inferred_clock  lpddr3|pll_clk_out_inferred_clock  |  5.000       2.115  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: clk_routing|CLK_100MHZ
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                         Starting                                                                Arrival          
+Instance                 Reference                  Type        Pin     Net                      Time        Slack
+                         Clock                                                                                    
+------------------------------------------------------------------------------------------------------------------
+reset_sync_100mhz[2]     clk_routing|CLK_100MHZ     FD1S3DX     Q       reset_sync_100mhz[2]     0.853       3.667
+reset_sync_100mhz[0]     clk_routing|CLK_100MHZ     FD1S3DX     Q       reset_sync_100mhz[0]     0.853       4.093
+reset_sync_100mhz[1]     clk_routing|CLK_100MHZ     FD1S3DX     Q       reset_sync_100mhz[1]     0.853       4.093
+==================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                   Starting                                               Required          
+Instance                           Reference                  Type        Pin     Net     Time         Slack
+                                   Clock                                                                    
+------------------------------------------------------------------------------------------------------------
+u_lpddr3.a_gen\[0\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[1\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[2\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[3\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[4\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[5\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[6\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[7\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[8\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+u_lpddr3.a_gen\[9\]\.oddr_inst     clk_routing|CLK_100MHZ     ODDRX1F     RST     rst     5.000        3.667
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      1.333
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 3.667
+
+    Number of logic level(s):                1
+    Starting point:                          reset_sync_100mhz[2] / Q
+    Ending point:                            u_lpddr3.a_gen\[0\]\.oddr_inst / RST
+    The start point is clocked by            clk_routing|CLK_100MHZ [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                               Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+reset_sync_100mhz[2]               FD1S3DX     Q        Out     0.853     0.853 r     -         
+reset_sync_100mhz[2]               Net         -        -       -         -           1         
+reset_sync_100mhz_RNI8TTS2[2]      INV         A        In      0.000     0.853 r     -         
+reset_sync_100mhz_RNI8TTS2[2]      INV         Z        Out     0.480     1.333 f     -         
+reset_sync_100mhz_i[2]             Net         -        -       -         -           48        
+u_lpddr3.a_gen\[0\]\.oddr_inst     ODDRX1F     RST      In      0.000     1.333 f     -         
+================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clk_routing|ETH_REFCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                               Arrival          
+Instance                Reference                  Type        Pin     Net                     Time        Slack
+                        Clock                                                                                   
+----------------------------------------------------------------------------------------------------------------
+reset_sync_rgmii[2]     clk_routing|ETH_REFCLK     FD1S3DX     Q       reset_sync_rgmii[2]     0.853       3.721
+reset_sync_rgmii[0]     clk_routing|ETH_REFCLK     FD1S3DX     Q       reset_sync_rgmii[0]     0.853       4.093
+reset_sync_rgmii[1]     clk_routing|ETH_REFCLK     FD1S3DX     Q       reset_sync_rgmii[1]     0.853       4.093
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                              Starting                                                    Required          
+Instance                                      Reference                  Type        Pin     Net          Time         Slack
+                                              Clock                                                                         
+----------------------------------------------------------------------------------------------------------------------------
+u_rgmii.gen_iddr_rx\[0\]\.iddrx1f_rx_data     clk_routing|ETH_REFCLK     IDDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_iddr_rx\[1\]\.iddrx1f_rx_data     clk_routing|ETH_REFCLK     IDDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_iddr_rx\[2\]\.iddrx1f_rx_data     clk_routing|ETH_REFCLK     IDDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_iddr_rx\[3\]\.iddrx1f_rx_data     clk_routing|ETH_REFCLK     IDDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_oddr_tx\[0\]\.oddrx1f_tx_data     clk_routing|ETH_REFCLK     ODDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_oddr_tx\[1\]\.oddrx1f_tx_data     clk_routing|ETH_REFCLK     ODDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_oddr_tx\[2\]\.oddrx1f_tx_data     clk_routing|ETH_REFCLK     ODDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.gen_oddr_tx\[3\]\.oddrx1f_tx_data     clk_routing|ETH_REFCLK     ODDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.iddrx1f_rx_ctl                        clk_routing|ETH_REFCLK     IDDRX1F     RST     rst_sync     5.000        3.721
+u_rgmii.oddrx1f_tx_clk                        clk_routing|ETH_REFCLK     ODDRX1F     RST     rst_sync     5.000        3.721
+============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      1.279
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 3.721
+
+    Number of logic level(s):                1
+    Starting point:                          reset_sync_rgmii[2] / Q
+    Ending point:                            u_rgmii.gen_iddr_rx\[0\]\.iddrx1f_rx_data / RST
+    The start point is clocked by            clk_routing|ETH_REFCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                 Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+reset_sync_rgmii[2]                                  FD1S3DX     Q        Out     0.853     0.853 r     -         
+reset_sync_rgmii[2]                                  Net         -        -       -         -           1         
+u_rgmii.gen_oddr_tx\[3\]\.oddrx1f_tx_data_kb_RNO     INV         A        In      0.000     0.853 r     -         
+u_rgmii.gen_oddr_tx\[3\]\.oddrx1f_tx_data_kb_RNO     INV         Z        Out     0.426     1.279 f     -         
+reset_sync_rgmii_i[2]                                Net         -        -       -         -           11        
+u_rgmii.gen_iddr_rx\[0\]\.iddrx1f_rx_data            IDDRX1F     RST      In      0.000     1.279 f     -         
+==================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clk_routing|ULPI_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                            Arrival          
+Instance                   Reference                Type        Pin     Net                    Time        Slack
+                           Clock                                                                                
+----------------------------------------------------------------------------------------------------------------
+ulpi_counter[0]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[0]        0.985       2.180
+ulpi_counter[1]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[1]        0.907       2.320
+ulpi_counter[2]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[2]        0.907       2.320
+ulpi_counter[3]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[3]        0.907       2.381
+ulpi_counter[4]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[4]        0.907       2.381
+ulpi_counter[5]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[5]        0.907       2.442
+ulpi_counter[6]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[6]        0.907       2.442
+ulpi_counter[7]            clk_routing|ULPI_CLK     FD1S3IX     Q       ulpi_counter[7]        0.907       3.262
+u_ulpi.data_out_reg[0]     clk_routing|ULPI_CLK     FD1S3DX     Q       data_out_reg0          0.907       3.649
+reset_sync_ulpi[0]         clk_routing|ULPI_CLK     FD1S3DX     Q       reset_sync_ulpi[0]     0.853       4.093
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                             Starting                                                                      Required          
+Instance                     Reference                Type         Pin     Net                             Time         Slack
+                             Clock                                                                                           
+-----------------------------------------------------------------------------------------------------------------------------
+ulpi_counter[7]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_s_7_0_S0       4.946        2.180
+ulpi_counter[5]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_5_0_S0     4.946        2.241
+ulpi_counter[6]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_5_0_S1     4.946        2.241
+ulpi_counter[3]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_3_0_S0     4.946        2.303
+ulpi_counter[4]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_3_0_S1     4.946        2.303
+ulpi_counter[1]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_1_0_S0     4.946        2.364
+ulpi_counter[2]              clk_routing|ULPI_CLK     FD1S3IX      D       un2_ulpi_counter_cry_1_0_S1     4.946        2.364
+ulpi_counter[0]              clk_routing|ULPI_CLK     FD1S3IX      D       ulpi_counter_i[0]               4.946        3.535
+u_ulpi.data_out_reg[0]       clk_routing|ULPI_CLK     FD1S3DX      D       N_733_0                         4.946        3.571
+u_ulpi_data_out_regio[1]     clk_routing|ULPI_CLK     OFS1P3DX     SP      u_ulpi.data_out_reg4            4.806        3.642
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      2.765
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.180
+
+    Number of logic level(s):                5
+    Starting point:                          ulpi_counter[0] / Q
+    Ending point:                            ulpi_counter[7] / D
+    The start point is clocked by            clk_routing|ULPI_CLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            clk_routing|ULPI_CLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                          Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+ulpi_counter[0]               FD1S3IX     Q        Out     0.985     0.985 r     -         
+ulpi_counter[0]               Net         -        -       -         -           4         
+un2_ulpi_counter_cry_0_0      CCU2C       A1       In      0.000     0.985 r     -         
+un2_ulpi_counter_cry_0_0      CCU2C       COUT     Out     0.900     1.885 r     -         
+un2_ulpi_counter_cry_0        Net         -        -       -         -           1         
+un2_ulpi_counter_cry_1_0      CCU2C       CIN      In      0.000     1.885 r     -         
+un2_ulpi_counter_cry_1_0      CCU2C       COUT     Out     0.061     1.946 r     -         
+un2_ulpi_counter_cry_2        Net         -        -       -         -           1         
+un2_ulpi_counter_cry_3_0      CCU2C       CIN      In      0.000     1.946 r     -         
+un2_ulpi_counter_cry_3_0      CCU2C       COUT     Out     0.061     2.007 r     -         
+un2_ulpi_counter_cry_4        Net         -        -       -         -           1         
+un2_ulpi_counter_cry_5_0      CCU2C       CIN      In      0.000     2.007 r     -         
+un2_ulpi_counter_cry_5_0      CCU2C       COUT     Out     0.061     2.068 r     -         
+un2_ulpi_counter_cry_6        Net         -        -       -         -           1         
+un2_ulpi_counter_s_7_0        CCU2C       CIN      In      0.000     2.068 r     -         
+un2_ulpi_counter_s_7_0        CCU2C       S0       Out     0.698     2.765 r     -         
+un2_ulpi_counter_s_7_0_S0     Net         -        -       -         -           1         
+ulpi_counter[7]               FD1S3IX     D        In      0.000     2.765 r     -         
+===========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: lpddr3|pll_clk_out_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                                        Arrival          
+Instance                       Reference                             Type        Pin     Net                   Time        Slack
+                               Clock                                                                                            
+--------------------------------------------------------------------------------------------------------------------------------
+u_lpddr3.toggle_counter[0]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[0]     1.051       2.115
+u_lpddr3.toggle_counter[1]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[1]     1.057       2.170
+u_lpddr3.toggle_counter[2]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[2]     1.045       2.182
+u_lpddr3.toggle_counter[3]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[3]     1.039       2.248
+u_lpddr3.toggle_counter[4]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[4]     1.039       2.248
+u_lpddr3.toggle_counter[5]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[5]     1.027       2.321
+u_lpddr3.toggle_counter[6]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[6]     1.015       2.333
+u_lpddr3.toggle_counter[7]     lpddr3|pll_clk_out_inferred_clock     FD1S3AX     Q       toggle_counter[7]     1.015       3.154
+================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                   Starting                                                                          Required          
+Instance                           Reference                             Type        Pin     Net                     Time         Slack
+                                   Clock                                                                                               
+---------------------------------------------------------------------------------------------------------------------------------------
+u_lpddr3.toggle_counter[7]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[7]     4.946        2.115
+u_lpddr3.toggle_counter[5]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[5]     4.946        2.175
+u_lpddr3.toggle_counter[6]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[6]     4.946        2.175
+u_lpddr3.toggle_counter[3]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[3]     4.946        2.236
+u_lpddr3.toggle_counter[4]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[4]     4.946        2.236
+u_lpddr3.toggle_counter[1]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[1]     4.946        2.297
+u_lpddr3.toggle_counter[2]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[2]     4.946        2.297
+u_lpddr3.toggle_counter[0]         lpddr3|pll_clk_out_inferred_clock     FD1S3AX     D       toggle_counter_s[0]     4.946        3.118
+u_lpddr3.a_gen\[1\]\.oddr_inst     lpddr3|pll_clk_out_inferred_clock     ODDRX1F     D1      toggle_counter_i[1]     5.000        3.331
+u_lpddr3.a_gen\[9\]\.oddr_inst     lpddr3|pll_clk_out_inferred_clock     ODDRX1F     D1      toggle_counter_i[1]     5.000        3.331
+=======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      2.832
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.114
+
+    Number of logic level(s):                5
+    Starting point:                          u_lpddr3.toggle_counter[0] / Q
+    Ending point:                            u_lpddr3.toggle_counter[7] / D
+    The start point is clocked by            lpddr3|pll_clk_out_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr3|pll_clk_out_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                 Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+u_lpddr3.toggle_counter[0]           FD1S3AX     Q        Out     1.051     1.051 r     -         
+toggle_counter[0]                    Net         -        -       -         -           11        
+u_lpddr3.toggle_counter_cry_0[0]     CCU2C       B1       In      0.000     1.051 r     -         
+u_lpddr3.toggle_counter_cry_0[0]     CCU2C       COUT     Out     0.900     1.951 r     -         
+toggle_counter_cry[0]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[1]     CCU2C       CIN      In      0.000     1.951 r     -         
+u_lpddr3.toggle_counter_cry_0[1]     CCU2C       COUT     Out     0.061     2.012 r     -         
+toggle_counter_cry[2]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[3]     CCU2C       CIN      In      0.000     2.012 r     -         
+u_lpddr3.toggle_counter_cry_0[3]     CCU2C       COUT     Out     0.061     2.073 r     -         
+toggle_counter_cry[4]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[5]     CCU2C       CIN      In      0.000     2.073 r     -         
+u_lpddr3.toggle_counter_cry_0[5]     CCU2C       COUT     Out     0.061     2.134 r     -         
+toggle_counter_cry[6]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_s_0[7]       CCU2C       CIN      In      0.000     2.134 r     -         
+u_lpddr3.toggle_counter_s_0[7]       CCU2C       S0       Out     0.698     2.832 r     -         
+toggle_counter_s[7]                  Net         -        -       -         -           1         
+u_lpddr3.toggle_counter[7]           FD1S3AX     D        In      0.000     2.832 r     -         
+==================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                Arrival          
+Instance                                      Reference     Type        Pin      Net                  Time        Slack
+                                              Clock                                                                    
+-----------------------------------------------------------------------------------------------------------------------
+u_lpddr3.pll_inst                             System        EHXPLLL     LOCK     pll_locked           0.000       3.166
+u_rgmii.gen_iddr_rx\[0\]\.iddrx1f_rx_data     System        IDDRX1F     Q0       rgmii_rx_data[0]     0.000       5.000
+u_rgmii.gen_iddr_rx\[0\]\.iddrx1f_rx_data     System        IDDRX1F     Q1       rgmii_rx_data[4]     0.000       5.000
+u_rgmii.gen_iddr_rx\[1\]\.iddrx1f_rx_data     System        IDDRX1F     Q0       rgmii_rx_data[1]     0.000       5.000
+u_rgmii.gen_iddr_rx\[1\]\.iddrx1f_rx_data     System        IDDRX1F     Q1       rgmii_rx_data[5]     0.000       5.000
+u_rgmii.gen_iddr_rx\[2\]\.iddrx1f_rx_data     System        IDDRX1F     Q0       rgmii_rx_data[2]     0.000       5.000
+u_rgmii.gen_iddr_rx\[2\]\.iddrx1f_rx_data     System        IDDRX1F     Q1       rgmii_rx_data[6]     0.000       5.000
+u_rgmii.gen_iddr_rx\[3\]\.iddrx1f_rx_data     System        IDDRX1F     Q0       rgmii_rx_data[3]     0.000       5.000
+u_rgmii.gen_iddr_rx\[3\]\.iddrx1f_rx_data     System        IDDRX1F     Q1       rgmii_rx_data[7]     0.000       5.000
+u_rgmii.iddrx1f_rx_ctl                        System        IDDRX1F     Q0       rgmii_rx_dv          0.000       5.000
+=======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                              Starting                                                  Required          
+Instance                                      Reference     Type        Pin     Net                     Time         Slack
+                                              Clock                                                                       
+--------------------------------------------------------------------------------------------------------------------------
+u_lpddr3.toggle_counter[7]                    System        FD1S3AX     D       toggle_counter_s[7]     4.946        3.166
+u_lpddr3.toggle_counter[5]                    System        FD1S3AX     D       toggle_counter_s[5]     4.946        3.227
+u_lpddr3.toggle_counter[6]                    System        FD1S3AX     D       toggle_counter_s[6]     4.946        3.227
+u_lpddr3.toggle_counter[3]                    System        FD1S3AX     D       toggle_counter_s[3]     4.946        3.288
+u_lpddr3.toggle_counter[4]                    System        FD1S3AX     D       toggle_counter_s[4]     4.946        3.288
+u_lpddr3.toggle_counter[1]                    System        FD1S3AX     D       toggle_counter_s[1]     4.946        3.349
+u_lpddr3.toggle_counter[2]                    System        FD1S3AX     D       toggle_counter_s[2]     4.946        3.349
+u_lpddr3.toggle_counter[0]                    System        FD1S3AX     D       toggle_counter_s[0]     4.946        4.169
+u_rgmii.gen_oddr_tx\[0\]\.oddrx1f_tx_data     System        ODDRX1F     D0      rgmii_rx_data[0]        5.000        5.000
+u_rgmii.gen_oddr_tx\[0\]\.oddrx1f_tx_data     System        ODDRX1F     D1      rgmii_rx_data[4]        5.000        5.000
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      1.780
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 3.165
+
+    Number of logic level(s):                5
+    Starting point:                          u_lpddr3.pll_inst / LOCK
+    Ending point:                            u_lpddr3.toggle_counter[7] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            lpddr3|pll_clk_out_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                 Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+u_lpddr3.pll_inst                    EHXPLLL     LOCK     Out     0.000     0.000 r     -         
+pll_locked                           Net         -        -       -         -           9         
+u_lpddr3.toggle_counter_cry_0[0]     CCU2C       A1       In      0.000     0.000 r     -         
+u_lpddr3.toggle_counter_cry_0[0]     CCU2C       COUT     Out     0.900     0.900 r     -         
+toggle_counter_cry[0]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[1]     CCU2C       CIN      In      0.000     0.900 r     -         
+u_lpddr3.toggle_counter_cry_0[1]     CCU2C       COUT     Out     0.061     0.961 r     -         
+toggle_counter_cry[2]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[3]     CCU2C       CIN      In      0.000     0.961 r     -         
+u_lpddr3.toggle_counter_cry_0[3]     CCU2C       COUT     Out     0.061     1.022 r     -         
+toggle_counter_cry[4]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_cry_0[5]     CCU2C       CIN      In      0.000     1.022 r     -         
+u_lpddr3.toggle_counter_cry_0[5]     CCU2C       COUT     Out     0.061     1.083 r     -         
+toggle_counter_cry[6]                Net         -        -       -         -           1         
+u_lpddr3.toggle_counter_s_0[7]       CCU2C       CIN      In      0.000     1.083 r     -         
+u_lpddr3.toggle_counter_s_0[7]       CCU2C       S0       Out     0.698     1.780 r     -         
+toggle_counter_s[7]                  Net         -        -       -         -           1         
+u_lpddr3.toggle_counter[7]           FD1S3AX     D        In      0.000     1.780 r     -         
+==================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 515MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 515MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfe5u_25f-6
+
+Register bits: 33 of 24288 (0%)
+PIC Latch:       0
+I/O cells:       75
+
+
+Details:
+BB:             20
+CCU2C:          10
+EHXPLLL:        2
+FD1S3AX:        8
+FD1S3DX:        10
+FD1S3IX:        8
+GSR:            1
+IB:             11
+IDDRX1F:        5
+INV:            13
+OB:             35
+OBZ:            9
+ODDRX1F:        52
+OFS1P3DX:       7
+ORCALUT4:       2
+PUR:            1
+VHI:            5
+VLO:            5
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 427MB peak: 515MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul  6 18:53:21 2025
+
+###########################################################]

@@ -9,7 +9,7 @@
 // Its primary purpose is to serve as a realistic placeholder for verifying
 // the clocking and I/O capabilities of the FPGA for this specific interface.
 //
-module adc_interface (
+module adc (
     // --- System Inputs ---
     input        SYS_CLK,    // A stable system clock (e.g., 100 MHz)
     input        RESET_N,    // Active-low reset
@@ -39,7 +39,20 @@ module adc_interface (
     (* FEEDBACK_PATH="CLKOP" *)
     (* CLKOP_ENABLE="ENABLED" *)
 
-    EHXPLLL #(
+    // EHXPLLL #(
+    //    .CLKI_DIV(20),
+    //    .CLKFB_DIV(7),
+    //    .CLKOP_DIV(1)
+    //) pll_inst (
+    //    .CLKI(SYS_CLK),
+    //    .CLKFB(pll_clk_out),
+    //    .CLKOP(pll_clk_out),
+    //    .LOCK(pll_locked),
+    //    .RST(rst),
+    //    .STDBY(1'b0)
+    //);
+	
+	    EHXPLLL #(
         .CLKI_DIV(20),
         .CLKFB_DIV(7),
         .CLKOP_DIV(1)
@@ -49,9 +62,20 @@ module adc_interface (
         .CLKOP(pll_clk_out),
         .LOCK(pll_locked),
         .RST(rst),
-        .STDBY(1'b0)
-    );
+        .STDBY(1'b0),
 
+        // --- Explicitly tie unused ports to 0 to remove warnings ---
+        .PHASESEL1(1'b0),
+        .PHASESEL0(1'b0),
+        .PHASEDIR(1'b0),
+        .PHASESTEP(1'b0),
+        .PHASELOADREG(1'b0),
+        .PLLWAKESYNC(1'b0),
+        .ENCLKOP(1'b0),
+        .ENCLKOS(1'b0),
+        .ENCLKOS2(1'b0),
+        .ENCLKOS3(1'b0)
+    );
 
     // Assign the generated clock to the output port
     assign ADC_CLK = pll_clk_out;

@@ -1,0 +1,40 @@
+#OPTIONS:"|-layerid|0|-orig_srs|/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/synwork/clk_routing_clk_routing_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing|-I|/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/|-I|/home/iwolfs/lscc/diamond/3.14/synpbase/lib|-v2001|-devicelib|/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v|-devicelib|/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/linux_a_64/c_ver":1727108826
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/ecp5u.v":1724334838
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/lucent/pmi_def.v":1727108787
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/vlog/hypermods.v":1727108815
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/vlog/scemi_objects.v":1727108815
+#CUR:"/home/iwolfs/lscc/diamond/3.14/synpbase/lib/vlog/scemi_pipes.svh":1727108815
+#CUR:"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v":1751820333
+#CUR:"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v":1751820431
+#CUR:"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v":1751737099
+#CUR:"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v":1751725177
+#CUR:"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v":1751820777
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_adc/adc.v" verilog
+1			"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ddr3/ddr3.v" verilog
+2			"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_rgmii/rgmii.v" verilog
+3			"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/test_ulpi/ulpi.v" verilog
+4			"/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 0 1 2 3
+#Dependency Lists(Users Of)
+0 4
+1 4
+2 4
+3 4
+4 -1
+#Design Unit to File Association
+module work adc 0
+module work lpddr3 1
+module work rgmii 2
+module work ulpi 3
+module work clk_routing 4
+
+#identified top module
+top_module clk_routing

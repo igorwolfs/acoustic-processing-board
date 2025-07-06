@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="clk_routing" device="LFE5U-25F-6BG256C" default_implementation="clk_routing">
+    <Options/>
+    <Implementation title="clk_routing" dir="clk_routing" description="clk_routing" synthesis="synplify" default_strategy="Strategy1">
+        <Options/>
+        <Source name="../test_adc/adc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../test_ddr3/ddr3.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../test_rgmii/rgmii.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../test_ulpi/ulpi.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="testbench_clk_routing.sv" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="clk_routing.v" type="Verilog" type_short="Verilog">
+            <Options top_module="clk_routing"/>
+        </Source>
+        <Source name="clk_routing.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="clk_routing/clk_routing.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="clk_routing1.sty"/>
+</BaliProject>

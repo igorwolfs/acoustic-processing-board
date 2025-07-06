@@ -1,0 +1,284 @@
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Jul  6 16:46:39 2025
+
+/home/iwolfs/lscc/diamond/3.14/ispfpga/bin/lin64/par -f
+clk_routing_clk_routing.p2t clk_routing_clk_routing_map.ncd
+clk_routing_clk_routing.dir clk_routing_clk_routing.prf -gui -msgset
+/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/promote.xml
+
+
+Preference file: clk_routing_clk_routing.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1          -            -            -            -            -            25           Failed
+
+* : Design saved.
+
+INFO - par: Iteration 5_1 failed due to design error(s).
+
+ERROR - par: All 1 iterations failed with design error(s). It is recommended to correct all design errors before running multiple iterations. Please check the Place and Route reports (.par) for the individual iterations under the directory "/home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing.dir".
+
+Total (real) run time for 1-seed: 25 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Lattice Place and Route Report for Design "clk_routing_clk_routing_map.ncd"
+Sun Jul  6 16:46:39 2025
+
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset /home/iwolfs/Work/Projects/electromechanical/acoustic-material-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 clk_routing_clk_routing_map.ncd clk_routing_clk_routing.dir/5_1.ncd clk_routing_clk_routing.prf
+Preference file: clk_routing_clk_routing.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file clk_routing_clk_routing_map.ncd.
+Design name: clk_routing
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application par from file 'sa5p25.nph' in environment: /home/iwolfs/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)      75/197          38% used
+                     75/197          38% bonded
+   IOLOGIC           64/199          32% used
+
+   SLICE             29/12144        <1% used
+
+   GSR                1/1           100% used
+   PLL                2/2           100% used
+
+
+WARNING - par: Input and feedback clock frequencies do not match their divider settings for u_lpddr3/pll_inst. If you desire to change the PLL frequency settings, you can do so by regenerating your PLL module.
+Number of Signals: 148
+Number of Connections: 378
+WARNING - par: LOCATE VREF "VREF_BANK2" preference has been ignored, because no PIO in bank "2" uses this VREF.
+WARNING - par: LOCATE VREF "VREF_BANK3" preference has been ignored, because no PIO in bank "3" uses this VREF.
+
+Pin Constraint Summary:
+   17 out of 75 pins locked (22% locked).
+
+The following 6 signals are selected to use the primary clock routing resources:
+    u_lpddr3/pll_clk_out (driver: u_lpddr3/pll_inst, clk/ce/sr load #: 52/0/0)
+    ADC_CLK_c (driver: u_adc/pll_inst, clk/ce/sr load #: 1/0/0)
+    CLK_100MHZ_c (driver: CLK_100MHZ, clk/ce/sr load #: 4/0/0)
+    ETH_REFCLK_c (driver: ETH_REFCLK, clk/ce/sr load #: 7/0/0)
+    ULPI_CLK_c (driver: ULPI_CLK, clk/ce/sr load #: 15/0/0)
+    reset_sync_rgmii[2] (driver: SLICE_14, clk/ce/sr load #: 0/0/11)
+
+
+Signal reset_sync_100mhz[2] is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 51115.
+Finished Placer Phase 1.  REAL time: 16 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  51682
+Finished Placer Phase 2.  REAL time: 16 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 2 out of 12 (16%)
+  GR_PCLK    : 1 out of 12 (8%)
+  PLL        : 2 out of 2 (100%)
+  DCS        : 0 out of 2 (0%)
+  DCC        : 0 out of 60 (0%)
+  CLKDIV     : 0 out of 4 (0%)
+
+Quadrant TL Clocks:
+  PRIMARY "ETH_REFCLK_c" from comp "ETH_REFCLK" on PIO site "G1 (PL20A)", CLK/CE/SR load = 5
+  PRIMARY "reset_sync_rgmii[2]" from Q0 on comp "SLICE_14" on site "R48C23B", CLK/CE/SR load = 11
+
+  PRIMARY  : 2 out of 16 (12%)
+
+Quadrant TR Clocks:
+  PRIMARY "u_lpddr3/pll_clk_out" from CLKOP on comp "u_lpddr3/pll_inst" on PLL site "PLL_BL0", CLK/CE/SR load = 32
+
+  PRIMARY  : 1 out of 16 (6%)
+
+Quadrant BL Clocks:
+  PRIMARY "u_lpddr3/pll_clk_out" from CLKOP on comp "u_lpddr3/pll_inst" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "ADC_CLK_c" from CLKOP on comp "u_adc/pll_inst" on PLL site "PLL_BR0", CLK/CE/SR load = 1
+  PRIMARY "CLK_100MHZ_c" from comp "CLK_100MHZ" on CLK_PIN site "M1 (PL26C)", CLK/CE/SR load = 3
+  PRIMARY "ETH_REFCLK_c" from comp "ETH_REFCLK" on PIO site "G1 (PL20A)", CLK/CE/SR load = 2
+
+  PRIMARY  : 4 out of 16 (25%)
+
+Quadrant BR Clocks:
+  PRIMARY "u_lpddr3/pll_clk_out" from CLKOP on comp "u_lpddr3/pll_inst" on PLL site "PLL_BL0", CLK/CE/SR load = 19
+  PRIMARY "ADC_CLK_c" from CLKOP on comp "u_adc/pll_inst" on PLL site "PLL_BR0", CLK/CE/SR load = 1
+  PRIMARY "CLK_100MHZ_c" from comp "CLK_100MHZ" on CLK_PIN site "M1 (PL26C)", CLK/CE/SR load = 1
+  PRIMARY "ULPI_CLK_c" from comp "ULPI_CLK" on CLK_PIN site "C8 (PT35A)", CLK/CE/SR load = 15
+
+  PRIMARY  : 4 out of 16 (25%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
++
+I/O Usage Summary (final):
+   75 out of 197 (38.1%) PIO sites used.
+   75 out of 197 (38.1%) bonded PIO sites used.
+   Number of PIO comps: 75; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 2 / 24 (  8%)  | 2.5V       | -          | -          |
+| 1        | 4 / 32 ( 12%)  | 3.3V       | -          | -          |
+| 2        | 27 / 32 ( 84%) | 2.5V       | -          | -          |
+| 3        | 27 / 32 ( 84%) | 2.5V       | -          | -          |
+| 6        | 2 / 32 (  6%)  | 3.3V       | -          | -          |
+| 7        | 12 / 32 ( 37%) | 3.3V       | -          | -          |
+| 8        | 1 / 13 (  7%)  | 3.3V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total placer CPU time: 15 secs 
+
+Dumping design to file clk_routing_clk_routing.dir/5_1.ncd.
+
+0 connections routed; 378 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 22 secs 
+
+Start NBR router at Sun Jul 06 16:47:01 CEST 2025
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at Sun Jul 06 16:47:02 CEST 2025
+
+Start NBR section for initial routing at Sun Jul 06 16:47:02 CEST 2025
+Level 1, iteration 1
+0(0.00%) conflict; 187(49.47%) untouched conns; 10603 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.444ns/-10.603ns; real time: 23 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 158(41.80%) untouched conns; 1980 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.295ns/-1.981ns; real time: 23 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 88(23.28%) untouched conns; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at Sun Jul 06 16:47:02 CEST 2025
+Level 1, iteration 1
+0(0.00%) conflict; 1(0.26%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 1(0.26%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 1(0.26%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+
+Start NBR section for performance tuning (iteration 1) at Sun Jul 06 16:47:02 CEST 2025
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+
+Start NBR section for re-routing at Sun Jul 06 16:47:02 CEST 2025
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 2984 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.337ns/-2.985ns; real time: 23 secs 
+
+Start NBR section for post-routing at Sun Jul 06 16:47:02 CEST 2025
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 30 (7.94%)
+  Estimated worst slack<setup> : -0.337ns
+  Timing score<setup> : 2301
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 23 secs 
+Total REAL time: 24 secs 
+Completely routed.
+End of route.  378 routed (100.00%); 0 unrouted.
+ERROR - par: netsanitycheck: The clock ETH_REFCLK_c on comp RGMII_RX_D[3]_MGIOL port CLK is driven by general routing through comp ETH_REFCLK. Please refer to 'ECP5U/UM Hi-Speed I/O Interface'.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 2301 
+
+Dumping design to file clk_routing_clk_routing.dir/5_1.ncd.
+
+
+
+PAR_SUMMARY::Run status = Failed
+PAR_SUMMARY::Number of unrouted conns = <n/a>
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 1
+
+Total CPU  time to completion: 24 secs 
+Total REAL time to completion: 25 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.

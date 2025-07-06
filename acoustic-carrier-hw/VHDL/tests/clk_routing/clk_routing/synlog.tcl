@@ -1,0 +1,1 @@
+run_tcl -fg clk_routing_clk_routing_synplify.tcl

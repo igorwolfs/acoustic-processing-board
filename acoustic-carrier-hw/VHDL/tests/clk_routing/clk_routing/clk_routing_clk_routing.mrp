@@ -1,0 +1,732 @@
+
+         Lattice Mapping Report File for Design Module 'clk_routing'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-25F -t CABGA256 -s 6 -oc Commercial
+     clk_routing_clk_routing.ngd -o clk_routing_clk_routing_map.ncd -pr
+     clk_routing_clk_routing.prf -mp clk_routing_clk_routing.mrp -lpf /home/iwol
+     fs/Work/Projects/electromechanical/acoustic-material-characterization/acous
+     tic-carrier-hw/VHDL/tests/clk_routing/clk_routing/clk_routing_clk_routing_s
+     ynplify.lpf -lpf /home/iwolfs/Work/Projects/electromechanical/acoustic-mate
+     rial-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routin
+     g.lpf -gui -msgset /home/iwolfs/Work/Projects/electromechanical/acoustic-ma
+     terial-characterization/acoustic-carrier-hw/VHDL/tests/clk_routing/promote.
+     xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-25FCABGA256
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  07/06/25  18:53:21
+
+Design Summary
+--------------
+
+   Number of registers:     33 out of 24879 (0%)
+      PFU registers:           26 out of 24288 (0%)
+      PIO registers:            7 out of   591 (1%)
+   Number of SLICEs:        29 out of 12144 (0%)
+      SLICEs as Logic/ROM:     29 out of 12144 (0%)
+      SLICEs as RAM:            0 out of  9108 (0%)
+      SLICEs as Carry:         10 out of 12144 (0%)
+   Number of LUT4s:         37 out of 24288 (0%)
+      Number used as logic LUTs:         17
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       20
+      Number used as shift registers:     0
+   Number of PIO sites used: 81 out of 197 (41%)
+      Number of PIO sites used for single ended IOs: 69
+      Number of PIO sites used for differential IOs: 12 (represented by 6 PIO
+     comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 57 out of 591 (10%)
+      Number of IDDR cells:   5
+      Number of ODDR cells:  52
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 57 (4 differential)
+      Number of PIO using IDDR only:        5 (0 differential)
+      Number of PIO using ODDR only:       52 (4 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  0 out of 56 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+Design Summary (cont)
+---------------------
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  2 out of 2 (100%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  4
+     Net CLK_100MHZ_c: 4 loads, 4 rising, 0 falling (Driver: PIO CLK_100MHZ )
+     Net ULPI_CLK_c: 15 loads, 15 rising, 0 falling (Driver: PIO ULPI_CLK )
+     Net ETH_REFCLK_c: 7 loads, 7 rising, 0 falling (Driver: PIO ETH_REFCLK )
+     Net u_lpddr3/pll_clk_out: 52 loads, 52 rising, 0 falling (Driver:
+     u_lpddr3/pll_inst )
+   Number of Clock Enables:  1
+     Net u_ulpi.data_out_reg4: 7 loads, 0 LSLICEs
+   Number of local set/reset loads for net reset_sync_100mhz[2] merged into GSR:
+     46
+   Number of LSRs:  5
+     Net ULPI_RST_c: 8 loads, 1 LSLICEs
+     Net reset_sync_rgmii[2]: 11 loads, 0 LSLICEs
+     Net reset_sync_100mhz_i[2]: 2 loads, 0 LSLICEs
+     Net reset_sync_ulpi[2]: 5 loads, 5 LSLICEs
+     Net RESET_N_c: 6 loads, 6 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u_lpddr3/toggle_counter[1]: 12 loads
+     Net reset_sync_rgmii[2]: 11 loads
+     Net u_lpddr3/toggle_counter[0]: 11 loads
+     Net ULPI_DIR_c: 10 loads
+     Net u_lpddr3/pll_locked: 9 loads
+     Net u_lpddr3/toggle_counter[2]: 9 loads
+     Net ULPI_RST_c: 8 loads
+     Net u_lpddr3/toggle_counter[3]: 8 loads
+     Net u_lpddr3/toggle_counter[4]: 8 loads
+     Net u_lpddr3/toggle_counter_i[1]: 8 loads
+
+
+
+                                    Page 2
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+
+
+
+   Number of warnings:  35
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Pref conflicts. Ignoring FREQUENCY PORT "CLK_100MHZ" 100.000000
+     MHz ;
+        Keeping FREQUENCY PORT "CLK_100MHZ" 100.000000 MHz ;
+     .
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(1
+     3): Semantic error in "LOCATE COMP "FPGA_RESET" SITE "R9" ;": COMP
+     "FPGA_RESET" cannot be found in design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(1
+     4): Semantic error in "IOBUF PORT "FPGA_RESET" IO_TYPE=LVCMOS33 PULLMODE=UP
+     ;": Port "FPGA_RESET" does not exist in the design. This preference has
+     been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(2
+     6): Semantic error in "IOBUF PORT "ADC_DTR" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_DTR" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(3
+     0): Semantic error in "IOBUF PORT "ADC_D[0]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[0]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(3
+     2): Semantic error in "IOBUF PORT "ADC_D[1]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[1]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(3
+     4): Semantic error in "IOBUF PORT "ADC_D[2]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[2]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(3
+     6): Semantic error in "IOBUF PORT "ADC_D[3]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[3]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(3
+     8): Semantic error in "IOBUF PORT "ADC_D[4]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[4]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(4
+     0): Semantic error in "IOBUF PORT "ADC_D[5]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[5]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(4
+     2): Semantic error in "IOBUF PORT "ADC_D[6]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[6]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(4
+     4): Semantic error in "IOBUF PORT "ADC_D[7]" IO_TYPE=LVCMOS33 ;": Port
+
+                                    Page 3
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+Design Errors/Warnings (cont)
+-----------------------------
+     "ADC_D[7]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(4
+     6): Semantic error in "IOBUF PORT "ADC_D[8]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[8]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(4
+     8): Semantic error in "IOBUF PORT "ADC_D[9]" IO_TYPE=LVCMOS33 ;": Port
+     "ADC_D[9]" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(1
+     80): Semantic error in "IOBUF PORT "RGMII_RX_CLK" IO_TYPE=LVCMOS33 ;": Port
+     "RGMII_RX_CLK" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(2
+     08): Semantic error in "IOBUF PORT "MDIO_CLK" IO_TYPE=LVCMOS33 ;": Port
+     "MDIO_CLK" does not exist in the design. This preference has been disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(2
+     10): Semantic error in "IOBUF PORT "MDIO_DATA" IO_TYPE=LVCMOS33 ;": Port
+     "MDIO_DATA" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: /home/iwolfs/Work/Projects/electromechanical/acoustic-material-ch
+     aracterization/acoustic-carrier-hw/VHDL/tests/clk_routing/clk_routing.lpf(2
+     46): Semantic error in "IOBUF PORT "ULPI_NXT" IO_TYPE=LVCMOS33 ;": Port
+     "ULPI_NXT" does not exist in the design. This preference has been disabled.
+WARNING - map: EHXPLLL 'u_lpddr3/pll_inst' cannot obtain
+     FREQUENCY_PIN_CLKOP=400.000 when FREQUENCY_PIN_CLKI=100.000, CLKI_DIV=1,
+     CLKFB_DIV=3, CLKOP_DIV=1.
+WARNING - map: Using local reset signal 'reset_sync_100mhz[2]' to infer global
+     GSR net.
+WARNING - map: IO buffer missing for top level port ADC_DTR...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](9)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](8)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](7)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](6)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](5)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](4)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](3)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](2)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](1)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port ADC_D[9:0](0)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port RGMII_RX_CLK...logic will be
+     discarded.
+
+                                    Page 4
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: IO buffer missing for top level port MDIO_CLK...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port MDIO_DATA...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port ULPI_NXT...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| LPDDR_CLK_P         | OUTPUT    | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+| ADC_CLK             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CLK_100MHZ          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQS_N[0]      | BIDIR     | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[12]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[14]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[0]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[13]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[2]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[1]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[10]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[11]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[6]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[5]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[9]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[4]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[3]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[15]        | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[8]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQ[7]         | BIDIR     | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQS_P[0]      | BIDIR     | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 5
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+IO (PIO) Attributes (cont)
+--------------------------
+| LPDDR_DQS_P[1]      | BIDIR     | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DQS_N[1]      | BIDIR     | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+| ULPI_STP            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ULPI_DIR            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[7]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[6]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[5]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[4]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[3]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[2]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[1]        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ULPI_DATA[0]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ULPI_RST            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ULPI_CLK            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_D[3]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_D[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_D[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_D[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_CTL        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_TX_CLK        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_RX_D[3]       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_RX_D[2]       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_RX_D[1]       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_RX_D[0]       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RGMII_RX_CTL        | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ETH_REFCLK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DM[1]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_DM[0]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 6
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+IO (PIO) Attributes (cont)
+--------------------------
+| LPDDR_A[15]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[14]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[13]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[12]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[11]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[10]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[9]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[8]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[7]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[6]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[5]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[4]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[3]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[2]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[1]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_A[0]          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_BA[2]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_BA[1]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_BA[0]         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_WE_N          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_CAS_N         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_RAS_N         | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_CS_N          | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_CKE           | OUTPUT    | SSTL135_I |            |
++---------------------+-----------+-----------+------------+
+| LPDDR_CLK_N         | OUTPUT    | SSTL135D_I|            |
++---------------------+-----------+-----------+------------+
+| RESET_N             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+                                    Page 7
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+Removed logic
+-------------
+
+Block u_adc/VCC undriven or does not drive anything - clipped.
+Block u_ulpi/GND undriven or does not drive anything - clipped.
+Block u_ulpi/VCC undriven or does not drive anything - clipped.
+Signal reset_sync_ulpi_i[2] was merged into signal reset_sync_ulpi[2]
+Signal RESET_N_c_i was merged into signal RESET_N_c
+Signal u_rgmii/rst_sync was merged into signal reset_sync_rgmii[2]
+Signal GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal u_lpddr3/VCC undriven or does not drive anything - clipped.
+Signal u_rgmii/VCC undriven or does not drive anything - clipped.
+Signal u_rgmii/GND undriven or does not drive anything - clipped.
+Signal un2_ulpi_counter_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal un2_ulpi_counter_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Signal u_adc/CLKINTFB undriven or does not drive anything - clipped.
+Signal u_adc/REFCLK undriven or does not drive anything - clipped.
+Signal u_adc/INTLOCK undriven or does not drive anything - clipped.
+Signal u_adc/pll_locked undriven or does not drive anything - clipped.
+Signal u_adc/CLKOS3 undriven or does not drive anything - clipped.
+Signal u_adc/CLKOS2 undriven or does not drive anything - clipped.
+Signal u_adc/CLKOS undriven or does not drive anything - clipped.
+Signal u_lpddr3/CLKINTFB_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/REFCLK_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/INTLOCK_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/CLKOS3_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/CLKOS2_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/CLKOS_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dqs_n undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dqs_p_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dqs_p undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_14 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_13 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_12 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_11 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_10 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_9 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_8 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_7 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_6 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_5 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_4 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_3 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_2 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_0 undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq undriven or does not drive anything - clipped.
+Signal u_lpddr3/un1_u_bb_dq_1 undriven or does not drive anything - clipped.
+Signal u_lpddr3/toggle_counter_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal u_lpddr3/toggle_counter_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal u_lpddr3/toggle_counter_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal u_lpddr3/N_1 undriven or does not drive anything - clipped.
+
+                                    Page 8
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+Removed logic (cont)
+--------------------
+Signal u_lpddr3/un1_u_bb_dqs_n_1 undriven or does not drive anything - clipped.
+Signal u_rgmii/Q1 undriven or does not drive anything - clipped.
+Signal un2_ulpi_counter_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal un2_ulpi_counter_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Block reset_sync_ulpi_RNI2EFN6[2] was optimized away.
+Block RESET_N_pad_RNI43B31 was optimized away.
+Block u_rgmii/gen_oddr_tx[3].oddrx1f_tx_data_kb_RNO was optimized away.
+Block GND was optimized away.
+Block VCC was optimized away.
+Block u_lpddr3/VCC was optimized away.
+Block u_rgmii/VCC was optimized away.
+Block u_rgmii/GND was optimized away.
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_lpddr3/pll_inst
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      CLK_100MHZ_c
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     u_lpddr3/pll_clk_out
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     u_lpddr3/pll_clk_out
+  Reset Signal:                            NODE     reset_sync_100mhz_i[2]
+  Standby Signal:                          NODE     u_lpddr3/GND
+  PLL LOCK signal:                         NODE     u_lpddr3/pll_locked
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      100.0000
+  Output Clock(P) Frequency (MHz):                  400.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    3
+  CLKOP Divider:                                    1
+  CLKOS Divider:                                    8
+  CLKOS2 Divider:                                   8
+  CLKOS3 Divider:                                   8
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+
+                                    Page 9
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                -315
+  CLKOS Trim Option Rising/Falling:                 RISING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               -315
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               -315
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+PLL 2:                                     Pin/Node Value
+  PLL Instance Name:                                u_adc/pll_inst
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      CLK_100MHZ_c
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         PIN,NODE ADC_CLK_c
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     ADC_CLK_c
+  Reset Signal:                            NODE     reset_sync_100mhz_i[2]
+  Standby Signal:                          NODE     u_adc/GND
+  PLL LOCK signal:                                  NONE
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      100.0000
+  Output Clock(P) Frequency (MHz):                  35.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     20
+  CLKFB Divider:                                    7
+  CLKOP Divider:                                    1
+  CLKOS Divider:                                    8
+  CLKOS2 Divider:                                   8
+  CLKOS3 Divider:                                   8
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                -315
+  CLKOS Trim Option Rising/Falling:                 RISING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               -315
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+
+                                   Page 10
+
+
+
+
+Design:  clk_routing                                   Date:  07/06/25  18:53:21
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOS3 Desired Phase Shift(degree):               -315
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+ASIC Components
+---------------
+
+Instance Name: u_lpddr3/pll_inst
+         Type: EHXPLLL
+Instance Name: u_adc/pll_inst
+         Type: EHXPLLL
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'reset_sync_100mhz[2]' of the design has been inferred
+        as Global Set Reset (GSR). The reset signal used for GSR control is
+        'reset_sync_100mhz[2]'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 265 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 11
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

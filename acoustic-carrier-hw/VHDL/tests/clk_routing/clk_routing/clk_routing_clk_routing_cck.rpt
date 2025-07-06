@@ -1,0 +1,199 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: /home/iwolfs/lscc/diamond/3.14/synpbase
+OS: Ubuntu 24.04.2 LTS
+Hostname: iwolfs-Aspire-A14-51z
+max virtual memory: unlimited (bytes)
+max user processes: 61935
+max stack size: 8388608 (bytes)
+
+
+Implementation : clk_routing
+
+# Written on Sun Jul  6 18:53:20 2025
+
+##### DESIGN INFO #######################################################
+
+Top View:                "clk_routing"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                              Ending                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                System                                |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                lpddr3|pll_clk_out_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+clk_routing|ULPI_CLK                  clk_routing|ULPI_CLK                  |     5.000            |     No paths         |     No paths         |     No paths                         
+clk_routing|CLK_100MHZ                System                                |     5.000            |     No paths         |     No paths         |     No paths                         
+clk_routing|CLK_100MHZ                clk_routing|CLK_100MHZ                |     5.000            |     No paths         |     No paths         |     No paths                         
+clk_routing|ETH_REFCLK                System                                |     5.000            |     No paths         |     No paths         |     No paths                         
+clk_routing|ETH_REFCLK                clk_routing|ETH_REFCLK                |     5.000            |     No paths         |     No paths         |     No paths                         
+lpddr3|pll_clk_out_inferred_clock     System                                |     5.000            |     No paths         |     No paths         |     No paths                         
+lpddr3|pll_clk_out_inferred_clock     lpddr3|pll_clk_out_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:ADC_CLK
+p:ADC_DTR
+p:ADC_D[0]
+p:ADC_D[1]
+p:ADC_D[2]
+p:ADC_D[3]
+p:ADC_D[4]
+p:ADC_D[5]
+p:ADC_D[6]
+p:ADC_D[7]
+p:ADC_D[8]
+p:ADC_D[9]
+p:LPDDR_A[0]
+p:LPDDR_A[1]
+p:LPDDR_A[2]
+p:LPDDR_A[3]
+p:LPDDR_A[4]
+p:LPDDR_A[5]
+p:LPDDR_A[6]
+p:LPDDR_A[7]
+p:LPDDR_A[8]
+p:LPDDR_A[9]
+p:LPDDR_A[10]
+p:LPDDR_A[11]
+p:LPDDR_A[12]
+p:LPDDR_A[13]
+p:LPDDR_A[14]
+p:LPDDR_A[15]
+p:LPDDR_BA[0]
+p:LPDDR_BA[1]
+p:LPDDR_BA[2]
+p:LPDDR_CAS_N
+p:LPDDR_CKE
+p:LPDDR_CLK_N
+p:LPDDR_CLK_P
+p:LPDDR_CS_N
+p:LPDDR_DM[0]
+p:LPDDR_DM[1]
+p:LPDDR_DQS_N[0] (bidir end point)
+p:LPDDR_DQS_N[0] (bidir start point)
+p:LPDDR_DQS_N[1] (bidir end point)
+p:LPDDR_DQS_N[1] (bidir start point)
+p:LPDDR_DQS_P[0] (bidir end point)
+p:LPDDR_DQS_P[0] (bidir start point)
+p:LPDDR_DQS_P[1] (bidir end point)
+p:LPDDR_DQS_P[1] (bidir start point)
+p:LPDDR_DQ[0] (bidir end point)
+p:LPDDR_DQ[0] (bidir start point)
+p:LPDDR_DQ[1] (bidir end point)
+p:LPDDR_DQ[1] (bidir start point)
+p:LPDDR_DQ[2] (bidir end point)
+p:LPDDR_DQ[2] (bidir start point)
+p:LPDDR_DQ[3] (bidir end point)
+p:LPDDR_DQ[3] (bidir start point)
+p:LPDDR_DQ[4] (bidir end point)
+p:LPDDR_DQ[4] (bidir start point)
+p:LPDDR_DQ[5] (bidir end point)
+p:LPDDR_DQ[5] (bidir start point)
+p:LPDDR_DQ[6] (bidir end point)
+p:LPDDR_DQ[6] (bidir start point)
+p:LPDDR_DQ[7] (bidir end point)
+p:LPDDR_DQ[7] (bidir start point)
+p:LPDDR_DQ[8] (bidir end point)
+p:LPDDR_DQ[8] (bidir start point)
+p:LPDDR_DQ[9] (bidir end point)
+p:LPDDR_DQ[9] (bidir start point)
+p:LPDDR_DQ[10] (bidir end point)
+p:LPDDR_DQ[10] (bidir start point)
+p:LPDDR_DQ[11] (bidir end point)
+p:LPDDR_DQ[11] (bidir start point)
+p:LPDDR_DQ[12] (bidir end point)
+p:LPDDR_DQ[12] (bidir start point)
+p:LPDDR_DQ[13] (bidir end point)
+p:LPDDR_DQ[13] (bidir start point)
+p:LPDDR_DQ[14] (bidir end point)
+p:LPDDR_DQ[14] (bidir start point)
+p:LPDDR_DQ[15] (bidir end point)
+p:LPDDR_DQ[15] (bidir start point)
+p:LPDDR_RAS_N
+p:LPDDR_WE_N
+p:MDIO_CLK
+p:MDIO_DATA
+p:RESET_N
+p:RGMII_RX_CLK
+p:RGMII_RX_CTL
+p:RGMII_RX_D[0]
+p:RGMII_RX_D[1]
+p:RGMII_RX_D[2]
+p:RGMII_RX_D[3]
+p:RGMII_TX_CLK
+p:RGMII_TX_CTL
+p:RGMII_TX_D[0]
+p:RGMII_TX_D[1]
+p:RGMII_TX_D[2]
+p:RGMII_TX_D[3]
+p:ULPI_DATA[0] (bidir end point)
+p:ULPI_DATA[0] (bidir start point)
+p:ULPI_DATA[1] (bidir end point)
+p:ULPI_DATA[1] (bidir start point)
+p:ULPI_DATA[2] (bidir end point)
+p:ULPI_DATA[2] (bidir start point)
+p:ULPI_DATA[3] (bidir end point)
+p:ULPI_DATA[3] (bidir start point)
+p:ULPI_DATA[4] (bidir end point)
+p:ULPI_DATA[4] (bidir start point)
+p:ULPI_DATA[5] (bidir end point)
+p:ULPI_DATA[5] (bidir start point)
+p:ULPI_DATA[6] (bidir end point)
+p:ULPI_DATA[6] (bidir start point)
+p:ULPI_DATA[7] (bidir end point)
+p:ULPI_DATA[7] (bidir start point)
+p:ULPI_DIR
+p:ULPI_NXT
+p:ULPI_RST
+p:ULPI_STP
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

@@ -1,0 +1,29 @@
+i ULPI_CLK
+m 0 0
+u 5 19
+p {p:ULPI_CLK}{t:reset_sync_ulpi[2].C}
+e ckid0_0 {t:reset_sync_ulpi[2].C} dffr
+c ckid0_0 {p:ULPI_CLK} port Unsupported/too complex instance on clock path
+i u_lpddr3.pll_clk_out_i
+m 0 0
+u 1 8
+p {t:u_lpddr3.pll_inst.CLKOP}{t:u_lpddr3.pll_clk_out_inferred_clock.I[0]}{t:u_lpddr3.pll_clk_out_inferred_clock.OUT[0]}{t:u_lpddr3.toggle_counter[7:0].C}
+e ckid0_1 {t:u_lpddr3.toggle_counter[7:0].C} dff
+c ckid0_1 {t:u_lpddr3.pll_inst.CLKOP} EHXPLLL Clock source is constant
+i ETH_REFCLK
+m 0 0
+u 3 3
+p {p:ETH_REFCLK}{t:reset_sync_rgmii[2].C}
+e ckid0_2 {t:reset_sync_rgmii[2].C} dffr
+c ckid0_2 {p:ETH_REFCLK} port Unsupported/too complex instance on clock path
+i CLK_100MHZ
+m 0 0
+u 3 3
+p {p:CLK_100MHZ}{t:reset_sync_100mhz[2].C}
+e ckid0_3 {t:reset_sync_100mhz[2].C} dffr
+c ckid0_3 {p:CLK_100MHZ} port Unsupported/too complex instance on clock path
+i u_lpddr3.pll_locked
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

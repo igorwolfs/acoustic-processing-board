@@ -23,19 +23,19 @@ module clk_routing (
     input  [9:0]  ADC_D,
 
     // --- LPDDR3 Interface ---
-    output        LPDDR3_CK_P,
-    output        LPDDR3_CK_N,
-    output        LPDDR3_CKE,
-    output        LPDDR3_CS_N,
-    output        LPDDR3_RAS_N,
-    output        LPDDR3_CAS_N,
-    output        LPDDR3_WE_N,
-    output [2:0]  LPDDR3_BA,
-    output [15:0] LPDDR3_A,
-    output [1:0]  LPDDR3_DM,
-    inout  [1:0]  LPDDR3_DQS_P,
-    inout  [1:0]  LPDDR3_DQS_N,
-    inout  [15:0] LPDDR3_DQ,
+    output        LPDDR_CLK_P,
+    output        LPDDR_CLK_N,
+    output        LPDDR_CKE,
+    output        LPDDR_CS_N,
+    output        LPDDR_RAS_N,
+    output        LPDDR_CAS_N,
+    output        LPDDR_WE_N,
+    output [2:0]  LPDDR_BA,
+    output [15:0] LPDDR_A,
+    output [1:0]  LPDDR_DM,
+    inout  [1:0]  LPDDR_DQS_P,
+    inout  [1:0]  LPDDR_DQS_N,
+    inout  [15:0] LPDDR_DQ,
 
     // --- RGMII Ethernet Interface ---
     input         ETH_REFCLK,    // NEW: 125 MHz reference clock for TX
@@ -54,11 +54,7 @@ module clk_routing (
     inout  [7:0]  ULPI_DATA,
     input         ULPI_DIR,
     input         ULPI_NXT,
-    output        ULPI_STP,
-
-    // --- Status/Debug Outputs ---
-    output [7:0]  DEBUG_LEDS,
-    output        PLL_LOCKED
+    output        ULPI_STP
 );
 
     // --- Clock Buffering ---
@@ -118,14 +114,11 @@ module clk_routing (
     wire adc_pll_locked;
     wire lpddr3_pll_locked;
     
-    // Combine all PLL lock signals
-    assign PLL_LOCKED = adc_pll_locked & lpddr3_pll_locked;
-
     // --- ADC Interface Instantiation ---
     wire [9:0] adc_app_data;
     wire       adc_app_data_valid;
 
-    adc_interface u_adc (
+    adc u_adc (
         .SYS_CLK(clk_100mhz_buf),
         .RESET_N(reset_n_100mhz),
         .APP_DATA(adc_app_data),
@@ -144,19 +137,19 @@ module clk_routing (
     lpddr3 u_lpddr3 (
         .SYS_CLK(clk_100mhz_buf),
         .RESET_N(reset_n_100mhz),
-        .CK_P(LPDDR3_CK_P),
-        .CK_N(LPDDR3_CK_N),
-        .CKE(LPDDR3_CKE),
-        .CS_N(LPDDR3_CS_N),
-        .RAS_N(LPDDR3_RAS_N),
-        .CAS_N(LPDDR3_CAS_N),
-        .WE_N(LPDDR3_WE_N),
-        .BA(LPDDR3_BA),
-        .A(LPDDR3_A),
-        .DM(LPDDR3_DM),
-        .DQS_P(LPDDR3_DQS_P),
-        .DQS_N(LPDDR3_DQS_N),
-        .DQ(LPDDR3_DQ)
+        .CK_P(LPDDR_CLK_P),
+        .CK_N(LPDDR_CLK_N),
+        .CKE(LPDDR_CKE),
+        .CS_N(LPDDR_CS_N),
+        .RAS_N(LPDDR_RAS_N),
+        .CAS_N(LPDDR_CAS_N),
+        .WE_N(LPDDR_WE_N),
+        .BA(LPDDR_BA),
+        .A(LPDDR_A),
+        .DM(LPDDR_DM),
+        .DQS_P(LPDDR_DQS_P),
+        .DQS_N(LPDDR_DQS_N),
+        .DQ(LPDDR_DQ)
     );
 
     // Extract PLL lock signal from LPDDR3 module
@@ -186,7 +179,8 @@ module clk_routing (
         .RGMII_TX_CTL(RGMII_TX_CTL),
         .RGMII_TX_D(RGMII_TX_D),
         .MDIO_CLK(MDIO_CLK),
-        .MDIO_DATA(MDIO_DATA)
+        .MDIO_DATA(MDIO_DATA),
+		.ETH_REFCLK(ETH_REFCLK),
     );
 
     // --- ULPI Interface Instantiation ---
@@ -220,16 +214,6 @@ module clk_routing (
     );
 
     // --- Debug LED Assignments ---
-    // Assign various status signals to debug LEDs
-    assign DEBUG_LEDS[0] = adc_app_data_valid;
-    assign DEBUG_LEDS[1] = rgmii_rx_dv;
-    assign DEBUG_LEDS[2] = rgmii_tx_dv;
-    assign DEBUG_LEDS[3] = ULPI_DIR;
-    assign DEBUG_LEDS[4] = ULPI_NXT;
-    assign DEBUG_LEDS[5] = PLL_LOCKED;
-    assign DEBUG_LEDS[6] = reset_n_100mhz;
-    assign DEBUG_LEDS[7] = ulpi_counter[7]; // Slow blink from ULPI counter
-
     // --- Additional Clock Domain Crossing (if needed) ---
     // If you need to pass data between clock domains, implement proper
     // clock domain crossing logic here (FIFOs, synchronizers, etc.)

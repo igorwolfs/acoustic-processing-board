@@ -1,0 +1,534 @@
+SYSCONFIG CONFIG_IOVOLTAGE=3.3 COMPRESS_CONFIG=ON MCCLK_FREQ=62 MASTER_SPI_PORT=ENABLE SLAVE_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE;
+
+
+#===============================================================================
+# BANK 0 - ADC / OSCILLATOR
+#===============================================================================
+
+
+# Clock
+LOCATE COMP "CLK_100MHZ" SITE "M2";
+IOBUF  PORT "CLK_100MHZ" IO_TYPE=LVCMOS33 PULLMODE=NONE;
+FREQUENCY PORT "CLK_100MHZ" 100 MHZ;
+
+
+# BANK 0
+## SIGCON
+LOCATE COMP "SIGCON[2]" SITE "A2";
+IOBUF PORT "SIGCON[2]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[1]" SITE "B3";
+IOBUF PORT "SIGCON[1]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[4]" SITE "A3";
+IOBUF PORT "SIGCON[4]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[5]" SITE "A4";
+IOBUF PORT "SIGCON[5]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[3]" SITE "B4";
+IOBUF PORT "SIGCON[3]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[6]" SITE "B5";
+IOBUF PORT "SIGCON[6]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[8]" SITE "A5";
+IOBUF PORT "SIGCON[8]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[9]" SITE "A6";
+IOBUF PORT "SIGCON[9]" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "SIGCON[7]" SITE "G6";
+IOBUF PORT "SIGCON[7]" IO_TYPE=LVCMOS33 DRIVE=4;
+
+### EXTERNAL CLOCK
+LOCATE COMP "EXT_CLK" SITE "E7";
+IOBUF PORT "EXT_CLK" IO_TYPE=LVCMOS33 DRIVE=4;
+
+
+#===============================================================================
+# BANK 1 - USB / ULPI
+#===============================================================================
+
+### USB-CC pins
+LOCATE COMP "USB_CC2" SITE "A9";
+IOBUF  PORT "USB_CC2" IO_TYPE=LVCMOS33 DRIVE=4;
+
+LOCATE COMP "USB_CC1" SITE "A10";
+IOBUF  PORT "USB_CC1" IO_TYPE=LVCMOS33 DRIVE=4;
+
+
+## USB_ULPI
+### DATA[0..7]
+LOCATE COMP "ULPI_D0" SITE "B14";
+IOBUF  PORT "ULPI_D0" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D1" SITE "A15";
+IOBUF  PORT "ULPI_D1" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D2" SITE "B13";
+IOBUF  PORT "ULPI_D2" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D3" SITE "A14";
+IOBUF  PORT "ULPI_D3" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D4" SITE "C12";
+IOBUF  PORT "ULPI_D4" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D5" SITE "A13";
+IOBUF  PORT "ULPI_D5" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D6" SITE "B12";   
+IOBUF  PORT "ULPI_D6" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_D7" SITE "A12";
+IOBUF  PORT "ULPI_D7" IO_TYPE=LVCMOS33 DRIVE=4;
+
+### CMD [NXT, STP, DIR, RST]
+LOCATE COMP "ULPI_NXT" SITE "D12";
+IOBUF  PORT "ULPI_NXT" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_STP" SITE "C13";
+IOBUF  PORT "ULPI_STP" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_DIR" SITE "D13";
+IOBUF  PORT "ULPI_DIR" IO_TYPE=LVCMOS33 DRIVE=4;
+LOCATE COMP "ULPI_RST" SITE "A11";
+IOBUF  PORT "ULPI_RST" IO_TYPE=LVCMOS33 DRIVE=4;
+
+### CLK
+LOCATE COMP "ULPI_CLK" SITE "C8";
+IOBUF  PORT "ULPI_CLK" IO_TYPE=LVCMOS33 DRIVE=4;
+
+#===============================================================================
+# BANK 2 - LPDDR3 INTERFACE
+#===============================================================================
+
+# --- MISC SIGNALS ---
+# USB Sense pin, configured as a standard 3.3V input.
+LOCATE COMP "FPGA_USB_SENSE" SITE "B15";
+IOBUF PORT "FPGA_USB_SENSE" IO_TYPE=LVCMOS33;
+
+# --- VOLTAGE REFERENCE ---
+# VREF for LPDDR3 SSTL135_I I/O standard (0.675V).
+LOCATE VREF "VREF_BANK2" SITE "G14";
+
+
+#===============================================================================
+# --- UPPER BYTE GROUP (DQ[8-15]) ---
+#===============================================================================
+
+# --- Upper Data Strobe (Differential) ---
+LOCATE COMP " LPDDR_UDQS+" SITE "D16";
+IOBUF PORT " LPDDR_UDQS+" IO_TYPE=SSTL135D_I;
+LOCATE COMP " LPDDR_UDQS-" SITE "E15";
+IOBUF PORT " LPDDR_UDQS-" IO_TYPE=SSTL135D_I;
+
+# --- Upper Data Mask ---
+LOCATE COMP " LPDDR_UDM" SITE "F13";
+IOBUF PORT " LPDDR_UDM" IO_TYPE=SSTL135_I;
+
+# --- Upper Data Bus (DQ[8-15]) ---
+LOCATE COMP " LPDDR_DQ[8]" SITE "F14";
+IOBUF PORT " LPDDR_DQ[8]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[9]" SITE "D14";
+IOBUF PORT " LPDDR_DQ[9]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[10]" SITE "E16";
+IOBUF PORT " LPDDR_DQ[10]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[11]" SITE "E14";
+IOBUF PORT " LPDDR_DQ[11]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[12]" SITE "B16";
+IOBUF PORT " LPDDR_DQ[12]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[13]" SITE "C16";
+IOBUF PORT " LPDDR_DQ[13]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[14]" SITE "C14";
+IOBUF PORT " LPDDR_DQ[14]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[15]" SITE "C15";
+IOBUF PORT " LPDDR_DQ[15]" IO_TYPE=SSTL135_I;
+
+
+#===============================================================================
+# --- LOWER BYTE GROUP (DQ[0-7]) ---
+#===============================================================================
+
+# --- Lower Data Strobe (Differential) ---
+LOCATE COMP " LPDDR_LDQS+" SITE "G16";
+IOBUF PORT " LPDDR_LDQS+" IO_TYPE=SSTL135D_I;
+LOCATE COMP " LPDDR_LDQS-" SITE "H15";
+IOBUF PORT " LPDDR_LDQS-" IO_TYPE=SSTL135D_I;
+
+# --- Lower Data Mask ---
+LOCATE COMP " LPDDR_LDM" SITE "G15";
+IOBUF PORT " LPDDR_LDM" IO_TYPE=SSTL135_I;
+
+# --- Lower Data Bus (DQ[0-7]) ---
+LOCATE COMP " LPDDR_DQ[0]" SITE "F16";
+IOBUF PORT " LPDDR_DQ[0]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[1]" SITE "J14";
+IOBUF PORT " LPDDR_DQ[1]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[2]" SITE "J15";
+IOBUF PORT " LPDDR_DQ[2]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[3]" SITE "K16";
+IOBUF PORT " LPDDR_DQ[3]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[4]" SITE "J16";
+IOBUF PORT " LPDDR_DQ[4]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[5]" SITE "K14";
+IOBUF PORT " LPDDR_DQ[5]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[6]" SITE "H14";
+IOBUF PORT " LPDDR_DQ[6]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_DQ[7]" SITE "K15";
+IOBUF PORT " LPDDR_DQ[7]" IO_TYPE=SSTL135_I;
+
+
+#===============================================================================
+# --- DQS GROUP DEFINITIONS for Lattice Diamond / ECP5U ---
+# Corrected: DM pin is now a separate attribute.
+#===============================================================================
+
+# Upper Byte Lane (DQ[15:8])
+# DQS_P and DQS_N are the differential DQS pair
+# DQ lists the 8 data pins for this bytes lane
+# DM specifies the Data Mask pin for this byte lane
+# DQS_GROUP GROUP " LPDDR_DQS_GRP_UPPER"	DQS_P=" LPDDR_UDQS+"	DQS_N=" LPDDR_UDQS-"	DQ=" LPDDR_DQ[8]  LPDDR_DQ[9]  LPDDR_DQ[10]  LPDDR_DQ[11]  LPDDR_DQ[12]  LPDDR_DQ[13]  LPDDR_DQ[14]  LPDDR_DQ[15]" DM=" LPDDR_UDM";
+
+# Lower Byte Lane (DQ[7:0])
+#DQS_GROUP GROUP	" LPDDR_DQS_GRP_LOWER" DQS_P=" LPDDR_LDQS+" DQS_N=" LPDDR_LDQS-" DQ=" LPDDR_DQ[0]  LPDDR_DQ[1]  LPDDR_DQ[2]  LPDDR_DQ[3]  LPDDR_DQ[4]  LPDDR_DQ[5]  LPDDR_DQ[6]  LPDDR_DQ[7]" DM=" LPDDR_LDM";
+
+#===============================================================================
+# BANK 3 - LPDDR3 CONTROL/ADDRESS INTERFACE
+#===============================================================================
+
+# --- VOLTAGE REFERENCE ---
+# VREF for LPDDR3 SSTL135_I I/O standard (0.675V).
+LOCATE VREF "VREF_BANK3" SITE "R16";
+
+#===============================================================================
+# --- CLOCK (DIFFERENTIAL) ---
+#===============================================================================
+
+LOCATE COMP " LPDDR_CLK_P" SITE "P11";
+IOBUF PORT " LPDDR_CLK_P" IO_TYPE=SSTL135D_I;
+LOCATE COMP " LPDDR_CLK_N" SITE "N11";
+IOBUF PORT " LPDDR_CLK_N" IO_TYPE=SSTL135D_I;
+
+#===============================================================================
+# --- CONTROL SIGNALS ---
+#===============================================================================
+LOCATE COMP " LPDDR_CKE" SITE "R12";
+IOBUF PORT " LPDDR_CKE" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_ODT" SITE "L13";
+IOBUF PORT " LPDDR_ODT" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_RESET_N" SITE "M16";
+IOBUF PORT " LPDDR_RESET_N" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_CS_N" SITE "M14";
+IOBUF PORT " LPDDR_CS_N" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_RAS_N" SITE "K13";
+IOBUF PORT " LPDDR_RAS_N" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_CAS_N" SITE "L14";
+IOBUF PORT " LPDDR_CAS_N" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_WE_N" SITE "N14";
+IOBUF PORT " LPDDR_WE_N" IO_TYPE=SSTL135_I;
+
+#===============================================================================
+# --- BANK ADDRESS ---
+#===============================================================================
+LOCATE COMP " LPDDR_BA[0]" SITE "M12";
+IOBUF PORT " LPDDR_BA[0]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_BA[1]" SITE "T13";
+IOBUF PORT " LPDDR_BA[1]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_BA[2]" SITE "M13";
+IOBUF PORT " LPDDR_BA[2]" IO_TYPE=SSTL135_I;
+
+#===============================================================================
+# --- ADDRESS BUS ---
+#===============================================================================
+LOCATE COMP " LPDDR_A[0]" SITE "P14";
+IOBUF PORT " LPDDR_A[0]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[1]" SITE "R15";
+IOBUF PORT " LPDDR_A[1]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[2]" SITE "N16";
+IOBUF PORT " LPDDR_A[2]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[3]" SITE "N13";
+IOBUF PORT " LPDDR_A[3]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[4]" SITE "R13";
+IOBUF PORT " LPDDR_A[4]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[5]" SITE "N12";
+IOBUF PORT " LPDDR_A[5]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[6]" SITE "T14";
+IOBUF PORT " LPDDR_A[6]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[7]" SITE "L16";
+IOBUF PORT " LPDDR_A[7]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[8]" SITE "P13";
+IOBUF PORT " LPDDR_A[8]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[9]" SITE "L15";
+IOBUF PORT " LPDDR_A[9]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[10]" SITE "P16";
+IOBUF PORT " LPDDR_A[10]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[11]" SITE "T15";
+IOBUF PORT " LPDDR_A[11]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[12]" SITE "P15";
+IOBUF PORT " LPDDR_A[12]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[13]" SITE "M15";
+IOBUF PORT " LPDDR_A[13]" IO_TYPE=SSTL135_I;
+LOCATE COMP " LPDDR_A[14]" SITE "R14";
+IOBUF PORT " LPDDR_A[14]" IO_TYPE=SSTL135_I;
+
+
+#===============================================================================
+# NOTE: The following BANK 6 section was duplicated in the source file.
+# Both versions are updated here as requested.
+#===============================================================================
+
+#===============================================================================
+# BANK 6 - PMOD & ADC INTERFACE (First Instance)
+#===============================================================================
+
+#===============================================================================
+# --- PMOD INTERFACE ---
+#===============================================================================
+LOCATE COMP "PMOD_IO[107]" SITE "L1";
+IOBUF PORT "PMOD_IO[107]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[101]" SITE "L2";
+IOBUF PORT "PMOD_IO[101]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[109]" SITE "M1";
+IOBUF PORT "PMOD_IO[109]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[103]" SITE "M2";
+IOBUF PORT "PMOD_IO[103]" IO_TYPE=LVCMOS33;
+# K4 is not connected in the schematic
+# K5 is not connected in the schematic
+LOCATE COMP "PMOD_IO[102]" SITE "L4";
+IOBUF PORT "PMOD_IO[102]" IO_TYPE=LVCMOS33;
+# L5 is not connected in the schematic
+LOCATE COMP "PMOD_IO[104]" SITE "N1";
+IOBUF PORT "PMOD_IO[104]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[106]" SITE "P2";
+IOBUF PORT "PMOD_IO[106]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[108]" SITE "L3";
+IOBUF PORT "PMOD_IO[108]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[110]" SITE "M3";
+IOBUF PORT "PMOD_IO[110]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[105]" SITE "P1";
+IOBUF PORT "PMOD_IO[105]" IO_TYPE=LVCMOS33;
+# M4 is not connected in the schematic
+LOCATE COMP "PMOD_IO[111]" SITE "N3";
+IOBUF PORT "PMOD_IO[111]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[112]" SITE "N4";
+IOBUF PORT "PMOD_IO[112]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# --- ADC INTERFACE ---
+#===============================================================================
+LOCATE COMP "FPGA_ADC_SW" SITE "R1";
+IOBUF PORT "FPGA_ADC_SW" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_CLK" SITE "R2";
+IOBUF PORT "ADC_CLK" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_DTR" SITE "R3";
+IOBUF PORT "ADC_DTR" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[0]" SITE "N6";
+IOBUF PORT "ADC_D[0]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[1]" SITE "P6";
+IOBUF PORT "ADC_D[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[2]" SITE "P5";
+IOBUF PORT "ADC_D[2]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[3]" SITE "R5";
+IOBUF PORT "ADC_D[3]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[4]" SITE "N5";
+IOBUF PORT "ADC_D[4]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[5]" SITE "M5";
+IOBUF PORT "ADC_D[5]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[6]" SITE "T4";
+IOBUF PORT "ADC_D[6]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[7]" SITE "P4";
+IOBUF PORT "ADC_D[7]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[8]" SITE "R4";
+IOBUF PORT "ADC_D[8]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[9]" SITE "T3";
+IOBUF PORT "ADC_D[9]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# BANK 6 - PMOD & ADC INTERFACE (Second Instance)
+#===============================================================================
+
+#===============================================================================
+# --- PMOD INTERFACE ---
+#===============================================================================
+LOCATE COMP "PMOD_IO[7]" SITE "L1";
+IOBUF PORT "PMOD_IO[7]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[1]" SITE "L2";
+IOBUF PORT "PMOD_IO[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[9]" SITE "M1";
+IOBUF PORT "PMOD_IO[9]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[3]" SITE "M2";
+IOBUF PORT "PMOD_IO[3]" IO_TYPE=LVCMOS33;
+# K4 is not connected in the schematic
+# K5 is not connected in the schematic
+LOCATE COMP "PMOD_IO[2]" SITE "L4";
+IOBUF PORT "PMOD_IO[2]" IO_TYPE=LVCMOS33;
+# L5 is not connected in the schematic
+LOCATE COMP "PMOD_IO[4]" SITE "N1";
+IOBUF PORT "PMOD_IO[4]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[6]" SITE "P2";
+IOBUF PORT "PMOD_IO[6]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[8]" SITE "L3";
+IOBUF PORT "PMOD_IO[8]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[10]" SITE "M3";
+IOBUF PORT "PMOD_IO[10]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[5]" SITE "P1";
+IOBUF PORT "PMOD_IO[5]" IO_TYPE=LVCMOS33;
+# M4 is not connected in the schematic
+LOCATE COMP "PMOD_IO[11]" SITE "N3";
+IOBUF PORT "PMOD_IO[11]" IO_TYPE=LVCMOS33;
+LOCATE COMP "PMOD_IO[12]" SITE "N4";
+IOBUF PORT "PMOD_IO[12]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# --- ADC INTERFACE ---
+#===============================================================================
+LOCATE COMP "FPGA_ADC_SW" SITE "R1";
+IOBUF PORT "FPGA_ADC_SW" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_CLK" SITE "T2";
+IOBUF PORT "ADC_CLK" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_OTR" SITE "R3";
+IOBUF PORT "ADC_OTR" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[0]" SITE "M6";
+IOBUF PORT "ADC_D[0]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[1]" SITE "P6";
+IOBUF PORT "ADC_D[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[2]" SITE "N5";
+IOBUF PORT "ADC_D[2]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[3]" SITE "R5";
+IOBUF PORT "ADC_D[3]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[4]" SITE "P5";
+IOBUF PORT "ADC_D[4]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[5]" SITE "N5";
+IOBUF PORT "ADC_D[5]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[6]" SITE "T4";
+IOBUF PORT "ADC_D[6]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[7]" SITE "P4";
+IOBUF PORT "ADC_D[7]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[8]" SITE "R4";
+IOBUF PORT "ADC_D[8]" IO_TYPE=LVCMOS33;
+LOCATE COMP "ADC_D[9]" SITE "T3";
+IOBUF PORT "ADC_D[9]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# BANK 7 - RGMII ETHERNET INTERFACE
+#===============================================================================
+
+#===============================================================================
+# --- RGMII CONTROL & MANAGEMENT SIGNALS ---
+#===============================================================================
+# Ethernet PHY Reset
+LOCATE COMP "ETH_RESET" SITE "E2";
+IOBUF PORT "ETH_RESET" IO_TYPE=LVCMOS33;
+
+# Ethernet PHY Interrupt
+LOCATE COMP "ETH_INT" SITE "E1";
+IOBUF PORT "ETH_INT" IO_TYPE=LVCMOS33;
+
+# Management Data Clock
+LOCATE COMP "RGMII_MDIO_CLK" SITE "G2";
+IOBUF PORT "RGMII_MDIO_CLK" IO_TYPE=LVCMOS33;
+
+# Management Data I/O
+LOCATE COMP "RGMII_MDIO_DATA" SITE "G3";
+IOBUF PORT "RGMII_MDIO_DATA" IO_TYPE=LVCMOS33;
+
+# Reference Clock
+LOCATE COMP "ETH_REFCLK" SITE "G1";
+IOBUF PORT "ETH_REFCLK" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# --- RGMII RECEIVE (RX) GROUP ---
+#===============================================================================
+# Receive Clock
+LOCATE COMP "RGMII_RX_CLK" SITE "F2";
+IOBUF PORT "RGMII_RX_CLK" IO_TYPE=LVCMOS33;
+
+# Receive Control (RX_DV)
+LOCATE COMP "RGMII_RX_CTL" SITE "F1";
+IOBUF PORT "RGMII_RX_CTL" IO_TYPE=LVCMOS33;
+
+# Receive Data Bus
+LOCATE COMP "RGMII_RX_D[0]" SITE "H2";
+IOBUF PORT "RGMII_RX_D[0]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_RX_D[1]" SITE "H3";
+IOBUF PORT "RGMII_RX_D[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_RX_D[2]" SITE "H4";
+IOBUF PORT "RGMII_RX_D[2]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_RX_D[3]" SITE "H5";
+IOBUF PORT "RGMII_RX_D[3]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# --- RGMII TRANSMIT (TX) GROUP ---
+#===============================================================================
+# Transmit Clock
+LOCATE COMP "RGMII_TX_CLK" SITE "J1";
+IOBUF PORT "RGMII_TX_CLK" IO_TYPE=LVCMOS33;
+
+# Transmit Control (TX_EN)
+LOCATE COMP "RGMII_TX_CTL" SITE "J2";
+IOBUF PORT "RGMII_TX_CTL" IO_TYPE=LVCMOS33;
+
+# Transmit Data Bus
+LOCATE COMP "RGMII_TX_D[0]" SITE "K3";
+IOBUF PORT "RGMII_TX_D[0]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_TX_D[1]" SITE "K2";
+IOBUF PORT "RGMII_TX_D[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_TX_D[2]" SITE "K1";
+IOBUF PORT "RGMII_TX_D[2]" IO_TYPE=LVCMOS33;
+LOCATE COMP "RGMII_TX_D[3]" SITE "J4";
+IOBUF PORT "RGMII_TX_D[3]" IO_TYPE=LVCMOS33;
+
+#===============================================================================
+# BANK 8 - CONFIGURATION BANK
+# Note: Many pins in this bank have dedicated functions during configuration.
+# To use them as general-purpose I/O, ensure the corresponding setting is
+# enabled in your project's device properties (e.g., "Use Config Pins as I/O").
+#===============================================================================
+
+#===============================================================================
+# --- JTAG INTERFACE ---
+# These pins are typically reserved for the JTAG programming and debug interface.
+#===============================================================================
+# LOCATE COMP "JTAG_TMS" SITE "T11";
+# LOCATE COMP "JTAG_TCK" SITE "T10";
+# LOCATE COMP "JTAG_TDI" SITE "R11";
+# LOCATE COMP "JTAG_TDO" SITE "M10";
+
+#===============================================================================
+# --- QSPI FLASH INTERFACE (also connected to PMOD) ---
+# Used for loading the configuration from an external SPI/QSPI flash chip.
+# Can be used as GPIO after configuration.
+#===============================================================================
+# QSPI Clock (also the primary configuration clock CCLK)
+LOCATE COMP "QSPI_SCK" SITE "N9";
+IOBUF PORT "QSPI_SCK" IO_TYPE=LVCMOS33;
+
+# QSPI Data Lines
+LOCATE COMP "QSPI_D[0]" SITE "T8";
+IOBUF PORT "QSPI_D[0]" IO_TYPE=LVCMOS33;
+LOCATE COMP "QSPI_D[1]" SITE "T7";
+IOBUF PORT "QSPI_D[1]" IO_TYPE=LVCMOS33;
+LOCATE COMP "QSPI_D[2]" SITE "M7";
+IOBUF PORT "QSPI_D[2]" IO_TYPE=LVCMOS33;
+LOCATE COMP "QSPI_D[3]" SITE "N7";
+IOBUF PORT "QSPI_D[3]" IO_TYPE=LVCMOS33;
+
+# QSPI Chip Selects & User LEDs
+# Note: R8 is shared between QSPI_CSn and FPGA_ADC_LED1.
+# The component name should match your top-level Verilog/VHDL.
+LOCATE COMP "FPGA_ADC_LED1" SITE "R8"; # Or "QSPI_CSN" if used for flash
+IOBUF PORT "FPGA_ADC_LED1" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "QSPI_CSPPIN1" SITE "P8";
+IOBUF PORT "QSPI_CSPPIN1" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "QSPI_CSPPIN2" SITE "M8";
+IOBUF PORT "QSPI_CSPPIN2" IO_TYPE=LVCMOS33;
+
+# Note: M9 is shared between a QSPI function (WRITE) and FPGA_ADC_LED0.
+LOCATE COMP "FPGA_ADC_LED0" SITE "M9";
+IOBUF PORT "FPGA_ADC_LED0" IO_TYPE=LVCMOS33;
+
+
+#===============================================================================
+# --- CONFIGURATION CONTROL SIGNALS ---
+# These pins control the configuration process.
+#===============================================================================
+# PROGRAM_N: Active-low pin to initiate configuration.
+# LOCATE COMP "FPGA_RESET" SITE "R9";
+
+# INIT_N: Indicates initialization status.
+# LOCATE COMP "FPGA_INIT" SITE "T9";
+
+# DONE: Indicates successful configuration.
+# LOCATE COMP "FPGA_DONE" SITE "P9";
+
+# CFG pins: Set the configuration mode (e.g., Master SPI, JTAG, etc.).
+# LOCATE COMP "FPGA_CFG[0]" SITE "N10";
+# LOCATE COMP "FPGA_CFG[1]" SITE "P10";
+# LOCATE COMP "FPGA_CFG[2]" SITE "R10";
