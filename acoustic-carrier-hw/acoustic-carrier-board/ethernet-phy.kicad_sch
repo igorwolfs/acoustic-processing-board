@@ -5,113 +5,6 @@
 	(uuid "7d944106-6481-44dc-93f6-735d9522e0d8")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -3603,12 +3496,6 @@
 		(uuid "946c604d-2212-4624-9faa-d3bf728996c5")
 	)
 	(junction
-		(at 203.2 247.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "974afb3e-382e-4539-85c2-592fc786b9c7")
-	)
-	(junction
 		(at 228.6 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4047,16 +3934,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 246.38) (xy 203.2 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05931891-e121-425d-ac89-0264ce18ede8")
-	)
-	(wire
-		(pts
 			(xy 125.73 46.99) (xy 125.73 44.45)
 		)
 		(stroke
@@ -4477,7 +4354,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 247.65) (xy 203.2 247.65)
+			(xy 189.23 247.65) (xy 212.09 247.65)
 		)
 		(stroke
 			(width 0)
@@ -5214,16 +5091,6 @@
 			(type default)
 		)
 		(uuid "7f5f66a2-7069-4a76-89b4-751f1ff85a9f")
-	)
-	(wire
-		(pts
-			(xy 203.2 247.65) (xy 212.09 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80609aff-adba-41ab-8ad2-dc5949ed220d")
 	)
 	(wire
 		(pts
@@ -19278,72 +19145,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/d85f0c18-d011-408e-9192-d89f0585c7ff"
 					(reference "C1216")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 203.2 246.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c5790610-f3d4-46b5-af3b-508f6de32bb6")
-		(property "Reference" "TP1201"
-			(at 203.962 237.998 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 203.708 240.284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 208.28 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 203.2 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3db6c4c0-581a-4037-bbcf-3196369fdc8b")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/d85f0c18-d011-408e-9192-d89f0585c7ff"
-					(reference "TP1201")
 					(unit 1)
 				)
 			)
