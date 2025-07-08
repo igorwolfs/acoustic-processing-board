@@ -8522,7 +8522,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 59.69) (xy 361.95 59.69)
+			(xy 361.95 59.69) (xy 382.27 59.69)
 		)
 		(stroke
 			(width 0)
@@ -9462,7 +9462,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 54.61) (xy 356.87 54.61)
+			(xy 356.87 54.61) (xy 381 54.61)
 		)
 		(stroke
 			(width 0)
@@ -9552,7 +9552,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 57.15) (xy 359.41 57.15)
+			(xy 359.41 57.15) (xy 382.27 57.15)
 		)
 		(stroke
 			(width 0)
@@ -9622,7 +9622,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 49.53) (xy 354.33 49.53)
+			(xy 354.33 49.53) (xy 381 49.53)
 		)
 		(stroke
 			(width 0)
@@ -10520,6 +10520,16 @@
 		)
 		(uuid "ff7d81f2-69bf-4d38-ad90-5679de204440")
 	)
+	(label "FPGA_DONE"
+		(at 381 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "033e0682-eb51-471d-98ea-05fe8117702e")
+	)
 	(label "QSPI{FLASH_MSPI}"
 		(at 167.64 137.16 180)
 		(effects
@@ -10689,16 +10699,6 @@
 			(justify right bottom)
 		)
 		(uuid "3bbcecc8-ec95-40f5-b21f-a70a1432a868")
-	)
-	(label "FPGA_CFG1"
-		(at 381 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3efffe2b-d449-402e-bce5-f2d775326d0b")
 	)
 	(label "JTAG.TMS"
 		(at 143.256 39.37 0)
@@ -10950,25 +10950,15 @@
 		)
 		(uuid "8bc43432-f253-45a5-9484-87b61106b153")
 	)
-	(label "FPGA_DONE"
-		(at 381 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8c490761-c088-416f-a901-e6e9fb468d8d")
-	)
 	(label "FPGA_RESETH"
-		(at 381 59.69 180)
+		(at 382.27 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "954a316d-0c0d-45ce-89af-5beb167e8a9e")
+		(uuid "8c6b0110-6172-4e15-a33c-ec0613404218")
 	)
 	(label "FPGA_RESETH"
 		(at 78.74 102.87 180)
@@ -11060,6 +11050,16 @@
 		)
 		(uuid "a4f56c8c-fd9b-49a9-9cbf-ac677f3f9b0c")
 	)
+	(label "FPGA_CFG1"
+		(at 382.27 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5b5fbca-4c0b-4d1b-b665-f121df3aaed7")
+	)
 	(label "QSPI.D0"
 		(at 27.94 163.83 0)
 		(effects
@@ -11089,16 +11089,6 @@
 			(justify right bottom)
 		)
 		(uuid "ae9385eb-2ccb-4296-96ba-9a839b336735")
-	)
-	(label "~{FPGA_INIT}"
-		(at 381 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b199b8dd-8f6b-4caa-9bf2-9e315f597d89")
 	)
 	(label "~{FPGA_INIT}"
 		(at 76.2 100.33 180)
@@ -11239,6 +11229,16 @@
 			(justify left bottom)
 		)
 		(uuid "ef1e98c1-3ae4-431e-9e14-bf728b0c436b")
+	)
+	(label "~{FPGA_INIT}"
+		(at 381 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8b669ea-d251-4ffe-aca4-464287e79209")
 	)
 	(label "JTAG.TMS"
 		(at 370.84 36.83 0)

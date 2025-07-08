@@ -4159,7 +4159,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 33.02) (xy 224.79 33.02)
+			(xy 237.49 33.02) (xy 224.79 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5349,7 +5349,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 33.02) (xy 196.85 33.02)
+			(xy 212.09 33.02) (xy 196.85 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6047,16 +6047,6 @@
 		)
 		(uuid "1bbe05a9-8bcf-4b5a-813a-9f8e6e88fc83")
 	)
-	(label "VDDR_CORE"
-		(at 208.28 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "203011b7-e1e4-4e5c-8cc2-9934a898ce96")
-	)
 	(label "DDR3.LDM"
 		(at 180.34 82.55 180)
 		(effects
@@ -6117,6 +6107,16 @@
 		)
 		(uuid "33783655-9e85-49bb-8ac4-4be0a1768112")
 	)
+	(label "VLPDDR3_DQ"
+		(at 237.49 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "34cc4537-8667-41a6-a886-b017f81b5982")
+	)
 	(label "DDR3.CS#"
 		(at 261.62 93.98 0)
 		(effects
@@ -6167,8 +6167,8 @@
 		)
 		(uuid "596f763c-e6b2-4dc5-8c25-935dc1ca355b")
 	)
-	(label "VDDR_DQ"
-		(at 57.15 99.06 0)
+	(label "VLPDDR3_DQ"
+		(at 43.18 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6237,16 +6237,6 @@
 		)
 		(uuid "8ccb83bd-c794-499b-b2fa-4d3b476fb00f")
 	)
-	(label "VDDR_DQ"
-		(at 234.95 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8d94b01e-9541-416d-978b-44e2ba70741b")
-	)
 	(label "DDR3.DQ4"
 		(at 180.34 97.79 180)
 		(effects
@@ -6277,7 +6267,7 @@
 		)
 		(uuid "956f4ada-4b6e-4d9a-b691-cdd2bcb9dc50")
 	)
-	(label "VDDR_CORE"
+	(label "VLPDDR3_CORE"
 		(at 41.91 55.88 0)
 		(effects
 			(font
@@ -6286,6 +6276,16 @@
 			(justify left bottom)
 		)
 		(uuid "9a720fb2-7e99-4240-ae77-0c6f6c501811")
+	)
+	(label "VLPDDR3_CORE"
+		(at 212.09 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9b386068-fde0-49cc-9f29-d3e853a817cb")
 	)
 	(label "DDR3.UDQS+"
 		(at 171.45 53.34 0)
@@ -6537,7 +6537,7 @@
 		)
 		(uuid "fab47985-6163-4c20-b70c-4fe2cb88076e")
 	)
-	(global_label "VLPDRR3_V675"
+	(global_label "VLPDDR3_V675"
 		(shape passive)
 		(at 33.02 125.73 0)
 		(fields_autoplaced yes)
@@ -6581,7 +6581,7 @@
 			)
 		)
 	)
-	(global_label "VLPDRR3_V675"
+	(global_label "VLPDDR3_V675"
 		(shape passive)
 		(at 181.61 115.57 180)
 		(fields_autoplaced yes)
