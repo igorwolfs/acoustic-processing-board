@@ -5887,6 +5887,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 58.42) (xy 39.37 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2350cc72-84e2-4dbe-907c-7788337a876b")
+	)
+	(wire
+		(pts
 			(xy 92.71 179.07) (xy 92.71 180.34)
 		)
 		(stroke
@@ -7825,6 +7835,16 @@
 		)
 		(uuid "bcc0f153-914a-4096-9c66-2b7d82b99c4b")
 	)
+	(wire
+		(pts
+			(xy 39.37 50.8) (xy 39.37 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcfd1195-1619-4ff3-8ed0-b2c8f309f475")
+	)
 	(bus
 		(pts
 			(xy 394.97 90.17) (xy 394.97 87.63)
@@ -7867,13 +7887,23 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 57.15) (xy 40.64 57.15)
+			(xy 39.37 58.42) (xy 54.61 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c1adaa62-a15c-4817-bb6c-c71e59202b50")
+	)
+	(wire
+		(pts
+			(xy 39.37 50.8) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2aa78e0-948a-4699-8275-c065caea87a6")
 	)
 	(wire
 		(pts
@@ -8014,16 +8044,6 @@
 			(type default)
 		)
 		(uuid "c696976e-2648-4373-9b5f-d3dce52123f7")
-	)
-	(wire
-		(pts
-			(xy 39.37 49.53) (xy 40.64 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c70de58f-42f0-4b86-ac25-bdd56d96e95c")
 	)
 	(wire
 		(pts
@@ -9355,28 +9375,6 @@
 		)
 		(uuid "f2bbcef0-7b8e-4b74-a940-9577b84d81f6")
 	)
-	(global_label "VCORE_3V3"
-		(shape passive)
-		(at 40.64 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "02c23a9b-6952-4352-8184-48e3c46919e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.0972 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "FPGA_ADC_LED1"
 		(shape input)
 		(at 57.15 41.91 0)
@@ -9417,28 +9415,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCORE_3V3"
-		(shape passive)
-		(at 40.64 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3268a713-491e-4b51-96be-41e9cfc1eff0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.0972 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -17473,6 +17449,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
 					(reference "#PWR01043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 54.61 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40c845e2-4b2c-4847-bb66-df55c9bae22e")
+		(property "Reference" "#PWR01019"
+			(at 54.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 49.784 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48bb088a-3dde-4cf4-b270-9e34e6cbc881")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
+					(reference "#PWR01019")
 					(unit 1)
 				)
 			)
@@ -27687,6 +27728,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
 					(reference "U1004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 54.61 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af45ce63-6630-47cc-81cc-73ca92b69a19")
+		(property "Reference" "#PWR01016"
+			(at 54.61 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 58.674 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6180c629-2160-48c5-b8b5-2c45126ab2d5")
+		)
+		(instances
+			(project ""
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
+					(reference "#PWR01016")
 					(unit 1)
 				)
 			)
