@@ -13,8 +13,9 @@
 - Saturation / Inductance: ok
 
 #### Footprint
-- SMD,4x4mm
-Dimenisons:
+- SMD,4x4mm	
+
+Dimensions:
 
 - NR4018S 4.0±0.2 4.0±0.2 1.8 Max. 3.3±0.2 0.95±0.2 2.1±0.2 1.9 1.1 3.7 
 	- Copied from online: ok
@@ -22,7 +23,7 @@ Dimenisons:
 
 ### 4.7 uF input capacitor
 - Footprint OK
-- voltage oK
+- Voltage OK
 
 
 ## Ethernet Supply (1.2 V)

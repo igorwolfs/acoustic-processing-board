@@ -5244,12 +5244,6 @@
 		(uuid "c0daee87-3a40-4053-b1bd-4018351e6cfd")
 	)
 	(junction
-		(at 182.88 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c25039c3-bffb-431c-b405-d93201b3c2fc")
-	)
-	(junction
 		(at 147.32 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5314,6 +5308,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e715a02b-ae76-4d44-8a10-8339e55d70f1")
+	)
+	(junction
+		(at 182.88 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7d0829a-7943-489d-8430-d56b0f339f86")
 	)
 	(junction
 		(at 71.12 119.38)
@@ -5557,7 +5557,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 91.44) (xy 168.91 91.44)
+			(xy 165.1 91.44) (xy 168.91 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6687,16 +6687,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 99.06) (xy 182.88 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fd080ec-53e0-4bfb-b86d-7cbe8bc60fa2")
-	)
-	(wire
-		(pts
 			(xy 55.88 113.03) (xy 55.88 114.3)
 		)
 		(stroke
@@ -6927,6 +6917,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 100.33) (xy 182.88 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ea10ca7-fa1a-4a4c-927f-0eeee2d7703c")
+	)
+	(wire
+		(pts
 			(xy 298.45 76.2) (xy 303.53 76.2)
 		)
 		(stroke
@@ -7124,6 +7124,16 @@
 			(type default)
 		)
 		(uuid "8fa4089e-15e0-4043-b18b-4652beb16c80")
+	)
+	(wire
+		(pts
+			(xy 189.23 100.33) (xy 189.23 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fba5dff-020a-4791-a214-d7c3e3cf0437")
 	)
 	(wire
 		(pts
@@ -8737,6 +8747,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 96.52) (xy 182.88 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e523ae-f94f-4a50-b803-71acd8ceecf6")
+	)
+	(wire
+		(pts
 			(xy 214.63 91.44) (xy 217.17 91.44)
 		)
 		(stroke
@@ -8794,16 +8814,6 @@
 			(type default)
 		)
 		(uuid "f8703f52-8ac8-4b1a-9999-4f8ec8a9108a")
-	)
-	(wire
-		(pts
-			(xy 182.88 99.06) (xy 182.88 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f91ff96b-985a-4375-a1e9-6241e53e3ba0")
 	)
 	(wire
 		(pts
@@ -8867,7 +8877,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 99.06) (xy 182.88 99.06)
+			(xy 189.23 100.33) (xy 182.88 100.33)
 		)
 		(stroke
 			(width 0)
@@ -9454,50 +9464,6 @@
 		(uuid "791b6b6a-83c8-4195-b03b-f9d359b675fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 75.0728 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCORE_3V3"
-		(shape passive)
-		(at 167.64 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aac32ead-599b-4473-a43d-07834cbc6b32")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.1828 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCORE_3V3"
-		(shape passive)
-		(at 185.42 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f509110e-1b22-450e-b2a3-8f160804ce6c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.8772 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11820,6 +11786,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
 					(reference "C1003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 189.23 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10079e06-9db8-45bb-a42a-bdb65bec91ef")
+		(property "Reference" "#PWR01020"
+			(at 189.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 189.23 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "919f1b96-0dd0-446d-98d3-37fa48fa1a69")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
+					(reference "#PWR01020")
 					(unit 1)
 				)
 			)
@@ -34737,6 +34768,71 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
 					(reference "#PWR01038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 165.1 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3cf7d63-4cdd-4268-9520-bc6e770ad4f3")
+		(property "Reference" "#PWR01046"
+			(at 165.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 165.1 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 165.1 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acfb78b1-d9a1-42b6-8212-ae7000c38d57")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/94142f45-8b3d-48ce-ac4d-b9c7695832d7"
+					(reference "#PWR01046")
 					(unit 1)
 				)
 			)
