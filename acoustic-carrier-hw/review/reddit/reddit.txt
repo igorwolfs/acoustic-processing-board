@@ -1,0 +1,26 @@
+# Reddit review
+# Schematic review request: FPGA-carrier board with HS analog frontend.
+
+Hi all,
+
+I designed this PCB as a part of my non-destructive ultrasound testing project for materials and welds.
+Main components:
+- Gigabit Ethernet
+- LPDDR3
+- USB2.0, USB-C connector up to 480 Mbps
+- a few PMOD connectors
+- 35 MHz ADC with analog frontend, with 2 possible analog connectors. (input frequency is meant to be between 0.1 MHz - 10 MHz)
+	- RJ45 with magnetics.
+	- RJ45 with capacitors for DC isolation.
+
+Stackup:
+- 6-layer JLC3313-stackup (JLCPCB)
+- SIG - GND - GND - SIG / PWR - GND - SIG
+- Signals impedance matched / length matched where required.
+
+Would be great if some of you could take a look. My main points of concern:
+- The frequency roloff at my ADC frontend.
+- Coupling between signal traces of the LPDDR3-peripheral. The traces are close. I only have 2 layers to route them on though and I believe this is the best I can do.
+- Traces underneath RJ45 connectors with magnetics.
+
+Thanks!
