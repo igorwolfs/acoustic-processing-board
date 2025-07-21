@@ -32,7 +32,7 @@ KICAD CALCULATOR
 SATURN PCB CALCULATOR
 - 51.48 ohms
 
-Minimal distance between microstrip traces
+Minimal distance between microstrip traces:
 - 3W
 
 In case of critical frequencies:
