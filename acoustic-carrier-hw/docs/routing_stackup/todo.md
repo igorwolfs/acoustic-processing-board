@@ -18,3 +18,6 @@
 
 ### Config files / Ethernet
 - Make sure to redo the pull-ups pull-downs according to how it was in the original schematics.
+
+# DDR3 length matching
+- Check effect of DLL disabled for LPDDR3
