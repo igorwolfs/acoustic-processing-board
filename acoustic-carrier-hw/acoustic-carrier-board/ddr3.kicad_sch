@@ -2253,6 +2253,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "iw-misc:TestPoint_0.25mm"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_0.25mm"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0.25mm_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_0.25mm_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2457,6 +2564,18 @@
 		)
 	)
 	(rectangle
+		(start 19.304 109.982)
+		(end 128.016 185.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8b09557e-1fa2-47a7-a6c0-1c4c962dc480)
+	)
+	(rectangle
 		(start 135.89 17.78)
 		(end 283.21 163.068)
 		(stroke
@@ -2494,7 +2613,7 @@
 	)
 	(text "Vref: \n- The DDR-logic requires an external 0.75 Volts (SSTL-15 standard).\n- External resistive divider required\nVcc: The DDRL-ram requires a 1.35 V supply voltage.\n- LDO / buck converter\nDQS-pins\n- Upper / Lower 8-bit synchronization for data\nData-pins:\n- upper 8 and lower 8 bits must belong to same DQS pins\nAddress / config pins\n- can be any DQ pins in the bank"
 		(exclude_from_sim no)
-		(at 20.828 120.65 0)
+		(at -56.134 121.666 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3038,6 +3157,15 @@
 		(uuid "f2edaaa5-fb84-4542-9d4e-5cdc8d88ded5")
 	)
 	(bus_entry
+		(at 123.19 147.32)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "079896f9-9f02-494d-b4b7-a18c75e98b49")
+	)
+	(bus_entry
 		(at 163.83 73.66)
 		(size 2.54 2.54)
 		(stroke
@@ -3047,6 +3175,24 @@
 		(uuid "0e754297-9db9-4f1a-94e2-0be18b67ad8a")
 	)
 	(bus_entry
+		(at 25.4 173.99)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162681f2-d872-4eb9-930e-360d31837e9d")
+	)
+	(bus_entry
+		(at 60.96 143.51)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1abea358-c57f-427a-bb0c-6545fc1fe00b")
+	)
+	(bus_entry
 		(at 275.59 74.93)
 		(size -2.54 2.54)
 		(stroke
@@ -3054,6 +3200,15 @@
 			(type default)
 		)
 		(uuid "1afab540-376e-48d6-8864-30452b35b8c9")
+	)
+	(bus_entry
+		(at 60.96 163.83)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21942c19-22d2-411e-815b-ef4253e3eb33")
 	)
 	(bus_entry
 		(at 275.59 116.84)
@@ -3072,6 +3227,24 @@
 			(type default)
 		)
 		(uuid "226126a0-8010-4f95-9989-e72299a9cb33")
+	)
+	(bus_entry
+		(at 93.98 153.67)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c5ccd7-caf0-4fed-8e2e-d9d6db54ea24")
+	)
+	(bus_entry
+		(at 123.19 152.4)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27249a0e-1c48-4c17-bca2-02ff502f5167")
 	)
 	(bus_entry
 		(at 163.83 58.42)
@@ -3101,6 +3274,33 @@
 		(uuid "2e00a1f5-3b4b-42d1-862d-05cfdb84ce4c")
 	)
 	(bus_entry
+		(at 123.19 162.56)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee4ee31-4f46-411e-88a4-62f49a7d2876")
+	)
+	(bus_entry
+		(at 25.4 181.61)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f5eda34-3fca-43d6-b9fe-65468e62051b")
+	)
+	(bus_entry
+		(at 123.19 160.02)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3251f180-ef09-423d-8d7b-ac5a2b2bf116")
+	)
+	(bus_entry
 		(at 163.83 66.04)
 		(size 2.54 2.54)
 		(stroke
@@ -3108,6 +3308,15 @@
 			(type default)
 		)
 		(uuid "32a343bf-43a2-4c6d-8193-ed6fa752ce64")
+	)
+	(bus_entry
+		(at 60.96 146.05)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42fb7043-9465-443b-90ba-3f08a65d88eb")
 	)
 	(bus_entry
 		(at 163.83 63.5)
@@ -3126,6 +3335,15 @@
 			(type default)
 		)
 		(uuid "48c682ec-cde3-436d-9c40-38df9c1f84ac")
+	)
+	(bus_entry
+		(at 93.98 161.29)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bcdda8c-afb4-4826-9ac9-c0d13f8ff84a")
 	)
 	(bus_entry
 		(at 275.59 80.01)
@@ -3155,6 +3373,33 @@
 		(uuid "4eaa1d7f-c248-4a67-b885-4fa12ab6c4ec")
 	)
 	(bus_entry
+		(at 60.96 173.99)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ec0f756-a5ef-46f3-bdef-261e11e733f7")
+	)
+	(bus_entry
+		(at 60.96 151.13)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51efd69e-57f6-4be1-a39c-26a5cacdaa49")
+	)
+	(bus_entry
+		(at 25.4 163.83)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53f25783-caf5-4b79-ba54-05973ff994f6")
+	)
+	(bus_entry
 		(at 163.83 100.33)
 		(size 2.54 2.54)
 		(stroke
@@ -3162,6 +3407,15 @@
 			(type default)
 		)
 		(uuid "541f5974-dc88-478c-a753-4d02c61f7c39")
+	)
+	(bus_entry
+		(at 25.4 148.59)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55b62199-5d17-442a-a9ca-809d6c764dd8")
 	)
 	(bus_entry
 		(at 275.59 64.77)
@@ -3180,6 +3434,15 @@
 			(type default)
 		)
 		(uuid "580be259-16d0-450a-848e-c6f5a5ca4186")
+	)
+	(bus_entry
+		(at 93.98 158.75)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f45602-a831-4c3d-9e06-46581236d1bb")
 	)
 	(bus_entry
 		(at 163.83 68.58)
@@ -3254,6 +3517,24 @@
 		(uuid "67e6c5b6-4b86-4d2f-ae68-69914719d2ed")
 	)
 	(bus_entry
+		(at 93.98 166.37)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c12f1dd-65b7-4889-8b1b-c9cd02ff47ec")
+	)
+	(bus_entry
+		(at 25.4 166.37)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71762722-f586-469c-bf66-c2d997d2545f")
+	)
+	(bus_entry
 		(at 275.59 46.99)
 		(size -2.54 2.54)
 		(stroke
@@ -3261,6 +3542,24 @@
 			(type default)
 		)
 		(uuid "7192f56f-e87d-4db9-9cb8-3a68499017c1")
+	)
+	(bus_entry
+		(at 60.96 166.37)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732f3829-174c-4f7b-924f-961048a69cd7")
+	)
+	(bus_entry
+		(at 93.98 163.83)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "745487e3-6a98-4806-b663-b56034bad27b")
 	)
 	(bus_entry
 		(at 163.83 92.71)
@@ -3272,6 +3571,15 @@
 		(uuid "75230cbc-e8b9-4a05-b617-149c380ea12a")
 	)
 	(bus_entry
+		(at 25.4 143.51)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a9340e-9191-41ce-a194-1cb3ef9dbc59")
+	)
+	(bus_entry
 		(at 163.83 48.26)
 		(size 2.54 2.54)
 		(stroke
@@ -3281,6 +3589,33 @@
 		(uuid "7db1f70f-6cdf-4206-963e-f575fecab1f6")
 	)
 	(bus_entry
+		(at 93.98 146.05)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd345ed-7ab6-4a84-b9b8-1311cf3ddc34")
+	)
+	(bus_entry
+		(at 25.4 161.29)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8232bdd2-8478-45e0-9991-5a6c0fc7bc79")
+	)
+	(bus_entry
+		(at 123.19 149.86)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "825b3ed9-58db-477f-b62b-045903a52c65")
+	)
+	(bus_entry
 		(at 275.59 52.07)
 		(size -2.54 2.54)
 		(stroke
@@ -3288,6 +3623,15 @@
 			(type default)
 		)
 		(uuid "8572bc80-cc11-4ffd-bde6-c7523508ecea")
+	)
+	(bus_entry
+		(at 93.98 168.91)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85aa6e44-f6c7-472a-a1b1-2603e32dee8d")
 	)
 	(bus_entry
 		(at 275.59 127)
@@ -3308,6 +3652,33 @@
 		(uuid "87be16c0-eb73-4efc-8d73-4ec675cdea41")
 	)
 	(bus_entry
+		(at 60.96 140.97)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8aeae5-ce81-4e5e-855e-aad8ae6d7bf4")
+	)
+	(bus_entry
+		(at 60.96 168.91)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d4879c7-f48c-4084-b9fa-df458012ab88")
+	)
+	(bus_entry
+		(at 123.19 165.1)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96fb7fdf-61e0-4366-b057-de62e14cad35")
+	)
+	(bus_entry
 		(at 163.83 80.01)
 		(size 2.54 2.54)
 		(stroke
@@ -3315,6 +3686,15 @@
 			(type default)
 		)
 		(uuid "971af2c9-92ab-4999-9ad8-e4c62ddd9745")
+	)
+	(bus_entry
+		(at 123.19 167.64)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c7ecc07-73f7-4f2f-99ec-c11f0dd422c0")
 	)
 	(bus_entry
 		(at 163.83 50.8)
@@ -3326,6 +3706,33 @@
 		(uuid "9eb98f08-f7e9-47e9-8690-43caf7362249")
 	)
 	(bus_entry
+		(at 60.96 171.45)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a09ab620-060b-48d3-95b4-eea3d7c9a48e")
+	)
+	(bus_entry
+		(at 60.96 156.21)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a388447c-f1fd-4fee-808b-bc32c4c09d49")
+	)
+	(bus_entry
+		(at 60.96 161.29)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5f29f23-d308-4043-8a89-e9612a84f9a0")
+	)
+	(bus_entry
 		(at 275.59 69.85)
 		(size -2.54 2.54)
 		(stroke
@@ -3333,6 +3740,24 @@
 			(type default)
 		)
 		(uuid "a7523728-c137-49e1-aef5-1bba02a00dcb")
+	)
+	(bus_entry
+		(at 60.96 158.75)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a772dcd9-042d-4e1b-b018-8f21fddf07f7")
+	)
+	(bus_entry
+		(at 60.96 153.67)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9bb8f4b-8eff-4453-ba55-f7ec11eea286")
 	)
 	(bus_entry
 		(at 275.59 109.22)
@@ -3371,6 +3796,15 @@
 		(uuid "b629c0ca-77f7-497e-831a-029982acdcb9")
 	)
 	(bus_entry
+		(at 25.4 151.13)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b788f139-bd6c-48a6-90fa-693069fb2a73")
+	)
+	(bus_entry
 		(at 275.59 77.47)
 		(size -2.54 2.54)
 		(stroke
@@ -3378,6 +3812,24 @@
 			(type default)
 		)
 		(uuid "bb579443-7f07-4e6f-83bf-79f4cf420ebd")
+	)
+	(bus_entry
+		(at 25.4 176.53)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdb3efca-f0f7-416f-9c91-7b0b0fef47ce")
+	)
+	(bus_entry
+		(at 25.4 179.07)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b2721f-6cac-4dd1-8953-fe9029d1603f")
 	)
 	(bus_entry
 		(at 275.59 88.9)
@@ -3389,6 +3841,42 @@
 		(uuid "cb1b746f-e4f2-4f57-83aa-25a476d132fd")
 	)
 	(bus_entry
+		(at 93.98 143.51)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbd67e36-34d7-4c84-b3df-e19f1c2ba42e")
+	)
+	(bus_entry
+		(at 93.98 148.59)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52f1f99-c0fe-479e-9527-070ca46975c1")
+	)
+	(bus_entry
+		(at 93.98 151.13)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d869facc-9d0c-4c05-8a67-3d0eecde33dc")
+	)
+	(bus_entry
+		(at 25.4 153.67)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbb82291-979d-4fd2-965f-af10e070bc9a")
+	)
+	(bus_entry
 		(at 275.59 124.46)
 		(size -2.54 2.54)
 		(stroke
@@ -3396,6 +3884,15 @@
 			(type default)
 		)
 		(uuid "e1656b61-051b-4709-9498-e4dcb794fb85")
+	)
+	(bus_entry
+		(at 123.19 154.94)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e213009d-8279-41a3-add7-355ecbe24805")
 	)
 	(bus_entry
 		(at 163.83 85.09)
@@ -3407,6 +3904,15 @@
 		(uuid "e4fe0304-a243-494a-a49d-b73f5cb8e394")
 	)
 	(bus_entry
+		(at 123.19 160.02)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67546c4-f568-4065-93eb-d82e5adfe0dc")
+	)
+	(bus_entry
 		(at 275.59 121.92)
 		(size -2.54 2.54)
 		(stroke
@@ -3416,6 +3922,15 @@
 		(uuid "e80a5e79-0195-422d-9128-e6cca5271321")
 	)
 	(bus_entry
+		(at 123.19 142.24)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea356604-5c3d-4dac-9220-a6b29f771964")
+	)
+	(bus_entry
 		(at 275.59 54.61)
 		(size -2.54 2.54)
 		(stroke
@@ -3423,6 +3938,33 @@
 			(type default)
 		)
 		(uuid "ebc5b32e-4e1f-4426-9428-b1a461df84a0")
+	)
+	(bus_entry
+		(at 60.96 138.43)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec390f9a-2194-41ce-bc9c-91d8c0cf5977")
+	)
+	(bus_entry
+		(at 123.19 144.78)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed6947f7-c300-4de3-984d-57c0caac2789")
+	)
+	(bus_entry
+		(at 93.98 156.21)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1962a0c-1a0a-4ad6-a6f6-0c52ac5e1c1a")
 	)
 	(bus_entry
 		(at 275.59 49.53)
@@ -3443,6 +3985,15 @@
 		(uuid "f351344a-9072-4353-b1c7-e2a6ca155242")
 	)
 	(bus_entry
+		(at 60.96 148.59)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4cf62ce-9449-4788-a981-c128704adb21")
+	)
+	(bus_entry
 		(at 275.59 119.38)
 		(size -2.54 2.54)
 		(stroke
@@ -3450,6 +4001,15 @@
 			(type default)
 		)
 		(uuid "f4fff5e5-14cc-4d48-bc5f-b2ba24fdfcd7")
+	)
+	(bus_entry
+		(at 123.19 157.48)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7065a70-00a8-4418-9762-eb7b0936ce3d")
 	)
 	(bus_entry
 		(at 163.83 97.79)
@@ -3470,6 +4030,15 @@
 		(uuid "fc0cffc6-ff64-4faa-b1ae-77cafb747a98")
 	)
 	(bus_entry
+		(at 25.4 146.05)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc19ee51-22cd-48b4-b6e3-835cbb1a00e4")
+	)
+	(bus_entry
 		(at 275.59 93.98)
 		(size -2.54 2.54)
 		(stroke
@@ -3486,6 +4055,16 @@
 			(type default)
 		)
 		(uuid "ff8cac0d-1236-4e5a-8778-ffcf7cb4d204")
+	)
+	(bus
+		(pts
+			(xy 25.4 153.67) (xy 25.4 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000c350b-e270-470a-bb58-04f9328e72d5")
 	)
 	(wire
 		(pts
@@ -3527,6 +4106,16 @@
 		)
 		(uuid "04befe8b-467d-456b-8da0-90b46d2094ec")
 	)
+	(bus
+		(pts
+			(xy 60.96 168.91) (xy 60.96 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058aee30-9b0f-4ff8-a494-9cfb7d575db4")
+	)
 	(wire
 		(pts
 			(xy 76.2 44.45) (xy 76.2 45.72)
@@ -3539,6 +4128,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 148.59) (xy 91.44 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "061970a9-c3c7-440e-9258-ea776a2f428c")
+	)
+	(wire
+		(pts
 			(xy 201.93 35.56) (xy 204.47 35.56)
 		)
 		(stroke
@@ -3546,6 +4145,46 @@
 			(type default)
 		)
 		(uuid "0775a226-1f67-4581-90d8-bc59d539ac93")
+	)
+	(bus
+		(pts
+			(xy 60.96 156.21) (xy 60.96 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0776e728-4084-490e-a26a-e2d97c3c8e97")
+	)
+	(wire
+		(pts
+			(xy 39.37 158.75) (xy 27.94 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b40e85-9e6b-42a3-8a21-a3dda71f1d90")
+	)
+	(wire
+		(pts
+			(xy 46.99 171.45) (xy 58.42 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "089c4bd3-2197-4c0f-be1a-2782a2cb1409")
+	)
+	(bus
+		(pts
+			(xy 93.98 151.13) (xy 93.98 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08fe75cf-a637-4374-9d9e-57c2acc51590")
 	)
 	(wire
 		(pts
@@ -3566,6 +4205,16 @@
 			(type default)
 		)
 		(uuid "0b433014-ae18-4b14-885b-bebf3d8dfc4b")
+	)
+	(bus
+		(pts
+			(xy 93.98 168.91) (xy 93.98 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0be3d51b-da3d-4111-a51c-8d40a6bbbd7d")
 	)
 	(bus
 		(pts
@@ -3597,6 +4246,16 @@
 		)
 		(uuid "1018432a-dd39-4b81-ba16-efae3ede9ac5")
 	)
+	(bus
+		(pts
+			(xy 25.4 179.07) (xy 25.4 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "111bc0f6-ec61-4503-82fa-e96e1a197a29")
+	)
 	(wire
 		(pts
 			(xy 166.37 82.55) (xy 184.15 82.55)
@@ -3616,6 +4275,16 @@
 			(type default)
 		)
 		(uuid "12e2655d-c058-489f-a67b-824c9237e304")
+	)
+	(bus
+		(pts
+			(xy 60.96 146.05) (xy 60.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13aa2665-c782-4b96-9329-8365fb4d962c")
 	)
 	(wire
 		(pts
@@ -3659,6 +4328,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 166.37) (xy 91.44 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "163c813b-2934-4a72-beba-2eec3ab11417")
+	)
+	(wire
+		(pts
 			(xy 261.62 93.98) (xy 273.05 93.98)
 		)
 		(stroke
@@ -3676,6 +4355,26 @@
 			(type default)
 		)
 		(uuid "1936c87e-ec82-41a2-9948-05f2ad9fbde6")
+	)
+	(wire
+		(pts
+			(xy 97.79 149.86) (xy 120.65 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a9c116-02ad-4f15-b7be-d114e21ddab1")
+	)
+	(wire
+		(pts
+			(xy 71.12 156.21) (xy 91.44 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19b84368-975d-468f-ba26-b598a755a1d1")
 	)
 	(wire
 		(pts
@@ -3707,6 +4406,26 @@
 		)
 		(uuid "1c1b136c-e1b1-4cb6-bfc4-5bb97bddf9af")
 	)
+	(bus
+		(pts
+			(xy 93.98 146.05) (xy 93.98 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c229a97-0591-4dec-b4db-89073d5dc01b")
+	)
+	(wire
+		(pts
+			(xy 71.12 153.67) (xy 91.44 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c675c00-2860-4d36-bfbc-076260e2e3c6")
+	)
 	(wire
 		(pts
 			(xy 36.83 78.74) (xy 43.18 78.74)
@@ -3729,6 +4448,16 @@
 	)
 	(bus
 		(pts
+			(xy 123.19 167.64) (xy 123.19 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e7f0a52-7a88-4252-8b97-34f618eba9a3")
+	)
+	(bus
+		(pts
 			(xy 275.59 106.68) (xy 275.59 109.22)
 		)
 		(stroke
@@ -3736,6 +4465,16 @@
 			(type default)
 		)
 		(uuid "1ee0d65e-7756-451a-8dc1-33e4026176d5")
+	)
+	(wire
+		(pts
+			(xy 71.12 163.83) (xy 91.44 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1efb5e95-0a75-4555-b7f5-da59ecf31b9d")
 	)
 	(wire
 		(pts
@@ -3787,6 +4526,16 @@
 		)
 		(uuid "2180dd9f-2116-432d-ad6a-6edb0184879d")
 	)
+	(bus
+		(pts
+			(xy 60.96 143.51) (xy 60.96 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "234351a9-0027-4426-a46b-abfa305ac883")
+	)
 	(wire
 		(pts
 			(xy 166.37 107.95) (xy 184.15 107.95)
@@ -3809,6 +4558,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 161.29) (xy 91.44 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ab059c-42b1-4f81-960b-5cc755605409")
+	)
+	(wire
+		(pts
 			(xy 30.48 97.79) (xy 30.48 99.06)
 		)
 		(stroke
@@ -3816,6 +4575,16 @@
 			(type default)
 		)
 		(uuid "26de899c-309e-4776-ad79-9c42ef68a724")
+	)
+	(bus
+		(pts
+			(xy 123.19 144.78) (xy 123.19 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2754c775-07c5-445b-b6af-6068221297e3")
 	)
 	(bus
 		(pts
@@ -3889,6 +4658,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 146.05) (xy 91.44 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb8bbf8-55cc-42c4-95eb-bc165adce120")
+	)
+	(wire
+		(pts
 			(xy 48.26 44.45) (xy 57.15 44.45)
 		)
 		(stroke
@@ -3896,6 +4675,16 @@
 			(type default)
 		)
 		(uuid "2f83e77f-07d4-450b-9f1d-34d2566a8b17")
+	)
+	(bus
+		(pts
+			(xy 50.8 119.38) (xy 60.96 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fbd6893-2f0f-411f-9547-57d23c6e5a23")
 	)
 	(wire
 		(pts
@@ -3919,6 +4708,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 151.13) (xy 27.94 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "318bfa71-3f37-47f4-b670-05ec91809985")
+	)
+	(wire
+		(pts
 			(xy 166.37 90.17) (xy 184.15 90.17)
 		)
 		(stroke
@@ -3936,6 +4735,16 @@
 			(type default)
 		)
 		(uuid "32b7614e-2271-4243-a7b6-0a9fd36a4ec0")
+	)
+	(bus
+		(pts
+			(xy 123.19 149.86) (xy 123.19 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33aa3b0a-c702-49b1-82fc-55331b8006cd")
 	)
 	(wire
 		(pts
@@ -3969,6 +4778,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 166.37) (xy 58.42 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "369507c7-85be-4a62-ba14-19019900227a")
+	)
+	(wire
+		(pts
 			(xy 39.37 44.45) (xy 39.37 45.72)
 		)
 		(stroke
@@ -3976,6 +4795,26 @@
 			(type default)
 		)
 		(uuid "389b313e-62a4-47cf-8273-c63e8cd62cee")
+	)
+	(wire
+		(pts
+			(xy 46.99 143.51) (xy 58.42 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38d14dc4-a9ad-4bd2-b88d-09b0fc7b2524")
+	)
+	(wire
+		(pts
+			(xy 120.65 139.7) (xy 97.79 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e9530e-1a38-4efe-b57a-220fc672b8fc")
 	)
 	(wire
 		(pts
@@ -3989,6 +4828,46 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 158.75) (xy 58.42 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c4b2355-de32-482f-9318-8dd3d08e3f7c")
+	)
+	(bus
+		(pts
+			(xy 25.4 166.37) (xy 25.4 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c832107-aa3c-473f-aa2b-a001d3c0a25e")
+	)
+	(wire
+		(pts
+			(xy 120.65 165.1) (xy 97.79 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cbabb32-97e0-458f-843d-360746bb02e6")
+	)
+	(bus
+		(pts
+			(xy 60.96 161.29) (xy 60.96 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d8b7733-de52-483c-ad86-a41b47dd00b1")
+	)
+	(wire
+		(pts
 			(xy 34.29 59.69) (xy 29.21 59.69)
 		)
 		(stroke
@@ -3996,6 +4875,16 @@
 			(type default)
 		)
 		(uuid "3eed1812-6ce9-4a1a-a8e9-e1b1dc1db060")
+	)
+	(wire
+		(pts
+			(xy 120.65 162.56) (xy 97.79 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd53c70-613b-43be-b942-ab3a7dee3b82")
 	)
 	(wire
 		(pts
@@ -4007,6 +4896,26 @@
 		)
 		(uuid "404e7b7f-7bf1-4b84-8547-594ddcae9d46")
 	)
+	(bus
+		(pts
+			(xy 60.96 119.38) (xy 60.96 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40693192-64ba-4bfb-878f-a0dc9a6ee764")
+	)
+	(bus
+		(pts
+			(xy 123.19 157.48) (xy 123.19 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40769b8d-a3a2-4aba-8454-f441b5ecbcfc")
+	)
 	(wire
 		(pts
 			(xy 48.26 52.07) (xy 48.26 50.8)
@@ -4016,6 +4925,16 @@
 			(type default)
 		)
 		(uuid "4193c5ab-1cca-4eb5-9b7d-72bfd6dd2521")
+	)
+	(wire
+		(pts
+			(xy 46.99 156.21) (xy 58.42 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41e8d7f5-4428-445c-ba42-3a1a88f07afd")
 	)
 	(wire
 		(pts
@@ -4069,6 +4988,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 143.51) (xy 91.44 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a26aef5-c71b-4150-b350-2762b6d802e4")
+	)
+	(wire
+		(pts
 			(xy 45.72 97.79) (xy 45.72 99.06)
 		)
 		(stroke
@@ -4097,6 +5026,16 @@
 		)
 		(uuid "4c05c44c-70b4-4ee5-8b1e-d976ca5ba633")
 	)
+	(bus
+		(pts
+			(xy 93.98 156.21) (xy 93.98 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cbcc441-57fa-4be7-ad48-90f14171f6f0")
+	)
 	(wire
 		(pts
 			(xy 53.34 99.06) (xy 49.53 99.06)
@@ -4116,6 +5055,26 @@
 			(type default)
 		)
 		(uuid "4d4e9624-7299-48b4-b7b6-b4e377c1e96c")
+	)
+	(bus
+		(pts
+			(xy 123.19 179.07) (xy 123.19 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d6c44a9-5230-4728-b0fe-891b3583f5b5")
+	)
+	(bus
+		(pts
+			(xy 60.96 163.83) (xy 60.96 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d7e3c0e-97e9-4e9d-bc1b-b89613692bab")
 	)
 	(wire
 		(pts
@@ -4176,6 +5135,16 @@
 			(type default)
 		)
 		(uuid "534467e3-b69c-47aa-a6bd-830eb4f93a72")
+	)
+	(wire
+		(pts
+			(xy 39.37 163.83) (xy 27.94 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "534fcb8b-cfc2-4fa4-8a13-67f920a70c39")
 	)
 	(wire
 		(pts
@@ -4249,6 +5218,16 @@
 	)
 	(bus
 		(pts
+			(xy 60.96 166.37) (xy 60.96 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594b612e-6240-4d4d-b564-8a9bac83a55c")
+	)
+	(bus
+		(pts
 			(xy 163.83 102.87) (xy 163.83 105.41)
 		)
 		(stroke
@@ -4287,6 +5266,26 @@
 		)
 		(uuid "5ea1b568-53a0-462b-b77f-b2ff9f635987")
 	)
+	(bus
+		(pts
+			(xy 93.98 166.37) (xy 93.98 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eba1e80-9960-41ad-9410-09404d5a821d")
+	)
+	(wire
+		(pts
+			(xy 71.12 151.13) (xy 91.44 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f1c40e7-17ed-43d4-ac4e-a08096d3d426")
+	)
 	(wire
 		(pts
 			(xy 261.62 49.53) (xy 273.05 49.53)
@@ -4319,6 +5318,36 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 161.29) (xy 58.42 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60c11dac-2a6c-4642-a886-5d6f5bea413c")
+	)
+	(bus
+		(pts
+			(xy 60.96 140.97) (xy 60.96 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611b2cf1-2832-4ac8-826f-195b93fcebf5")
+	)
+	(wire
+		(pts
+			(xy 97.79 147.32) (xy 120.65 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6379359b-bdde-4e31-a06c-5868d6891545")
+	)
+	(wire
+		(pts
 			(xy 261.62 77.47) (xy 273.05 77.47)
 		)
 		(stroke
@@ -4339,6 +5368,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 173.99) (xy 58.42 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "656beb93-2ae4-4c5b-b76c-c8e8460472be")
+	)
+	(wire
+		(pts
+			(xy 46.99 168.91) (xy 58.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e8242f-6b0b-4bf5-97aa-10753aa49757")
+	)
+	(wire
+		(pts
 			(xy 36.83 71.12) (xy 36.83 72.39)
 		)
 		(stroke
@@ -4346,6 +5395,16 @@
 			(type default)
 		)
 		(uuid "66aa4767-3a4b-479b-8b48-98903535e148")
+	)
+	(wire
+		(pts
+			(xy 39.37 179.07) (xy 27.94 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67490597-b993-4ff2-89da-d1379298ee20")
 	)
 	(wire
 		(pts
@@ -4376,6 +5435,16 @@
 			(type default)
 		)
 		(uuid "6a762e2d-03af-4b34-a146-46a83734a915")
+	)
+	(wire
+		(pts
+			(xy 39.37 148.59) (xy 27.94 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b63ae92-c71e-4968-8fe2-29f024e02b8a")
 	)
 	(wire
 		(pts
@@ -4436,6 +5505,16 @@
 			(type default)
 		)
 		(uuid "6dbb0bcf-4d66-41ff-8bbe-d8d0ed0a5095")
+	)
+	(wire
+		(pts
+			(xy 97.79 154.94) (xy 120.65 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ded48c1-4998-48a5-9173-3b204b30e0de")
 	)
 	(wire
 		(pts
@@ -4539,6 +5618,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 171.45) (xy 27.94 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b9843b-fa69-40e7-a4de-08b3d2d5f433")
+	)
+	(wire
+		(pts
 			(xy 196.85 152.4) (xy 199.39 152.4)
 		)
 		(stroke
@@ -4546,6 +5635,16 @@
 			(type default)
 		)
 		(uuid "721c38bc-f5ec-4dc5-97da-9870741bdfd6")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 27.94 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "728a4675-1bfc-4dec-ad92-2445142a4662")
 	)
 	(wire
 		(pts
@@ -4569,6 +5668,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 142.24) (xy 97.79 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7600d8fa-7e53-4631-ba7b-70fbcf32ca77")
+	)
+	(wire
+		(pts
 			(xy 261.62 106.68) (xy 273.05 106.68)
 		)
 		(stroke
@@ -4589,6 +5698,16 @@
 	)
 	(bus
 		(pts
+			(xy 123.19 147.32) (xy 123.19 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77f20e67-a826-4e75-aec0-2ab307449034")
+	)
+	(bus
+		(pts
 			(xy 275.59 62.23) (xy 275.59 64.77)
 		)
 		(stroke
@@ -4596,6 +5715,26 @@
 			(type default)
 		)
 		(uuid "783abc3c-2f5f-494c-948d-6579f2d72860")
+	)
+	(bus
+		(pts
+			(xy 25.4 146.05) (xy 25.4 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7845798f-05f4-4338-a590-20e0998c79d7")
+	)
+	(bus
+		(pts
+			(xy 93.98 148.59) (xy 93.98 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786893f3-1709-4655-8610-c854c92110fd")
 	)
 	(bus
 		(pts
@@ -4647,6 +5786,16 @@
 		)
 		(uuid "7b4d46fb-b32e-4720-bda1-517f6e85b3d5")
 	)
+	(bus
+		(pts
+			(xy 121.92 179.07) (xy 123.19 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b7916d0-ced5-485c-86ba-59b2494f6f87")
+	)
 	(wire
 		(pts
 			(xy 274.32 135.89) (xy 274.32 137.16)
@@ -4676,6 +5825,16 @@
 			(type default)
 		)
 		(uuid "7e158510-eeda-46e0-8d87-9e8223724b1b")
+	)
+	(wire
+		(pts
+			(xy 120.65 157.48) (xy 97.79 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1fd52e-9a35-4695-8631-4420ef9920cc")
 	)
 	(wire
 		(pts
@@ -4727,6 +5886,16 @@
 		)
 		(uuid "8245ee5e-2874-4a28-9e86-2bb98fc9eb0d")
 	)
+	(bus
+		(pts
+			(xy 25.4 163.83) (xy 25.4 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8388cd48-2150-4f47-a0a7-2420ebe59fe0")
+	)
 	(wire
 		(pts
 			(xy 207.01 35.56) (xy 209.55 35.56)
@@ -4759,6 +5928,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 158.75) (xy 91.44 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86517b05-73d9-472d-ab68-77665e9d6f3f")
+	)
+	(wire
+		(pts
 			(xy 30.48 52.07) (xy 39.37 52.07)
 		)
 		(stroke
@@ -4766,6 +5945,16 @@
 			(type default)
 		)
 		(uuid "877fe31c-137c-439e-a658-ad749f87ca70")
+	)
+	(bus
+		(pts
+			(xy 25.4 173.99) (xy 25.4 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a5026f-ffe7-48aa-a40b-1158b1a30adf")
 	)
 	(wire
 		(pts
@@ -4827,6 +6016,16 @@
 		)
 		(uuid "8dab90d6-74a5-4b41-91fa-db1a4a4ba625")
 	)
+	(bus
+		(pts
+			(xy 93.98 163.83) (xy 93.98 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dc5d1fc-e073-4a74-87a6-24453193548b")
+	)
 	(wire
 		(pts
 			(xy 39.37 50.8) (xy 39.37 52.07)
@@ -4866,6 +6065,16 @@
 			(type default)
 		)
 		(uuid "8fae5f6a-aa24-466d-8c49-fa91fba4608c")
+	)
+	(bus
+		(pts
+			(xy 25.4 181.61) (xy 25.4 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917958a8-b221-44bc-a41a-abad93c0de35")
 	)
 	(bus
 		(pts
@@ -4939,6 +6148,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 140.97) (xy 58.42 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9735cba8-f139-4439-af02-25ef548d65e4")
+	)
+	(wire
+		(pts
 			(xy 166.37 71.12) (xy 184.15 71.12)
 		)
 		(stroke
@@ -4969,6 +6188,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 148.59) (xy 58.42 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cef00cc-3c32-466c-b2f7-3674b2a33def")
+	)
+	(wire
+		(pts
 			(xy 261.62 111.76) (xy 273.05 111.76)
 		)
 		(stroke
@@ -4979,6 +6208,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 160.02) (xy 120.65 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9df7e134-a5ff-4a9a-b186-8d538e563e77")
+	)
+	(wire
+		(pts
 			(xy 101.6 50.8) (xy 101.6 52.07)
 		)
 		(stroke
@@ -4986,6 +6225,16 @@
 			(type default)
 		)
 		(uuid "9fb4896b-424a-4bca-8557-1d301a4a91fc")
+	)
+	(wire
+		(pts
+			(xy 97.79 152.4) (xy 120.65 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a153a389-1428-4e55-8fe5-48802e30bd05")
 	)
 	(wire
 		(pts
@@ -5047,6 +6296,16 @@
 		)
 		(uuid "a51c55eb-efaa-4389-96bd-09e199b24cc5")
 	)
+	(bus
+		(pts
+			(xy 93.98 153.67) (xy 93.98 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d8d5a4-d766-4342-97fe-e347edd3be66")
+	)
 	(wire
 		(pts
 			(xy 39.37 91.44) (xy 45.72 91.44)
@@ -5086,6 +6345,16 @@
 			(type default)
 		)
 		(uuid "a7abade3-c978-47ef-ac3e-cf28f77d3839")
+	)
+	(bus
+		(pts
+			(xy 123.19 162.56) (xy 123.19 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8d3d9c8-2469-457c-8081-af987cb1163e")
 	)
 	(wire
 		(pts
@@ -5139,6 +6408,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 151.13) (xy 58.42 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b11f2d2d-516b-4cd7-bcbe-2828e334a506")
+	)
+	(wire
+		(pts
+			(xy 46.99 153.67) (xy 58.42 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ad9003-dfcf-4a69-8fba-4e1a47652114")
+	)
+	(wire
+		(pts
 			(xy 166.37 50.8) (xy 184.15 50.8)
 		)
 		(stroke
@@ -5157,6 +6446,16 @@
 		)
 		(uuid "b291de49-bec4-495a-8136-5ff848695f04")
 	)
+	(bus
+		(pts
+			(xy 60.96 158.75) (xy 60.96 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d83af5-0282-4d5e-b5eb-97db504606fd")
+	)
 	(wire
 		(pts
 			(xy 29.21 59.69) (xy 29.21 71.12)
@@ -5166,6 +6465,36 @@
 			(type default)
 		)
 		(uuid "b519bc7a-950c-42c7-88a9-e8a9e4a1eb39")
+	)
+	(wire
+		(pts
+			(xy 46.99 176.53) (xy 58.42 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b64e3410-6338-4f2e-952f-b5bad5b00e63")
+	)
+	(bus
+		(pts
+			(xy 60.96 181.61) (xy 60.96 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7aba280-c961-430d-b67b-300c2d44c8c1")
+	)
+	(bus
+		(pts
+			(xy 60.96 171.45) (xy 60.96 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7cd3521-ee24-45ac-86dc-e7d55c842c32")
 	)
 	(wire
 		(pts
@@ -5239,6 +6568,26 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 146.05) (xy 27.94 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc109eba-dba6-4907-a842-b42b313dd1d5")
+	)
+	(wire
+		(pts
+			(xy 39.37 143.51) (xy 27.94 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd203752-7ca9-473a-9ee9-b038413c0e36")
+	)
+	(wire
+		(pts
 			(xy 204.47 152.4) (xy 207.01 152.4)
 		)
 		(stroke
@@ -5299,6 +6648,56 @@
 	)
 	(bus
 		(pts
+			(xy 123.19 160.02) (xy 123.19 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4c65c00-9aed-4e3f-a2ce-b9e11e446d17")
+	)
+	(bus
+		(pts
+			(xy 93.98 163.83) (xy 93.98 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c64100df-3426-42c7-91a6-90a7b45d1f6c")
+	)
+	(bus
+		(pts
+			(xy 25.4 181.61) (xy 60.96 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c682b364-0a3b-4c31-88ee-ff9ec10601ef")
+	)
+	(bus
+		(pts
+			(xy 60.96 151.13) (xy 60.96 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6f837f2-091f-42cc-91f8-6dff0bbcb71a")
+	)
+	(wire
+		(pts
+			(xy 39.37 173.99) (xy 27.94 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7293590-965d-4698-aff9-848c065f4860")
+	)
+	(bus
+		(pts
 			(xy 163.83 95.25) (xy 163.83 92.71)
 		)
 		(stroke
@@ -5346,6 +6745,46 @@
 			(type default)
 		)
 		(uuid "ca594b57-814c-4402-8554-4c47c2758dfd")
+	)
+	(wire
+		(pts
+			(xy 46.99 163.83) (xy 58.42 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc966720-bcf2-4233-9ff0-99758a179ee8")
+	)
+	(wire
+		(pts
+			(xy 120.65 144.78) (xy 97.79 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cccc27b2-5f3d-4533-a21f-4eb0631e10fd")
+	)
+	(bus
+		(pts
+			(xy 88.9 180.34) (xy 93.98 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdb0119e-8abb-4019-be32-77dfc072eb17")
+	)
+	(bus
+		(pts
+			(xy 60.96 138.43) (xy 60.96 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce0bdb63-33bf-4a59-9162-ceb8a8ce15e7")
 	)
 	(wire
 		(pts
@@ -5429,6 +6868,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 140.97) (xy 91.44 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d33b784c-99fd-4b4b-af10-33fdfe682202")
+	)
+	(wire
+		(pts
 			(xy 261.62 64.77) (xy 273.05 64.77)
 		)
 		(stroke
@@ -5477,6 +6926,16 @@
 		)
 		(uuid "d4c9311c-3db9-4e2a-9c25-65ddca8a875e")
 	)
+	(bus
+		(pts
+			(xy 25.4 148.59) (xy 25.4 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e4bec4-4d14-401e-8235-5ba0841cdd07")
+	)
 	(wire
 		(pts
 			(xy 233.68 152.4) (xy 236.22 152.4)
@@ -5516,6 +6975,16 @@
 			(type default)
 		)
 		(uuid "d62b24ab-6118-4bc3-b2e3-fab896403819")
+	)
+	(wire
+		(pts
+			(xy 39.37 140.97) (xy 27.94 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d638ef0b-99ef-4327-b4e9-01b1ac61e1ea")
 	)
 	(wire
 		(pts
@@ -5619,6 +7088,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 176.53) (xy 27.94 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf7578a-a3cc-40af-bbf4-5e420f860160")
+	)
+	(wire
+		(pts
 			(xy 181.61 115.57) (xy 184.15 115.57)
 		)
 		(stroke
@@ -5636,6 +7115,16 @@
 			(type default)
 		)
 		(uuid "dc27d8a1-a6a3-4a87-b70e-e16e297ae284")
+	)
+	(bus
+		(pts
+			(xy 25.4 151.13) (xy 25.4 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc6114b2-721a-40f8-b7a5-c6ce08a13ae7")
 	)
 	(wire
 		(pts
@@ -5686,6 +7175,16 @@
 			(type default)
 		)
 		(uuid "e0d7d6bc-c0e0-4f84-a7a9-c117c43ba085")
+	)
+	(bus
+		(pts
+			(xy 25.4 176.53) (xy 25.4 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e10a9d70-54ea-4c3a-ac7c-ed1fd660b0dc")
 	)
 	(wire
 		(pts
@@ -5757,6 +7256,26 @@
 		)
 		(uuid "e55ca15c-835d-45f3-a090-b3e7e041c40b")
 	)
+	(bus
+		(pts
+			(xy 93.98 158.75) (xy 93.98 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5dd6e26-3733-4e46-90f7-b29255241fd6")
+	)
+	(bus
+		(pts
+			(xy 60.96 153.67) (xy 60.96 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e65dcd4b-193c-4a58-a099-176f0b21ddf6")
+	)
 	(wire
 		(pts
 			(xy 53.34 92.71) (xy 53.34 91.44)
@@ -5786,6 +7305,26 @@
 			(type default)
 		)
 		(uuid "eae1c9ee-1293-45e6-9228-cf115c25b978")
+	)
+	(bus
+		(pts
+			(xy 123.19 149.86) (xy 123.19 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb0a9339-4330-4a23-94ec-de2d9b81bc5a")
+	)
+	(wire
+		(pts
+			(xy 46.99 146.05) (xy 58.42 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5cd7f5-dc85-4382-b617-5fbe4d75a79d")
 	)
 	(wire
 		(pts
@@ -5857,6 +7396,16 @@
 		)
 		(uuid "eed7154c-6ad9-465b-aca2-886412e07395")
 	)
+	(bus
+		(pts
+			(xy 123.19 165.1) (xy 123.19 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd31140-83eb-4271-9ca1-61bb05f2cd15")
+	)
 	(wire
 		(pts
 			(xy 214.63 35.56) (xy 217.17 35.56)
@@ -5897,6 +7446,26 @@
 		)
 		(uuid "f1f93c1b-52c9-4ec8-bdf5-cbed38c76e18")
 	)
+	(bus
+		(pts
+			(xy 25.4 161.29) (xy 25.4 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2293053-3052-40ec-bd89-097627d95664")
+	)
+	(bus
+		(pts
+			(xy 123.19 154.94) (xy 123.19 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f232e2a9-863d-43c8-8c2e-e435438b44c4")
+	)
 	(wire
 		(pts
 			(xy 66.04 44.45) (xy 73.66 44.45)
@@ -5926,6 +7495,16 @@
 			(type default)
 		)
 		(uuid "f3cff29c-948d-4291-8e35-e4da2cb38062")
+	)
+	(bus
+		(pts
+			(xy 60.96 148.59) (xy 60.96 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50bb405-48d7-4197-abf0-3c1c1635d444")
 	)
 	(bus
 		(pts
@@ -5977,6 +7556,16 @@
 		)
 		(uuid "f8c9b9a1-404f-4435-b7b1-7dbd9aeca038")
 	)
+	(bus
+		(pts
+			(xy 93.98 151.13) (xy 93.98 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa655f26-3f88-4caf-923d-ef5eaa5ba95c")
+	)
 	(wire
 		(pts
 			(xy 102.87 71.12) (xy 95.25 71.12)
@@ -6027,6 +7616,16 @@
 		)
 		(uuid "024eb27c-38b1-4613-82b3-cc9bd67a79a7")
 	)
+	(label "DDR3.DQ5"
+		(at 77.47 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02ae5c62-9924-40d5-9db0-af4dca8a4d43")
+	)
 	(label "DDR3.CK-"
 		(at 261.62 127 0)
 		(effects
@@ -6037,6 +7636,16 @@
 		)
 		(uuid "0b80e045-44df-4441-b29c-7ba81efe9f0a")
 	)
+	(label "DDR3.CK-"
+		(at 39.37 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "154c851a-55e7-43e8-9193-55d39c7c6efb")
+	)
 	(label "DDR3.DQ14"
 		(at 171.45 60.96 0)
 		(effects
@@ -6046,6 +7655,26 @@
 			(justify left bottom)
 		)
 		(uuid "1bbe05a9-8bcf-4b5a-813a-9f8e6e88fc83")
+	)
+	(label "DDR3.A13"
+		(at 48.26 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ffb25ef-f87d-4fad-99df-717bac53b874")
+	)
+	(label "DDR3.CS#"
+		(at 39.37 176.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21330642-6c01-4d0b-a50b-547afa4a77c2")
 	)
 	(label "DDR3.LDM"
 		(at 180.34 82.55 180)
@@ -6066,6 +7695,26 @@
 			(justify left bottom)
 		)
 		(uuid "24ae98e4-60b4-4a8f-afeb-21a2da7ad6b0")
+	)
+	(label "DDR3.A11"
+		(at 48.26 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "255e8a15-6377-487e-8538-ca5e0ef19f21")
+	)
+	(label "DDR3.BA0"
+		(at 39.37 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29c50715-3298-4a6b-8b8a-2ece3dbe29bf")
 	)
 	(label "DDR3.DQ12"
 		(at 171.45 66.04 0)
@@ -6117,6 +7766,26 @@
 		)
 		(uuid "34cc4537-8667-41a6-a886-b017f81b5982")
 	)
+	(label "DDR3.A8"
+		(at 48.26 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35ba82d2-c8e4-4e7b-a1ef-c597dca6c516")
+	)
+	(label "DDR3.A14"
+		(at 48.26 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "364b339c-ef0b-4bc7-b0fe-72f004720840")
+	)
 	(label "DDR3.CS#"
 		(at 261.62 93.98 0)
 		(effects
@@ -6127,6 +7796,46 @@
 		)
 		(uuid "36b75229-043c-45a3-84db-2f49861c6b56")
 	)
+	(label "DDR3.DQ6"
+		(at 77.47 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c06f880-fea7-4b72-b0e2-fccc5bf0c79f")
+	)
+	(label "DDR3.A9"
+		(at 48.26 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cd0789c-5d13-4db5-b0fa-d30853f5a3d9")
+	)
+	(label "DDR3.CKE"
+		(at 39.37 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f9dd919-62d9-43df-8f9a-6170d759fab7")
+	)
+	(label "DDR3.A2"
+		(at 48.26 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40d2f656-9af4-4d9d-adf7-aaf7a4fa40b6")
+	)
 	(label "DDR3.DQ13"
 		(at 171.45 63.5 0)
 		(effects
@@ -6136,6 +7845,16 @@
 			(justify left bottom)
 		)
 		(uuid "456fad83-2455-4bb7-9ebb-b1fe7fdfadc7")
+	)
+	(label "DDR3.A12"
+		(at 48.26 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ed11bb6-8370-4d4b-b511-2ab543c92d30")
 	)
 	(label "DDR3.A13"
 		(at 262.89 52.07 0)
@@ -6156,6 +7875,26 @@
 			(justify left bottom)
 		)
 		(uuid "543eea6c-b058-44ff-9e9e-6326dc7d2eed")
+	)
+	(label "DDR3.ODT"
+		(at 39.37 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "554415ae-8b01-45c2-a91e-d40b9a9e0ab3")
+	)
+	(label "DDR3.DQ9"
+		(at 105.41 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "589f6c69-f25d-4a8a-a23b-02edcaad0c85")
 	)
 	(label "DDR3.DQ9"
 		(at 171.45 73.66 0)
@@ -6197,6 +7936,36 @@
 		)
 		(uuid "6193fae1-3960-47d7-9a37-13ff1462b685")
 	)
+	(label "DDR3.LDQS-"
+		(at 74.93 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6631874f-04d7-486d-acdb-74a0a186e9e5")
+	)
+	(label "DDR3.A6"
+		(at 48.26 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6846157d-d725-4991-998a-d1e235dd95d7")
+	)
+	(label "DDR3.DQ0"
+		(at 77.47 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7236adb3-7ae9-479c-86a4-ecadca3d525a")
+	)
 	(label "DDR3.CK+"
 		(at 261.62 124.46 0)
 		(effects
@@ -6217,6 +7986,26 @@
 		)
 		(uuid "77607f43-746b-4b63-81bf-92e4b753115f")
 	)
+	(label "DDR3.A3"
+		(at 48.26 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79d95790-5247-402b-a274-5f345725b225")
+	)
+	(label "DDR3.DQ11"
+		(at 105.41 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b6ad3ef-798f-4cde-8dd3-055797c6ebbd")
+	)
 	(label "DDR3.DQ6"
 		(at 180.34 92.71 180)
 		(effects
@@ -6227,6 +8016,46 @@
 		)
 		(uuid "818ff75a-c969-4b71-b9d5-8e2319ff5104")
 	)
+	(label "DDR3.A1"
+		(at 48.26 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81d2f747-5f31-42c2-bd34-00d190b94d66")
+	)
+	(label "DDR3.DQ3"
+		(at 77.47 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82887e4f-0b55-4d70-a541-59e0ad94c16e")
+	)
+	(label "DDR3.A0"
+		(at 48.26 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "83fb7811-89c9-4dee-8b68-ae5fccc7e4e0")
+	)
+	(label "DDR3.A5"
+		(at 48.26 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "843f1b4f-2aab-4c62-91df-382a7a90ea3f")
+	)
 	(label "DDR3.A2"
 		(at 262.89 80.01 0)
 		(effects
@@ -6236,6 +8065,16 @@
 			(justify left bottom)
 		)
 		(uuid "8ccb83bd-c794-499b-b2fa-4d3b476fb00f")
+	)
+	(label "DDR3.DQ8"
+		(at 105.41 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90592438-dde4-4c16-922a-0e156e725914")
 	)
 	(label "DDR3.DQ4"
 		(at 180.34 97.79 180)
@@ -6267,6 +8106,16 @@
 		)
 		(uuid "956f4ada-4b6e-4d9a-b691-cdd2bcb9dc50")
 	)
+	(label "DDR3.DQ4"
+		(at 77.47 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97f05890-a40e-4311-839c-0ac8bfddfa67")
+	)
 	(label "VLPDDR3_CORE"
 		(at 46.99 44.45 0)
 		(effects
@@ -6276,6 +8125,16 @@
 			(justify left bottom)
 		)
 		(uuid "9a720fb2-7e99-4240-ae77-0c6f6c501811")
+	)
+	(label "DDR3.LDQS+"
+		(at 76.2 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a831a24-53cb-4b4d-b027-b9d43a791978")
 	)
 	(label "VLPDDR3_CORE"
 		(at 212.09 33.02 180)
@@ -6287,6 +8146,16 @@
 		)
 		(uuid "9b386068-fde0-49cc-9f29-d3e853a817cb")
 	)
+	(label "DDR3.DQ7"
+		(at 77.47 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9bb70b7d-3931-4891-a55e-2699a33d7a4f")
+	)
 	(label "DDR3.UDQS+"
 		(at 171.45 53.34 0)
 		(effects
@@ -6296,6 +8165,26 @@
 			(justify left bottom)
 		)
 		(uuid "9d34f15f-0f40-4cd8-946b-b55511202f63")
+	)
+	(label "DDR3.BA2"
+		(at 39.37 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9fce7374-7430-42ca-89e4-b53b4d1b1f6e")
+	)
+	(label "DDR3.CAS#"
+		(at 39.37 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0065e43-b9db-4437-9a06-ccc2ac60d53e")
 	)
 	(label "DDR3.A9"
 		(at 262.89 62.23 0)
@@ -6337,6 +8226,56 @@
 		)
 		(uuid "a378ad45-b77c-41b9-a5af-2094c1097c06")
 	)
+	(label "DDR3.DQ2"
+		(at 77.47 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4abbaa2-5dc6-4975-bf93-04689ba7c206")
+	)
+	(label "DDR3.CK+"
+		(at 39.37 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5cc6ad7-2374-4c0e-a08c-9f7912da8d05")
+	)
+	(label "DDR3.DQ1"
+		(at 77.47 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a868e6b7-e574-4805-8e1a-4ce4b28f7870")
+	)
+	(label "DDR3.RAS#"
+		(at 39.37 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9c45b8b-bc77-4428-9766-e319b948a9f2")
+	)
+	(label "DDR3.DQ12"
+		(at 105.41 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9ee1505-f756-4fe2-9409-ec60a7598eb5")
+	)
 	(label "DDR3.A8"
 		(at 262.89 64.77 0)
 		(effects
@@ -6346,6 +8285,26 @@
 			(justify left bottom)
 		)
 		(uuid "aa69e560-75d2-4f0a-a4ac-c442a4311399")
+	)
+	(label "DDR3.A4"
+		(at 48.26 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2981731-8c37-4a86-8dd1-9e6d076e7f8e")
+	)
+	(label "DDR3.A7"
+		(at 48.26 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7f62e90-f4c5-41f4-8dfa-bee674a51480")
 	)
 	(label "DDR3.DQ0"
 		(at 180.34 107.95 180)
@@ -6367,6 +8326,16 @@
 		)
 		(uuid "c227ff1f-5c81-4a90-bcfc-834342d16afa")
 	)
+	(label "DDR3.DQ13"
+		(at 105.41 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3b43216-2094-49f5-84f5-3eedd05e4504")
+	)
 	(label "DDR3.LDQS+"
 		(at 181.61 85.09 180)
 		(effects
@@ -6387,6 +8356,16 @@
 		)
 		(uuid "c7e122a1-7354-45a2-957b-b038fa033a3d")
 	)
+	(label "DDR3.DQ10"
+		(at 105.41 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c88d1335-d666-458a-b346-77234bee6762")
+	)
 	(label "DDR3.WE#"
 		(at 261.62 96.52 0)
 		(effects
@@ -6406,6 +8385,16 @@
 			(justify left bottom)
 		)
 		(uuid "ce53873e-fe18-40ff-ba2c-0b8b5d1ec167")
+	)
+	(label "DDR3.A10"
+		(at 48.26 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf54f5f3-4053-4c58-b6c6-396481badbf2")
 	)
 	(label "DDR3.RAS#"
 		(at 261.62 121.92 0)
@@ -6437,6 +8426,16 @@
 		)
 		(uuid "d38301e8-a0ca-4031-addf-093e172701cc")
 	)
+	(label "DDR3.LDM"
+		(at 77.47 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d44b6fcb-b04e-4149-8b24-35f76fc17ac6")
+	)
 	(label "DDR3.DQ8"
 		(at 171.45 76.2 0)
 		(effects
@@ -6457,6 +8456,16 @@
 		)
 		(uuid "d81e1be6-706a-417d-9f6e-88f87e5e79b6")
 	)
+	(label "DDR3.DQ14"
+		(at 105.41 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da690dd3-e7eb-4733-8185-9b4b2ffdc1f8")
+	)
 	(label "DDR3.A3"
 		(at 262.89 77.47 0)
 		(effects
@@ -6466,6 +8475,16 @@
 			(justify left bottom)
 		)
 		(uuid "e1287bc5-f7a8-4d32-b647-76563ee5ee89")
+	)
+	(label "DDR3.WE#"
+		(at 39.37 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e374eaad-2216-4114-bcf7-05b23e547066")
 	)
 	(label "DDR3.UDM"
 		(at 171.45 50.8 0)
@@ -6477,6 +8496,16 @@
 		)
 		(uuid "e6b8d752-fe56-4e17-bf6f-0cb96a601267")
 	)
+	(label "DDR3.DQ15"
+		(at 105.41 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9b7c4ec-e7d4-4b4e-8bca-d44fbba602ab")
+	)
 	(label "DDR3.DQ11"
 		(at 171.45 68.58 0)
 		(effects
@@ -6486,6 +8515,16 @@
 			(justify left bottom)
 		)
 		(uuid "eaf66d53-d7ee-40fb-853a-a47ebecf00b1")
+	)
+	(label "DDR3.UDQS+"
+		(at 105.41 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eba9160f-4e50-449f-87f6-164a7b80daea")
 	)
 	(label "DDR3.A6"
 		(at 262.89 69.85 0)
@@ -6527,6 +8566,16 @@
 		)
 		(uuid "f5823e41-671d-4e37-abe9-5e4b1f65e75d")
 	)
+	(label "DDR3.RESET#"
+		(at 39.37 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5d56924-89c7-4f6c-ad87-afcd8031e9cd")
+	)
 	(label "DDR3.BA2"
 		(at 261.62 106.68 0)
 		(effects
@@ -6536,6 +8585,36 @@
 			(justify left bottom)
 		)
 		(uuid "fab47985-6163-4c20-b70c-4fe2cb88076e")
+	)
+	(label "DDR3.UDQS-"
+		(at 105.41 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc76859b-b7e0-4476-8ec8-6b44f6dd18b0")
+	)
+	(label "DDR3.BA1"
+		(at 39.37 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd6f09e4-3a3c-4ea4-b9ee-ee77d59a5455")
+	)
+	(label "DDR3.UDM"
+		(at 105.41 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdcf15c3-b382-4e28-9c5d-c1db04e992f7")
 	)
 	(global_label "VLPDDR3_V675"
 		(shape passive)
@@ -6625,6 +8704,28 @@
 			)
 		)
 	)
+	(hierarchical_label "DDR3{LPDDR3_DQL}"
+		(shape input)
+		(at 88.9 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "739c0957-856a-4027-adac-bdc5a7810b39")
+	)
+	(hierarchical_label "DDR3{LPDDR3_DQU}"
+		(shape input)
+		(at 121.92 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "acc73195-ce9e-471e-a225-fd5b894b8a37")
+	)
 	(hierarchical_label "DDR3{LPDDR3_DQU}"
 		(shape input)
 		(at 161.29 38.1 180)
@@ -6647,6 +8748,17 @@
 		)
 		(uuid "cf9f5765-c2ea-4d2d-a243-efbdd64fe37e")
 	)
+	(hierarchical_label "DDR3{LPDDR3_CTL}"
+		(shape input)
+		(at 50.8 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f97fd791-be61-409e-b3e5-b6f5c1c2f924")
+	)
 	(hierarchical_label "DDR3{LPDDR3_DQL}"
 		(shape input)
 		(at 161.29 130.81 180)
@@ -6657,6 +8769,73 @@
 			(justify right)
 		)
 		(uuid "fda50465-d803-4a58-add6-813a48cda259")
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05c19cf8-984e-4db1-97e7-60893205ba1a")
+		(property "Reference" "TP1116"
+			(at 73.66 141.4779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11a320c6-67ea-4352-b991-bf47d03c5119")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1116")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -6911,6 +9090,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ca779fc-cc27-4545-bf4b-d8608ab1530d")
+		(property "Reference" "TP1121"
+			(at 73.66 154.1779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a16ad2d-c5e6-45c5-abad-73b7c3037573")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1121")
 					(unit 1)
 				)
 			)
@@ -7175,6 +9421,609 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13ce31f6-1e85-4af1-81b4-bcfb2810b1c4")
+		(property "Reference" "TP1146"
+			(at 41.91 154.1779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d775daab-b25f-4d8f-8bb4-a037da0e4ade")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1483cd7a-9352-4ce4-93ad-f0750e54c7b6")
+		(property "Reference" "TP1129"
+			(at 49.53 151.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 50.546 152.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2821eaa-d935-4559-b7e1-c6a0096ca795")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1670611b-8301-4e06-bf11-458dcce56004")
+		(property "Reference" "TP1105"
+			(at 100.33 137.6679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9016edf9-bb03-484c-986a-a0e6c8179e42")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19f49170-a71e-420e-a063-de6f5b481d8a")
+		(property "Reference" "TP1111"
+			(at 100.33 152.9079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8646aa24-d25f-4245-bbef-2322c0472806")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "201a0baa-4020-4e36-a0d1-a74026dffd6b")
+		(property "Reference" "TP1117"
+			(at 73.66 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2aef468a-a906-4a00-a115-57eaf157d7ee")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2fd843d5-6e6f-48a2-90d9-436cadfa32e5")
+		(property "Reference" "TP1107"
+			(at 100.33 140.2079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ed095b0-12b4-482a-b46d-2f72de742445")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3158b78c-ab79-491d-8bc4-eb1579c73152")
+		(property "Reference" "TP1138"
+			(at 41.91 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 168.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c14bb58-2e18-4a85-a731-49b4273d8bd9")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31ce7c89-35ca-4650-84ed-2c9d7e39fb9b")
+		(property "Reference" "TP1110"
+			(at 100.33 150.3679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 101.346 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "446f4593-27a8-47ed-9949-660054eb1011")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3218360d-ba27-4721-8095-e2ae8e12e403")
+		(property "Reference" "TP1115"
+			(at 100.33 147.8279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 149.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29d9b4f8-a44b-4a53-baea-c85b0ca339d0")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 53.34 95.25 0)
 		(unit 1)
@@ -7427,6 +10276,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3440a637-241c-4afc-ad98-2c51d0da1499")
+		(property "Reference" "TP1122"
+			(at 73.66 156.7179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28b0a71f-ca7c-4a72-a555-165221fa4bb4")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1122")
 					(unit 1)
 				)
 			)
@@ -7691,6 +10607,274 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3811287f-693c-437d-9935-81f1c72b2707")
+		(property "Reference" "TP1125"
+			(at 49.53 141.4779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1234aa06-36cd-406c-a0d0-98f98f7b619a")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38f3826e-a85f-4e6b-850a-af985022c32d")
+		(property "Reference" "TP1143"
+			(at 41.91 141.4779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cf599d9-fd6f-4bd2-ba85-ebfbb1c21b6f")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ffe835c-8904-4c74-abcd-5674136c011d")
+		(property "Reference" "TP1139"
+			(at 41.91 169.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 170.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2dd762e-91a2-4aa4-b2da-b232a2a674bb")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40e9ff0d-d2ab-47a1-87da-e8ced62feb7a")
+		(property "Reference" "TP1124"
+			(at 73.66 161.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed675690-499f-43f2-9fee-58a5ad5a870b")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 45.72 95.25 0)
 		(unit 1)
@@ -7949,6 +11133,274 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42b0e446-58fd-4821-b980-2674956a9283")
+		(property "Reference" "TP1123"
+			(at 73.66 159.2579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87bd2654-3f01-4f70-8c06-c9c67f917d99")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "439f9550-a0e6-4f03-bb56-32d5bffede99")
+		(property "Reference" "TP1134"
+			(at 49.53 164.3379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 165.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "434eb1c0-4923-4574-8b16-580efcf14c96")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44c8d653-00f1-4d43-bd27-e267f7462771")
+		(property "Reference" "TP1112"
+			(at 100.33 155.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 156.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38a36770-3ca9-4b56-a40c-c6a57c054b05")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "48ef49e5-5db3-44a6-9f8b-35b8c5b7e0f1")
+		(property "Reference" "TP1101"
+			(at 49.53 136.3979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 137.922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9407fb0b-8a01-46dc-bcdb-3b4d4a245e3b")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 52.07 74.93 0)
 		(unit 1)
@@ -8201,6 +11653,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cdca251-3fb4-4e90-8a36-31d782ce1b07")
+		(property "Reference" "TP1128"
+			(at 49.53 149.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78f2c6cd-674a-4baa-b456-7718fe3916ef")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1128")
 					(unit 1)
 				)
 			)
@@ -8530,6 +12049,140 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56c61ce1-c003-4210-b7e8-f51bbe4079c3")
+		(property "Reference" "TP1133"
+			(at 49.53 161.7979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cf94690-4f73-4366-a9da-ce7ffba0ff32")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5738e876-7af7-406d-87e6-0c83e7fe4977")
+		(property "Reference" "TP1118"
+			(at 73.66 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8a6aa6d-213c-427c-91c2-eee40895f6d0")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 80.01 0)
 		(unit 1)
@@ -8589,6 +12242,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "#PWR01102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c225e22-cb40-4472-a276-b7fd4846cafb")
+		(property "Reference" "TP1120"
+			(at 73.66 151.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 74.676 152.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d01f4c7f-f275-40f1-8874-4ce846efdf69")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1120")
 					(unit 1)
 				)
 			)
@@ -8853,6 +12573,140 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f29f70c-8221-4176-be1b-b23a32483093")
+		(property "Reference" "TP1132"
+			(at 49.53 159.2579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1131fcf7-4545-4695-a6c3-f6d5b9601f26")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62c058be-b711-4145-8a8d-c12d0d38d660")
+		(property "Reference" "TP1106"
+			(at 73.66 138.9379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e901555-5ecc-4b60-a588-425528e27668")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 54.61 0)
 		(unit 1)
@@ -8912,6 +12766,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "#PWR01101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e96f84-0297-447d-91bf-feafdcb3ce55")
+		(property "Reference" "TP1144"
+			(at 41.91 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49204ef2-e07d-4b05-a9f6-9e51b8cbf299")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1144")
 					(unit 1)
 				)
 			)
@@ -9270,6 +13191,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "#PWR01103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d3a938c-09ef-40e7-8d92-4e7efdc2ea8d")
+		(property "Reference" "TP1142"
+			(at 41.91 138.9379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1264ed97-13c4-4253-85f3-915299280277")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1142")
 					(unit 1)
 				)
 			)
@@ -9786,6 +13774,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73d65634-6b35-43c4-a78e-29d6f745ec84")
+		(property "Reference" "TP1127"
+			(at 49.53 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42d6d19c-8379-4177-ab48-d4190c14c2d5")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1127")
 					(unit 1)
 				)
 			)
@@ -10343,6 +14398,73 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7db6508b-741e-47d9-9112-fc83f62bcffd")
+		(property "Reference" "TP1140"
+			(at 41.91 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 173.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8b281ca-31ff-43e6-b1ba-2fd2eba0a559")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 39.37 95.25 0)
 		(unit 1)
@@ -10595,6 +14717,140 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eb20661-4ec4-4174-aabd-0a4e85e2f675")
+		(property "Reference" "TP1113"
+			(at 100.33 157.9879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae551213-8846-4067-9243-e0862bf64dfa")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fe06058-810e-41cd-811a-572cc6161b7c")
+		(property "Reference" "TP1114"
+			(at 100.33 160.5279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 162.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bc1098f-8af4-4937-9a16-b7414cf84513")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1114")
 					(unit 1)
 				)
 			)
@@ -10918,6 +15174,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "933af3b0-a956-4be7-b427-10a90d5387ce")
+		(property "Reference" "TP1103"
+			(at 73.66 136.3979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 137.922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "130fef5e-4ae2-44e8-9101-6037d67d6bbb")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1103")
 					(unit 1)
 				)
 			)
@@ -11440,6 +15763,207 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af197957-3884-48ba-98ab-95769d904130")
+		(property "Reference" "TP1141"
+			(at 41.91 174.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 176.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7403fcd1-7e82-46db-a200-761dee09c801")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3ec42bb-3666-4b77-9225-da9fce15627c")
+		(property "Reference" "TP1131"
+			(at 49.53 156.7179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a644807-b311-40da-b4f1-9840871bdc0f")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b67d9b3b-67a3-48f6-b7b9-1d9abf2f54e2")
+		(property "Reference" "TP1135"
+			(at 49.53 166.8779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 168.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a414c0b-57c2-4160-a06f-1a542da1f8d2")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 85.09 48.26 0)
 		(unit 1)
@@ -11692,6 +16216,73 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "C1119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0534f65-db7a-4ef4-867f-1c391e8de0f0")
+		(property "Reference" "TP1145"
+			(at 41.91 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "632a34ff-9be0-472c-a895-97586331678b")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1145")
 					(unit 1)
 				)
 			)
@@ -13856,6 +18447,73 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc943710-586f-42ee-85a2-ee11e0781414")
+		(property "Reference" "TP1137"
+			(at 49.53 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 173.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46ad6831-6362-4235-9f08-6f56171fd760")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 30.48 48.26 0)
 		(unit 1)
@@ -14114,6 +18772,341 @@
 		)
 	)
 	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e22e3883-db9c-4c26-a3f1-0eeb42ceafa4")
+		(property "Reference" "TP1126"
+			(at 49.53 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "153db0a4-3a86-470e-a840-de56aa4a0476")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e596deb0-9b65-4739-9020-63584002772f")
+		(property "Reference" "TP1109"
+			(at 100.33 145.2879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1c7dc05-bd6b-44ea-a2b2-e886edc36c93")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5e66e0b-ad5f-4bd1-b467-7327d5c717f5")
+		(property "Reference" "TP1130"
+			(at 49.53 154.1779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0a5cbc9-3849-473a-b090-ad137374aaee")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e66cf15b-a3e9-4679-b774-b09a7d06f252")
+		(property "Reference" "TP1104"
+			(at 100.33 135.1279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 136.652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da1c693a-e8da-4b7e-ba14-b1d27582b13a")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 97.79 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7c02d12-2e38-46db-9540-e8c9b8d7061f")
+		(property "Reference" "TP1108"
+			(at 100.33 142.7479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 98.806 144.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 102.87 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a97a9382-7def-4aae-853d-1909d9dd3471")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 194.31 154.94 0)
 		(unit 1)
@@ -14173,6 +19166,140 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "#PWR01105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f205ddb1-4ea4-4877-bd6a-76e99ef82bd9")
+		(property "Reference" "TP1136"
+			(at 49.53 169.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 170.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8b0ac8d-10d3-49a7-8e80-a647ac2c7baf")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f55a3ce9-b9fc-4f03-9f7a-3956961ef6fc")
+		(property "Reference" "TP1147"
+			(at 41.91 156.7179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c575068d-0b7a-487d-9af2-b8c039588ba8")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1147")
 					(unit 1)
 				)
 			)
@@ -14496,6 +19623,207 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "#FLG01103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 46.99 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8bed3cc-f64c-4bf3-b970-a632f0943254")
+		(property "Reference" "TP1102"
+			(at 49.53 138.9379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 48.006 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 52.07 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 46.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42e0bb5b-05ae-4580-9748-2c1290c5c008")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 39.37 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc9dad36-0787-472a-8663-9613cdd29fa1")
+		(property "Reference" "TP1148"
+			(at 41.91 159.2579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 40.386 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 44.45 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a7d684e-1e94-4ca8-ad79-01486e0a8acf")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iw-misc:TestPoint_0.25mm")
+		(at 71.12 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe91e60f-9f4f-468e-b0dd-c75b89d25193")
+		(property "Reference" "TP1119"
+			(at 73.66 149.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "TestPoint_0.25mm"
+			(at 72.136 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "iw-misc:TestPoint_Pad_D0.25mm"
+			(at 76.2 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7e9440b-3aca-4ebe-a8ca-36b550213513")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "TP1119")
 					(unit 1)
 				)
 			)

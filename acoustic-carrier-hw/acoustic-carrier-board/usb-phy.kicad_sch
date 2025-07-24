@@ -824,170 +824,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at 0.762 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "L_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_Small_0_1"
-				(arc
-					(start 0 2.032)
-					(mid 0.5058 1.524)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 -0.508)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -1.524)
-					(end 0 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -3092,12 +2928,6 @@
 		(uuid "0682f385-3b92-4de8-ad9a-7d3a5e7e6945")
 	)
 	(junction
-		(at 313.69 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bb87c2f-4a63-4d5a-9575-e8667c0cf9b2")
-	)
-	(junction
 		(at 281.94 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3192,12 +3022,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66a1da19-c56b-4144-a546-fa0113a511f0")
-	)
-	(junction
-		(at 322.58 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66b95bd4-9727-4177-b3e1-5a0f57a667e0")
 	)
 	(junction
 		(at 359.41 205.74)
@@ -3604,16 +3428,6 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 54.61) (xy 321.31 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b5882d6-21bd-4f1c-b80b-746d1550083f")
-	)
-	(wire
-		(pts
 			(xy 96.52 177.8) (xy 102.87 177.8)
 		)
 		(stroke
@@ -3631,16 +3445,6 @@
 			(type default)
 		)
 		(uuid "0dda6d0c-44b5-4f8c-944c-bfb4f932198c")
-	)
-	(wire
-		(pts
-			(xy 313.69 44.45) (xy 313.69 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1076c6a6-0493-45ee-8e06-bdf03a550913")
 	)
 	(wire
 		(pts
@@ -3731,6 +3535,16 @@
 			(type default)
 		)
 		(uuid "1e243ff6-9fba-4534-bee6-276536a78190")
+	)
+	(wire
+		(pts
+			(xy 317.5 55.88) (xy 317.5 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2c41ee-195e-470b-bd0c-1ec4b6699919")
 	)
 	(wire
 		(pts
@@ -3831,16 +3645,6 @@
 			(type default)
 		)
 		(uuid "2a181d14-490b-431d-b597-876481574751")
-	)
-	(wire
-		(pts
-			(xy 322.58 44.45) (xy 322.58 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aa6ac3c-084c-4067-a18b-29482308119f")
 	)
 	(bus
 		(pts
@@ -3951,6 +3755,16 @@
 			(type default)
 		)
 		(uuid "37b09f5d-4eba-4657-a7a1-297db702488d")
+	)
+	(wire
+		(pts
+			(xy 313.69 55.88) (xy 317.5 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38d9a9ad-f95c-469b-99ca-752aa26c72e3")
 	)
 	(wire
 		(pts
@@ -4221,16 +4035,6 @@
 			(type default)
 		)
 		(uuid "520ef39d-7d93-45a0-ac07-c95767d662b7")
-	)
-	(wire
-		(pts
-			(xy 322.58 54.61) (xy 322.58 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "567df5a5-6cc4-4b39-bb57-b46d597d975e")
 	)
 	(wire
 		(pts
@@ -5074,16 +4878,6 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 52.07) (xy 313.69 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8a5e724-8fc5-4fb8-9cf8-1277ac9a256d")
-	)
-	(wire
-		(pts
 			(xy 364.49 210.82) (xy 364.49 219.71)
 		)
 		(stroke
@@ -5121,16 +4915,6 @@
 			(type default)
 		)
 		(uuid "bd469fd1-9aa0-4b6d-a063-70de95398275")
-	)
-	(wire
-		(pts
-			(xy 313.69 44.45) (xy 322.58 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf03d735-c0f0-405b-8d9d-26422b5f57ab")
 	)
 	(wire
 		(pts
@@ -5354,16 +5138,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 54.61) (xy 313.69 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d515e7d7-f565-4cd1-bed9-00eddc890342")
-	)
-	(wire
-		(pts
 			(xy 130.81 60.96) (xy 130.81 38.1)
 		)
 		(stroke
@@ -5371,6 +5145,16 @@
 			(type default)
 		)
 		(uuid "d92bb1f9-88cf-4d8a-8247-121d04ccb0d7")
+	)
+	(wire
+		(pts
+			(xy 313.69 55.88) (xy 313.69 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc81ca9f-1c07-448f-8f97-9ed7223336f0")
 	)
 	(wire
 		(pts
@@ -5681,16 +5465,6 @@
 			(type default)
 		)
 		(uuid "fb89ed1d-8220-4e3f-9630-32aef33369ba")
-	)
-	(wire
-		(pts
-			(xy 313.69 54.61) (xy 313.69 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc80bb41-a4c0-409a-9821-41de6770c366")
 	)
 	(wire
 		(pts
@@ -6158,92 +5932,6 @@
 			(justify right)
 		)
 		(uuid "d5c6c636-5538-4ef3-8466-41b1de92a5d4")
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 313.69 49.53 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "038f1158-e642-463b-b236-710c269abe24")
-		(property "Reference" "L801"
-			(at 311.404 49.784 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120@100MHz"
-			(at 309.372 49.022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 313.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588898925176217600"
-			(at 313.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "25mOhm, 1-3A"
-			(at 313.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C113030"
-			(at 313.69 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "BLM18SG121TN1D"
-			(at 313.69 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a265251-9227-488f-bc4d-637c252cc19b")
-		)
-		(pin "2"
-			(uuid "e16dd752-95ca-4294-aecb-bf672e34372d")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/bccc7554-d2b1-4102-8d28-ddff56ec5c7a"
-					(reference "L801")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -11352,16 +11040,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 322.58 57.15 0)
+		(at 317.5 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4af4bf1f-0495-4fc7-9f75-fafd457db727")
 		(property "Reference" "#PWR0801"
-			(at 322.58 63.5 0)
+			(at 317.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11370,7 +11057,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 322.58 61.595 0)
+			(at 321.818 57.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11378,7 +11065,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 322.58 57.15 0)
+			(at 317.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11387,7 +11074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 322.58 57.15 0)
+			(at 317.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11396,7 +11083,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 322.58 57.15 0)
+			(at 317.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18881,93 +18568,6 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/bccc7554-d2b1-4102-8d28-ddff56ec5c7a"
 					(reference "R804")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 318.77 54.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d0791aaa-82ec-45ec-b492-567e05bbea3d")
-		(property "Reference" "C818"
-			(at 318.262 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1nF"
-			(at 319.532 61.722 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 318.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603345729432014848"
-			(at 318.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "X7R, 2 kV"
-			(at 318.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LPN" "C9196"
-			(at 318.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1206B102K202NT"
-			(at 318.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7453e913-068e-4877-abfc-77b3a8e1aed2")
-		)
-		(pin "1"
-			(uuid "dc72a6b2-b627-4500-8350-55fca9b40a45")
-		)
-		(instances
-			(project "acoustic-carrier-board"
-				(path "/25b015c9-ab13-4427-b72c-b6f348597100/bccc7554-d2b1-4102-8d28-ddff56ec5c7a"
-					(reference "C818")
 					(unit 1)
 				)
 			)
