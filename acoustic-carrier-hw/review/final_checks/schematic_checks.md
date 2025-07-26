@@ -23,4 +23,4 @@
 
 OK for master slave mode.
 
-# 
+# SPI Connections
