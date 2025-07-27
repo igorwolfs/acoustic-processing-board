@@ -2681,6 +2681,12 @@
 		(uuid "089ebc4e-f2d2-42e9-bb95-41b3c87172cd")
 	)
 	(junction
+		(at 36.83 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c646b29-1c90-48da-8434-88ce8f3a394d")
+	)
+	(junction
 		(at 238.76 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2841,6 +2847,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63b3b9cb-9302-43f9-a98f-8151f9c5e8e8")
+	)
+	(junction
+		(at 30.48 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66fcb67a-1e34-4eb9-add9-b659e7ec31ea")
 	)
 	(junction
 		(at 57.15 52.07)
@@ -4628,6 +4640,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 71.12) (xy 36.83 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aee1399-5f65-456a-9290-b19778738216")
+	)
+	(wire
+		(pts
 			(xy 184.15 68.58) (xy 166.37 68.58)
 		)
 		(stroke
@@ -4845,6 +4867,16 @@
 			(type default)
 		)
 		(uuid "3d8b7733-de52-483c-ad86-a41b47dd00b1")
+	)
+	(wire
+		(pts
+			(xy 30.48 77.47) (xy 30.48 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6177dd-ba18-4d8f-815d-48003a6f18fe")
 	)
 	(wire
 		(pts
@@ -5968,6 +6000,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 78.74) (xy 36.83 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a695184-b18f-43d7-a530-8faf6bac4158")
+	)
+	(wire
+		(pts
 			(xy 101.6 44.45) (xy 93.98 44.45)
 		)
 		(stroke
@@ -6088,7 +6130,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 71.12) (xy 36.83 71.12)
+			(xy 29.21 71.12) (xy 30.48 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6155,6 +6197,16 @@
 			(type default)
 		)
 		(uuid "9762fba1-05fc-4585-9e7f-5cd6283ba077")
+	)
+	(wire
+		(pts
+			(xy 30.48 72.39) (xy 30.48 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b9dc4ee-5f5a-41a6-a348-59a6c54aafb7")
 	)
 	(wire
 		(pts
@@ -12927,6 +12979,111 @@
 			(project "acoustic-carrier-board"
 				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
 					(reference "TP1103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 30.48 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f81b845-7b48-404c-b19b-9c8af9b62570")
+		(property "Reference" "C1116"
+			(at 28.702 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 27.432 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8603345729432014848"
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "X7R, +-10%"
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LPN" "C22435929"
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CGA0201X7R104K160ET "
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 30.48 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9c5418f7-9c2d-4633-b95b-df782dee39f0")
+		)
+		(pin "1"
+			(uuid "d9b31bb1-ad33-4437-b1dc-24bcf5ac1fe0")
+		)
+		(instances
+			(project "acoustic-carrier-board"
+				(path "/25b015c9-ab13-4427-b72c-b6f348597100/f2b9f5c5-2b83-49a1-9584-962bb926f77f"
+					(reference "C1116")
 					(unit 1)
 				)
 			)
