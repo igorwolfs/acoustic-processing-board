@@ -5258,10 +5258,6 @@
 		(uuid "fffda305-4065-4943-a8b4-3c2c3525a8ea")
 	)
 	(no_connect
-		(at 71.12 69.85)
-		(uuid "1437032c-c0dd-4892-a639-2a8b763f2c3c")
-	)
-	(no_connect
 		(at 212.09 73.66)
 		(uuid "2356846a-620c-4782-85bf-e45326a196c5")
 	)
@@ -5989,6 +5985,16 @@
 			(type default)
 		)
 		(uuid "15d6a751-5f93-4e53-b560-152c028ed43d")
+	)
+	(wire
+		(pts
+			(xy 76.2 69.85) (xy 71.12 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18aec08a-d14b-41ee-85df-e9aaa2072741")
 	)
 	(wire
 		(pts
@@ -7192,6 +7198,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 68.58) (xy 76.2 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e45899a5-cfff-4047-b633-8710bb348995")
+	)
+	(wire
+		(pts
 			(xy 231.14 95.25) (xy 231.14 96.52)
 		)
 		(stroke
@@ -7339,6 +7355,16 @@
 			(type default)
 		)
 		(uuid "fe0586e9-5430-4783-bdb8-fc75252af4fa")
+	)
+	(wire
+		(pts
+			(xy 76.2 68.58) (xy 77.47 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff806bb9-1859-4f6e-873e-e8d08fb9d46d")
 	)
 	(label "DDR3.CKE"
 		(at 76.2 87.63 0)
@@ -7953,6 +7979,28 @@
 		(uuid "b7c58842-c1f2-4e0f-aa44-11efc4652c51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.3148 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FPGA_USB_SENSE"
+		(shape input)
+		(at 77.47 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e3d790c8-ab5d-4e38-8f42-cced0b7a46fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.9651 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
