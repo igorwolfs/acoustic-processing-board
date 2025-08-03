@@ -47,7 +47,7 @@ Main reason for choosing a 6-layer over an 8-layer stack-up was price. Keeping L
 #### Lattice ECP5U
 The Lattice ECP5U was the best price-quality in terms of computing power. 
 
-With a max CLK frequency of about 400 MHz it can operate around the lowest frequency possible for LPDDR3. 
+With a max CLK frequency of about 400 MHz it can operate around the lowest DDR3 speed class.
 
 #### Micron-DDR3 PHY
 Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{c}{300e6 * \sqrt{4.1}} = 50 cm$), delay-matching becomes less of an issue and higher ECP5U rise and fall times increase tolerance margin for the 50 ohm single-ended / 100 ohm differential impedance requirements.
@@ -55,7 +55,7 @@ Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{
 - CMD-CTRL-bus 
 	- signals led through vias twice.
 	- CK+/- 42 mm
-	- Other CMD/CTRL signals kept within 32-38 mm
+	- CMD/CTRL BUS signals kept around 35 mm (between 34-37 mm)
 - DQU-group 
 	- led through vias twice.
 	- UDQS+/-: 21.7 mm
@@ -72,7 +72,7 @@ Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{
 - ULPI-bus operating at 60 MHz
 	- Traces were delay-matched.
 	- Impedance matched to 50 ohms.
-- 2 Schmitt triggers were added to read-out the power delivery through the CC-lines.
+- 2 Schmitt triggers were added for read-out of CC-line voltage to determine current USB PD capacity.
 
 #### MS9280 ADC
 Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
@@ -82,7 +82,7 @@ Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
 2 RJ45 connectors meant to transfer analog signals attached with a switch. A comparison will be made for measuring analog signals between
 - An RJ45 connector with internal magnetics.
 - An RJ45 connector without magnetics, and with external blocking capacitors.
-	- Capacitors might need to be changed, to stay out of S.R.F territory and limit signal phase-shift
+	- Capacitors might need to be changed, to stay out of S.R.F territory and limit phase-shift between differential signals.
 
 #### W25Q128JVS SPI
 2 external 128 MBit SPI IC's connected
@@ -94,3 +94,24 @@ Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
 2 possible ways of loading the bitstream of the ECP5U
 - The JTAG-PMOD connector
 - Flashing the external 128 MBit SPI connected to the startup MSPI of the ECP5U.
+
+## Reviews
+### Reddit
+The first iteration of the design was placed on [reddit for review](https://www.reddit.com/r/PrintedCircuitBoard/comments/1m0hude/schematic_review_request_ecp5ufpga_board_with_hs/).
+
+The initial design included longer trace-lengths to the DDR-PHY to achieve better delay and impedance matching. The decision was made to reduce trace lengths and sacrifice some of the delay-budget and trace distance instead.
+
+
+<table>
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  <tr>
+    <td> <img src="images/DDR_BOT_BEF.jpeg"  alt="1" width = 400px height = 260px ></td>
+    <td><img src="images/DDR_BOT_AFT.png" alt="2" width = 400px height = 200px></td>
+   </tr> 
+   <tr>
+      <td><img src="images/DDR_TOP_BEF.jpeg" alt="3" width = 400px height = 260px></td>
+      <td><img src="images/DDR_TOP_AFT.png" alt="4" width = 400px height = 200>
+  </td>
+</tr>

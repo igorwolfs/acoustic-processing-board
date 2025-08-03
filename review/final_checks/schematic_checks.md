@@ -24,3 +24,11 @@
 OK for master slave mode.
 
 # SPI Connections
+
+- CS, Di, MCLK: OK
+- Is CSSPIin2 a regular pin after boot? 
+
+# Decoupling capacitors
+- USB ULPI: OK
+- FPGA: OK
+- 
