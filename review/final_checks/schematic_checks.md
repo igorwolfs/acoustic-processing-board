@@ -9,7 +9,7 @@
 ## JTAG
 (6. Configuration Considerations)
 
-- TDI, TMS, TDO: pul-up with 4.7 kOhm
+- TDI, TMS, TDO: pull-up with 4.7 kOhm
 - TCK: pull-down with 4.7 kOhm
 
 ## Config-pins

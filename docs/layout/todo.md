@@ -1,6 +1,4 @@
 # Stackup choice
-
-
 # Impedance characterization of transmission lins
 - DDR3-SE: 50 ohms
 - DDR3-DIFF: 100 ohms

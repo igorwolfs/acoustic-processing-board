@@ -14,18 +14,18 @@ Apart from technical constraints such as sampling rate (> 20 MHz), transfer / pr
 6-layer stackup (JLC06161H-3313) with 
 - L1, L6: controlled impedance layers.
 	- 50 Ohm non-coplanar microstrip: 
-		- TL width: 0.157 mm
+		- TL Width (W): 0.157 mm 
 		- Spacing between conductors: 2-3 x W
 	- 100 Ohm differential non-coplanar
-		- TL width: 0.122 mm
-		- Diff-pair gap: 0.2032 mm
+		- TL width (W): 0.122 mm
+		- Diff-pair spacing: 0.2032 mm
 		- Conductor spacing: 2-3 x W
 - L4: power plane:
 	- +2V5 Auxiliary FPGA voltage
 	- +1V35 LPDDR3 voltage
 	- +1V2 ETH voltage
 	- +3V3 digital
-	- +3V3 analog, planes separated by stitched via trace.
+	- +3V3 analog
 - L2, L3, L5: GND planes
 	- L2 (L1 reference)
 	- L3 (L4 reference)
@@ -75,7 +75,7 @@ Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{
 - 2 Schmitt triggers were added for read-out of CC-line voltage to determine current USB PD capacity.
 
 #### MS9280 ADC
-Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
+Sampling rate > 2 times Nyquist, purchasing price was less than 1 $.
 
 #### ADC RJ45 connectors + switch
 
@@ -89,6 +89,11 @@ Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
 - One to flash the ECP5U bitstream.
 - One to flash firmware used in case of a soft-core CPU configured in the FPGA-fabric.
 
+#### Other
+More info on routing can be found in the (rather chaotic) [layout folder](docs/layout/) and [component selection folder](docs/schematic/component_selection/).
+
+Simulations for ADI-devices can be found inside [ltspice-folder](simulations/ltspice/), TI-related sims can be found in the [TI-folder](simulations/TINA/)
+
 ## Booting
 ### Loading Bitstream 
 2 possible ways of loading the bitstream of the ECP5U
@@ -99,8 +104,7 @@ Sampling rate > 3 times Nyquist, purchasing price was less than 1 $.
 ### Reddit
 The first iteration of the design was placed on [reddit for review](https://www.reddit.com/r/PrintedCircuitBoard/comments/1m0hude/schematic_review_request_ecp5ufpga_board_with_hs/).
 
-The initial design included longer trace-lengths to the DDR-PHY to achieve better delay and impedance matching. The decision was made to reduce trace lengths and sacrifice some of the delay-budget and trace distance instead.
-
+The initial design included longer trace-lengths to the DDR-PHY to achieve better delay and impedance matching. It was deemed that for the given stackup, sacrificing delay-budget and inter-trace distance wasn't worth the increase in trace lengths at those frequencies.
 
 <table>
   <tr>
@@ -115,3 +119,10 @@ The initial design included longer trace-lengths to the DDR-PHY to achieve bette
       <td><img src="images/DDR_TOP_AFT.png" alt="4" width = 400px height = 200>
   </td>
 </tr>
+</table>
+
+
+### Other
+An additional LC-filter was added between shield and ground mostly for ESD-reasons.
+
+![](images/USB_SH_filter.png)
