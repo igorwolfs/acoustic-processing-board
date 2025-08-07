@@ -49,6 +49,13 @@ The Lattice ECP5U was the best price-quality in terms of computing power.
 
 With a max CLK frequency of about 400 MHz it can operate around the lowest DDR3 speed class.
 
+#### KSZ9031RN-Ethernet
+Often used in open-source boards together with the ECP5U.
+
+- RGMII interface operating at 125 MHz
+- Differential pair needs to be tightly matched, offset calibration between pairs is performed.
+- 4-pair RJ45 with intergrated magnetics (HR911130A)
+
 #### Micron-DDR3 PHY
 Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{c}{300e6 * \sqrt{4.1}} = 50 cm$), delay-matching becomes less of an issue and higher ECP5U rise and fall times increase tolerance margin for the 50 ohm single-ended / 100 ohm differential impedance requirements.
 
@@ -66,11 +73,11 @@ Anticipated was that around lower DDR3-speed classes (300 MHz, $\lambda = \frac{
 	- Data-signals kept within 1.5 mm
 
 
- > References: [Orangecrab Board](https://github.com/orangecrab-fpga/orangecrab-hardware]), Section 3.18 Lattice FPGA-DS-02012-3.2, [Micron DDR3 SDRAM](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588894245961019392) table 58
+ > References: [Orangecrab Board](https://github.com/orangecrab-fpga/orangecrab-hardware), Section 3.18 Lattice FPGA-DS-02012-3.2, [Micron DDR3 SDRAM](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588894245961019392) table 58
 
 #### USB3300-EZK
 - ULPI-bus operating at 60 MHz
-	- Traces were delay-matched.
+	- Traces were [delay-matched](docs/layout/USB/routing.md).
 	- Impedance matched to 50 ohms.
 - 2 Schmitt triggers were added for read-out of CC-line voltage to determine current USB PD capacity.
 

@@ -5,7 +5,7 @@
 
 
 ## Differential ethernet impedance
-Differential impedance is about 100 ohms by defautl
+Differential impedance is about 100 ohms by default.
 
 # Pairs
 - Incorrect channel order for A, B, C, D-channels
