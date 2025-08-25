@@ -5,4 +5,4 @@
 	- For polar capacitors
 
 # Check
-- Does impedance control show up when connected 
+- Does impedance control show up when connected
