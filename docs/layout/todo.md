@@ -1,9 +1,9 @@
 # Stackup choice
-# Impedance characterization of transmission lins
+## Impedance characterization of transmission line
 - DDR3-SE: 50 ohms
 - DDR3-DIFF: 100 ohms
 - Analog signal: 100 ohms diff
-- ETH RGMII: 
+- ETH RGMII: 50 ohms
 - ETH diff: 100 ohms
 - USB diff: 90 ohms
 

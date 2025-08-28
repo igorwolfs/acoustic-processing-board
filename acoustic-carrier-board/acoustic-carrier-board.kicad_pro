@@ -518,29 +518,44 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.1,
-        "diff_pair_gap": 0.2032,
-        "diff_pair_width": 0.1217,
-        "name": "analog",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 11,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
         "name": "analog-frontend",
-        "pcb_color": "rgb(132, 0, 132)",
-        "priority": 5,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "connectors",
-        "pcb_color": "rgb(0, 132, 0)",
-        "priority": 1,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "name": "ddr3",
-        "pcb_color": "rgb(0, 132, 132)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "ethernet-phy",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "gnd",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "usb-phy",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
@@ -548,16 +563,25 @@
         "clearance": 0.1,
         "diff_pair_gap": 0.2032,
         "diff_pair_width": 0.1217,
-        "name": "ddr3_diff",
+        "name": "z_analog_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 8,
+        "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "clearance": 0.1,
-        "name": "ddr3_se",
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1217,
+        "name": "z_ddr3_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 9,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.1,
+        "name": "z_ddr3_se",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1565
       },
@@ -565,48 +589,30 @@
         "clearance": 0.1,
         "diff_pair_gap": 0.2032,
         "diff_pair_width": 0.1217,
-        "name": "eth_diff",
+        "name": "z_eth_diff",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 11,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "z_eth_se",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 10,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "eth_se",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 9,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "ethernet-phy",
-        "pcb_color": "rgb(132, 132, 0)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "gnd",
-        "pcb_color": "rgb(72, 72, 72)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "power",
-        "pcb_color": "rgb(255, 0, 0)",
-        "priority": 6,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
-      },
-      {
-        "name": "usb-phy",
-        "pcb_color": "rgb(0, 0, 194)",
-        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "clearance": 0.1,
         "diff_pair_gap": 0.2032,
         "diff_pair_width": 0.1554,
-        "name": "usb_diff",
+        "name": "z_usb_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 12,
+        "priority": 13,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "z_usb_se",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
@@ -643,6 +649,12 @@
         "analog"
       ],
       "Net-(C1016-Pad2)": [
+        "analog"
+      ],
+      "Net-(C1017-Pad1)": [
+        "analog"
+      ],
+      "Net-(C1018-Pad1)": [
         "analog"
       ],
       "Net-(J1004-In)": [
@@ -687,39 +699,39 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "usb_diff",
+        "netclass": "z_usb_diff",
         "pattern": "*USB_D*"
       },
       {
-        "netclass": "analog",
+        "netclass": "z_analog_diff",
         "pattern": "*ADC_AIN*"
       },
       {
-        "netclass": "ddr3_se",
+        "netclass": "z_ddr3_se",
         "pattern": "*DDR3.DQ*"
       },
       {
-        "netclass": "eth_diff",
-        "pattern": "ETH_PHY*"
+        "netclass": "z_eth_diff",
+        "pattern": "/ETHERNET-PHY/ETH_PHY*"
       },
       {
-        "netclass": "eth_se",
-        "pattern": "RGMII*"
+        "netclass": "z_eth_se",
+        "pattern": "/ETHERNET-PHY/RGMII*"
       },
       {
-        "netclass": "ddr3_diff",
+        "netclass": "z_ddr3_diff",
         "pattern": "*DDR3.UDQS*"
       },
       {
-        "netclass": "ddr3_diff",
+        "netclass": "z_ddr3_diff",
         "pattern": "*DDR3.LDQS*"
       },
       {
-        "netclass": "ddr3_se",
+        "netclass": "z_ddr3_se",
         "pattern": "*DDR3.LDM"
       },
       {
-        "netclass": "ddr3_se",
+        "netclass": "z_ddr3_se",
         "pattern": "*DDR3.UDM"
       },
       {
@@ -771,8 +783,52 @@
         "pattern": "GND"
       },
       {
-        "netclass": "Default",
-        "pattern": "DDR3.CK*"
+        "netclass": "z_ddr3_diff",
+        "pattern": "*DDR3.CK+"
+      },
+      {
+        "netclass": "z_ddr3_diff",
+        "pattern": "*DDR3.CK-"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.A*"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.RESET#"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.ODT"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.BA*"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.CS#"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.CAS#"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.WE#"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.RAS#"
+      },
+      {
+        "netclass": "z_ddr3_se",
+        "pattern": "*DDR3.CKE"
+      },
+      {
+        "netclass": "z_usb_se",
+        "pattern": "*USB.*"
       }
     ]
   },
